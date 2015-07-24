@@ -14,5 +14,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bobby-brennan/fhir-swagger/issues"
+  },
+  "dependencies": {
+    "xsd2json": "~1.4.3",
+    "async": "~1.4.0",
+    "jsonix": "~2.3.0"
   }
 }
