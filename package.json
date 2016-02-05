@@ -1,6 +1,6 @@
 {
   "name": "fhir-swagger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Helper for creating Swagger from FHIR APIs ======",
   "main": "index.js",
   "scripts": {
