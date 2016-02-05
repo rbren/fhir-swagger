@@ -16,9 +16,10 @@
     "url": "https://github.com/bobby-brennan/fhir-swagger/issues"
   },
   "dependencies": {
-    "xsd2json": "~1.4.3",
     "async": "~1.4.0",
+    "express": "~4.13.1",
     "jsonix": "~2.3.0",
-    "express": "~4.13.1"
+    "request": "^2.69.0",
+    "xsd2json": "~1.4.3"
   }
 }
