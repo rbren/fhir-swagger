@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var FS = require('fs');
+var args = require('yargs').argv;
+var baseURL = args.fhir_url || 'http://argonaut.healthintersections.com.au/open';
+var confPath = args.conformance_path || '/metadata?_format=application/json';
+var outputFile = args.output || './swagger.json';
+
+require('../index.js')(baseURL, confPath, function(err, swagger) {
+  if (err) throw err;
+  FS.writeFileSync(outputFile, JSON.stringify(swagger, null, 2))
+});
+
