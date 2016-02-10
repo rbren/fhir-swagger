@@ -1,11 +1,24 @@
 var Request = require('request');
 var Converter = require('./lib/conformance-to-swagger.js');
 
-module.exports = function(baseURL, confPath, callback) {
+module.exports = function(options, callback) {
   callback = callback || function(err) {if (err) throw err};
-  Request(baseURL + confPath, {json: true}, function(err, resp, body) {
+  var headers = {};
+  var auth = options.authorization;
+  if (auth) {
+    var authString = auth.username + ':' + auth.password;
+    authString = new Buffer(authString).toString('base64');
+    headers.Authorization = 'Basic ' + authString;
+  }
+
+  Request({
+    rejectUnauthorized: options.reject_unauthorized,
+    url: options.fhir_url + options.conformance_path,
+    headers: headers,
+    json: true,
+  }, function(err, resp, body) {
     if (err) return callback(err);
-    var swagger = Converter.convert(baseURL, body);
+    var swagger = Converter.convert(options.fhir_url, body);
     callback(null, swagger);
   })
 }
