@@ -10,7 +10,7 @@ var GOLDEN_DIR = __dirname + '/out';
 
 describe('Converter', function() {
   it('should create swagger', function(done) {
-    this.timeout(4000);
+    this.timeout(8000);
     convert(options, function(err, swagger) {
       var goldenFile = GOLDEN_DIR + '/swagger.json';
       if (process.env.WRITE_GOLDEN) {

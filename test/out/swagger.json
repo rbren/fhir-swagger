@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "definitions": {},
   "paths": {
-    "/account": {
+    "/Account": {
       "get": {
         "parameters": [
           {
@@ -177,7 +177,7 @@
         }
       }
     },
-    "/allergyintolerance": {
+    "/AllergyIntolerance": {
       "get": {
         "parameters": [
           {
@@ -390,7 +390,7 @@
         }
       }
     },
-    "/appointment": {
+    "/Appointment": {
       "get": {
         "parameters": [
           {
@@ -559,7 +559,7 @@
         }
       }
     },
-    "/appointmentresponse": {
+    "/AppointmentResponse": {
       "get": {
         "parameters": [
           {
@@ -721,7 +721,7 @@
         }
       }
     },
-    "/auditevent": {
+    "/AuditEvent": {
       "get": {
         "parameters": [
           {
@@ -944,7 +944,7 @@
         }
       }
     },
-    "/basic": {
+    "/Basic": {
       "get": {
         "parameters": [
           {
@@ -1101,7 +1101,7 @@
         }
       }
     },
-    "/binary": {
+    "/Binary": {
       "get": {
         "parameters": [
           {
@@ -1227,7 +1227,7 @@
         }
       }
     },
-    "/bodysite": {
+    "/BodySite": {
       "get": {
         "parameters": [
           {
@@ -1365,7 +1365,7 @@
         }
       }
     },
-    "/bundle": {
+    "/Bundle": {
       "get": {
         "parameters": [
           {
@@ -1503,7 +1503,7 @@
         }
       }
     },
-    "/careplan": {
+    "/CarePlan": {
       "get": {
         "parameters": [
           {
@@ -1703,7 +1703,7 @@
         }
       }
     },
-    "/claim": {
+    "/Claim": {
       "get": {
         "parameters": [
           {
@@ -1853,7 +1853,7 @@
         }
       }
     },
-    "/claimresponse": {
+    "/ClaimResponse": {
       "get": {
         "parameters": [
           {
@@ -1985,7 +1985,7 @@
         }
       }
     },
-    "/clinicalimpression": {
+    "/ClinicalImpression": {
       "get": {
         "parameters": [
           {
@@ -2190,7 +2190,7 @@
         }
       }
     },
-    "/communication": {
+    "/Communication": {
       "get": {
         "parameters": [
           {
@@ -2384,7 +2384,7 @@
         }
       }
     },
-    "/communicationrequest": {
+    "/CommunicationRequest": {
       "get": {
         "parameters": [
           {
@@ -2584,7 +2584,7 @@
         }
       }
     },
-    "/composition": {
+    "/Composition": {
       "get": {
         "parameters": [
           {
@@ -2802,7 +2802,7 @@
         }
       }
     },
-    "/conceptmap": {
+    "/ConceptMap": {
       "get": {
         "parameters": [
           {
@@ -3031,7 +3031,7 @@
         }
       }
     },
-    "/condition": {
+    "/Condition": {
       "get": {
         "parameters": [
           {
@@ -3243,7 +3243,7 @@
         }
       }
     },
-    "/conformance": {
+    "/Conformance": {
       "get": {
         "parameters": [
           {
@@ -3460,7 +3460,7 @@
         }
       }
     },
-    "/contract": {
+    "/Contract": {
       "get": {
         "parameters": [
           {
@@ -3610,7 +3610,7 @@
         }
       }
     },
-    "/coverage": {
+    "/Coverage": {
       "get": {
         "parameters": [
           {
@@ -3778,7 +3778,7 @@
         }
       }
     },
-    "/dataelement": {
+    "/DataElement": {
       "get": {
         "parameters": [
           {
@@ -3965,7 +3965,7 @@
         }
       }
     },
-    "/detectedissue": {
+    "/DetectedIssue": {
       "get": {
         "parameters": [
           {
@@ -4122,7 +4122,7 @@
         }
       }
     },
-    "/device": {
+    "/Device": {
       "get": {
         "parameters": [
           {
@@ -4296,7 +4296,7 @@
         }
       }
     },
-    "/devicecomponent": {
+    "/DeviceComponent": {
       "get": {
         "parameters": [
           {
@@ -4434,7 +4434,7 @@
         }
       }
     },
-    "/devicemetric": {
+    "/DeviceMetric": {
       "get": {
         "parameters": [
           {
@@ -4584,7 +4584,7 @@
         }
       }
     },
-    "/deviceuserequest": {
+    "/DeviceUseRequest": {
       "get": {
         "parameters": [
           {
@@ -4722,7 +4722,7 @@
         }
       }
     },
-    "/deviceusestatement": {
+    "/DeviceUseStatement": {
       "get": {
         "parameters": [
           {
@@ -4860,7 +4860,7 @@
         }
       }
     },
-    "/diagnosticorder": {
+    "/DiagnosticOrder": {
       "get": {
         "parameters": [
           {
@@ -5084,7 +5084,7 @@
         }
       }
     },
-    "/diagnosticreport": {
+    "/DiagnosticReport": {
       "get": {
         "parameters": [
           {
@@ -5296,7 +5296,7 @@
         }
       }
     },
-    "/documentmanifest": {
+    "/DocumentManifest": {
       "get": {
         "parameters": [
           {
@@ -5495,7 +5495,7 @@
         }
       }
     },
-    "/documentreference": {
+    "/DocumentReference": {
       "get": {
         "parameters": [
           {
@@ -5774,7 +5774,7 @@
         }
       }
     },
-    "/eligibilityrequest": {
+    "/EligibilityRequest": {
       "get": {
         "parameters": [
           {
@@ -5900,7 +5900,7 @@
         }
       }
     },
-    "/eligibilityresponse": {
+    "/EligibilityResponse": {
       "get": {
         "parameters": [
           {
@@ -6026,7 +6026,7 @@
         }
       }
     },
-    "/encounter": {
+    "/Encounter": {
       "get": {
         "parameters": [
           {
@@ -6268,7 +6268,7 @@
         }
       }
     },
-    "/enrollmentrequest": {
+    "/EnrollmentRequest": {
       "get": {
         "parameters": [
           {
@@ -6406,7 +6406,7 @@
         }
       }
     },
-    "/enrollmentresponse": {
+    "/EnrollmentResponse": {
       "get": {
         "parameters": [
           {
@@ -6532,7 +6532,7 @@
         }
       }
     },
-    "/episodeofcare": {
+    "/EpisodeOfCare": {
       "get": {
         "parameters": [
           {
@@ -6713,7 +6713,7 @@
         }
       }
     },
-    "/explanationofbenefit": {
+    "/ExplanationOfBenefit": {
       "get": {
         "parameters": [
           {
@@ -6839,7 +6839,7 @@
         }
       }
     },
-    "/familymemberhistory": {
+    "/FamilyMemberHistory": {
       "get": {
         "parameters": [
           {
@@ -7002,7 +7002,7 @@
         }
       }
     },
-    "/flag": {
+    "/Flag": {
       "get": {
         "parameters": [
           {
@@ -7153,7 +7153,7 @@
         }
       }
     },
-    "/goal": {
+    "/Goal": {
       "get": {
         "parameters": [
           {
@@ -7310,7 +7310,7 @@
         }
       }
     },
-    "/group": {
+    "/Group": {
       "get": {
         "parameters": [
           {
@@ -7484,7 +7484,7 @@
         }
       }
     },
-    "/healthcareservice": {
+    "/HealthcareService": {
       "get": {
         "parameters": [
           {
@@ -7652,7 +7652,7 @@
         }
       }
     },
-    "/imagingobjectselection": {
+    "/ImagingObjectSelection": {
       "get": {
         "parameters": [
           {
@@ -7809,7 +7809,7 @@
         }
       }
     },
-    "/imagingstudy": {
+    "/ImagingStudy": {
       "get": {
         "parameters": [
           {
@@ -7990,7 +7990,7 @@
         }
       }
     },
-    "/immunization": {
+    "/Immunization": {
       "get": {
         "parameters": [
           {
@@ -8208,7 +8208,7 @@
         }
       }
     },
-    "/immunizationrecommendation": {
+    "/ImmunizationRecommendation": {
       "get": {
         "parameters": [
           {
@@ -8383,7 +8383,7 @@
         }
       }
     },
-    "/implementationguide": {
+    "/ImplementationGuide": {
       "get": {
         "parameters": [
           {
@@ -8564,7 +8564,7 @@
         }
       }
     },
-    "/list": {
+    "/List": {
       "get": {
         "parameters": [
           {
@@ -8757,7 +8757,7 @@
         }
       }
     },
-    "/location": {
+    "/Location": {
       "get": {
         "parameters": [
           {
@@ -8961,7 +8961,7 @@
         }
       }
     },
-    "/media": {
+    "/Media": {
       "get": {
         "parameters": [
           {
@@ -9130,7 +9130,7 @@
         }
       }
     },
-    "/medication": {
+    "/Medication": {
       "get": {
         "parameters": [
           {
@@ -9286,7 +9286,7 @@
         }
       }
     },
-    "/medicationadministration": {
+    "/MedicationAdministration": {
       "get": {
         "parameters": [
           {
@@ -9473,7 +9473,7 @@
         }
       }
     },
-    "/medicationdispense": {
+    "/MedicationDispense": {
       "get": {
         "parameters": [
           {
@@ -9673,7 +9673,7 @@
         }
       }
     },
-    "/medicationorder": {
+    "/MedicationOrder": {
       "get": {
         "parameters": [
           {
@@ -9842,7 +9842,7 @@
         }
       }
     },
-    "/medicationstatement": {
+    "/MedicationStatement": {
       "get": {
         "parameters": [
           {
@@ -10005,7 +10005,7 @@
         }
       }
     },
-    "/namingsystem": {
+    "/NamingSystem": {
       "get": {
         "parameters": [
           {
@@ -10211,7 +10211,7 @@
         }
       }
     },
-    "/nutritionorder": {
+    "/NutritionOrder": {
       "get": {
         "parameters": [
           {
@@ -10392,7 +10392,7 @@
         }
       }
     },
-    "/observation": {
+    "/Observation": {
       "get": {
         "parameters": [
           {
@@ -10670,7 +10670,7 @@
         }
       }
     },
-    "/operationdefinition": {
+    "/OperationDefinition": {
       "get": {
         "parameters": [
           {
@@ -10869,7 +10869,7 @@
         }
       }
     },
-    "/operationoutcome": {
+    "/OperationOutcome": {
       "get": {
         "parameters": [
           {
@@ -10989,7 +10989,7 @@
         }
       }
     },
-    "/order": {
+    "/Order": {
       "get": {
         "parameters": [
           {
@@ -11165,7 +11165,7 @@
         }
       }
     },
-    "/orderresponse": {
+    "/OrderResponse": {
       "get": {
         "parameters": [
           {
@@ -11322,7 +11322,7 @@
         }
       }
     },
-    "/organization": {
+    "/Organization": {
       "get": {
         "parameters": [
           {
@@ -11514,7 +11514,7 @@
         }
       }
     },
-    "/patient": {
+    "/Patient": {
       "get": {
         "parameters": [
           {
@@ -11828,7 +11828,7 @@
         }
       }
     },
-    "/paymentnotice": {
+    "/PaymentNotice": {
       "get": {
         "parameters": [
           {
@@ -11954,7 +11954,7 @@
         }
       }
     },
-    "/paymentreconciliation": {
+    "/PaymentReconciliation": {
       "get": {
         "parameters": [
           {
@@ -12080,7 +12080,7 @@
         }
       }
     },
-    "/person": {
+    "/Person": {
       "get": {
         "parameters": [
           {
@@ -12315,7 +12315,7 @@
         }
       }
     },
-    "/practitioner": {
+    "/Practitioner": {
       "get": {
         "parameters": [
           {
@@ -12555,7 +12555,7 @@
         }
       }
     },
-    "/procedure": {
+    "/Procedure": {
       "get": {
         "parameters": [
           {
@@ -12724,7 +12724,7 @@
         }
       }
     },
-    "/procedurerequest": {
+    "/ProcedureRequest": {
       "get": {
         "parameters": [
           {
@@ -12880,7 +12880,7 @@
         }
       }
     },
-    "/processrequest": {
+    "/ProcessRequest": {
       "get": {
         "parameters": [
           {
@@ -13024,7 +13024,7 @@
         }
       }
     },
-    "/processresponse": {
+    "/ProcessResponse": {
       "get": {
         "parameters": [
           {
@@ -13174,7 +13174,7 @@
         }
       }
     },
-    "/provenance": {
+    "/Provenance": {
       "get": {
         "parameters": [
           {
@@ -13356,7 +13356,7 @@
         }
       }
     },
-    "/questionnaire": {
+    "/Questionnaire": {
       "get": {
         "parameters": [
           {
@@ -13519,7 +13519,7 @@
         }
       }
     },
-    "/questionnaireresponse": {
+    "/QuestionnaireResponse": {
       "get": {
         "parameters": [
           {
@@ -13688,7 +13688,7 @@
         }
       }
     },
-    "/referralrequest": {
+    "/ReferralRequest": {
       "get": {
         "parameters": [
           {
@@ -13857,7 +13857,7 @@
         }
       }
     },
-    "/relatedperson": {
+    "/RelatedPerson": {
       "get": {
         "parameters": [
           {
@@ -14068,7 +14068,7 @@
         }
       }
     },
-    "/riskassessment": {
+    "/RiskAssessment": {
       "get": {
         "parameters": [
           {
@@ -14237,7 +14237,7 @@
         }
       }
     },
-    "/schedule": {
+    "/Schedule": {
       "get": {
         "parameters": [
           {
@@ -14382,7 +14382,7 @@
         }
       }
     },
-    "/searchparameter": {
+    "/SearchParameter": {
       "get": {
         "parameters": [
           {
@@ -14544,7 +14544,7 @@
         }
       }
     },
-    "/slot": {
+    "/Slot": {
       "get": {
         "parameters": [
           {
@@ -14695,7 +14695,7 @@
         }
       }
     },
-    "/specimen": {
+    "/Specimen": {
       "get": {
         "parameters": [
           {
@@ -14882,7 +14882,7 @@
         }
       }
     },
-    "/structuredefinition": {
+    "/StructureDefinition": {
       "get": {
         "parameters": [
           {
@@ -15129,7 +15129,7 @@
         }
       }
     },
-    "/subscription": {
+    "/Subscription": {
       "get": {
         "parameters": [
           {
@@ -15291,7 +15291,7 @@
         }
       }
     },
-    "/substance": {
+    "/Substance": {
       "get": {
         "parameters": [
           {
@@ -15454,7 +15454,7 @@
         }
       }
     },
-    "/supplydelivery": {
+    "/SupplyDelivery": {
       "get": {
         "parameters": [
           {
@@ -15604,7 +15604,7 @@
         }
       }
     },
-    "/supplyrequest": {
+    "/SupplyRequest": {
       "get": {
         "parameters": [
           {
@@ -15767,7 +15767,7 @@
         }
       }
     },
-    "/testscript": {
+    "/TestScript": {
       "get": {
         "parameters": [
           {
@@ -15929,7 +15929,7 @@
         }
       }
     },
-    "/valueset": {
+    "/ValueSet": {
       "get": {
         "parameters": [
           {
@@ -16128,7 +16128,7 @@
         }
       }
     },
-    "/visionprescription": {
+    "/VisionPrescription": {
       "get": {
         "parameters": [
           {
