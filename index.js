@@ -19,6 +19,10 @@ module.exports = function(options, callback) {
   }, function(err, resp, body) {
     if (err) return callback(err);
     var swagger = Converter.convert(options.fhir_url, body);
+    if (auth) {
+      swagger.securityDefinitions = swagger.securityDefinitions || {};
+      swagger.securityDefinitions.Basic = {type: 'basic'};
+    }
     callback(null, swagger);
   })
 }
