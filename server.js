@@ -12,6 +12,7 @@ Swagger = Convert(args, function(err, s) {
   var portal = new LucyConsole({
     swagger: swagger,
     proxy: args.proxy_host || true,
+    development: process.env.DEVELOPMENT,
   })
   App.use(portal.router);
 });
