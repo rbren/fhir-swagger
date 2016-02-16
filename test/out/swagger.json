@@ -4,6 +4,9 @@
   "paths": {
     "/Account": {
       "post": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12,6 +15,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -194,6 +200,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -202,6 +211,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -210,6 +222,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -220,6 +235,9 @@
     },
     "/Account/{id}/_history": {
       "get": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -246,6 +264,9 @@
     },
     "/Account/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Account"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -267,6 +288,9 @@
     },
     "/AllergyIntolerance": {
       "post": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -275,6 +299,9 @@
         }
       },
       "get": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -495,6 +522,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -503,6 +533,9 @@
         }
       },
       "put": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -511,6 +544,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -521,6 +557,9 @@
     },
     "/AllergyIntolerance/{id}/_history": {
       "get": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -547,6 +586,9 @@
     },
     "/AllergyIntolerance/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "AllergyIntolerance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -568,6 +610,9 @@
     },
     "/Appointment": {
       "post": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -576,6 +621,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -752,6 +800,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -760,6 +811,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -768,6 +822,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -778,6 +835,9 @@
     },
     "/Appointment/{id}/_history": {
       "get": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -804,6 +864,9 @@
     },
     "/Appointment/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Appointment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -825,6 +888,9 @@
     },
     "/AppointmentResponse": {
       "post": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -833,6 +899,9 @@
         }
       },
       "get": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -1002,6 +1071,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1010,6 +1082,9 @@
         }
       },
       "put": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1018,6 +1093,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1028,6 +1106,9 @@
     },
     "/AppointmentResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1054,6 +1135,9 @@
     },
     "/AppointmentResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "AppointmentResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1075,6 +1159,9 @@
     },
     "/AuditEvent": {
       "post": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1083,6 +1170,9 @@
         }
       },
       "get": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -1313,6 +1403,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1321,6 +1414,9 @@
         }
       },
       "put": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1329,6 +1425,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1339,6 +1438,9 @@
     },
     "/AuditEvent/{id}/_history": {
       "get": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1365,6 +1467,9 @@
     },
     "/AuditEvent/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "AuditEvent"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1386,6 +1491,9 @@
     },
     "/Basic": {
       "post": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1394,6 +1502,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -1558,6 +1669,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1566,6 +1680,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1574,6 +1691,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1584,6 +1704,9 @@
     },
     "/Basic/{id}/_history": {
       "get": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1610,6 +1733,9 @@
     },
     "/Basic/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Basic"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1631,6 +1757,9 @@
     },
     "/Binary": {
       "post": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1639,6 +1768,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -1772,6 +1904,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1780,6 +1915,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1788,6 +1926,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1798,6 +1939,9 @@
     },
     "/Binary/{id}/_history": {
       "get": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1824,6 +1968,9 @@
     },
     "/Binary/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Binary"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -1845,6 +1992,9 @@
     },
     "/BodySite": {
       "post": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -1853,6 +2003,9 @@
         }
       },
       "get": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -1998,6 +2151,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2006,6 +2162,9 @@
         }
       },
       "put": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2014,6 +2173,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2024,6 +2186,9 @@
     },
     "/BodySite/{id}/_history": {
       "get": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2050,6 +2215,9 @@
     },
     "/BodySite/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "BodySite"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2071,6 +2239,9 @@
     },
     "/Bundle": {
       "post": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2079,6 +2250,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -2224,6 +2398,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2232,6 +2409,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2240,6 +2420,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2250,6 +2433,9 @@
     },
     "/Bundle/{id}/_history": {
       "get": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2276,6 +2462,9 @@
     },
     "/Bundle/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Bundle"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2297,6 +2486,9 @@
     },
     "/CarePlan": {
       "post": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2305,6 +2497,9 @@
         }
       },
       "get": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -2512,6 +2707,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2520,6 +2718,9 @@
         }
       },
       "put": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2528,6 +2729,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2538,6 +2742,9 @@
     },
     "/CarePlan/{id}/_history": {
       "get": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2564,6 +2771,9 @@
     },
     "/CarePlan/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "CarePlan"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2585,6 +2795,9 @@
     },
     "/Claim": {
       "post": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2593,6 +2806,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -2750,6 +2966,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2758,6 +2977,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2766,6 +2988,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2776,6 +3001,9 @@
     },
     "/Claim/{id}/_history": {
       "get": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2802,6 +3030,9 @@
     },
     "/Claim/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Claim"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -2823,6 +3054,9 @@
     },
     "/ClaimResponse": {
       "post": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2831,6 +3065,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -2970,6 +3207,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2978,6 +3218,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2986,6 +3229,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -2996,6 +3242,9 @@
     },
     "/ClaimResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3022,6 +3271,9 @@
     },
     "/ClaimResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ClaimResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3043,6 +3295,9 @@
     },
     "/ClinicalImpression": {
       "post": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3051,6 +3306,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -3263,6 +3521,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3271,6 +3532,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3279,6 +3543,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3289,6 +3556,9 @@
     },
     "/ClinicalImpression/{id}/_history": {
       "get": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3315,6 +3585,9 @@
     },
     "/ClinicalImpression/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ClinicalImpression"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3336,6 +3609,9 @@
     },
     "/Communication": {
       "post": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3344,6 +3620,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -3545,6 +3824,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3553,6 +3835,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3561,6 +3846,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3571,6 +3859,9 @@
     },
     "/Communication/{id}/_history": {
       "get": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3597,6 +3888,9 @@
     },
     "/Communication/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Communication"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3618,6 +3912,9 @@
     },
     "/CommunicationRequest": {
       "post": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3626,6 +3923,9 @@
         }
       },
       "get": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -3833,6 +4133,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3841,6 +4144,9 @@
         }
       },
       "put": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3849,6 +4155,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3859,6 +4168,9 @@
     },
     "/CommunicationRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3885,6 +4197,9 @@
     },
     "/CommunicationRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "CommunicationRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -3906,6 +4221,9 @@
     },
     "/Composition": {
       "post": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -3914,6 +4232,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -4139,6 +4460,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4147,6 +4471,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4155,6 +4482,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4165,6 +4495,9 @@
     },
     "/Composition/{id}/_history": {
       "get": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4191,6 +4524,9 @@
     },
     "/Composition/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Composition"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4212,6 +4548,9 @@
     },
     "/ConceptMap": {
       "post": {
+        "tags": [
+          "ConceptMap"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4229,6 +4568,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ConceptMap"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4237,6 +4579,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ConceptMap"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4245,6 +4590,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ConceptMap"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4255,6 +4603,9 @@
     },
     "/ConceptMap/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ConceptMap"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4276,6 +4627,9 @@
     },
     "/Condition": {
       "post": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4284,6 +4638,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -4503,6 +4860,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4511,6 +4871,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4519,6 +4882,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4529,6 +4895,9 @@
     },
     "/Condition/{id}/_history": {
       "get": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4555,6 +4924,9 @@
     },
     "/Condition/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Condition"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4576,6 +4948,9 @@
     },
     "/Conformance": {
       "post": {
+        "tags": [
+          "Conformance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4593,6 +4968,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Conformance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4601,6 +4979,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Conformance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4609,6 +4990,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Conformance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4619,6 +5003,9 @@
     },
     "/Conformance/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Conformance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4640,6 +5027,9 @@
     },
     "/Contract": {
       "post": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4648,6 +5038,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -4805,6 +5198,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4813,6 +5209,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4821,6 +5220,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4831,6 +5233,9 @@
     },
     "/Contract/{id}/_history": {
       "get": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4857,6 +5262,9 @@
     },
     "/Contract/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Contract"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -4878,6 +5286,9 @@
     },
     "/Coverage": {
       "post": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -4886,6 +5297,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -5061,6 +5475,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5069,6 +5486,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5077,6 +5497,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5087,6 +5510,9 @@
     },
     "/Coverage/{id}/_history": {
       "get": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5113,6 +5539,9 @@
     },
     "/Coverage/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Coverage"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5134,6 +5563,9 @@
     },
     "/DataElement": {
       "post": {
+        "tags": [
+          "DataElement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5151,6 +5583,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DataElement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5159,6 +5594,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DataElement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5167,6 +5605,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DataElement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5177,6 +5618,9 @@
     },
     "/DataElement/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DataElement"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5198,6 +5642,9 @@
     },
     "/DetectedIssue": {
       "post": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5206,6 +5653,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -5370,6 +5820,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5378,6 +5831,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5386,6 +5842,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5396,6 +5855,9 @@
     },
     "/DetectedIssue/{id}/_history": {
       "get": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5422,6 +5884,9 @@
     },
     "/DetectedIssue/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DetectedIssue"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5443,6 +5908,9 @@
     },
     "/Device": {
       "post": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5451,6 +5919,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -5632,6 +6103,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5640,6 +6114,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5648,6 +6125,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5658,6 +6138,9 @@
     },
     "/Device/{id}/_history": {
       "get": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5684,6 +6167,9 @@
     },
     "/Device/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Device"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5705,6 +6191,9 @@
     },
     "/DeviceComponent": {
       "post": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5713,6 +6202,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -5858,6 +6350,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5866,6 +6361,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5874,6 +6372,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5884,6 +6385,9 @@
     },
     "/DeviceComponent/{id}/_history": {
       "get": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5910,6 +6414,9 @@
     },
     "/DeviceComponent/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DeviceComponent"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -5931,6 +6438,9 @@
     },
     "/DeviceMetric": {
       "post": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -5939,6 +6449,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -6096,6 +6609,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6104,6 +6620,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6112,6 +6631,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6122,6 +6644,9 @@
     },
     "/DeviceMetric/{id}/_history": {
       "get": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6148,6 +6673,9 @@
     },
     "/DeviceMetric/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DeviceMetric"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6169,6 +6697,9 @@
     },
     "/DeviceUseRequest": {
       "post": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6177,6 +6708,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -6322,6 +6856,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6330,6 +6867,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6338,6 +6878,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6348,6 +6891,9 @@
     },
     "/DeviceUseRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6374,6 +6920,9 @@
     },
     "/DeviceUseRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DeviceUseRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6395,6 +6944,9 @@
     },
     "/DeviceUseStatement": {
       "post": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6403,6 +6955,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -6548,6 +7103,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6556,6 +7114,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6564,6 +7125,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6574,6 +7138,9 @@
     },
     "/DeviceUseStatement/{id}/_history": {
       "get": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6600,6 +7167,9 @@
     },
     "/DeviceUseStatement/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DeviceUseStatement"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6621,6 +7191,9 @@
     },
     "/DiagnosticOrder": {
       "post": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6629,6 +7202,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -6860,6 +7436,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6868,6 +7447,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6876,6 +7458,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6886,6 +7471,9 @@
     },
     "/DiagnosticOrder/{id}/_history": {
       "get": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6912,6 +7500,9 @@
     },
     "/DiagnosticOrder/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DiagnosticOrder"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -6933,6 +7524,9 @@
     },
     "/DiagnosticReport": {
       "post": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -6941,6 +7535,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -7160,6 +7757,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7168,6 +7768,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7176,6 +7779,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7186,6 +7792,9 @@
     },
     "/DiagnosticReport/{id}/_history": {
       "get": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -7212,6 +7821,9 @@
     },
     "/DiagnosticReport/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DiagnosticReport"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -7233,6 +7845,9 @@
     },
     "/DocumentManifest": {
       "post": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7241,6 +7856,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -7447,6 +8065,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7455,6 +8076,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7463,6 +8087,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7473,6 +8100,9 @@
     },
     "/DocumentManifest/{id}/_history": {
       "get": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -7499,6 +8129,9 @@
     },
     "/DocumentManifest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DocumentManifest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -7520,6 +8153,9 @@
     },
     "/DocumentReference": {
       "post": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7528,6 +8164,9 @@
         }
       },
       "get": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -7814,6 +8453,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7822,6 +8464,9 @@
         }
       },
       "put": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7830,6 +8475,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7840,6 +8488,9 @@
     },
     "/DocumentReference/{id}/_history": {
       "get": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -7866,6 +8517,9 @@
     },
     "/DocumentReference/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "DocumentReference"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -7887,6 +8541,9 @@
     },
     "/EligibilityRequest": {
       "post": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -7895,6 +8552,9 @@
         }
       },
       "get": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -8028,6 +8688,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8036,6 +8699,9 @@
         }
       },
       "put": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8044,6 +8710,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8054,6 +8723,9 @@
     },
     "/EligibilityRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8080,6 +8752,9 @@
     },
     "/EligibilityRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "EligibilityRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8101,6 +8776,9 @@
     },
     "/EligibilityResponse": {
       "post": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8109,6 +8787,9 @@
         }
       },
       "get": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -8242,6 +8923,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8250,6 +8934,9 @@
         }
       },
       "put": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8258,6 +8945,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8268,6 +8958,9 @@
     },
     "/EligibilityResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8294,6 +8987,9 @@
     },
     "/EligibilityResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "EligibilityResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8315,6 +9011,9 @@
     },
     "/Encounter": {
       "post": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8323,6 +9022,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -8572,6 +9274,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8580,6 +9285,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8588,6 +9296,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8598,6 +9309,9 @@
     },
     "/Encounter/{id}/_history": {
       "get": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8624,6 +9338,9 @@
     },
     "/Encounter/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Encounter"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8645,6 +9362,9 @@
     },
     "/EnrollmentRequest": {
       "post": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8653,6 +9373,9 @@
         }
       },
       "get": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -8798,6 +9521,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8806,6 +9532,9 @@
         }
       },
       "put": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8814,6 +9543,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8824,6 +9556,9 @@
     },
     "/EnrollmentRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8850,6 +9585,9 @@
     },
     "/EnrollmentRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "EnrollmentRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -8871,6 +9609,9 @@
     },
     "/EnrollmentResponse": {
       "post": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -8879,6 +9620,9 @@
         }
       },
       "get": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -9012,6 +9756,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9020,6 +9767,9 @@
         }
       },
       "put": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9028,6 +9778,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9038,6 +9791,9 @@
     },
     "/EnrollmentResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9064,6 +9820,9 @@
     },
     "/EnrollmentResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "EnrollmentResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9085,6 +9844,9 @@
     },
     "/EpisodeOfCare": {
       "post": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9093,6 +9855,9 @@
         }
       },
       "get": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -9281,6 +10046,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9289,6 +10057,9 @@
         }
       },
       "put": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9297,6 +10068,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9307,6 +10081,9 @@
     },
     "/EpisodeOfCare/{id}/_history": {
       "get": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9333,6 +10110,9 @@
     },
     "/EpisodeOfCare/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "EpisodeOfCare"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9354,6 +10134,9 @@
     },
     "/ExplanationOfBenefit": {
       "post": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9362,6 +10145,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -9495,6 +10281,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9503,6 +10292,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9511,6 +10303,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9521,6 +10316,9 @@
     },
     "/ExplanationOfBenefit/{id}/_history": {
       "get": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9547,6 +10345,9 @@
     },
     "/ExplanationOfBenefit/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ExplanationOfBenefit"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9568,6 +10369,9 @@
     },
     "/FamilyMemberHistory": {
       "post": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9576,6 +10380,9 @@
         }
       },
       "get": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -9746,6 +10553,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9754,6 +10564,9 @@
         }
       },
       "put": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9762,6 +10575,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9772,6 +10588,9 @@
     },
     "/FamilyMemberHistory/{id}/_history": {
       "get": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9798,6 +10617,9 @@
     },
     "/FamilyMemberHistory/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "FamilyMemberHistory"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -9819,6 +10641,9 @@
     },
     "/Flag": {
       "post": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9827,6 +10652,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -9985,6 +10813,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -9993,6 +10824,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10001,6 +10835,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10011,6 +10848,9 @@
     },
     "/Flag/{id}/_history": {
       "get": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10037,6 +10877,9 @@
     },
     "/Flag/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Flag"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10058,6 +10901,9 @@
     },
     "/Goal": {
       "post": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10066,6 +10912,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -10230,6 +11079,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10238,6 +11090,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10246,6 +11101,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10256,6 +11114,9 @@
     },
     "/Goal/{id}/_history": {
       "get": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10282,6 +11143,9 @@
     },
     "/Goal/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Goal"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10303,6 +11167,9 @@
     },
     "/Group": {
       "post": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10311,6 +11178,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -10492,6 +11362,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10500,6 +11373,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10508,6 +11384,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10518,6 +11397,9 @@
     },
     "/Group/{id}/_history": {
       "get": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10544,6 +11426,9 @@
     },
     "/Group/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Group"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10565,6 +11450,9 @@
     },
     "/HealthcareService": {
       "post": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10573,6 +11461,9 @@
         }
       },
       "get": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -10748,6 +11639,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10756,6 +11650,9 @@
         }
       },
       "put": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10764,6 +11661,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10774,6 +11674,9 @@
     },
     "/HealthcareService/{id}/_history": {
       "get": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10800,6 +11703,9 @@
     },
     "/HealthcareService/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "HealthcareService"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -10821,6 +11727,9 @@
     },
     "/ImagingObjectSelection": {
       "post": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -10829,6 +11738,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -10993,6 +11905,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11001,6 +11916,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11009,6 +11927,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11019,6 +11940,9 @@
     },
     "/ImagingObjectSelection/{id}/_history": {
       "get": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11045,6 +11969,9 @@
     },
     "/ImagingObjectSelection/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ImagingObjectSelection"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11066,6 +11993,9 @@
     },
     "/ImagingStudy": {
       "post": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11074,6 +12004,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -11262,6 +12195,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11270,6 +12206,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11278,6 +12217,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11288,6 +12230,9 @@
     },
     "/ImagingStudy/{id}/_history": {
       "get": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11314,6 +12259,9 @@
     },
     "/ImagingStudy/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ImagingStudy"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11335,6 +12283,9 @@
     },
     "/Immunization": {
       "post": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11343,6 +12294,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -11568,6 +12522,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11576,6 +12533,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11584,6 +12544,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11594,6 +12557,9 @@
     },
     "/Immunization/{id}/_history": {
       "get": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11620,6 +12586,9 @@
     },
     "/Immunization/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Immunization"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11641,6 +12610,9 @@
     },
     "/ImmunizationRecommendation": {
       "post": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11649,6 +12621,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -11831,6 +12806,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11839,6 +12817,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11847,6 +12828,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11857,6 +12841,9 @@
     },
     "/ImmunizationRecommendation/{id}/_history": {
       "get": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11883,6 +12870,9 @@
     },
     "/ImmunizationRecommendation/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ImmunizationRecommendation"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -11904,6 +12894,9 @@
     },
     "/ImplementationGuide": {
       "post": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -11912,6 +12905,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -12100,6 +13096,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12108,6 +13107,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12116,6 +13118,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12126,6 +13131,9 @@
     },
     "/ImplementationGuide/{id}/_history": {
       "get": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12152,6 +13160,9 @@
     },
     "/ImplementationGuide/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ImplementationGuide"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12173,6 +13184,9 @@
     },
     "/List": {
       "post": {
+        "tags": [
+          "List"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12181,6 +13195,9 @@
         }
       },
       "get": {
+        "tags": [
+          "List"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -12381,6 +13398,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "List"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12389,6 +13409,9 @@
         }
       },
       "put": {
+        "tags": [
+          "List"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12397,6 +13420,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "List"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12407,6 +13433,9 @@
     },
     "/List/{id}/_history": {
       "get": {
+        "tags": [
+          "List"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12433,6 +13462,9 @@
     },
     "/List/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "List"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12454,6 +13486,9 @@
     },
     "/Location": {
       "post": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12462,6 +13497,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -12673,6 +13711,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12681,6 +13722,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12689,6 +13733,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12699,6 +13746,9 @@
     },
     "/Location/{id}/_history": {
       "get": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12725,6 +13775,9 @@
     },
     "/Location/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Location"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12746,6 +13799,9 @@
     },
     "/Media": {
       "post": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12754,6 +13810,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -12930,6 +13989,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12938,6 +14000,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12946,6 +14011,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -12956,6 +14024,9 @@
     },
     "/Media/{id}/_history": {
       "get": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -12982,6 +14053,9 @@
     },
     "/Media/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Media"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13003,6 +14077,9 @@
     },
     "/Medication": {
       "post": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13011,6 +14088,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -13174,6 +14254,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13182,6 +14265,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13190,6 +14276,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13200,6 +14289,9 @@
     },
     "/Medication/{id}/_history": {
       "get": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13226,6 +14318,9 @@
     },
     "/Medication/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Medication"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13247,6 +14342,9 @@
     },
     "/MedicationAdministration": {
       "post": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13255,6 +14353,9 @@
         }
       },
       "get": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -13449,6 +14550,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13457,6 +14561,9 @@
         }
       },
       "put": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13465,6 +14572,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13475,6 +14585,9 @@
     },
     "/MedicationAdministration/{id}/_history": {
       "get": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13501,6 +14614,9 @@
     },
     "/MedicationAdministration/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "MedicationAdministration"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13522,6 +14638,9 @@
     },
     "/MedicationDispense": {
       "post": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13530,6 +14649,9 @@
         }
       },
       "get": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -13737,6 +14859,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13745,6 +14870,9 @@
         }
       },
       "put": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13753,6 +14881,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13763,6 +14894,9 @@
     },
     "/MedicationDispense/{id}/_history": {
       "get": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13789,6 +14923,9 @@
     },
     "/MedicationDispense/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "MedicationDispense"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -13810,6 +14947,9 @@
     },
     "/MedicationOrder": {
       "post": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -13818,6 +14958,9 @@
         }
       },
       "get": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -13994,6 +15137,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14002,6 +15148,9 @@
         }
       },
       "put": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14010,6 +15159,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14020,6 +15172,9 @@
     },
     "/MedicationOrder/{id}/_history": {
       "get": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14046,6 +15201,9 @@
     },
     "/MedicationOrder/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "MedicationOrder"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14067,6 +15225,9 @@
     },
     "/MedicationStatement": {
       "post": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14075,6 +15236,9 @@
         }
       },
       "get": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -14245,6 +15409,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14253,6 +15420,9 @@
         }
       },
       "put": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14261,6 +15431,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14271,6 +15444,9 @@
     },
     "/MedicationStatement/{id}/_history": {
       "get": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14297,6 +15473,9 @@
     },
     "/MedicationStatement/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "MedicationStatement"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14318,6 +15497,9 @@
     },
     "/NamingSystem": {
       "post": {
+        "tags": [
+          "NamingSystem"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14335,6 +15517,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "NamingSystem"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14343,6 +15528,9 @@
         }
       },
       "put": {
+        "tags": [
+          "NamingSystem"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14351,6 +15539,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "NamingSystem"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14361,6 +15552,9 @@
     },
     "/NamingSystem/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "NamingSystem"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14382,6 +15576,9 @@
     },
     "/NutritionOrder": {
       "post": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14390,6 +15587,9 @@
         }
       },
       "get": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -14578,6 +15778,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14586,6 +15789,9 @@
         }
       },
       "put": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14594,6 +15800,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14604,6 +15813,9 @@
     },
     "/NutritionOrder/{id}/_history": {
       "get": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14630,6 +15842,9 @@
     },
     "/NutritionOrder/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "NutritionOrder"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14651,6 +15866,9 @@
     },
     "/Observation": {
       "post": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14659,6 +15877,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -14944,6 +16165,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14952,6 +16176,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14960,6 +16187,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -14970,6 +16200,9 @@
     },
     "/Observation/{id}/_history": {
       "get": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -14996,6 +16229,9 @@
     },
     "/Observation/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Observation"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15017,6 +16253,9 @@
     },
     "/OperationDefinition": {
       "post": {
+        "tags": [
+          "OperationDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15034,6 +16273,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "OperationDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15042,6 +16284,9 @@
         }
       },
       "put": {
+        "tags": [
+          "OperationDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15050,6 +16295,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "OperationDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15060,6 +16308,9 @@
     },
     "/OperationDefinition/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "OperationDefinition"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15081,6 +16332,9 @@
     },
     "/OperationOutcome": {
       "post": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15089,6 +16343,9 @@
         }
       },
       "get": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -15216,6 +16473,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15224,6 +16484,9 @@
         }
       },
       "put": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15232,6 +16495,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15242,6 +16508,9 @@
     },
     "/OperationOutcome/{id}/_history": {
       "get": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15268,6 +16537,9 @@
     },
     "/OperationOutcome/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "OperationOutcome"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15289,6 +16561,9 @@
     },
     "/Order": {
       "post": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15297,6 +16572,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -15480,6 +16758,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15488,6 +16769,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15496,6 +16780,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15506,6 +16793,9 @@
     },
     "/Order/{id}/_history": {
       "get": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15532,6 +16822,9 @@
     },
     "/Order/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Order"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15553,6 +16846,9 @@
     },
     "/OrderResponse": {
       "post": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15561,6 +16857,9 @@
         }
       },
       "get": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -15725,6 +17024,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15733,6 +17035,9 @@
         }
       },
       "put": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15741,6 +17046,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15751,6 +17059,9 @@
     },
     "/OrderResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15777,6 +17088,9 @@
     },
     "/OrderResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "OrderResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -15798,6 +17112,9 @@
     },
     "/Organization": {
       "post": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -15806,6 +17123,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -16005,6 +17325,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16013,6 +17336,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16021,6 +17347,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16031,6 +17360,9 @@
     },
     "/Organization/{id}/_history": {
       "get": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16057,6 +17389,9 @@
     },
     "/Organization/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Organization"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16078,6 +17413,9 @@
     },
     "/Patient": {
       "post": {
+        "tags": [
+          "Patient"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16095,6 +17433,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Patient"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16103,6 +17444,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Patient"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16111,6 +17455,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Patient"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16121,6 +17468,9 @@
     },
     "/Patient/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Patient"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16142,6 +17492,9 @@
     },
     "/PaymentNotice": {
       "post": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16150,6 +17503,9 @@
         }
       },
       "get": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -16283,6 +17639,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16291,6 +17650,9 @@
         }
       },
       "put": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16299,6 +17661,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16309,6 +17674,9 @@
     },
     "/PaymentNotice/{id}/_history": {
       "get": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16335,6 +17703,9 @@
     },
     "/PaymentNotice/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "PaymentNotice"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16356,6 +17727,9 @@
     },
     "/PaymentReconciliation": {
       "post": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16364,6 +17738,9 @@
         }
       },
       "get": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -16497,6 +17874,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16505,6 +17885,9 @@
         }
       },
       "put": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16513,6 +17896,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16523,6 +17909,9 @@
     },
     "/PaymentReconciliation/{id}/_history": {
       "get": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16549,6 +17938,9 @@
     },
     "/PaymentReconciliation/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "PaymentReconciliation"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16570,6 +17962,9 @@
     },
     "/Person": {
       "post": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16578,6 +17973,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -16820,6 +18218,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16828,6 +18229,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16836,6 +18240,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16846,6 +18253,9 @@
     },
     "/Person/{id}/_history": {
       "get": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16872,6 +18282,9 @@
     },
     "/Person/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Person"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -16893,6 +18306,9 @@
     },
     "/Practitioner": {
       "post": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -16901,6 +18317,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -17148,6 +18567,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17156,6 +18578,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17164,6 +18589,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17174,6 +18602,9 @@
     },
     "/Practitioner/{id}/_history": {
       "get": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17200,6 +18631,9 @@
     },
     "/Practitioner/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Practitioner"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17221,6 +18655,9 @@
     },
     "/Procedure": {
       "post": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17229,6 +18666,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -17405,6 +18845,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17413,6 +18856,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17421,6 +18867,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17431,6 +18880,9 @@
     },
     "/Procedure/{id}/_history": {
       "get": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17457,6 +18909,9 @@
     },
     "/Procedure/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Procedure"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17478,6 +18933,9 @@
     },
     "/ProcedureRequest": {
       "post": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17486,6 +18944,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -17649,6 +19110,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17657,6 +19121,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17665,6 +19132,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17675,6 +19145,9 @@
     },
     "/ProcedureRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17701,6 +19174,9 @@
     },
     "/ProcedureRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ProcedureRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17722,6 +19198,9 @@
     },
     "/ProcessRequest": {
       "post": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17730,6 +19209,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -17881,6 +19363,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17889,6 +19374,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17897,6 +19385,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17907,6 +19398,9 @@
     },
     "/ProcessRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17933,6 +19427,9 @@
     },
     "/ProcessRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ProcessRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -17954,6 +19451,9 @@
     },
     "/ProcessResponse": {
       "post": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -17962,6 +19462,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -18119,6 +19622,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18127,6 +19633,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18135,6 +19644,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18145,6 +19657,9 @@
     },
     "/ProcessResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18171,6 +19686,9 @@
     },
     "/ProcessResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ProcessResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18192,6 +19710,9 @@
     },
     "/Provenance": {
       "post": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18200,6 +19721,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -18389,6 +19913,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18397,6 +19924,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18405,6 +19935,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18415,6 +19948,9 @@
     },
     "/Provenance/{id}/_history": {
       "get": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18441,6 +19977,9 @@
     },
     "/Provenance/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Provenance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18462,6 +20001,9 @@
     },
     "/Questionnaire": {
       "post": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18470,6 +20012,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -18640,6 +20185,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18648,6 +20196,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18656,6 +20207,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18666,6 +20220,9 @@
     },
     "/Questionnaire/{id}/_history": {
       "get": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18692,6 +20249,9 @@
     },
     "/Questionnaire/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Questionnaire"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18713,6 +20273,9 @@
     },
     "/QuestionnaireResponse": {
       "post": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18721,6 +20284,9 @@
         }
       },
       "get": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -18897,6 +20463,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18905,6 +20474,9 @@
         }
       },
       "put": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18913,6 +20485,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18923,6 +20498,9 @@
     },
     "/QuestionnaireResponse/{id}/_history": {
       "get": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18949,6 +20527,9 @@
     },
     "/QuestionnaireResponse/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "QuestionnaireResponse"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -18970,6 +20551,9 @@
     },
     "/ReferralRequest": {
       "post": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -18978,6 +20562,9 @@
         }
       },
       "get": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -19154,6 +20741,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19162,6 +20752,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19170,6 +20763,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19180,6 +20776,9 @@
     },
     "/ReferralRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19206,6 +20805,9 @@
     },
     "/ReferralRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ReferralRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19227,6 +20829,9 @@
     },
     "/RelatedPerson": {
       "post": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19235,6 +20840,9 @@
         }
       },
       "get": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -19453,6 +21061,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19461,6 +21072,9 @@
         }
       },
       "put": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19469,6 +21083,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19479,6 +21096,9 @@
     },
     "/RelatedPerson/{id}/_history": {
       "get": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19505,6 +21125,9 @@
     },
     "/RelatedPerson/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "RelatedPerson"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19526,6 +21149,9 @@
     },
     "/RiskAssessment": {
       "post": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19534,6 +21160,9 @@
         }
       },
       "get": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -19710,6 +21339,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19718,6 +21350,9 @@
         }
       },
       "put": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19726,6 +21361,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19736,6 +21374,9 @@
     },
     "/RiskAssessment/{id}/_history": {
       "get": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19762,6 +21403,9 @@
     },
     "/RiskAssessment/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "RiskAssessment"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19783,6 +21427,9 @@
     },
     "/Schedule": {
       "post": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19791,6 +21438,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -19943,6 +21593,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19951,6 +21604,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19959,6 +21615,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -19969,6 +21628,9 @@
     },
     "/Schedule/{id}/_history": {
       "get": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -19995,6 +21657,9 @@
     },
     "/Schedule/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Schedule"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20016,6 +21681,9 @@
     },
     "/SearchParameter": {
       "post": {
+        "tags": [
+          "SearchParameter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20033,6 +21701,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "SearchParameter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20041,6 +21712,9 @@
         }
       },
       "put": {
+        "tags": [
+          "SearchParameter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20049,6 +21723,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "SearchParameter"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20059,6 +21736,9 @@
     },
     "/SearchParameter/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "SearchParameter"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20080,6 +21760,9 @@
     },
     "/Slot": {
       "post": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20088,6 +21771,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -20246,6 +21932,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20254,6 +21943,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20262,6 +21954,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20272,6 +21967,9 @@
     },
     "/Slot/{id}/_history": {
       "get": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20298,6 +21996,9 @@
     },
     "/Slot/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Slot"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20319,6 +22020,9 @@
     },
     "/Specimen": {
       "post": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20327,6 +22031,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -20521,6 +22228,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20529,6 +22239,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20537,6 +22250,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20547,6 +22263,9 @@
     },
     "/Specimen/{id}/_history": {
       "get": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20573,6 +22292,9 @@
     },
     "/Specimen/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Specimen"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20594,6 +22316,9 @@
     },
     "/StructureDefinition": {
       "post": {
+        "tags": [
+          "StructureDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20611,6 +22336,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "StructureDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20619,6 +22347,9 @@
         }
       },
       "put": {
+        "tags": [
+          "StructureDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20627,6 +22358,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "StructureDefinition"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20637,6 +22371,9 @@
     },
     "/StructureDefinition/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "StructureDefinition"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20658,6 +22395,9 @@
     },
     "/Subscription": {
       "post": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20666,6 +22406,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -20835,6 +22578,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20843,6 +22589,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20851,6 +22600,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20861,6 +22613,9 @@
     },
     "/Subscription/{id}/_history": {
       "get": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20887,6 +22642,9 @@
     },
     "/Subscription/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Subscription"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -20908,6 +22666,9 @@
     },
     "/Substance": {
       "post": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -20916,6 +22677,9 @@
         }
       },
       "get": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -21086,6 +22850,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21094,6 +22861,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21102,6 +22872,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21112,6 +22885,9 @@
     },
     "/Substance/{id}/_history": {
       "get": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21138,6 +22914,9 @@
     },
     "/Substance/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "Substance"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21159,6 +22938,9 @@
     },
     "/SupplyDelivery": {
       "post": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21167,6 +22949,9 @@
         }
       },
       "get": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -21324,6 +23109,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21332,6 +23120,9 @@
         }
       },
       "put": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21340,6 +23131,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21350,6 +23144,9 @@
     },
     "/SupplyDelivery/{id}/_history": {
       "get": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21376,6 +23173,9 @@
     },
     "/SupplyDelivery/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "SupplyDelivery"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21397,6 +23197,9 @@
     },
     "/SupplyRequest": {
       "post": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21405,6 +23208,9 @@
         }
       },
       "get": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -21575,6 +23381,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21583,6 +23392,9 @@
         }
       },
       "put": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21591,6 +23403,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21601,6 +23416,9 @@
     },
     "/SupplyRequest/{id}/_history": {
       "get": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21627,6 +23445,9 @@
     },
     "/SupplyRequest/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "SupplyRequest"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21648,6 +23469,9 @@
     },
     "/TestScript": {
       "post": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21656,6 +23480,9 @@
         }
       },
       "get": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -21825,6 +23652,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21833,6 +23663,9 @@
         }
       },
       "put": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21841,6 +23674,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21851,6 +23687,9 @@
     },
     "/TestScript/{id}/_history": {
       "get": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21877,6 +23716,9 @@
     },
     "/TestScript/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "TestScript"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21898,6 +23740,9 @@
     },
     "/ValueSet": {
       "post": {
+        "tags": [
+          "ValueSet"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21915,6 +23760,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "ValueSet"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21923,6 +23771,9 @@
         }
       },
       "put": {
+        "tags": [
+          "ValueSet"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21931,6 +23782,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "ValueSet"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21941,6 +23795,9 @@
     },
     "/ValueSet/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "ValueSet"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -21962,6 +23819,9 @@
     },
     "/VisionPrescription": {
       "post": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -21970,6 +23830,9 @@
         }
       },
       "get": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [
           {
             "name": "_content",
@@ -22128,6 +23991,9 @@
         }
       ],
       "get": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -22136,6 +24002,9 @@
         }
       },
       "put": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -22144,6 +24013,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [],
         "responses": {
           "200": {
@@ -22154,6 +24026,9 @@
     },
     "/VisionPrescription/{id}/_history": {
       "get": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -22180,6 +24055,9 @@
     },
     "/VisionPrescription/{id}/_history/{vid}": {
       "get": {
+        "tags": [
+          "VisionPrescription"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -22207,5 +24085,286 @@
   "schemes": [
     "http"
   ],
-  "basePath": "/open"
+  "basePath": "/open",
+  "tags": [
+    {
+      "name": "Account"
+    },
+    {
+      "name": "AllergyIntolerance"
+    },
+    {
+      "name": "Appointment"
+    },
+    {
+      "name": "AppointmentResponse"
+    },
+    {
+      "name": "AuditEvent"
+    },
+    {
+      "name": "Basic"
+    },
+    {
+      "name": "Binary"
+    },
+    {
+      "name": "BodySite"
+    },
+    {
+      "name": "Bundle"
+    },
+    {
+      "name": "CarePlan"
+    },
+    {
+      "name": "Claim"
+    },
+    {
+      "name": "ClaimResponse"
+    },
+    {
+      "name": "ClinicalImpression"
+    },
+    {
+      "name": "Communication"
+    },
+    {
+      "name": "CommunicationRequest"
+    },
+    {
+      "name": "Composition"
+    },
+    {
+      "name": "ConceptMap"
+    },
+    {
+      "name": "Condition"
+    },
+    {
+      "name": "Conformance"
+    },
+    {
+      "name": "Contract"
+    },
+    {
+      "name": "Coverage"
+    },
+    {
+      "name": "DataElement"
+    },
+    {
+      "name": "DetectedIssue"
+    },
+    {
+      "name": "Device"
+    },
+    {
+      "name": "DeviceComponent"
+    },
+    {
+      "name": "DeviceMetric"
+    },
+    {
+      "name": "DeviceUseRequest"
+    },
+    {
+      "name": "DeviceUseStatement"
+    },
+    {
+      "name": "DiagnosticOrder"
+    },
+    {
+      "name": "DiagnosticReport"
+    },
+    {
+      "name": "DocumentManifest"
+    },
+    {
+      "name": "DocumentReference"
+    },
+    {
+      "name": "EligibilityRequest"
+    },
+    {
+      "name": "EligibilityResponse"
+    },
+    {
+      "name": "Encounter"
+    },
+    {
+      "name": "EnrollmentRequest"
+    },
+    {
+      "name": "EnrollmentResponse"
+    },
+    {
+      "name": "EpisodeOfCare"
+    },
+    {
+      "name": "ExplanationOfBenefit"
+    },
+    {
+      "name": "FamilyMemberHistory"
+    },
+    {
+      "name": "Flag"
+    },
+    {
+      "name": "Goal"
+    },
+    {
+      "name": "Group"
+    },
+    {
+      "name": "HealthcareService"
+    },
+    {
+      "name": "ImagingObjectSelection"
+    },
+    {
+      "name": "ImagingStudy"
+    },
+    {
+      "name": "Immunization"
+    },
+    {
+      "name": "ImmunizationRecommendation"
+    },
+    {
+      "name": "ImplementationGuide"
+    },
+    {
+      "name": "List"
+    },
+    {
+      "name": "Location"
+    },
+    {
+      "name": "Media"
+    },
+    {
+      "name": "Medication"
+    },
+    {
+      "name": "MedicationAdministration"
+    },
+    {
+      "name": "MedicationDispense"
+    },
+    {
+      "name": "MedicationOrder"
+    },
+    {
+      "name": "MedicationStatement"
+    },
+    {
+      "name": "NamingSystem"
+    },
+    {
+      "name": "NutritionOrder"
+    },
+    {
+      "name": "Observation"
+    },
+    {
+      "name": "OperationDefinition"
+    },
+    {
+      "name": "OperationOutcome"
+    },
+    {
+      "name": "Order"
+    },
+    {
+      "name": "OrderResponse"
+    },
+    {
+      "name": "Organization"
+    },
+    {
+      "name": "Parameters"
+    },
+    {
+      "name": "Patient"
+    },
+    {
+      "name": "PaymentNotice"
+    },
+    {
+      "name": "PaymentReconciliation"
+    },
+    {
+      "name": "Person"
+    },
+    {
+      "name": "Practitioner"
+    },
+    {
+      "name": "Procedure"
+    },
+    {
+      "name": "ProcedureRequest"
+    },
+    {
+      "name": "ProcessRequest"
+    },
+    {
+      "name": "ProcessResponse"
+    },
+    {
+      "name": "Provenance"
+    },
+    {
+      "name": "Questionnaire"
+    },
+    {
+      "name": "QuestionnaireResponse"
+    },
+    {
+      "name": "ReferralRequest"
+    },
+    {
+      "name": "RelatedPerson"
+    },
+    {
+      "name": "RiskAssessment"
+    },
+    {
+      "name": "Schedule"
+    },
+    {
+      "name": "SearchParameter"
+    },
+    {
+      "name": "Slot"
+    },
+    {
+      "name": "Specimen"
+    },
+    {
+      "name": "StructureDefinition"
+    },
+    {
+      "name": "Subscription"
+    },
+    {
+      "name": "Substance"
+    },
+    {
+      "name": "SupplyDelivery"
+    },
+    {
+      "name": "SupplyRequest"
+    },
+    {
+      "name": "TestScript"
+    },
+    {
+      "name": "ValueSet"
+    },
+    {
+      "name": "VisionPrescription"
+    }
+  ]
 }
