@@ -177,6 +177,22 @@
         }
       }
     },
+    "/Account/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/AllergyIntolerance": {
       "get": {
         "parameters": [
@@ -390,6 +406,22 @@
         }
       }
     },
+    "/AllergyIntolerance/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Appointment": {
       "get": {
         "parameters": [
@@ -559,6 +591,22 @@
         }
       }
     },
+    "/Appointment/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/AppointmentResponse": {
       "get": {
         "parameters": [
@@ -714,6 +762,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/AppointmentResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -944,6 +1008,22 @@
         }
       }
     },
+    "/AuditEvent/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Basic": {
       "get": {
         "parameters": [
@@ -1101,6 +1181,22 @@
         }
       }
     },
+    "/Basic/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Binary": {
       "get": {
         "parameters": [
@@ -1220,6 +1316,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Binary/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -1365,6 +1477,22 @@
         }
       }
     },
+    "/BodySite/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Bundle": {
       "get": {
         "parameters": [
@@ -1496,6 +1624,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Bundle/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -1703,6 +1847,22 @@
         }
       }
     },
+    "/CarePlan/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Claim": {
       "get": {
         "parameters": [
@@ -1853,6 +2013,22 @@
         }
       }
     },
+    "/Claim/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ClaimResponse": {
       "get": {
         "parameters": [
@@ -1978,6 +2154,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ClaimResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -2190,6 +2382,22 @@
         }
       }
     },
+    "/ClinicalImpression/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Communication": {
       "get": {
         "parameters": [
@@ -2377,6 +2585,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Communication/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -2577,6 +2801,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/CommunicationRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -2802,228 +3042,32 @@
         }
       }
     },
-    "/ConceptMap": {
+    "/Composition/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "context",
-            "type": "string",
-            "in": "query",
-            "description": "A use context assigned to the concept map"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "The concept map publication date",
-            "format": "date"
-          },
-          {
-            "name": "dependson",
-            "type": "uri",
-            "in": "query",
-            "description": "Reference to element/field/ValueSet mapping depends on"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "in": "query",
-            "description": "Text search in the description of the concept map"
-          },
-          {
-            "name": "identifier",
-            "type": "string",
-            "in": "query",
-            "description": "Additional identifier for the concept map"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the concept map"
-          },
-          {
-            "name": "product",
-            "type": "uri",
-            "in": "query",
-            "description": "Reference to element/field/ValueSet mapping depends on"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher of the concept map"
-          },
-          {
-            "name": "source",
-            "type": "reference",
-            "in": "query",
-            "description": "Identifies the source of the concepts which are being mapped"
-          },
-          {
-            "name": "sourcecode",
-            "type": "string",
-            "in": "query",
-            "description": "Identifies element being mapped"
-          },
-          {
-            "name": "sourcesystem",
-            "type": "uri",
-            "in": "query",
-            "description": "Code System (if value set crosses code systems)"
-          },
-          {
-            "name": "sourceuri",
-            "type": "reference",
-            "in": "query",
-            "description": "Identifies the source of the concepts which are being mapped"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "Status of the concept map"
-          },
-          {
-            "name": "target",
-            "type": "reference",
-            "in": "query",
-            "description": "Provides context to the mappings"
-          },
-          {
-            "name": "targetcode",
-            "type": "string",
-            "in": "query",
-            "description": "Code that identifies the target element"
-          },
-          {
-            "name": "targetsystem",
-            "type": "uri",
-            "in": "query",
-            "description": "System of the target (if necessary)"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "The URL of the concept map"
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "in": "query",
-            "description": "The version identifier of the concept map"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/ConceptMap": {},
+    "/ConceptMap/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -3243,216 +3287,32 @@
         }
       }
     },
-    "/Conformance": {
+    "/Condition/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "The conformance statement publication date",
-            "format": "date"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "in": "query",
-            "description": "Text search in the description of the conformance statement"
-          },
-          {
-            "name": "event",
-            "type": "string",
-            "in": "query",
-            "description": "Event code in a conformance statement"
-          },
-          {
-            "name": "fhirversion",
-            "type": "string",
-            "in": "query",
-            "description": "The version of FHIR"
-          },
-          {
-            "name": "format",
-            "type": "string",
-            "in": "query",
-            "description": "formats supported (xml | json | mime type)"
-          },
-          {
-            "name": "mode",
-            "type": "string",
-            "in": "query",
-            "description": "Mode - restful (server/client) or messaging (sender/receiver)"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the conformance statement"
-          },
-          {
-            "name": "profile",
-            "type": "reference",
-            "in": "query",
-            "description": "A profile id invoked in a conformance statement"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher of the conformance statement"
-          },
-          {
-            "name": "resource",
-            "type": "string",
-            "in": "query",
-            "description": "Name of a resource mentioned in a conformance statement"
-          },
-          {
-            "name": "security",
-            "type": "string",
-            "in": "query",
-            "description": "OAuth | SMART-on-FHIR | NTLM | Basic | Kerberos | Certificates"
-          },
-          {
-            "name": "software",
-            "type": "string",
-            "in": "query",
-            "description": "Part of a the name of a software application"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "The current status of the conformance statement"
-          },
-          {
-            "name": "supported-profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Profiles for use cases supported"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "The uri that identifies the conformance statement"
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "in": "query",
-            "description": "The version identifier of the conformance statement"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/Conformance": {},
+    "/Conformance/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -3603,6 +3463,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Contract/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -3778,186 +3654,32 @@
         }
       }
     },
-    "/DataElement": {
+    "/Coverage/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "code",
-            "type": "string",
-            "in": "query",
-            "description": "A code for the data element (server may choose to do subsumption)"
-          },
-          {
-            "name": "context",
-            "type": "string",
-            "in": "query",
-            "description": "A use context assigned to the data element"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "The data element publication date",
-            "format": "date"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "in": "query",
-            "description": "Text search in the description of the data element.  This corresponds to the definition of the first DataElement.element."
-          },
-          {
-            "name": "identifier",
-            "type": "string",
-            "in": "query",
-            "description": "The identifier of the data element"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the data element"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher of the data element"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "The current status of the data element"
-          },
-          {
-            "name": "stringency",
-            "type": "string",
-            "in": "query",
-            "description": "The stringency of the data element definition"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "The official URL for the data element"
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "in": "query",
-            "description": "The version identifier of the data element"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/DataElement": {},
+    "/DataElement/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -4115,6 +3837,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/DetectedIssue/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -4296,6 +4034,22 @@
         }
       }
     },
+    "/Device/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/DeviceComponent": {
       "get": {
         "parameters": [
@@ -4427,6 +4181,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/DeviceComponent/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -4584,6 +4354,22 @@
         }
       }
     },
+    "/DeviceMetric/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/DeviceUseRequest": {
       "get": {
         "parameters": [
@@ -4722,6 +4508,22 @@
         }
       }
     },
+    "/DeviceUseRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/DeviceUseStatement": {
       "get": {
         "parameters": [
@@ -4853,6 +4655,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/DeviceUseStatement/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -5084,6 +4902,22 @@
         }
       }
     },
+    "/DiagnosticOrder/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/DiagnosticReport": {
       "get": {
         "parameters": [
@@ -5296,6 +5130,22 @@
         }
       }
     },
+    "/DiagnosticReport/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/DocumentManifest": {
       "get": {
         "parameters": [
@@ -5488,6 +5338,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/DocumentManifest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -5774,6 +5640,22 @@
         }
       }
     },
+    "/DocumentReference/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/EligibilityRequest": {
       "get": {
         "parameters": [
@@ -5900,6 +5782,22 @@
         }
       }
     },
+    "/EligibilityRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/EligibilityResponse": {
       "get": {
         "parameters": [
@@ -6019,6 +5917,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/EligibilityResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -6268,6 +6182,22 @@
         }
       }
     },
+    "/Encounter/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/EnrollmentRequest": {
       "get": {
         "parameters": [
@@ -6406,6 +6336,22 @@
         }
       }
     },
+    "/EnrollmentRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/EnrollmentResponse": {
       "get": {
         "parameters": [
@@ -6525,6 +6471,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/EnrollmentResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -6713,6 +6675,22 @@
         }
       }
     },
+    "/EpisodeOfCare/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ExplanationOfBenefit": {
       "get": {
         "parameters": [
@@ -6832,6 +6810,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ExplanationOfBenefit/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -7002,6 +6996,22 @@
         }
       }
     },
+    "/FamilyMemberHistory/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Flag": {
       "get": {
         "parameters": [
@@ -7146,6 +7156,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Flag/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -7303,6 +7329,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Goal/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -7484,6 +7526,22 @@
         }
       }
     },
+    "/Group/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/HealthcareService": {
       "get": {
         "parameters": [
@@ -7652,6 +7710,22 @@
         }
       }
     },
+    "/HealthcareService/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ImagingObjectSelection": {
       "get": {
         "parameters": [
@@ -7802,6 +7876,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ImagingObjectSelection/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -7983,6 +8073,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ImagingStudy/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -8208,6 +8314,22 @@
         }
       }
     },
+    "/Immunization/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ImmunizationRecommendation": {
       "get": {
         "parameters": [
@@ -8376,6 +8498,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ImmunizationRecommendation/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -8557,6 +8695,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ImplementationGuide/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -8750,6 +8904,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/List/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -8961,6 +9131,22 @@
         }
       }
     },
+    "/Location/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Media": {
       "get": {
         "parameters": [
@@ -9130,6 +9316,22 @@
         }
       }
     },
+    "/Media/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Medication": {
       "get": {
         "parameters": [
@@ -9279,6 +9481,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Medication/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -9466,6 +9684,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/MedicationAdministration/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -9673,6 +9907,22 @@
         }
       }
     },
+    "/MedicationDispense/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/MedicationOrder": {
       "get": {
         "parameters": [
@@ -9835,6 +10085,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/MedicationOrder/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -10005,205 +10271,32 @@
         }
       }
     },
-    "/NamingSystem": {
+    "/MedicationStatement/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "contact",
-            "type": "string",
-            "in": "query",
-            "description": "Name of a individual to contact"
-          },
-          {
-            "name": "context",
-            "type": "string",
-            "in": "query",
-            "description": "Content intends to support these contexts"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "Publication Date(/time)",
-            "format": "date"
-          },
-          {
-            "name": "id-type",
-            "type": "string",
-            "in": "query",
-            "description": "oid | uuid | uri | other"
-          },
-          {
-            "name": "kind",
-            "type": "string",
-            "in": "query",
-            "description": "codesystem | identifier | root"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Human-readable label"
-          },
-          {
-            "name": "period",
-            "type": "string",
-            "in": "query",
-            "description": "When is identifier valid?",
-            "format": "date"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher (Organization or individual)"
-          },
-          {
-            "name": "replaced-by",
-            "type": "reference",
-            "in": "query",
-            "description": "Use this instead"
-          },
-          {
-            "name": "responsible",
-            "type": "string",
-            "in": "query",
-            "description": "Who maintains system namespace?"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "draft | active | retired"
-          },
-          {
-            "name": "telecom",
-            "type": "string",
-            "in": "query",
-            "description": "Contact details for individual or publisher"
-          },
-          {
-            "name": "type",
-            "type": "string",
-            "in": "query",
-            "description": "e.g. driver,  provider,  patient, bank etc."
-          },
-          {
-            "name": "value",
-            "type": "string",
-            "in": "query",
-            "description": "The unique identifier"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/NamingSystem": {},
+    "/NamingSystem/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -10385,6 +10478,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/NutritionOrder/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -10670,198 +10779,32 @@
         }
       }
     },
-    "/OperationDefinition": {
+    "/Observation/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "base",
-            "type": "reference",
-            "in": "query",
-            "description": "Marks this as a profile of the base"
-          },
-          {
-            "name": "code",
-            "type": "string",
-            "in": "query",
-            "description": "Name used to invoke the operation"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "Date for this version of the operation definition",
-            "format": "date"
-          },
-          {
-            "name": "instance",
-            "type": "string",
-            "in": "query",
-            "description": "Invoke on an instance?"
-          },
-          {
-            "name": "kind",
-            "type": "string",
-            "in": "query",
-            "description": "operation | query"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Informal name for this operation"
-          },
-          {
-            "name": "profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Profile on the type"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher (Organization or individual)"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "draft | active | retired"
-          },
-          {
-            "name": "system",
-            "type": "string",
-            "in": "query",
-            "description": "Invoke at the system level?"
-          },
-          {
-            "name": "type",
-            "type": "string",
-            "in": "query",
-            "description": "Invoke at resource level for these type"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "Logical URL to reference this operation definition"
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id for this version of the operation definition"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/OperationDefinition": {},
+    "/OperationDefinition/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -10982,6 +10925,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/OperationOutcome/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -11165,6 +11124,22 @@
         }
       }
     },
+    "/Order/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/OrderResponse": {
       "get": {
         "parameters": [
@@ -11315,6 +11290,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/OrderResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -11514,313 +11505,32 @@
         }
       }
     },
-    "/Patient": {
+    "/Organization/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "active",
-            "type": "string",
-            "in": "query",
-            "description": "Whether the patient record is active"
-          },
-          {
-            "name": "address",
-            "type": "string",
-            "in": "query",
-            "description": "An address in any kind of address/part of the patient"
-          },
-          {
-            "name": "address-city",
-            "type": "string",
-            "in": "query",
-            "description": "A city specified in an address"
-          },
-          {
-            "name": "address-country",
-            "type": "string",
-            "in": "query",
-            "description": "A country specified in an address"
-          },
-          {
-            "name": "address-postalcode",
-            "type": "string",
-            "in": "query",
-            "description": "A postalCode specified in an address"
-          },
-          {
-            "name": "address-state",
-            "type": "string",
-            "in": "query",
-            "description": "A state specified in an address"
-          },
-          {
-            "name": "address-use",
-            "type": "string",
-            "in": "query",
-            "description": "A use code specified in an address"
-          },
-          {
-            "name": "animal-breed",
-            "type": "string",
-            "in": "query",
-            "description": "The breed for animal patients"
-          },
-          {
-            "name": "animal-species",
-            "type": "string",
-            "in": "query",
-            "description": "The species for animal patients"
-          },
-          {
-            "name": "birthdate",
-            "type": "string",
-            "in": "query",
-            "description": "The patient's date of birth",
-            "format": "date"
-          },
-          {
-            "name": "careprovider",
-            "type": "reference",
-            "in": "query",
-            "description": "Patient's nominated care provider, could be a care manager, not the organization that manages the record"
-          },
-          {
-            "name": "deathdate",
-            "type": "string",
-            "in": "query",
-            "description": "The date of death has been provided and satisfies this search value",
-            "format": "date"
-          },
-          {
-            "name": "deceased",
-            "type": "string",
-            "in": "query",
-            "description": "This patient has been marked as deceased, or as a death date entered"
-          },
-          {
-            "name": "email",
-            "type": "string",
-            "in": "query",
-            "description": "A value in an email contact"
-          },
-          {
-            "name": "family",
-            "type": "string",
-            "in": "query",
-            "description": "A portion of the family name of the patient"
-          },
-          {
-            "name": "gender",
-            "type": "string",
-            "in": "query",
-            "description": "Gender of the patient"
-          },
-          {
-            "name": "given",
-            "type": "string",
-            "in": "query",
-            "description": "A portion of the given name of the patient"
-          },
-          {
-            "name": "identifier",
-            "type": "string",
-            "in": "query",
-            "description": "A patient identifier"
-          },
-          {
-            "name": "language",
-            "type": "string",
-            "in": "query",
-            "description": "Language code (irrespective of use value)"
-          },
-          {
-            "name": "link",
-            "type": "reference",
-            "in": "query",
-            "description": "All patients linked to the given patient"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "A portion of either family or given name of the patient"
-          },
-          {
-            "name": "organization",
-            "type": "reference",
-            "in": "query",
-            "description": "The organization at which this person is a patient"
-          },
-          {
-            "name": "phone",
-            "type": "string",
-            "in": "query",
-            "description": "A value in a phone contact"
-          },
-          {
-            "name": "phonetic",
-            "type": "string",
-            "in": "query",
-            "description": "A portion of either family or given name using some kind of phonetic matching algorithm"
-          },
-          {
-            "name": "telecom",
-            "type": "string",
-            "in": "query",
-            "description": "The value in any kind of telecom details of the patient"
-          },
-          {
-            "name": "city",
-            "type": "string",
-            "in": "query",
-            "description": "Search based on City"
-          },
-          {
-            "name": "postalCode",
-            "type": "string",
-            "in": "query",
-            "description": "Search based on zip code"
-          },
-          {
-            "name": "state",
-            "type": "string",
-            "in": "query",
-            "description": "Search based on state"
-          },
-          {
-            "name": "mothersMaidenName",
-            "type": "string",
-            "in": "query",
-            "description": "Search based on Patient mother's Maiden Name"
-          },
-          {
-            "name": "age",
-            "type": "integer",
-            "in": "query",
-            "description": "Search based on Patient's age"
-          },
-          {
-            "name": "race",
-            "type": "string",
-            "in": "query",
-            "description": "Search based on patient's race (US Realm)"
-          },
-          {
-            "name": "ethnicity",
-            "type": "string",
-            "in": "query",
-            "description": "Search based on Patient mother's Maiden Name"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/Patient": {},
+    "/Patient/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -11954,6 +11664,22 @@
         }
       }
     },
+    "/PaymentNotice/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/PaymentReconciliation": {
       "get": {
         "parameters": [
@@ -12073,6 +11799,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/PaymentReconciliation/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -12308,6 +12050,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Person/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -12555,6 +12313,22 @@
         }
       }
     },
+    "/Practitioner/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Procedure": {
       "get": {
         "parameters": [
@@ -12724,6 +12498,22 @@
         }
       }
     },
+    "/Procedure/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ProcedureRequest": {
       "get": {
         "parameters": [
@@ -12880,6 +12670,22 @@
         }
       }
     },
+    "/ProcedureRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ProcessRequest": {
       "get": {
         "parameters": [
@@ -13017,6 +12823,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ProcessRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -13167,6 +12989,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ProcessResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -13356,6 +13194,22 @@
         }
       }
     },
+    "/Provenance/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Questionnaire": {
       "get": {
         "parameters": [
@@ -13512,6 +13366,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Questionnaire/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -13688,6 +13558,22 @@
         }
       }
     },
+    "/QuestionnaireResponse/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/ReferralRequest": {
       "get": {
         "parameters": [
@@ -13850,6 +13736,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/ReferralRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -14068,6 +13970,22 @@
         }
       }
     },
+    "/RelatedPerson/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/RiskAssessment": {
       "get": {
         "parameters": [
@@ -14237,6 +14155,22 @@
         }
       }
     },
+    "/RiskAssessment/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/Schedule": {
       "get": {
         "parameters": [
@@ -14382,161 +14316,32 @@
         }
       }
     },
-    "/SearchParameter": {
+    "/Schedule/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "base",
-            "type": "string",
-            "in": "query",
-            "description": "The resource type this search parameter applies to"
-          },
-          {
-            "name": "code",
-            "type": "string",
-            "in": "query",
-            "description": "Code used in URL"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "in": "query",
-            "description": "Documentation for  search parameter"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Informal name for this search parameter"
-          },
-          {
-            "name": "target",
-            "type": "string",
-            "in": "query",
-            "description": "Types of resource (if a resource reference)"
-          },
-          {
-            "name": "type",
-            "type": "string",
-            "in": "query",
-            "description": "number | date | string | token | reference | composite | quantity | uri"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "Absolute URL used to reference this search parameter"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/SearchParameter": {},
+    "/SearchParameter/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -14688,6 +14493,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Slot/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -14882,246 +14703,32 @@
         }
       }
     },
-    "/StructureDefinition": {
+    "/Specimen/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "abstract",
-            "type": "string",
-            "in": "query",
-            "description": "Whether the structure is abstract"
-          },
-          {
-            "name": "base",
-            "type": "uri",
-            "in": "query",
-            "description": "Structure that this set of constraints applies to"
-          },
-          {
-            "name": "base-path",
-            "type": "string",
-            "in": "query",
-            "description": "Path that identifies the base element"
-          },
-          {
-            "name": "code",
-            "type": "string",
-            "in": "query",
-            "description": "A code for the profile"
-          },
-          {
-            "name": "context",
-            "type": "string",
-            "in": "query",
-            "description": "A use context assigned to the structure"
-          },
-          {
-            "name": "context-type",
-            "type": "string",
-            "in": "query",
-            "description": "resource | datatype | mapping | extension"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "The profile publication date",
-            "format": "date"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "in": "query",
-            "description": "Text search in the description of the profile"
-          },
-          {
-            "name": "display",
-            "type": "string",
-            "in": "query",
-            "description": "Use this name when displaying the value"
-          },
-          {
-            "name": "experimental",
-            "type": "string",
-            "in": "query",
-            "description": "If for testing purposes, not real usage"
-          },
-          {
-            "name": "ext-context",
-            "type": "string",
-            "in": "query",
-            "description": "Where the extension can be used in instances"
-          },
-          {
-            "name": "identifier",
-            "type": "string",
-            "in": "query",
-            "description": "The identifier of the profile"
-          },
-          {
-            "name": "kind",
-            "type": "string",
-            "in": "query",
-            "description": "datatype | resource | logical"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the profile"
-          },
-          {
-            "name": "path",
-            "type": "string",
-            "in": "query",
-            "description": "A path that is constrained in the profile"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher of the profile"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "The current status of the profile"
-          },
-          {
-            "name": "type",
-            "type": "string",
-            "in": "query",
-            "description": "Any datatype or resource, including abstract ones"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "Absolute URL used to reference this StructureDefinition"
-          },
-          {
-            "name": "valueset",
-            "type": "reference",
-            "in": "query",
-            "description": "A vocabulary binding reference"
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "in": "query",
-            "description": "The version identifier of the profile"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/StructureDefinition": {},
+    "/StructureDefinition/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -15284,6 +14891,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Subscription/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -15454,6 +15077,22 @@
         }
       }
     },
+    "/Substance/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/SupplyDelivery": {
       "get": {
         "parameters": [
@@ -15597,6 +15236,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/SupplyDelivery/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -15767,6 +15422,22 @@
         }
       }
     },
+    "/SupplyRequest/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/TestScript": {
       "get": {
         "parameters": [
@@ -15929,198 +15600,32 @@
         }
       }
     },
-    "/ValueSet": {
+    "/TestScript/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
       "get": {
-        "parameters": [
-          {
-            "name": "_content",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the entire content of the resource"
-          },
-          {
-            "name": "_id",
-            "type": "string",
-            "in": "query",
-            "description": "Logical id of this artifact"
-          },
-          {
-            "name": "_lastUpdated",
-            "type": "string",
-            "in": "query",
-            "description": "When the resource version last changed",
-            "format": "date"
-          },
-          {
-            "name": "_profile",
-            "type": "uri",
-            "in": "query",
-            "description": "Profiles this resource claims to conform to"
-          },
-          {
-            "name": "_query",
-            "type": "string",
-            "in": "query",
-            "description": "A custom search profile that describes a specific defined query operation"
-          },
-          {
-            "name": "_security",
-            "type": "string",
-            "in": "query",
-            "description": "Security Labels applied to this resource"
-          },
-          {
-            "name": "_tag",
-            "type": "string",
-            "in": "query",
-            "description": "Tags applied to this resource"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "Search on the narrative of the resource"
-          },
-          {
-            "name": "code",
-            "type": "string",
-            "in": "query",
-            "description": "A code defined in the value set"
-          },
-          {
-            "name": "context",
-            "type": "string",
-            "in": "query",
-            "description": "A use context assigned to the value set"
-          },
-          {
-            "name": "date",
-            "type": "string",
-            "in": "query",
-            "description": "The value set publication date",
-            "format": "date"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "in": "query",
-            "description": "Text search in the description of the value set"
-          },
-          {
-            "name": "expansion",
-            "type": "uri",
-            "in": "query",
-            "description": "Uniquely identifies this expansion"
-          },
-          {
-            "name": "identifier",
-            "type": "string",
-            "in": "query",
-            "description": "The identifier for the value set"
-          },
-          {
-            "name": "name",
-            "type": "string",
-            "in": "query",
-            "description": "The name of the value set"
-          },
-          {
-            "name": "publisher",
-            "type": "string",
-            "in": "query",
-            "description": "Name of the publisher of the value set"
-          },
-          {
-            "name": "reference",
-            "type": "uri",
-            "in": "query",
-            "description": "A code system included or excluded in the value set or an imported value set"
-          },
-          {
-            "name": "status",
-            "type": "string",
-            "in": "query",
-            "description": "The status of the value set"
-          },
-          {
-            "name": "system",
-            "type": "uri",
-            "in": "query",
-            "description": "The system for any codes defined by this value set"
-          },
-          {
-            "name": "url",
-            "type": "uri",
-            "in": "query",
-            "description": "The logical URL for the value set"
-          },
-          {
-            "name": "version",
-            "type": "string",
-            "in": "query",
-            "description": "The version identifier of the value set"
-          },
-          {
-            "name": "_text",
-            "type": "string",
-            "in": "query",
-            "description": "General Text Search of the narrative portion"
-          },
-          {
-            "name": "_profile",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that conform to a profile"
-          },
-          {
-            "name": "_security",
-            "type": "reference",
-            "in": "query",
-            "description": "Search for resources that have a particular security tag"
-          },
-          {
-            "name": "_sort",
-            "type": "string",
-            "in": "query",
-            "description": "Specify one or more other parameters to use as the sort order"
-          },
-          {
-            "name": "_count",
-            "type": "integer",
-            "in": "query",
-            "description": "Number of records to return"
-          },
-          {
-            "name": "_summary",
-            "type": "integer",
-            "in": "query",
-            "description": "Return just a summary for resources that define a summary view"
-          },
-          {
-            "name": "_include",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that matching resources refer to"
-          },
-          {
-            "name": "_reverseInclude",
-            "type": "string",
-            "in": "query",
-            "description": "Additional resources to return - other resources that refer to matching resources (this is trialing an extension to the specification)"
-          },
-          {
-            "name": "_filter",
-            "type": "string",
-            "in": "query",
-            "description": "filter parameter as documented in the specification"
-          },
-          {
-            "name": "_format",
-            "in": "query",
-            "type": "string",
-            "x-consoleDefault": "application/json"
+        "responses": {
+          "200": {
+            "description": "Success"
           }
-        ],
+        }
+      }
+    },
+    "/ValueSet": {},
+    "/ValueSet/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
@@ -16272,6 +15777,22 @@
             "x-consoleDefault": "application/json"
           }
         ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/VisionPrescription/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "type": "string"
+        }
+      ],
+      "get": {
         "responses": {
           "200": {
             "description": "Success"
