@@ -20,7 +20,7 @@ npm install --save fhir-swagger
 var fhirToSwagger = require('fhir-swagger')
 var options = {
   fhir_url: 'http://argonaut.healthintersections.com.au/open',
-  conformance_path = '/metadata?_format=application/json',
+  conformance_path: '/metadata?_format=application/json',
 }
 
 fhirToSwagger(options, function(err, swagger) {
