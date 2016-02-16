@@ -1,0 +1,65 @@
+{
+  "resourceType": "VisionPrescription",
+  "id": "33124",
+  "text": {
+    "status": "generated",
+    "div": "<div>Sample Contract Lens prescription</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://www.happysight.com/prescription",
+      "value": "15014"
+    }
+  ],
+  "dateWritten": "2014-06-15",
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "prescriber": {
+    "reference": "Practitioner/example"
+  },
+  "dispense": [
+    {
+      "product": {
+        "system": "http://hl7.org/fhir/ex-visionprescriptionproduct",
+        "code": "contact"
+      },
+      "eye": "right",
+      "cylinder": -2.25,
+      "axis": 160,
+      "add": 1.75,
+      "power": -2.75,
+      "backCurve": 8.7,
+      "diameter": 14.0,
+      "duration": {
+        "value": 1,
+        "unit": "month",
+        "system": "http://unitsofmeasure.org",
+        "code": "month"
+      },
+      "color": "green",
+      "brand": "OphthaGuard"
+    },
+    {
+      "product": {
+        "system": "http://hl7.org/fhir/ex-visionprescriptionproduct",
+        "code": "contact"
+      },
+      "eye": "left",
+      "cylinder": -3.50,
+      "axis": 160,
+      "add": 1.75,
+      "power": -2.75,
+      "backCurve": 8.7,
+      "diameter": 14.0,
+      "duration": {
+        "value": 1,
+        "unit": "month",
+        "system": "http://unitsofmeasure.org",
+        "code": "month"
+      },
+      "color": "green",
+      "brand": "OphthaGuard"
+    }
+  ]
+}

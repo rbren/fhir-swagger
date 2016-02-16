@@ -1,0 +1,184 @@
+{
+  "resourceType": "Claim",
+  "id": "100151",
+  "text": {
+    "status": "generated",
+    "div": "<div>A human-readable rendering of the Oral Health Claim</div>"
+  },
+  "type": "oral",
+  "identifier": [
+    {
+      "system": "http://happyvalley.com/claim",
+      "value": "12346"
+    }
+  ],
+  "created": "2014-08-16",
+  "target": {
+    "reference": "Organization/2"
+  },
+  "organization": {
+    "reference": "Organization/1"
+  },
+  "use": "complete",
+  "priority": {
+    "code": "normal"
+  },
+  "payee": {
+    "type": {
+      "code": "provider"
+    }
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosis": {
+        "code": "123456"
+      }
+    }
+  ],
+  "patient": {
+    "reference": "Patient/1"
+  },
+  "coverage": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "reference": "Coverage/9876B1"
+      },
+      "relationship": {
+        "code": "self"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "type": {
+        "code": "service"
+      },
+      "provider": {
+        "reference": "Practitioner/example"
+      },
+      "service": {
+        "system": "http://hl7.org/fhir/oralservicecodes",
+        "code": "1200"
+      },
+      "serviceDate": "2014-08-16",
+      "unitPrice": {
+        "value": 135.57,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "net": {
+        "value": 135.57,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    },
+    {
+      "sequence": 2,
+      "type": {
+        "code": "service"
+      },
+      "provider": {
+        "reference": "Practitioner/example"
+      },
+      "service": {
+        "system": "http://hl7.org/fhir/oralservicecodes",
+        "code": "21211"
+      },
+      "serviceDate": "2014-08-16",
+      "unitPrice": {
+        "value": 105.00,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "net": {
+        "value": 105.00,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "bodySite": {
+        "system": "http://fdi.org/fhir/oraltoothcodes",
+        "code": "21"
+      },
+      "subSite": [
+        {
+          "system": "http://fdi.org/fhir/oralsurfacecodes",
+          "code": "L"
+        }
+      ]
+    },
+    {
+      "sequence": 3,
+      "type": {
+        "code": "group"
+      },
+      "provider": {
+        "reference": "Practitioner/example"
+      },
+      "service": {
+        "system": "http://hl7.org/fhir/oralservicecodes",
+        "code": "27211"
+      },
+      "serviceDate": "2014-08-16",
+      "unitPrice": {
+        "value": 1100.00,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "net": {
+        "value": 1100.00,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "bodySite": {
+        "system": "http://fdi.org/fhir/oraltoothcodes",
+        "code": "36"
+      },
+      "detail": [
+        {
+          "sequence": 1,
+          "type": {
+            "code": "service"
+          },
+          "service": {
+            "system": "http://hl7.org/fhir/oralservicecodes",
+            "code": "27211"
+          },
+          "unitPrice": {
+            "value": 750.00,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 750.00,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          }
+        },
+        {
+          "sequence": 2,
+          "type": {
+            "code": "service"
+          },
+          "service": {
+            "system": "http://hl7.org/fhir/oralservicecodes",
+            "code": "lab"
+          },
+          "unitPrice": {
+            "value": 350.00,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          },
+          "net": {
+            "value": 350.00,
+            "system": "urn:iso:std:iso:4217",
+            "code": "USD"
+          }
+        }
+      ]
+    }
+  ]
+}

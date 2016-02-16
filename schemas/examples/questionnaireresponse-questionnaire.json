@@ -1,0 +1,1345 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for QuestionnaireResponse.author",
+      "status": "active",
+      "description": "Type options for QuestionnaireResponse.author",
+      "expansion": {
+        "identifier": "urn:uuid:26640702-47c5-4776-b9f1-06c46ea3912a",
+        "timestamp": "2015-10-24T07:44:01+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Device",
+            "display": "Device"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for QuestionnaireResponse.source",
+      "status": "active",
+      "description": "Type options for QuestionnaireResponse.source",
+      "expansion": {
+        "identifier": "urn:uuid:a222b23e-698e-40ef-abf0-ee08f0e3e32c",
+        "timestamp": "2015-10-24T07:44:01+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs4",
+      "name": "Type options for QuestionnaireResponse.group.question.answer.value[x]",
+      "status": "active",
+      "description": "Type options for QuestionnaireResponse.group.question.answer.value[x]",
+      "expansion": {
+        "identifier": "urn:uuid:82c3f8ea-d22e-46f9-830a-05f97b672b31",
+        "timestamp": "2015-10-24T07:44:01+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "boolean",
+            "display": "boolean"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "decimal",
+            "display": "decimal"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "integer",
+            "display": "integer"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "date",
+            "display": "date"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "dateTime",
+            "display": "dateTime"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "instant",
+            "display": "instant"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "time",
+            "display": "time"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "string",
+            "display": "string"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "uri",
+            "display": "uri"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Attachment",
+            "display": "Attachment"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Coding",
+            "display": "Coding"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Quantity",
+            "display": "Quantity"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Resource",
+            "display": "Resource"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2015-10-24T07:41:03+11:00",
+  "publisher": "Health Level Seven International (Patient Care)",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "A structured set of questions and their answers. The questions are ordered and grouped into coherent subsets, corresponding to the structure of the grouping of the underlying questions."
+      }
+    ],
+    "linkId": "QuestionnaireResponse",
+    "title": "A structured set of questions and their answers",
+    "required": false,
+    "repeats": true,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.id.value",
+            "text": "Logical id of this artifact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.extension",
+        "text": "Additional Content defined by implementations",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.modifierExtension",
+        "text": "Extensions that cannot be ignored",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A business identifier assigned to a particular completed (or partially completed) questionnaire."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.identifier",
+        "text": "Unique id for this set of answers",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "QuestionnaireResponse.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "QuestionnaireResponse.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Indicates the Questionnaire resource that defines the form for which answers are being provided."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.questionnaire",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Questionnaire?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.questionnaire.value",
+            "text": "Form being answered",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The lifecycle status of the questionnaire response as a whole."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.status",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.status.value",
+            "text": "status",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.subject",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Resource?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.subject.value",
+            "text": "The subject of the questions",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system. Mapping a subject's answers to multiple choice options and determining what to put in the textual answer is a matter of interpretation.  Authoring by device would indicate that some portion of the questionnaire had been auto-populated."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.author",
+        "text": "Person who received and recorded the answers",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.author._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs2"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.author._Device",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Device?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.author._Device.value",
+                    "text": "Device",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.author._Practitioner",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.author._Practitioner.value",
+                    "text": "Practitioner",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.author._Patient",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.author._Patient.value",
+                    "text": "Patient",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.author._RelatedPerson",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/RelatedPerson?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.author._RelatedPerson.value",
+                    "text": "RelatedPerson",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The date and/or time that this version of the questionnaire response was authored. May be different from the update time of the resource itself, because that is the status of the collection and authoring.  This element is optional to allow for systems that may not know the value, however it SHOULD be populated if possible."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "datetime"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.authored",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.authored.value",
+            "text": "Date this version was authored",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The person who answered the questions about the subject. If not specified, no inference can be made about who provided the data."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.source",
+        "text": "The person who answered the questions",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "QuestionnaireResponse.source._type",
+            "text": "type",
+            "type": "choice",
+            "required": false,
+            "repeats": false,
+            "options": {
+              "reference": "#vs3"
+            },
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.source._Patient",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Patient?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.source._Patient.value",
+                    "text": "Patient",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.source._Practitioner",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.source._Practitioner.value",
+                    "text": "Practitioner",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "Reference"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.source._RelatedPerson",
+                "question": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                        "valueString": "/RelatedPerson?subject=$subj&patient=$subj&encounter=$encounter"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.source._RelatedPerson.value",
+                    "text": "RelatedPerson",
+                    "type": "reference",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Encounter during which this set of questionnaire response were collected. When there were multiple encounters, this is the one considered most relevant to the context of the answers."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Reference"
+          }
+        ],
+        "linkId": "QuestionnaireResponse.encounter",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "extension": [
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                "valueString": "/Encounter?subject=$subj&patient=$subj&encounter=$encounter"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.encounter.value",
+            "text": "Primary encounter during which the answers were collected",
+            "type": "reference",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A group of questions to a possibly similarly grouped set of questions in the questionnaire response."
+          }
+        ],
+        "linkId": "QuestionnaireResponse.group",
+        "title": "Grouped questions",
+        "text": "The Questionnaire itself has one \"root\" group with the actual contents of the Questionnaire.",
+        "required": false,
+        "repeats": false,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "QuestionnaireResponse.group.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Identifies the group from the Questionnaire that corresponds to this group in the QuestionnaireResponse resource."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.linkId",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "QuestionnaireResponse.group.linkId.value",
+                "text": "Corresponding group within Questionnaire",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Text that is displayed above the contents of the group. On the root group, this is the title of the questionnaire."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.title",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "QuestionnaireResponse.group.title.value",
+                "text": "Name for this group",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Additional text for the group, used for display purposes."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.text",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "QuestionnaireResponse.group.text.value",
+                "text": "Additional text for the group",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "More specific subject this section's answers are about, details the subject given in QuestionnaireResponse."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "Reference"
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.subject",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "extension": [
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                    "valueString": "/Resource?subject=$subj&patient=$subj&encounter=$encounter"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.subject.value",
+                "text": "The subject this group's answers are about",
+                "type": "reference",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "A sub-group within a group. The ordering of groups within this group is relevant."
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.group",
+            "title": "Nested questionnaire response group",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Set of questions within this group. The order of questions within the group is relevant."
+              }
+            ],
+            "linkId": "QuestionnaireResponse.group.question",
+            "title": "Questions in this group",
+            "required": false,
+            "repeats": true,
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "unique id for the element within a resource (for internal references)."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.question.id",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "QuestionnaireResponse.group.question.id.value",
+                    "text": "xml:id (or equivalent in JSON)",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.question.extension",
+                "text": "Additional Content defined by implementations",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.question.modifierExtension",
+                "text": "Extensions that cannot be ignored",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Identifies the question from the Questionnaire that corresponds to this question in the QuestionnaireResponse resource."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.question.linkId",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "QuestionnaireResponse.group.question.linkId.value",
+                    "text": "Corresponding question within Questionnaire",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The actual question as shown to the user to prompt them for an answer."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.question.text",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "QuestionnaireResponse.group.question.text.value",
+                    "text": "Text of the question as it is shown to the user",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The respondent's answer(s) to the question."
+                  }
+                ],
+                "linkId": "QuestionnaireResponse.group.question.answer",
+                "title": "The response(s) to the question",
+                "text": "The value is nested because we cannot have a repeating structure that has variable type.",
+                "required": false,
+                "repeats": true,
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "unique id for the element within a resource (for internal references)."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.group.question.answer.id",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "QuestionnaireResponse.group.question.answer.id.value",
+                        "text": "xml:id (or equivalent in JSON)",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.group.question.answer.extension",
+                    "text": "Additional Content defined by implementations",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.group.question.answer.modifierExtension",
+                    "text": "Extensions that cannot be ignored",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "The answer (or one of the answers) provided by the respondent to the question. More complex structures (Attachment, Resource and Quantity) will typically be limited to electronic forms that can expose an appropriate user interface to capture the components and enforce the constraints of a complex data type.  Additional complex types can be introduced through extensions."
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.group.question.answer.value[x]",
+                    "text": "Single-valued answer to the question",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "QuestionnaireResponse.group.question.answer.value[x]._type",
+                        "text": "type",
+                        "type": "choice",
+                        "required": false,
+                        "repeats": false,
+                        "options": {
+                          "reference": "#vs4"
+                        },
+                        "group": [
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "boolean"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._boolean",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._boolean.value",
+                                "text": "boolean",
+                                "type": "boolean",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "decimal"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._decimal",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._decimal.value",
+                                "text": "decimal",
+                                "type": "decimal",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "integer"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._integer",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._integer.value",
+                                "text": "integer",
+                                "type": "integer",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "datetime"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._date",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._date.value",
+                                "text": "date",
+                                "type": "dateTime",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "datetime"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._dateTime",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._dateTime.value",
+                                "text": "dateTime",
+                                "type": "dateTime",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "instant"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._instant",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._instant.value",
+                                "text": "instant",
+                                "type": "instant",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "time"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._time",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._time.value",
+                                "text": "time",
+                                "type": "time",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "string"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._string",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._string.value",
+                                "text": "string",
+                                "type": "string",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "uri"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._uri",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._uri.value",
+                                "text": "uri",
+                                "type": "string",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "Attachment"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Attachment",
+                            "text": "Attachment"
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "Coding"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Coding",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Coding.value",
+                                "text": "Coding",
+                                "type": "open-choice",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "Quantity"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Quantity",
+                            "text": "Quantity",
+                            "question": [
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Quantity.comparator",
+                                "text": "comp:",
+                                "type": "choice",
+                                "required": false,
+                                "repeats": false
+                              },
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Quantity.value",
+                                "text": "value:",
+                                "type": "decimal",
+                                "required": false,
+                                "repeats": false
+                              },
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Quantity.units",
+                                "text": "units:",
+                                "type": "string",
+                                "required": false,
+                                "repeats": false
+                              },
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Quantity.code",
+                                "text": "coded units:",
+                                "type": "string",
+                                "required": false,
+                                "repeats": false
+                              },
+                              {
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Quantity.system",
+                                "text": "units system:",
+                                "type": "string",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          },
+                          {
+                            "extension": [
+                              {
+                                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                                "valueString": "Reference"
+                              }
+                            ],
+                            "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Resource",
+                            "question": [
+                              {
+                                "extension": [
+                                  {
+                                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
+                                    "valueString": "/Resource?subject=$subj&patient=$subj&encounter=$encounter"
+                                  }
+                                ],
+                                "linkId": "QuestionnaireResponse.group.question.answer.value[x]._Resource.value",
+                                "text": "Resource",
+                                "type": "reference",
+                                "required": false,
+                                "repeats": false
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "Nested group, containing nested question for this question. The order of groups within the question is relevant."
+                      }
+                    ],
+                    "linkId": "QuestionnaireResponse.group.question.answer.group",
+                    "title": "Nested questionnaire group",
+                    "required": false,
+                    "repeats": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

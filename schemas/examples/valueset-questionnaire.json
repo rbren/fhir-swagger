@@ -1,0 +1,2194 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for ValueSet.expansion.parameter.value[x]",
+      "status": "active",
+      "description": "Type options for ValueSet.expansion.parameter.value[x]",
+      "expansion": {
+        "identifier": "urn:uuid:4270361e-d606-45f5-81db-0d79deb267f0",
+        "timestamp": "2015-10-24T07:42:40+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "string",
+            "display": "string"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "boolean",
+            "display": "boolean"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "integer",
+            "display": "integer"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "decimal",
+            "display": "decimal"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "uri",
+            "display": "uri"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "code",
+            "display": "code"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2015-10-24T07:41:03+11:00",
+  "publisher": "Health Level Seven International (Vocabulary)",
+  "group": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+        "valueString": "A value set specifies a set of codes drawn from one or more code systems."
+      }
+    ],
+    "linkId": "ValueSet",
+    "title": "A set of codes drawn from one or more code systems",
+    "required": false,
+    "repeats": true,
+    "group": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.id",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.id.value",
+            "text": "Logical id of this artifact",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
+          }
+        ],
+        "linkId": "ValueSet.meta",
+        "text": "Metadata about the resource",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "ValueSet.implicitRules",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.implicitRules.value",
+            "text": "A set of rules under which this content was created",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "ValueSet.language",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.language.value",
+            "text": "language",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."
+          }
+        ],
+        "linkId": "ValueSet.text",
+        "text": "Text summary of the resource, for human interpretation",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."
+          }
+        ],
+        "linkId": "ValueSet.contained",
+        "text": "Contained, inline Resources",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+          }
+        ],
+        "linkId": "ValueSet.extension",
+        "text": "Additional Content defined by implementations",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+          }
+        ],
+        "linkId": "ValueSet.modifierExtension",
+        "text": "Extensions that cannot be ignored",
+        "required": false,
+        "repeats": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "An absolute URL that is used to identify this value set when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this value set is (or will be) published."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "uri"
+          }
+        ],
+        "linkId": "ValueSet.url",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.url.value",
+            "text": "Globally unique logical identifier for  value set",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Formal identifier that is used to identify this value set when it is represented in other formats, or referenced in a specification, model, design or an instance. Typically, this is used for values that can go in an HL7 v3 II data type."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "Identifier"
+          }
+        ],
+        "linkId": "ValueSet.identifier",
+        "text": "Additional identifier for the value set (e.g. HL7 v2 / CDA)",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.identifier.label",
+            "text": "label:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "ValueSet.identifier.system",
+            "text": "system:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "ValueSet.identifier.value",
+            "text": "value:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Used to identify this version of the value set when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the profile author manually and the value should be a timestamp. There may be multiple resource versions of the value set that have the same identifier."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.version",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.version.value",
+            "text": "Logical identifier for this version of the value set",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A free text natural language name describing the value set. The name is not expected to be unique. A name should be provided unless the value set is a contained resource (e.g. an anonymous value set in a profile). Most registries will require a name."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.name",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.name.value",
+            "text": "Informal name for this value set",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The status of the value set. Allows filtering of value set instances that are appropriate (or not) for use."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "code"
+          }
+        ],
+        "linkId": "ValueSet.status",
+        "required": true,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.status.value",
+            "text": "status",
+            "type": "choice",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "This valueset was authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage. Allows filtering of value sets that are appropriate for use vs. not."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "boolean"
+          }
+        ],
+        "linkId": "ValueSet.experimental",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.experimental.value",
+            "text": "If for testing purposes, not real usage",
+            "type": "boolean",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The name of the individual or organization that published the value set. Usually an organization, but may be an individual. This item SHOULD be populated unless the information is available from context."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.publisher",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.publisher.value",
+            "text": "Name of the publisher (organization or individual)",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Contacts to assist a user in finding and communicating with the publisher."
+          }
+        ],
+        "linkId": "ValueSet.contact",
+        "title": "Contact details of the publisher",
+        "text": "May be a web site, an email address, a telephone number, etc.",
+        "required": false,
+        "repeats": true,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "ValueSet.contact.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.contact.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.contact.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.contact.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The name of an individual to contact regarding the value set. If there is no named individual, the telecom is for the organization as a whole."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "ValueSet.contact.name",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.contact.name.value",
+                "text": "Name of an individual to contact",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Contact details for individual (if a name was provided) or the publisher."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "ContactPoint"
+              }
+            ],
+            "linkId": "ValueSet.contact.telecom",
+            "text": "Contact details for individual or publisher",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.contact.telecom.system",
+                "text": "type:",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "ValueSet.contact.telecom.value",
+                "text": "value:",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              },
+              {
+                "linkId": "ValueSet.contact.telecom.use",
+                "text": "use:",
+                "type": "choice",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The date that the value set status was last changed. The date must change when the business version changes, if it does, and it must change if the status code changes. In addition, it should change when the substantive content of the implementation guide changes (e.g. the 'content logical definition'). Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the value set. Additional specific dates may be added as extensions."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "datetime"
+          }
+        ],
+        "linkId": "ValueSet.date",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.date.value",
+            "text": "Date for given status",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "If a locked date is defined, then the Content Logical Definition must be evaluated using the current version of all referenced code system(s) and value set instances as of the locked date. With a defined lockedDate the value set is considered \"Locked\". Otherwise, the value set may have different expansions as underlying code systems and/or value sets evolve.  The interpretation of lockedDate is often dependent on the context - e.g. a SNOMED CT derived value set with a lockedDate will have a different expansion in USA than in UK.  If a value set specifies a version for include and exclude statements, and also specifies a locked date, the specified versions need to be available that date, or the value set will not be usable."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "datetime"
+          }
+        ],
+        "linkId": "ValueSet.lockedDate",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.lockedDate.value",
+            "text": "Fixed date for all referenced code systems and value sets",
+            "type": "dateTime",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A free text natural language description of the use of the value set - reason for definition, \"the semantic space\" to be included in the value set, conditions of use, etc. The description may include a list of expected usages for the value set and can also describe the approach taken to build the value set. The description is not intended to describe the semantics of the Value Set - there are no intrinsic semantics separate from the codes contained in its expansion. The description should capture its intended use, which is needed for ensuring integrity for its use in models across future changes. A description should be provided unless the value set is a contained resource (e.g. an anonymous value set in a profile). Most registries will require a description."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.description",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.description.value",
+            "text": "Human language description of the value set",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of value set definitions."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "CodeableConcept"
+          }
+        ],
+        "linkId": "ValueSet.useContext",
+        "text": "Content intends to support these contexts",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.useContext.coding",
+            "text": "code:",
+            "type": "open-choice",
+            "required": false,
+            "repeats": false
+          },
+          {
+            "linkId": "ValueSet.useContext.text",
+            "text": "text:",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "If this is set to 'true', then no new versions of the content logical definition can be created.  Note: Other metadata might still change. Normally immutability is set to 'false', which is the default assumption if it is not populated.  Note that the implication is that if this is set to 'true', there may be only one ValueSet version for this definition. Immutability tends to be set to 'true' in one of two cases: - Where the value set, by the nature of its usage, cannot change.  For example \"All specializations of ACT in ActClassCode\" - Where there's no safe way to express the \"Purpose\" such that someone else could safely make changes to the value set definition. Source workflow control must guarantee that the same URI always yields the same definition."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "boolean"
+          }
+        ],
+        "linkId": "ValueSet.immutable",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.immutable.value",
+            "text": "Indicates whether or not any change to the content logical definition may occur",
+            "type": "boolean",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Explains why this value set is needed and why it has been constrained as it has. This element does not describe the usage of the value set (that is done in comments), rather it's for traceability of ''why'' the element is either needed or ''why'' the constraints exist as they do.  This may be used to point to source materials or specifications that drove the structure of this data element."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.requirements",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.requirements.value",
+            "text": "Why needed",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A copyright statement relating to the value set and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the value set. Frequently, the copyright differs between the value set and the codes that are included. The copyright statement should clearly differentiate between these when required."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "string"
+          }
+        ],
+        "linkId": "ValueSet.copyright",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.copyright.value",
+            "text": "Use and/or publishing restrictions",
+            "type": "string",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "Whether this is intended to be used with an extensible binding or not."
+          },
+          {
+            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+            "valueString": "boolean"
+          }
+        ],
+        "linkId": "ValueSet.extensible",
+        "required": false,
+        "repeats": true,
+        "question": [
+          {
+            "linkId": "ValueSet.extensible.value",
+            "text": "Whether this is intended to be used with an extensible binding",
+            "type": "boolean",
+            "required": false,
+            "repeats": false
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A definition of a code system, inlined into the value set (as a packaging convenience). Note that the inline code system may be used from other value sets by referring to its (codeSystem.system) directly."
+          }
+        ],
+        "linkId": "ValueSet.codeSystem",
+        "title": "An inline code system, which is part of this value set",
+        "text": "All code systems defined as part of a FHIR value set have an implicit valueset that includes all of the codes in the code system - the value set in which they are defined.",
+        "required": false,
+        "repeats": false,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.codeSystem.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "An absolute URI that is used to reference this code system, including in [Coding]{datatypes.html#Coding}.system. The reference is not required to point to any specific kind of definition, but the more information that can be provided, the more useful it is for implementers. Best practice is to resolve to a computable definition of the code system (either a value set, or some other format). Terminology servers MAY validate this reference (e.g. when accepting PUT/POST), and MAY make additional rules about what kind of content it refers to."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "uri"
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.system",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.codeSystem.system.value",
+                "text": "URI to identify the code system (e.g. in Coding.system)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The version of this code system that defines the codes. Note that the version is optional because a well maintained code system does not suffer from versioning, and therefore the version does not need to be maintained. However many code systems are not well maintained, and the version needs to be defined and tracked."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.version",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.codeSystem.version.value",
+                "text": "Version (for use in Coding.version)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "If code comparison is case sensitive when codes within this system are compared to each other. If this value is missing, then it is not specified whether a code system is case sensitive or not. When the rule is not known, Postel's law should be followed: produce codes with the correct case, and accept codes in any case. This element is primarily provided to support validation software."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "boolean"
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.caseSensitive",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.codeSystem.caseSensitive.value",
+                "text": "If code comparison is case sensitive",
+                "type": "boolean",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are."
+              }
+            ],
+            "linkId": "ValueSet.codeSystem.concept",
+            "title": "Concepts in the code system",
+            "required": true,
+            "repeats": true,
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "unique id for the element within a resource (for internal references)."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.id",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.codeSystem.concept.id.value",
+                    "text": "xml:id (or equivalent in JSON)",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.extension",
+                "text": "Additional Content defined by implementations",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.modifierExtension",
+                "text": "Extensions that cannot be ignored",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "A code - a text symbol - that uniquely identifies the concept within the code system."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "code"
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.code",
+                "required": true,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.codeSystem.concept.code.value",
+                    "text": "code",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "If this code is not for use as a real concept."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "boolean"
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.abstract",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.codeSystem.concept.abstract.value",
+                    "text": "If this code is not for use as a real concept",
+                    "type": "boolean",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "A human readable string that is the recommended default way to present this concept to a user."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.display",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.codeSystem.concept.display.value",
+                    "text": "Text to display to the user",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The formal definition of the concept. The value set resource does not make formal definitions required, because of the prevalence of legacy systems. However, they are highly recommended, as without them there is no formal meaning associated with the concept."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.definition",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.codeSystem.concept.definition.value",
+                    "text": "Formal definition",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Additional representations for the concept - other languages, aliases, specialized purposes, used for particular purposes, etc."
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.designation",
+                "title": "Additional representations for the concept",
+                "required": false,
+                "repeats": true,
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "unique id for the element within a resource (for internal references)."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "ValueSet.codeSystem.concept.designation.id",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.codeSystem.concept.designation.id.value",
+                        "text": "xml:id (or equivalent in JSON)",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "ValueSet.codeSystem.concept.designation.extension",
+                    "text": "Additional Content defined by implementations",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "ValueSet.codeSystem.concept.designation.modifierExtension",
+                    "text": "Extensions that cannot be ignored",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "The language this designation is defined for. In the absence of a language, the resource language applies."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "code"
+                      }
+                    ],
+                    "linkId": "ValueSet.codeSystem.concept.designation.language",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.codeSystem.concept.designation.language.value",
+                        "text": "language",
+                        "type": "choice",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "A code that details how this designation would be used. If no use is provided, the designation can be assumed to be suitable for general display to a human user."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "Coding"
+                      }
+                    ],
+                    "linkId": "ValueSet.codeSystem.concept.designation.use",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.codeSystem.concept.designation.use.value",
+                        "text": "Details how this designation would be used",
+                        "type": "open-choice",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "The text value for this designation."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "ValueSet.codeSystem.concept.designation.value",
+                    "required": true,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.codeSystem.concept.designation.value.value",
+                        "text": "The text value for this designation",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) and can only be determined by examining the definitions of the concepts."
+                  }
+                ],
+                "linkId": "ValueSet.codeSystem.concept.concept",
+                "title": "Child Concepts (is-a/contains/categorizes)",
+                "required": false,
+                "repeats": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A set of criteria that provide the content logical definition of the value set by including or excluding codes from outside this value set."
+          }
+        ],
+        "linkId": "ValueSet.compose",
+        "title": "When value set includes codes from elsewhere",
+        "required": false,
+        "repeats": false,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "ValueSet.compose.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.compose.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.compose.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.compose.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Includes the contents of the referenced value set as a part of the contents of this value set. This is an absolute URI that is a reference to ValueSet.uri. The value set URI is either a logical reference to a defined value set such as a [SNOMED CT reference set]{snomedct.html#implicit}, or a direct reference to a value set definition using ValueSet.url. The reference may also not reference an actual FHIR ValueSet resource; in this case, whatever is referenced is an implicit definition of a value set that needs to be clear about how versions are resolved."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "uri"
+              }
+            ],
+            "linkId": "ValueSet.compose.import",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.compose.import.value",
+                "text": "Import the contents of another value set",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Include one or more codes from a code system."
+              }
+            ],
+            "linkId": "ValueSet.compose.include",
+            "title": "Include one or more codes from a code system",
+            "text": "If there are no codes or filters, the entire code system is included. Note that the set of codes that are included may contain abstract codes.",
+            "required": false,
+            "repeats": true,
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "unique id for the element within a resource (for internal references)."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.id",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.compose.include.id.value",
+                    "text": "xml:id (or equivalent in JSON)",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.extension",
+                "text": "Additional Content defined by implementations",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.modifierExtension",
+                "text": "Extensions that cannot be ignored",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "An absolute URI which is the code system from which the selected codes come from. See ''Coding.system'' for further documentation."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "uri"
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.system",
+                "required": true,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.compose.include.system.value",
+                    "text": "The system the codes come from",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The version of the code system that the codes are selected from. This is used when selecting the descendants of a concept - they may change between versions. If no version is specified, then the exact contents of the value set may not be known until a context of use binds it to a particular version."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.version",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.compose.include.version.value",
+                    "text": "Specific version of the code system referred to",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Specifies a concept to be included or excluded."
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.concept",
+                "title": "A concept defined in the system",
+                "text": "The list of concepts is considered ordered, though the order may not have any particular significance. Typically, the order of an expansion follows that defined in the compose element.",
+                "required": false,
+                "repeats": true,
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "unique id for the element within a resource (for internal references)."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.concept.id",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.concept.id.value",
+                        "text": "xml:id (or equivalent in JSON)",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.concept.extension",
+                    "text": "Additional Content defined by implementations",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.concept.modifierExtension",
+                    "text": "Extensions that cannot be ignored",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "Specifies a code for the concept to be included or excluded. Expressions are allowed if defined by the underlying code system."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "code"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.concept.code",
+                    "required": true,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.concept.code.value",
+                        "text": "code",
+                        "type": "choice",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "The text to display to the user for this concept in the context of this valueset. If no display is provided, then applications using the value set use the display specified for the code by the system. The value set resource allows for an alternative display to be specified for when this concept is used in this particular value set. See notes in the value set narrative about the correct use of this element."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.concept.display",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.concept.display.value",
+                        "text": "Test to display for this code for this value set",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "Additional representations for this concept when used in this value set - other languages, aliases, specialized purposes, used for particular purposes, etc."
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.concept.designation",
+                    "title": "Additional representations for this valueset",
+                    "required": false,
+                    "repeats": true
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Select concepts by specify a matching criteria based on the properties (including relationships) defined by the system. If multiple filters are specified, they SHALL all be true."
+                  }
+                ],
+                "linkId": "ValueSet.compose.include.filter",
+                "title": "Select codes/concepts by their properties (including relationships)",
+                "text": "Selecting codes by specifying filters based on properties is only possible where the underlying code system defines appropriate properties. Note that in some cases, the underlying code system defines the logical concepts but not the literal codes for the concepts. In such cases, the literal definitions may be provided by a third party.",
+                "required": false,
+                "repeats": true,
+                "group": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "unique id for the element within a resource (for internal references)."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "string"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.filter.id",
+                    "required": false,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.filter.id.value",
+                        "text": "xml:id (or equivalent in JSON)",
+                        "type": "string",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.filter.extension",
+                    "text": "Additional Content defined by implementations",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.filter.modifierExtension",
+                    "text": "Extensions that cannot be ignored",
+                    "required": false,
+                    "repeats": true
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "A code that identifies a property defined in the code system."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "code"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.filter.property",
+                    "required": true,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.filter.property.value",
+                        "text": "property",
+                        "type": "choice",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "The kind of operation to perform as a part of the filter criteria."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "code"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.filter.op",
+                    "required": true,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.filter.op.value",
+                        "text": "op",
+                        "type": "choice",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  },
+                  {
+                    "extension": [
+                      {
+                        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                        "valueString": "The match value may be either a code defined by the system, or a string value, which is a regex match on the literal string of the property value. Use regex matching with care - full regex matching on every SNOMED CT term is prohibitive, for example."
+                      },
+                      {
+                        "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                        "valueString": "code"
+                      }
+                    ],
+                    "linkId": "ValueSet.compose.include.filter.value",
+                    "required": true,
+                    "repeats": true,
+                    "question": [
+                      {
+                        "linkId": "ValueSet.compose.include.filter.value.value",
+                        "text": "value",
+                        "type": "choice",
+                        "required": false,
+                        "repeats": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "Exclude one or more codes from the value set."
+              }
+            ],
+            "linkId": "ValueSet.compose.exclude",
+            "title": "Explicitly exclude codes",
+            "text": "Usually this is used to selectively exclude codes that were included by subsumption in the inclusions. Any display names specified for the codes are ignored.",
+            "required": false,
+            "repeats": true
+          }
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+            "valueString": "A value set can also be \"expanded\", where the value set is turned into a simple collection of enumerated codes. This element holds the expansion, if it has been performed."
+          }
+        ],
+        "linkId": "ValueSet.expansion",
+        "title": "Used when the value set is \"expanded\"",
+        "text": "Expansion is performed to produce a collection of codes that are ready to use for data entry or validation.",
+        "required": false,
+        "repeats": false,
+        "group": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "unique id for the element within a resource (for internal references)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "string"
+              }
+            ],
+            "linkId": "ValueSet.expansion.id",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.expansion.id.value",
+                "text": "xml:id (or equivalent in JSON)",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.expansion.extension",
+            "text": "Additional Content defined by implementations",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+              }
+            ],
+            "linkId": "ValueSet.expansion.modifierExtension",
+            "text": "Extensions that cannot be ignored",
+            "required": false,
+            "repeats": true
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "An identifier that uniquely identifies this expansion of the valueset. Systems may re-use the same identifier as long as the expansion and the definition remain the same, but are not required to do so. Typically, this uri is a UUID (e.g. urn:uuid:8230ff20-c97a-4167-a59d-dc2cb9df16dd)."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "uri"
+              }
+            ],
+            "linkId": "ValueSet.expansion.identifier",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.expansion.identifier.value",
+                "text": "Uniquely identifies this expansion",
+                "type": "string",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The time at which the expansion was produced by the expanding system. This SHOULD be a fully populated instant, but in some circumstances, value sets are expanded by hand, and the expansion is published without that precision."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "datetime"
+              }
+            ],
+            "linkId": "ValueSet.expansion.timestamp",
+            "required": true,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.expansion.timestamp.value",
+                "text": "Time ValueSet expansion happened",
+                "type": "dateTime",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The total number of concepts in the expansion. If the number of concept nodes in this resource is less than the stated number, then the server can return more using the offset parameter. Paging only applies to flat expansions."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "integer"
+              }
+            ],
+            "linkId": "ValueSet.expansion.total",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.expansion.total.value",
+                "text": "Total number of codes in the expansion",
+                "type": "integer",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "If paging is being used, the offset at which this resource starts.  I.e. this resource is a partial view into the expansion. If paging is not being used, this element SHALL not be present. Paging only applies to flat expansions. If a filter is applied, the count is the number of concepts that matched the filter, not the number of concepts in an unfiltered view of the expansion."
+              },
+              {
+                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                "valueString": "integer"
+              }
+            ],
+            "linkId": "ValueSet.expansion.offset",
+            "required": false,
+            "repeats": true,
+            "question": [
+              {
+                "linkId": "ValueSet.expansion.offset.value",
+                "text": "Offset at which this resource starts",
+                "type": "integer",
+                "required": false,
+                "repeats": false
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "A parameter that controlled the expansion process. These parameters may be used by users of expanded value sets to check whether the expansion is suitable for a particular purpose, or to pick the correct expansion."
+              }
+            ],
+            "linkId": "ValueSet.expansion.parameter",
+            "title": "Parameter that controlled the expansion process",
+            "text": "The server decides which parameters to include here, but at a minimum, the list SHOULD include the date, filter, and profile parameters passed to the $expand operation (if any).",
+            "required": false,
+            "repeats": true,
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "unique id for the element within a resource (for internal references)."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.parameter.id",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.parameter.id.value",
+                    "text": "xml:id (or equivalent in JSON)",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.expansion.parameter.extension",
+                "text": "Additional Content defined by implementations",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.expansion.parameter.modifierExtension",
+                "text": "Extensions that cannot be ignored",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The name of the parameter. The names are assigned at the discretion of the server."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.parameter.name",
+                "required": true,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.parameter.name.value",
+                    "text": "Name as assigned by the server",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The value of the parameter."
+                  }
+                ],
+                "linkId": "ValueSet.expansion.parameter.value[x]",
+                "text": "Value of the named parameter",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.parameter.value[x]._type",
+                    "text": "type",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false,
+                    "options": {
+                      "reference": "#vs2"
+                    },
+                    "group": [
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "string"
+                          }
+                        ],
+                        "linkId": "ValueSet.expansion.parameter.value[x]._string",
+                        "question": [
+                          {
+                            "linkId": "ValueSet.expansion.parameter.value[x]._string.value",
+                            "text": "string",
+                            "type": "string",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "boolean"
+                          }
+                        ],
+                        "linkId": "ValueSet.expansion.parameter.value[x]._boolean",
+                        "question": [
+                          {
+                            "linkId": "ValueSet.expansion.parameter.value[x]._boolean.value",
+                            "text": "boolean",
+                            "type": "boolean",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "integer"
+                          }
+                        ],
+                        "linkId": "ValueSet.expansion.parameter.value[x]._integer",
+                        "question": [
+                          {
+                            "linkId": "ValueSet.expansion.parameter.value[x]._integer.value",
+                            "text": "integer",
+                            "type": "integer",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "decimal"
+                          }
+                        ],
+                        "linkId": "ValueSet.expansion.parameter.value[x]._decimal",
+                        "question": [
+                          {
+                            "linkId": "ValueSet.expansion.parameter.value[x]._decimal.value",
+                            "text": "decimal",
+                            "type": "decimal",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "uri"
+                          }
+                        ],
+                        "linkId": "ValueSet.expansion.parameter.value[x]._uri",
+                        "question": [
+                          {
+                            "linkId": "ValueSet.expansion.parameter.value[x]._uri.value",
+                            "text": "uri",
+                            "type": "string",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      },
+                      {
+                        "extension": [
+                          {
+                            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                            "valueString": "code"
+                          }
+                        ],
+                        "linkId": "ValueSet.expansion.parameter.value[x]._code",
+                        "question": [
+                          {
+                            "linkId": "ValueSet.expansion.parameter.value[x]._code.value",
+                            "text": "value[x]",
+                            "type": "choice",
+                            "required": false,
+                            "repeats": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                "valueString": "The codes that are contained in the value set expansion."
+              }
+            ],
+            "linkId": "ValueSet.expansion.contains",
+            "title": "Codes in the value set",
+            "required": false,
+            "repeats": true,
+            "group": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "unique id for the element within a resource (for internal references)."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.id",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.contains.id.value",
+                    "text": "xml:id (or equivalent in JSON)",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.extension",
+                "text": "Additional Content defined by implementations",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.modifierExtension",
+                "text": "Extensions that cannot be ignored",
+                "required": false,
+                "repeats": true
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "An absolute URI which is the code system in which the code for this item in the expansion is defined."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "uri"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.system",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.contains.system.value",
+                    "text": "System value for the code",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "If true, this entry is included in the expansion for navigational purposes, and the user cannot select the code directly as a proper value. This should not be understood to exclude its use for searching (e.g. by subsumption testing). The client should know whether it is appropriate for the user to select an abstract code or not."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "boolean"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.abstract",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.contains.abstract.value",
+                    "text": "If user cannot select this entry",
+                    "type": "boolean",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The version of this code system that defined this code and/or display. This should only be used with code systems that do not enforce concept permanence. The exact value of the version string is specified by the system from which the code is derived."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.version",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.contains.version.value",
+                    "text": "Version in which this code/display is defined",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The code for this item in the expansion hierarchy. If this code is missing the entry in the hierarchy is a place holder (abstract) and does not represent a valid code in the value set."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "code"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.code",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.contains.code.value",
+                    "text": "code",
+                    "type": "choice",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "The recommended display for this item in the expansion."
+                  },
+                  {
+                    "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
+                    "valueString": "string"
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.display",
+                "required": false,
+                "repeats": true,
+                "question": [
+                  {
+                    "linkId": "ValueSet.expansion.contains.display.value",
+                    "text": "User display for the concept",
+                    "type": "string",
+                    "required": false,
+                    "repeats": false
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
+                    "valueString": "Other codes and entries contained under this entry in the hierarchy."
+                  }
+                ],
+                "linkId": "ValueSet.expansion.contains.contains",
+                "title": "Codes contained under this entry",
+                "text": "If the expansion uses this element, there is  no implication about the logical relationship between them, and the  structure cannot be used for logical inferencing. The structure  exists to provide navigational assistance for helping human users to  locate codes in the expansion.",
+                "required": false,
+                "repeats": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

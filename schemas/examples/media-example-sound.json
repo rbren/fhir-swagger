@@ -1,0 +1,26 @@
+{
+  "resourceType": "Media",
+  "id": "sound",
+  "text": {
+    "status": "generated",
+    "div": "<div>Sound recording of speech example for Patient Henry Levin (MRN 12345):<br/><img alt=\"diagram\" src=\"#11\"/></div>"
+  },
+  "type": "video",
+  "subject": {
+    "reference": "Patient/xcda"
+  },
+  "operator": {
+    "reference": "Practitioner/xcda-author"
+  },
+  "duration": 65,
+  "content": {
+    "id": "a1",
+    "contentType": "audio/mpeg",
+    "data": "dG9vIGJpZyB0b28gaW5jbHVkZSB0aGUgd2hvbGU=",
+    "_data": {
+      "fhir_comments": [
+        "  too big too include the whole  "
+      ]
+    }
+  }
+}

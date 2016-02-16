@@ -1,0 +1,19 @@
+{
+  "resourceType": "ProcessRequest",
+  "id": "1115",
+  "text": {
+    "status": "generated",
+    "div": "<div>A human-readable rendering of the Poll ProcessRequest</div>"
+  },
+  "action": "poll",
+  "identifier": [
+    {
+      "system": "http://www.phr.com/patient/12345/processrequest",
+      "value": "115"
+    }
+  ],
+  "created": "2014-08-16",
+  "include": [
+    "ExplanationOfBenefit"
+  ]
+}

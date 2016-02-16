@@ -1,0 +1,11 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "organization-extensions-Organization-alias",
+  "url": "http://hl7.org/fhir/SearchParameter/organization-extensions-Organization-alias",
+  "name": "alias",
+  "code": "alias",
+  "type": "string",
+  "description": "Include Organizations that contain the provided alias",
+  "xpath": "f:Organization/f:extension[@url='http://hl7.org/fhir/StructureDefinition/organization-alias']",
+  "xpathUsage": "normal"
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-gene-dnavariant",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-gene-dnavariant",
+  "name": "gene-dnavariant",
+  "code": "gene-dnavariant",
+  "base": "Observation",
+  "type": "string",
+  "description": "HGNC gene symbol and HGVS DNA Variant",
+  "xpathUsage": "normal"
+}

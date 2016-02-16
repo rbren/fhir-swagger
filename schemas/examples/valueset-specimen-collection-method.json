@@ -1,0 +1,103 @@
+{
+  "resourceType": "ValueSet",
+  "id": "specimen-collection-method",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>SpecimenCollectionMethod</h2><p> This example value set defines a set of codes that can be used to indicate the method of collection of a specimen. It includes values from HL7 v2 table 0048.</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in http://snomed.info/sct<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>119295008</td><td>Specimen obtained by aspiration</td><td/></tr><tr><td>413651001</td><td>Bioptics</td><td/></tr><tr><td>360020006</td><td>Extirpation - action</td><td/></tr><tr><td>430823004</td><td>Examination of midstream urine specimen</td><td/></tr><tr><td>16404004</td><td>Induced</td><td/></tr><tr><td>67889009</td><td>Irrigation</td><td/></tr><tr><td>29240004</td><td>Autopsy examination</td><td/></tr><tr><td>45710003</td><td>Sputum</td><td/></tr><tr><td>7800008</td><td>Punctate</td><td/></tr><tr><td>258431006</td><td>Scrapings</td><td/></tr><tr><td>20255002</td><td>Blushing</td><td/></tr><tr><td>386147002</td><td>Smear procedure</td><td/></tr><tr><td>278450005</td><td>Finger stick</td><td/></tr></table></li><li>Include all codes defined in <a href=\"v2/0488/index.html\">http://hl7.org/fhir/v2/0488</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.275"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+  "version": "1.0.2",
+  "name": "SpecimenCollectionMethod",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": " This example value set defines a set of codes that can be used to indicate the method of collection of a specimen. It includes values from HL7 v2 table 0048.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "119295008",
+            "display": "Specimen obtained by aspiration"
+          },
+          {
+            "code": "413651001",
+            "display": "Bioptics"
+          },
+          {
+            "code": "360020006",
+            "display": "Extirpation - action"
+          },
+          {
+            "code": "430823004",
+            "display": "Examination of midstream urine specimen"
+          },
+          {
+            "code": "16404004",
+            "display": "Induced"
+          },
+          {
+            "code": "67889009",
+            "display": "Irrigation"
+          },
+          {
+            "code": "29240004",
+            "display": "Autopsy examination"
+          },
+          {
+            "code": "45710003",
+            "display": "Sputum"
+          },
+          {
+            "code": "7800008",
+            "display": "Punctate"
+          },
+          {
+            "code": "258431006",
+            "display": "Scrapings"
+          },
+          {
+            "code": "20255002",
+            "display": "Blushing"
+          },
+          {
+            "code": "386147002",
+            "display": "Smear procedure"
+          },
+          {
+            "code": "278450005",
+            "display": "Finger stick"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/v2/0488"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "valueset-extensions-ValueSet-author",
+  "url": "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-author",
+  "name": "author",
+  "code": "author",
+  "type": "string",
+  "xpath": "f:ValueSet/f:extension[@url='http://hl7.org/fhir/StructureDefinition/valueset-author']",
+  "xpathUsage": "normal"
+}

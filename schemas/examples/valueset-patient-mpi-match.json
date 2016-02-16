@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "patient-mpi-match",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MPIMatch</h2><p>A Master Patient Index (MPI) assessment of whether a candidate patient record is a match or not.</p><p>This value set has an inline code system http://hl7.org/fhir/patient-mpi-match, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>certain<a name=\"certain\"> </a></td><td>Certain Match</td><td>This record meets the MPI criteria to be automatically considered as a full match.</td></tr><tr><td>probable<a name=\"probable\"> </a></td><td>Probable Match</td><td>This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match.</td></tr><tr><td>possible<a name=\"possible\"> </a></td><td>Possible Match</td><td>This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match.</td></tr><tr><td>certainly-not<a name=\"certainly-not\"> </a></td><td>Certainly Not a Match</td><td>This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the MPI.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.434"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/patient-mpi-match",
+  "version": "1.0.2",
+  "name": "MPIMatch",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "A Master Patient Index (MPI) assessment of whether a candidate patient record is a match or not.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.434"
+      }
+    ],
+    "system": "http://hl7.org/fhir/patient-mpi-match",
+    "version": "1.0.2",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "certain",
+        "display": "Certain Match",
+        "definition": "This record meets the MPI criteria to be automatically considered as a full match."
+      },
+      {
+        "code": "probable",
+        "display": "Probable Match",
+        "definition": "This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match."
+      },
+      {
+        "code": "possible",
+        "display": "Possible Match",
+        "definition": "This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match."
+      },
+      {
+        "code": "certainly-not",
+        "display": "Certainly Not a Match",
+        "definition": "This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the MPI."
+      }
+    ]
+  }
+}

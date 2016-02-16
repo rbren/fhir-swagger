@@ -1,0 +1,33 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "example002",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Tylenol No. 1 Caplet</p>\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "informationSource": {
+    "reference": "Patient/f001"
+  },
+  "dateAsserted": "2015-02-22",
+  "status": "completed",
+  "wasNotTaken": true,
+  "reasonNotTaken": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "166643006",
+          "display": "Liver enzymes abnormal"
+        }
+      ]
+    }
+  ],
+  "effectiveDateTime": "2015-01-23",
+  "note": "Patient can not take acetaminophen as per Dr instructions",
+  "medicationReference": {
+    "reference": "Medication/MedicationExample7"
+  }
+}

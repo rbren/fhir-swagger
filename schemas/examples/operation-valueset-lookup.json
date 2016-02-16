@@ -1,0 +1,143 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "ValueSet-lookup",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Concept Look Up</h2><p>OPERATION: Concept Look Up</p><div><p>Given a code/system, or a Coding, get additional details about the concept</p>\n</div><p>URL: [base]/ValueSet/$lookup</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>code</td><td>0..1</td><td>code</td><td/><td><div><p>The code that is to be validated. If a code is provided, a system must be provided</p>\n</div></td></tr><tr><td>IN</td><td>system</td><td>0..1</td><td>uri</td><td/><td><div><p>The system for the code that is to be validated</p>\n</div></td></tr><tr><td>IN</td><td>version</td><td>0..1</td><td>string</td><td/><td><div><p>The version of the system, if one was provided in the source data</p>\n</div></td></tr><tr><td>IN</td><td>coding</td><td>0..1</td><td>Coding</td><td/><td><div><p>A coding to look up</p>\n</div></td></tr><tr><td>IN</td><td>date</td><td>0..1</td><td>dateTime</td><td/><td><div><p>The date for which the information should be returned. Normally, this is the current conditions (which is the default value) but under some circumstances, systems need to acccess this information as it would have been in the past. A typical example of this would be where code selection is constrained to the set of codes that were available when the patient was treated, not when the record is being edited. Note that which date is appropriate is a matter for implementation policy.</p>\n</div></td></tr><tr><td>OUT</td><td>name</td><td>1..1</td><td>string</td><td/><td><div><p>A display name for the code system</p>\n</div></td></tr><tr><td>OUT</td><td>version</td><td>0..1</td><td>string</td><td/><td><div><p>The version that these details are based on</p>\n</div></td></tr><tr><td>OUT</td><td>display</td><td>1..1</td><td>string</td><td/><td><div><p>The preferred display for this concept</p>\n</div></td></tr><tr><td>OUT</td><td>abstract</td><td>0..1</td><td>boolean</td><td/><td><div><p>Whether this code is an abstract concept</p>\n</div></td></tr><tr><td>OUT</td><td>designation</td><td>0..*</td><td></td><td/><td><div><p>Additional representations for this concept</p>\n</div></td></tr><tr><td>OUT</td><td>designation.language</td><td>0..1</td><td>code</td><td/><td><div><p>The language this designation is defined for</p>\n</div></td></tr><tr><td>OUT</td><td>designation.use</td><td>0..1</td><td>Coding</td><td/><td><div><p>A code that details how this designation would be used</p>\n</div></td></tr><tr><td>OUT</td><td>designation.value</td><td>1..1</td><td>string</td><td/><td><div><p>The text value for this designation</p>\n</div></td></tr></table><div><p>Note that the $lookup operation is more than just a value set search  - the server finds the concept, and gathers the return information from the value set and the underlying code system definitions.</p>\n</div></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup",
+  "name": "Concept Look Up",
+  "status": "draft",
+  "kind": "operation",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "Given a code/system, or a Coding, get additional details about the concept",
+  "code": "lookup",
+  "notes": "Note that the $lookup operation is more than just a value set search  - the server finds the concept, and gathers the return information from the value set and the underlying code system definitions.",
+  "system": false,
+  "type": [
+    "ValueSet"
+  ],
+  "instance": false,
+  "parameter": [
+    {
+      "name": "code",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The code that is to be validated. If a code is provided, a system must be provided",
+      "type": "code"
+    },
+    {
+      "name": "system",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The system for the code that is to be validated",
+      "type": "uri"
+    },
+    {
+      "name": "version",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The version of the system, if one was provided in the source data",
+      "type": "string"
+    },
+    {
+      "name": "coding",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A coding to look up",
+      "type": "Coding"
+    },
+    {
+      "name": "date",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The date for which the information should be returned. Normally, this is the current conditions (which is the default value) but under some circumstances, systems need to acccess this information as it would have been in the past. A typical example of this would be where code selection is constrained to the set of codes that were available when the patient was treated, not when the record is being edited. Note that which date is appropriate is a matter for implementation policy.",
+      "type": "dateTime"
+    },
+    {
+      "name": "name",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "A display name for the code system",
+      "type": "string"
+    },
+    {
+      "name": "version",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "The version that these details are based on",
+      "type": "string"
+    },
+    {
+      "name": "display",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "The preferred display for this concept",
+      "type": "string"
+    },
+    {
+      "name": "abstract",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "documentation": "Whether this code is an abstract concept",
+      "type": "boolean"
+    },
+    {
+      "name": "designation",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "documentation": "Additional representations for this concept",
+      "part": [
+        {
+          "name": "language",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "The language this designation is defined for",
+          "type": "code"
+        },
+        {
+          "name": "use",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "A code that details how this designation would be used",
+          "type": "Coding"
+        },
+        {
+          "name": "value",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "The text value for this designation",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

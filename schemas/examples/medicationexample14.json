@@ -1,0 +1,32 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample014",
+  "text": {
+    "fhir_comments": [
+      "  this example includes a medication for content  "
+    ],
+    "status": "generated",
+    "div": "<div>Amoxicillin 250mg/5ml Suspension</div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "96068000",
+        "display": "Amoxicillin trihydrate"
+      }
+    ]
+  },
+  "isBrand": false,
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "85581007",
+          "display": "Drug Powder"
+        }
+      ]
+    }
+  }
+}

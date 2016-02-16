@@ -1,0 +1,124 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "v3-data-absent-reason",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>v3 map for DataAbsentReason (http://hl7.org/fhir/ConceptMap/v3-data-absent-reason)</h2><p>Mapping from <a href=\"valueset-data-absent-reason.html\">http://hl7.org/fhir/ValueSet/data-absent-reason</a> to <a href=\"v3/NullFlavor/index.html\">http://hl7.org/fhir/ValueSet/v3-NullFlavor</a></p><p>DRAFT. Published on 24/10/2015 7:41:03 AM by HL7 (FHIR Project) (<a href=\"http://hl7.org/fhir\">http://hl7.org/fhir</a>, <a href=\"mailto:fhir@lists.hl7.org\">fhir@lists.hl7.org</a>; ). </p><p>v3 Map (NullFlavor)</p><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Equivalence</b></td><td><b>Destination Code</b></td></tr><tr><td>unknown (Unknown)</td><td>equal</td><td>UNK (unknown)</td></tr><tr><td>asked (Asked)</td><td>equal</td><td>ASKU (asked but unknown)</td></tr><tr><td>temp (Temp)</td><td>equal</td><td>NAV (temporarily unavailable)</td></tr><tr><td>not-asked (Not Asked)</td><td>equal</td><td>NASK (not asked)</td></tr><tr><td>masked (Masked)</td><td>equal</td><td>MSK (masked)</td></tr><tr><td>unsupported (Unsupported)</td><td>wider</td><td>NA (not applicable)</td></tr><tr><td>error (Error)</td><td>wider</td><td>NA (not applicable)</td></tr><tr><td>NaN (Not a Number)</td><td>wider</td><td>NA (not applicable)</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/ConceptMap/v3-data-absent-reason",
+  "name": "v3 map for DataAbsentReason",
+  "status": "draft",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "v3 Map (NullFlavor)",
+  "sourceReference": {
+    "reference": "http://hl7.org/fhir/ValueSet/data-absent-reason"
+  },
+  "targetReference": {
+    "reference": "http://hl7.org/fhir/ValueSet/v3-NullFlavor"
+  },
+  "element": [
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "unknown",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "UNK",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "asked",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "ASKU",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "temp",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "NAV",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "not-asked",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "NASK",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "masked",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "MSK",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "unsupported",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "NA",
+          "equivalence": "wider"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "error",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "NA",
+          "equivalence": "wider"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/data-absent-reason",
+      "code": "NaN",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/NullFlavor",
+          "code": "NA",
+          "equivalence": "wider"
+        }
+      ]
+    }
+  ]
+}

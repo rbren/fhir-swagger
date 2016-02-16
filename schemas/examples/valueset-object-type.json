@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "object-type",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>AuditEventObjectType</h2><p>Code for the object type involved audited.</p><p>This value set has an inline code system http://hl7.org/fhir/object-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td>Person</td><td>Person</td></tr><tr><td>2<a name=\"2\"> </a></td><td>System Object</td><td>System Object</td></tr><tr><td>3<a name=\"3\"> </a></td><td>Organization</td><td>Organization</td></tr><tr><td>4<a name=\"4\"> </a></td><td>Other</td><td>Other</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.266"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/object-type",
+  "version": "1.0.2",
+  "name": "AuditEventObjectType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "Code for the object type involved audited.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.266"
+      }
+    ],
+    "system": "http://hl7.org/fhir/object-type",
+    "version": "1.0.2",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "1",
+        "display": "Person",
+        "definition": "Person"
+      },
+      {
+        "code": "2",
+        "display": "System Object",
+        "definition": "System Object"
+      },
+      {
+        "code": "3",
+        "display": "Organization",
+        "definition": "Organization"
+      },
+      {
+        "code": "4",
+        "display": "Other",
+        "definition": "Other"
+      }
+    ]
+  }
+}

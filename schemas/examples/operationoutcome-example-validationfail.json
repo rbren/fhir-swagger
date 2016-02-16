@@ -1,0 +1,20 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "validationfail",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Error parsing resource XML (Unknown Content &quot;label&quot; @ /Patient/identifier/label)</p>\n    </div>"
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "structure",
+      "details": {
+        "text": "Error parsing resource XML (Unknown Content \"label\""
+      },
+      "location": [
+        "/f:Patient/f:identifier"
+      ]
+    }
+  ]
+}

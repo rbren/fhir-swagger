@@ -1,0 +1,101 @@
+{
+  "resourceType": "ValueSet",
+  "id": "claim-modifiers",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Modifier type Codes</h2><p>This value set includes sample Modifier type codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://hl7.org/fhir/modifiers, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>A<a name=\"A\"> </a></td><td>Repair of prior service or installation</td><td>Repair of prior service or installation.</td></tr><tr><td>B<a name=\"B\"> </a></td><td>Temporary service or installation</td><td>Temporary service or installation.</td></tr><tr><td>C<a name=\"C\"> </a></td><td>TMJ treatment</td><td>Treatment associated with TMJ.</td></tr><tr><td>E<a name=\"E\"> </a></td><td>Implant or associated with an implant</td><td>Implant or associated with an implant.</td></tr><tr><td>X<a name=\"X\"> </a></td><td>None</td><td>None.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.311"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/claim-modifiers",
+  "version": "1.0.2",
+  "name": "Modifier type Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "This value set includes sample Modifier type codes.",
+  "copyright": "This is an example set.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.311"
+      }
+    ],
+    "system": "http://hl7.org/fhir/modifiers",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "A",
+        "display": "Repair of prior service or installation",
+        "_display": {
+          "fhir_comments": [
+            "   Repair of prior service or installation   "
+          ]
+        },
+        "definition": "Repair of prior service or installation."
+      },
+      {
+        "code": "B",
+        "display": "Temporary service or installation",
+        "_display": {
+          "fhir_comments": [
+            "   Temporary service or installation   "
+          ]
+        },
+        "definition": "Temporary service or installation."
+      },
+      {
+        "code": "C",
+        "display": "TMJ treatment",
+        "_display": {
+          "fhir_comments": [
+            "   TMJ treatment   "
+          ]
+        },
+        "definition": "Treatment associated with TMJ."
+      },
+      {
+        "code": "E",
+        "display": "Implant or associated with an implant",
+        "_display": {
+          "fhir_comments": [
+            "   Implant or associated with an implant   "
+          ]
+        },
+        "definition": "Implant or associated with an implant."
+      },
+      {
+        "code": "X",
+        "display": "None",
+        "_display": {
+          "fhir_comments": [
+            "   none    "
+          ]
+        },
+        "definition": "None."
+      }
+    ]
+  }
+}

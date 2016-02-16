@@ -1,0 +1,35 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample005",
+  "text": {
+    "fhir_comments": [
+      "  this example is popluated as a package  "
+    ],
+    "status": "generated",
+    "div": "<div>Didrocal</div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hc-sc.gc.ca",
+        "code": "02176017",
+        "display": "Didrocal"
+      }
+    ]
+  },
+  "isBrand": true,
+  "manufacturer": {
+    "reference": "http://http://www.actavis.ca/default.htm/fhirresource/1"
+  },
+  "package": {
+    "container": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398124009",
+          "display": "drug container"
+        }
+      ]
+    }
+  }
+}

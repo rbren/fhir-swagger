@@ -1,0 +1,102 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "v3-observation-relationshiptypes",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>v3 map for ObservationRelationshipType (http://hl7.org/fhir/ConceptMap/v3-observation-relationshiptypes)</h2><p>Mapping from <a href=\"valueset-observation-relationshiptypes.html\">http://hl7.org/fhir/ValueSet/observation-relationshiptypes</a> to <a href=\"v3/ActRelationshipType/index.html\">http://hl7.org/fhir/ValueSet/v3-ActRelationshipType</a></p><p>DRAFT. Published on 24/10/2015 7:41:03 AM by HL7 (FHIR Project) (<a href=\"http://hl7.org/fhir\">http://hl7.org/fhir</a>, <a href=\"mailto:fhir@lists.hl7.org\">fhir@lists.hl7.org</a>; ). </p><p>v3 Map (ActRrelationshipType)</p><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Equivalence</b></td><td><b>Destination Code</b></td></tr><tr><td>has-member (Has Member)</td><td>equal</td><td>MBR (??)</td></tr><tr><td>derived-from (Derived From)</td><td>equal</td><td>DRIV (??)</td></tr><tr><td>sequel-to (Sequel To)</td><td>equal</td><td>SEQL (??)</td></tr><tr><td>replaces (Replaces)</td><td>equal</td><td>RPLC (??)</td></tr><tr><td>qualified-by (Qualified By)</td><td>equal</td><td>QUALF (??)</td></tr><tr><td>interfered-by (Interfered By)</td><td>equal</td><td>INTF (??)</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/ConceptMap/v3-observation-relationshiptypes",
+  "name": "v3 map for ObservationRelationshipType",
+  "status": "draft",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "v3 Map (ActRrelationshipType)",
+  "sourceReference": {
+    "reference": "http://hl7.org/fhir/ValueSet/observation-relationshiptypes"
+  },
+  "targetReference": {
+    "reference": "http://hl7.org/fhir/ValueSet/v3-ActRelationshipType"
+  },
+  "element": [
+    {
+      "codeSystem": "http://hl7.org/fhir/observation-relationshiptypes",
+      "code": "has-member",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/ActRrelationshipType",
+          "code": "MBR",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/observation-relationshiptypes",
+      "code": "derived-from",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/ActRrelationshipType",
+          "code": "DRIV",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/observation-relationshiptypes",
+      "code": "sequel-to",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/ActRrelationshipType",
+          "code": "SEQL",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/observation-relationshiptypes",
+      "code": "replaces",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/ActRrelationshipType",
+          "code": "RPLC",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/observation-relationshiptypes",
+      "code": "qualified-by",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/ActRrelationshipType",
+          "code": "QUALF",
+          "equivalence": "equal"
+        }
+      ]
+    },
+    {
+      "codeSystem": "http://hl7.org/fhir/observation-relationshiptypes",
+      "code": "interfered-by",
+      "target": [
+        {
+          "codeSystem": "http://hl7.org/fhir/v3/ActRrelationshipType",
+          "code": "INTF",
+          "equivalence": "equal"
+        }
+      ]
+    }
+  ]
+}

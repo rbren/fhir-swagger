@@ -1,0 +1,121 @@
+{
+  "resourceType": "Specimen",
+  "id": "isolate",
+  "text": {
+    "fhir_comments": [
+      "  text>\n    <status value=\"generated\" />\n    <div xmlns=\"http://www.w3.org/1999/xhtml\">[Put rendering here]</div>\n  </text>  "
+    ],
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: isolate</p><p><b>contained</b>: </p><p><b>status</b>: available</p><p><b>type</b>: Bacterial isolate specimen <span>(Details : {SNOMED CT code '429951000124103' = '429951000124103', given as 'Bacterial isolate specimen'})</span></p><p><b>parent</b>: id: stool; status: unavailable; Stool specimen <span>(Details : {SNOMED CT code '119339001' = '119339001', given as 'Stool specimen'})</span>; Patient/example; X352356; receivedTime: 16/08/2015 5:03:00 PM</p><p><b>subject</b>: <a>Patient/example</a></p><p><b>accessionIdentifier</b>: X352356-ISO1</p><p><b>receivedTime</b>: 18/08/2015 5:03:00 PM</p><h3>Collections</h3><table><tr><td>-</td><td><b>Collector</b></td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td>*</td><td><a>Practitioner/f202</a></td><td>16/08/2015 5:03:00 PM</td><td>Plates, Blood Agar <span>(Details : {http://hl7.org/fhir/v2/0488 code 'BAP' = 'Plates, Blood Agar)</span></td></tr></table></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Specimen",
+      "id": "stool",
+      "status": "unavailable",
+      "type": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "119339001",
+            "display": "Stool specimen"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/example"
+      },
+      "accessionIdentifier": {
+        "fhir_comments": [
+          "   accession identifier - e.g. assigned by the labaratory when it is received.\n     This is common, unlike specimen identifier   "
+        ],
+        "system": "http://lab.acme.org/specimens/2015",
+        "value": "X352356"
+      },
+      "receivedTime": "2015-08-16T07:03:00Z",
+      "collection": {
+        "collector": {
+          "display": "Patient",
+          "_display": {
+            "fhir_comments": [
+              "   in practice, collecter is almost always recorded   "
+            ]
+          }
+        },
+        "comment": [
+          "Patient dropped off specimen"
+        ],
+        "collectedDateTime": "2011-08-16T06:15:00Z",
+        "_collectedDateTime": {
+          "fhir_comments": [
+            "   the time of collection is usually required. Usually a point in time, but can be a period \n      (collectedPeriod) if it's a timed collection (e.g. a 24 hour urine)   "
+          ]
+        },
+        "method": {
+          "fhir_comments": [
+            "   method is usually implied by type   "
+          ],
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0488",
+              "code": "LNV"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "status": "available",
+  "_status": {
+    "fhir_comments": [
+      "  \n   Type is a loosely defined field because there is such a lot of variation in how it is used.\n   The principal variation is how much information that could be represented elsewhere is also \n   represented here. For instance, here's some possible types:\n     lithium heparin plasma   (+ .container.additive) (e.g. SNOMED CT 446272009)\n     transfusion bag of blood (+ container.type) \n     Peritoneal lavage        (+ collection.bodySite)\n   If the type includes other fields, it would be normal not to populate the other fields\n\n   Note that this practice is so widespread that it's pointless to try and stop it   "
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "429951000124103",
+        "display": "Bacterial isolate specimen"
+      }
+    ]
+  },
+  "parent": [
+    {
+      "reference": "#stool"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "accessionIdentifier": {
+    "fhir_comments": [
+      "   accession identifier - e.g. assigned by the labaratory when it is received.\n     This is common, unlike specimen identifier   "
+    ],
+    "system": "http://lab.acme.org/specimens/2011",
+    "value": "X352356-ISO1"
+  },
+  "receivedTime": "2015-08-18T07:03:00Z",
+  "collection": {
+    "collector": {
+      "reference": "Practitioner/f202"
+    },
+    "collectedDateTime": "2015-08-16T07:03:00Z",
+    "_collectedDateTime": {
+      "fhir_comments": [
+        "   the time of collection is usually required. Usually a point in time, but can be a period \n      (collectedPeriod) if it's a timed collection (e.g. a 24 hour urine)   "
+      ]
+    },
+    "method": {
+      "fhir_comments": [
+        "   method is usually implied by type   "
+      ],
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/v2/0488",
+          "code": "BAP"
+        }
+      ]
+    }
+  }
+}
