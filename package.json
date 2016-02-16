@@ -18,6 +18,7 @@
   "dependencies": {
     "async": "~1.4.0",
     "express": "~4.13.1",
+    "json-schema-generator": "bobby-brennan/json-schema-generator#patch-1",
     "jsonix": "~2.3.0",
     "request": "^2.69.0",
     "xsd2json": "~1.4.3",
