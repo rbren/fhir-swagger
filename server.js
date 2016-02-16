@@ -11,6 +11,7 @@ Swagger = Convert(args, function(err, s) {
   swagger = s;
   var portal = new LucyConsole({
     swagger: swagger,
+    proxy: args.proxy_host || true,
   })
   App.use(portal.router);
 });
@@ -18,5 +19,7 @@ Swagger = Convert(args, function(err, s) {
 App.get('/swagger', function(req, res) {
   res.json(swagger);
 })
+
+App.use('/proxy', require('./proxy.js'));
 
 App.listen(3000);

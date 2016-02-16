@@ -28,6 +28,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "lucy-console": "^1.0.8"
+    "lucy-console": "^1.1.0"
   }
 }
