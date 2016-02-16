@@ -1,20 +1,22 @@
 var App = require('express')();
 
 var Request = require('request');
-var Converter = require('./lib/conformance-to-swagger.js');
+var Convert = require('./index.js');
+var LucyConsole = require('lucy-console');
 
-var BASE_URL = 'http://argonaut.healthintersections.com.au/open';
-var CONF_PATH = '/metadata?_format=application/json';
-
-var Swagger = {};
-
-Request(BASE_URL + CONF_PATH, {json: true}, function(err, resp, body) {
+var args = require('./options.js')
+var swagger = null;
+Swagger = Convert(args, function(err, s) {
   if (err) throw err;
-  Swagger = Converter.convert(BASE_URL, body);
-})
+  swagger = s;
+  var portal = new LucyConsole({
+    swagger: swagger,
+  })
+  App.use(portal.router);
+});
 
 App.get('/swagger', function(req, res) {
-  res.json(Swagger);
+  res.json(swagger);
 })
 
 App.listen(3000);

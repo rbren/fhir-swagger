@@ -27,6 +27,7 @@
     "fhir-swagger": "./bin/fhir-swagger"
   },
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "lucy-console": "^1.0.8"
   }
 }

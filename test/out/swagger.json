@@ -20,9 +20,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -87,9 +87,9 @@
           {
             "name": "period",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Transaction window"
+            "description": "Transaction window",
+            "format": "date"
           },
           {
             "name": "status",
@@ -195,9 +195,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -244,9 +244,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When recorded"
+            "description": "When recorded",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -257,9 +257,9 @@
           {
             "name": "last-date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date(/time) of last known occurrence of a reaction"
+            "description": "Date(/time) of last known occurrence of a reaction",
+            "format": "date"
           },
           {
             "name": "manifestation",
@@ -270,9 +270,9 @@
           {
             "name": "onset",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date(/time) when manifestations showed"
+            "description": "Date(/time) when manifestations showed",
+            "format": "date"
           },
           {
             "name": "patient",
@@ -408,9 +408,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -451,9 +451,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Appointment date/time."
+            "description": "Appointment date/time.",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -577,9 +577,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -739,9 +739,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -794,9 +794,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Time when the event occurred on source"
+            "description": "Time when the event occurred on source",
+            "format": "date"
           },
           {
             "name": "desc",
@@ -962,9 +962,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -1011,9 +1011,9 @@
           {
             "name": "created",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When created"
+            "description": "When created",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -1119,9 +1119,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -1245,9 +1245,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -1383,9 +1383,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -1521,9 +1521,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -1564,9 +1564,9 @@
           {
             "name": "activitydate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Specified date occurs within period specified by CarePlan.activity.timingSchedule"
+            "description": "Specified date occurs within period specified by CarePlan.activity.timingSchedule",
+            "format": "date"
           },
           {
             "name": "activityreference",
@@ -1583,9 +1583,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Time period plan covers"
+            "description": "Time period plan covers",
+            "format": "date"
           },
           {
             "name": "goal",
@@ -1721,9 +1721,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -1871,9 +1871,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -2003,9 +2003,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -2052,9 +2052,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the assessment occurred"
+            "description": "When the assessment occurred",
+            "format": "date"
           },
           {
             "name": "finding",
@@ -2208,9 +2208,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -2275,9 +2275,9 @@
           {
             "name": "received",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When received"
+            "description": "When received",
+            "format": "date"
           },
           {
             "name": "recipient",
@@ -2300,9 +2300,9 @@
           {
             "name": "sent",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When sent"
+            "description": "When sent",
+            "format": "date"
           },
           {
             "name": "status",
@@ -2402,9 +2402,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -2481,9 +2481,9 @@
           {
             "name": "requested",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When ordered or proposed"
+            "description": "When ordered or proposed",
+            "format": "date"
           },
           {
             "name": "requester",
@@ -2512,9 +2512,9 @@
           {
             "name": "time",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When scheduled"
+            "description": "When scheduled",
+            "format": "date"
           },
           {
             "name": "_text",
@@ -2602,9 +2602,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -2669,9 +2669,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Composition editing time"
+            "description": "Composition editing time",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -2700,9 +2700,9 @@
           {
             "name": "period",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The period covered by the documentation"
+            "description": "The period covered by the documentation",
+            "format": "date"
           },
           {
             "name": "section",
@@ -2820,9 +2820,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -2863,9 +2863,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The concept map publication date"
+            "description": "The concept map publication date",
+            "format": "date"
           },
           {
             "name": "dependson",
@@ -3049,9 +3049,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -3116,9 +3116,9 @@
           {
             "name": "date-recorded",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "A date, when the Condition statement was documented"
+            "description": "A date, when the Condition statement was documented",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -3141,9 +3141,9 @@
           {
             "name": "onset",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date related onsets (dateTime and Period)"
+            "description": "Date related onsets (dateTime and Period)",
+            "format": "date"
           },
           {
             "name": "onset-info",
@@ -3261,9 +3261,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -3298,9 +3298,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The conformance statement publication date"
+            "description": "The conformance statement publication date",
+            "format": "date"
           },
           {
             "name": "description",
@@ -3478,9 +3478,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -3628,9 +3628,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -3796,9 +3796,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -3845,9 +3845,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The data element publication date"
+            "description": "The data element publication date",
+            "format": "date"
           },
           {
             "name": "description",
@@ -3983,9 +3983,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4032,9 +4032,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When identified"
+            "description": "When identified",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -4140,9 +4140,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4314,9 +4314,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4452,9 +4452,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4602,9 +4602,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4740,9 +4740,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4878,9 +4878,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -4939,9 +4939,9 @@
           {
             "name": "event-date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The date at which the event happened"
+            "description": "The date at which the event happened",
+            "format": "date"
           },
           {
             "name": "event-status",
@@ -4964,9 +4964,9 @@
           {
             "name": "item-date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The date at which the event happened"
+            "description": "The date at which the event happened",
+            "format": "date"
           },
           {
             "name": "item-past-status",
@@ -5102,9 +5102,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -5151,9 +5151,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The clinically relevant time of the report"
+            "description": "The clinically relevant time of the report",
+            "format": "date"
           },
           {
             "name": "diagnosis",
@@ -5182,9 +5182,9 @@
           {
             "name": "issued",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the report was issued"
+            "description": "When the report was issued",
+            "format": "date"
           },
           {
             "name": "patient",
@@ -5314,9 +5314,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -5363,9 +5363,9 @@
           {
             "name": "created",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When this document manifest created"
+            "description": "When this document manifest created",
+            "format": "date"
           },
           {
             "name": "description",
@@ -5513,9 +5513,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -5568,9 +5568,9 @@
           {
             "name": "created",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Document creation time"
+            "description": "Document creation time",
+            "format": "date"
           },
           {
             "name": "custodian",
@@ -5617,9 +5617,9 @@
           {
             "name": "indexed",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When this document reference created"
+            "description": "When this document reference created",
+            "format": "date"
           },
           {
             "name": "language",
@@ -5642,9 +5642,9 @@
           {
             "name": "period",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Time of service that is being documented"
+            "description": "Time of service that is being documented",
+            "format": "date"
           },
           {
             "name": "related-id",
@@ -5792,9 +5792,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -5918,9 +5918,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6044,9 +6044,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6093,9 +6093,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "A date within the period the Encounter lasted"
+            "description": "A date within the period the Encounter lasted",
+            "format": "date"
           },
           {
             "name": "episodeofcare",
@@ -6136,9 +6136,9 @@
           {
             "name": "location-period",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Time period during which the patient was present at the location"
+            "description": "Time period during which the patient was present at the location",
+            "format": "date"
           },
           {
             "name": "part-of",
@@ -6286,9 +6286,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6424,9 +6424,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6550,9 +6550,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6599,9 +6599,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The provided date search value falls within the episode of care's period"
+            "description": "The provided date search value falls within the episode of care's period",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -6731,9 +6731,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6857,9 +6857,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -6900,9 +6900,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When history was captured/updated"
+            "description": "When history was captured/updated",
+            "format": "date"
           },
           {
             "name": "gender",
@@ -7020,9 +7020,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -7063,9 +7063,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Time period when flag is active"
+            "description": "Time period when flag is active",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -7171,9 +7171,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -7238,9 +7238,9 @@
           {
             "name": "targetdate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Reach goal on or before"
+            "description": "Reach goal on or before",
+            "format": "date"
           },
           {
             "name": "_text",
@@ -7328,9 +7328,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -7502,9 +7502,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -7670,9 +7670,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -7713,9 +7713,9 @@
           {
             "name": "authoring-time",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Time of key DICOM object selection authoring"
+            "description": "Time of key DICOM object selection authoring",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -7827,9 +7827,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -7906,9 +7906,9 @@
           {
             "name": "started",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the study was started"
+            "description": "When the study was started",
+            "format": "date"
           },
           {
             "name": "study",
@@ -8008,9 +8008,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -8045,9 +8045,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Vaccination  (non)-Administration Date"
+            "description": "Vaccination  (non)-Administration Date",
+            "format": "date"
           },
           {
             "name": "dose-sequence",
@@ -8106,9 +8106,9 @@
           {
             "name": "reaction-date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When reaction started"
+            "description": "When reaction started",
+            "format": "date"
           },
           {
             "name": "reason",
@@ -8226,9 +8226,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -8263,9 +8263,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date recommendation created"
+            "description": "Date recommendation created",
+            "format": "date"
           },
           {
             "name": "dose-number",
@@ -8401,9 +8401,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -8444,9 +8444,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The implementation guide publication date"
+            "description": "The implementation guide publication date",
+            "format": "date"
           },
           {
             "name": "dependency",
@@ -8582,9 +8582,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -8625,9 +8625,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the list was prepared"
+            "description": "When the list was prepared",
+            "format": "date"
           },
           {
             "name": "empty-reason",
@@ -8775,9 +8775,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -8979,9 +8979,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -9016,9 +9016,9 @@
           {
             "name": "created",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date attachment was first created"
+            "description": "Date attachment was first created",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -9148,9 +9148,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -9304,9 +9304,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -9353,9 +9353,9 @@
           {
             "name": "effectivetime",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date administration happened (or did not happen)"
+            "description": "Date administration happened (or did not happen)",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -9491,9 +9491,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -9594,16 +9594,16 @@
           {
             "name": "whenhandedover",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date when medication handed over to patient (outpatient setting), or supplied to ward or clinic (inpatient setting)"
+            "description": "Date when medication handed over to patient (outpatient setting), or supplied to ward or clinic (inpatient setting)",
+            "format": "date"
           },
           {
             "name": "whenprepared",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date when medication prepared"
+            "description": "Date when medication prepared",
+            "format": "date"
           },
           {
             "name": "_text",
@@ -9691,9 +9691,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -9734,9 +9734,9 @@
           {
             "name": "datewritten",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Return prescriptions written on this date"
+            "description": "Return prescriptions written on this date",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -9860,9 +9860,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -9903,9 +9903,9 @@
           {
             "name": "effectivedate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date when patient was taking (or not taking) the medication"
+            "description": "Date when patient was taking (or not taking) the medication",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -10023,9 +10023,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -10072,9 +10072,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Publication Date(/time)"
+            "description": "Publication Date(/time)",
+            "format": "date"
           },
           {
             "name": "id-type",
@@ -10097,9 +10097,9 @@
           {
             "name": "period",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When is identifier valid?"
+            "description": "When is identifier valid?",
+            "format": "date"
           },
           {
             "name": "publisher",
@@ -10229,9 +10229,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -10272,9 +10272,9 @@
           {
             "name": "datetime",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Return nutrition orders requested on this date"
+            "description": "Return nutrition orders requested on this date",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -10410,9 +10410,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -10507,9 +10507,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+            "description": "Obtained date/time. If the obtained element is a period, a date that falls in the period",
+            "format": "date"
           },
           {
             "name": "device",
@@ -10586,9 +10586,9 @@
           {
             "name": "value-date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The value of the observation, if the value is a date or period of time"
+            "description": "The value of the observation, if the value is a date or period of time",
+            "format": "date"
           },
           {
             "name": "value-quantity",
@@ -10688,9 +10688,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -10737,9 +10737,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date for this version of the operation definition"
+            "description": "Date for this version of the operation definition",
+            "format": "date"
           },
           {
             "name": "instance",
@@ -10887,9 +10887,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -11007,9 +11007,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -11044,9 +11044,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the order was made"
+            "description": "When the order was made",
+            "format": "date"
           },
           {
             "name": "detail",
@@ -11087,9 +11087,9 @@
           {
             "name": "when",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "A formal schedule"
+            "description": "A formal schedule",
+            "format": "date"
           },
           {
             "name": "when_code",
@@ -11183,9 +11183,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -11226,9 +11226,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the response was made"
+            "description": "When the response was made",
+            "format": "date"
           },
           {
             "name": "fulfillment",
@@ -11340,9 +11340,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -11532,9 +11532,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -11623,9 +11623,9 @@
           {
             "name": "birthdate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The patient's date of birth"
+            "description": "The patient's date of birth",
+            "format": "date"
           },
           {
             "name": "careprovider",
@@ -11636,9 +11636,9 @@
           {
             "name": "deathdate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The date of death has been provided and satisfies this search value"
+            "description": "The date of death has been provided and satisfies this search value",
+            "format": "date"
           },
           {
             "name": "deceased",
@@ -11846,9 +11846,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -11972,9 +11972,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -12098,9 +12098,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -12171,9 +12171,9 @@
           {
             "name": "birthdate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The person's date of birth"
+            "description": "The person's date of birth",
+            "format": "date"
           },
           {
             "name": "email",
@@ -12333,9 +12333,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -12573,9 +12573,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -12616,9 +12616,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Date/Period the procedure was performed"
+            "description": "Date/Period the procedure was performed",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -12742,9 +12742,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -12898,9 +12898,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13042,9 +13042,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13192,9 +13192,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13235,9 +13235,9 @@
           {
             "name": "end",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "End time with inclusive boundary, if not ongoing"
+            "description": "End time with inclusive boundary, if not ongoing",
+            "format": "date"
           },
           {
             "name": "entity",
@@ -13272,9 +13272,9 @@
           {
             "name": "start",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Starting time with inclusive boundary"
+            "description": "Starting time with inclusive boundary",
+            "format": "date"
           },
           {
             "name": "target",
@@ -13374,9 +13374,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13417,9 +13417,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the questionnaire was last changed"
+            "description": "When the questionnaire was last changed",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -13537,9 +13537,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13580,9 +13580,9 @@
           {
             "name": "authored",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the questionnaire was authored"
+            "description": "When the questionnaire was authored",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -13706,9 +13706,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13743,9 +13743,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Creation or activation date"
+            "description": "Creation or activation date",
+            "format": "date"
           },
           {
             "name": "patient",
@@ -13875,9 +13875,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -13948,9 +13948,9 @@
           {
             "name": "birthdate",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The Related Person's date of birth"
+            "description": "The Related Person's date of birth",
+            "format": "date"
           },
           {
             "name": "email",
@@ -14086,9 +14086,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -14129,9 +14129,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When was assessment made?"
+            "description": "When was assessment made?",
+            "format": "date"
           },
           {
             "name": "encounter",
@@ -14255,9 +14255,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -14298,9 +14298,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Search for Schedule resources that have a period that contains this date specified"
+            "description": "Search for Schedule resources that have a period that contains this date specified",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -14400,9 +14400,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -14562,9 +14562,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -14623,9 +14623,9 @@
           {
             "name": "start",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Appointment date/time."
+            "description": "Appointment date/time.",
+            "format": "date"
           },
           {
             "name": "_text",
@@ -14713,9 +14713,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -14762,9 +14762,9 @@
           {
             "name": "collected",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The date the specimen was collected"
+            "description": "The date the specimen was collected",
+            "format": "date"
           },
           {
             "name": "collector",
@@ -14900,9 +14900,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -14973,9 +14973,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The profile publication date"
+            "description": "The profile publication date",
+            "format": "date"
           },
           {
             "name": "description",
@@ -15147,9 +15147,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -15309,9 +15309,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -15364,9 +15364,9 @@
           {
             "name": "expiry",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Expiry date of package or container of substance"
+            "description": "Expiry date of package or container of substance",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -15472,9 +15472,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -15622,9 +15622,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -15659,9 +15659,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the request was made"
+            "description": "When the request was made",
+            "format": "date"
           },
           {
             "name": "identifier",
@@ -15785,9 +15785,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -15947,9 +15947,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -15996,9 +15996,9 @@
           {
             "name": "date",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "The value set publication date"
+            "description": "The value set publication date",
+            "format": "date"
           },
           {
             "name": "description",
@@ -16146,9 +16146,9 @@
           {
             "name": "_lastUpdated",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "When the resource version last changed"
+            "description": "When the resource version last changed",
+            "format": "date"
           },
           {
             "name": "_profile",
@@ -16183,9 +16183,9 @@
           {
             "name": "datewritten",
             "type": "string",
-            "format": "date",
             "in": "query",
-            "description": "Return prescriptions written on this date"
+            "description": "Return prescriptions written on this date",
+            "format": "date"
           },
           {
             "name": "encounter",
