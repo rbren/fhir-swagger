@@ -6,7 +6,7 @@ var LucyConsole = require('lucy-console');
 
 var args = require('./options.js')
 var swagger = null;
-Swagger = Convert(args, function(err, s) {
+Convert(args, function(err, s) {
   if (err) throw err;
   swagger = s;
   var portal = new LucyConsole({
