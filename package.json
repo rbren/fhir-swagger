@@ -25,5 +25,8 @@
   },
   "bin": {
     "fhir-swagger": "./bin/fhir-swagger"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
   }
 }
