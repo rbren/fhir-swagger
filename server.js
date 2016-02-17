@@ -23,4 +23,4 @@ App.get('/swagger', function(req, res) {
 
 App.use('/proxy', require('./proxy.js'));
 
-App.listen(3000);
+App.listen(args.port || 3000);
