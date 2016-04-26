@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "gao-evaluation-result-code",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>GAO Result Code</h2><p>Codes indicating the appropriateness of an order based upon established clinical guidelines.</p><p>This code system http://hl7.org/fhir/evaluation-result-code defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>within<a name=\"within\"> </a></td><td>Within Guidelines</td><td>Order is within identified guidelines.</td></tr><tr><td>outside<a name=\"outside\"> </a></td><td>Outside Guidelines</td><td>Order is outside identified guidelines.</td></tr><tr><td>noguidelines<a name=\"noguidelines\"> </a></td><td>No Guidelines Apply</td><td>No guidelines apply to order.</td></tr><tr><td>incomplete<a name=\"incomplete\"> </a></td><td>Evaluation not completed.</td><td>Evaluation was not completed (e.g., because more information is necessary).</td></tr><tr><td>manual<a name=\"manual\"> </a></td><td>Manual Evaluation</td><td>The evaluation was issued through a manual process.</td></tr><tr><td>notcovered<a name=\"notcovered\"> </a></td><td>Not covered</td><td>No evaluation was performed as the requested service is not covered for this patient.</td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/evaluation-result-code",
+  "version": "1.0.0",
+  "name": "GAO Result Code",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7",
+  "description": "Codes indicating the appropriateness of an order based upon established clinical guidelines.",
+  "requirements": "These values are needed to report the results of an evaluation of appropriateness for an order based upon specified guidelines.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/gao-evaluation-result-code",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "within",
+      "display": "Within Guidelines",
+      "definition": "Order is within identified guidelines."
+    },
+    {
+      "code": "outside",
+      "display": "Outside Guidelines",
+      "definition": "Order is outside identified guidelines."
+    },
+    {
+      "code": "noguidelines",
+      "display": "No Guidelines Apply",
+      "definition": "No guidelines apply to order."
+    },
+    {
+      "code": "incomplete",
+      "display": "Evaluation not completed.",
+      "definition": "Evaluation was not completed (e.g., because more information is necessary)."
+    },
+    {
+      "code": "manual",
+      "display": "Manual Evaluation",
+      "definition": "The evaluation was issued through a manual process."
+    },
+    {
+      "code": "notcovered",
+      "display": "Not covered",
+      "definition": "No evaluation was performed as the requested service is not covered for this patient."
+    }
+  ]
+}

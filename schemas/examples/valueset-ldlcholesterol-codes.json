@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ldlcholesterol-codes",
   "meta": {
-    "lastUpdated": "2015-10-24T06:41:03.495+10:00",
+    "lastUpdated": "2016-03-31T07:01:25.570+10:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -15,10 +15,6 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
       "valueUri": "2.16.840.1.113883.4.642.2.444"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.387"
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/ldlcholesterol-codes",

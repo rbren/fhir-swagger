@@ -3,7 +3,7 @@
   "id": "f201",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>contained</b>: , </p><p><b>code</b>: History of family member diseases <span>(Details : {LOINC code '8670-2' = 'History of family member diseases', given as 'History of family member diseases'})</span></p><p><b>subject</b>: <a>Roel</a></p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>note</b>: Both parents, both brothers and both children (twin) are still alive.</p><blockquote><p><b>entry</b></p><p><b>item</b>: id: fmh-1; status: completed; Mother <span>(Details : {SNOMED CT code '72705000' = '72705000', given as 'Mother'})</span>; </p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: id: fmh-2; status: completed; Uncle <span>(Details : {SNOMED CT code '38048003' = '38048003', given as 'Uncle'})</span>; deceased</p></blockquote></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>contained</b>: , </p><p><b>status</b>: current</p><p><b>mode</b>: snapshot</p><p><b>code</b>: History of family member diseases <span>(Details : {LOINC code '8670-2' = 'History of family member diseases', given as 'History of family member diseases'})</span></p><p><b>subject</b>: <a>Roel</a></p><p><b>note</b>: Both parents, both brothers and both children (twin) are still alive.</p><blockquote><p><b>entry</b></p><p><b>item</b>: id: fmh-1; status: completed; Mother <span>(Details : {SNOMED CT code '72705000' = 'Mother (person)', given as 'Mother'})</span>; </p></blockquote><blockquote><p><b>entry</b></p><p><b>item</b>: id: fmh-2; status: completed; Uncle <span>(Details : {SNOMED CT code '38048003' = 'Uncle (person)', given as 'Uncle'})</span>; deceased</p></blockquote></div>"
   },
   "contained": [
     {
@@ -86,6 +86,8 @@
       ]
     }
   ],
+  "status": "current",
+  "mode": "snapshot",
   "code": {
     "coding": [
       {
@@ -99,9 +101,11 @@
     "reference": "Patient/f201",
     "display": "Roel"
   },
-  "status": "current",
-  "mode": "snapshot",
-  "note": "Both parents, both brothers and both children (twin) are still alive.",
+  "note": [
+    {
+      "text": "Both parents, both brothers and both children (twin) are still alive."
+    }
+  ],
   "entry": [
     {
       "fhir_comments": [

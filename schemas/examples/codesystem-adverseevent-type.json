@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "qicore-adverseevent-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>QICore Adverse Event Type Codes</h2><p>Value Set for QICore Adverse Event Type Codes (Preferred)</p><p>This code system http://hl7.org/fhir/qicore-adverseevent-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>incident<a name=\"incident\"> </a></td><td>Incident</td><td>A safety incident, reaction, medication error, or other untoward medical event affecting a patient</td></tr><tr><td>near-miss<a name=\"near-miss\"> </a></td><td>Near Miss</td><td>A safety event that almost happened, but was noticed and prevented in time to prevent harm from occurring to the patient</td></tr><tr><td>unsafe<a name=\"unsafe\"> </a></td><td>Unsafe Condition</td><td>Any unsafe condition that poses a elevated risk to patient safety</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.615"
+    }
+  ],
+  "url": "http://hl7.org/fhir/qicore-adverseevent-type",
+  "version": "1.4.0",
+  "name": "QICore Adverse Event Type Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 Clinical Quality Information (CQI) Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Value Set for QICore Adverse Event Type Codes (Preferred)",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/qicore-adverseevent-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "incident",
+      "display": "Incident",
+      "definition": "A safety incident, reaction, medication error, or other untoward medical event affecting a patient"
+    },
+    {
+      "code": "near-miss",
+      "display": "Near Miss",
+      "definition": "A safety event that almost happened, but was noticed and prevented in time to prevent harm from occurring to the patient"
+    },
+    {
+      "code": "unsafe",
+      "display": "Unsafe Condition",
+      "definition": "Any unsafe condition that poses a elevated risk to patient safety"
+    }
+  ]
+}

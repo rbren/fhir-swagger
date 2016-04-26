@@ -6,11 +6,42 @@
     "div": "<div>Brian MRI results discussion</div>"
   },
   "status": "booked",
-  "type": {
+  "serviceCategory": {
     "coding": [
       {
-        "code": "52",
-        "display": "General Discussion"
+        "system": "http://example.org/service-category",
+        "code": "gp",
+        "display": "General Practice"
+      }
+    ]
+  },
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "52",
+          "display": "General Discussion"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://example.org/specialty",
+          "code": "gp",
+          "display": "General Practice"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://example.org/appointment-type",
+        "code": "follow",
+        "display": "Followup"
       }
     ]
   },
@@ -18,6 +49,7 @@
   "description": "Discussion on the results of your recent MRI",
   "start": "2013-12-10T09:00:00Z",
   "end": "2013-12-10T11:00:00Z",
+  "created": "2013-10-10",
   "comment": "Further expand on the results of the MRI and determine the next actions that may be appropriate.",
   "participant": [
     {
@@ -33,7 +65,8 @@
         {
           "coding": [
             {
-              "code": "attending"
+              "system": "http://hl7.org/fhir/v3/ParticipationType",
+              "code": "ATND"
             }
           ]
         }

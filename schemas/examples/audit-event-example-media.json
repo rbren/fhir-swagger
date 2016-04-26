@@ -3,26 +3,24 @@
   "id": "example-media",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-media</p><h3>Events</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Subtype</b></td><td><b>Action</b></td><td><b>DateTime</b></td><td><b>Outcome</b></td></tr><tr><td>*</td><td>Export (Details: http://nema.org/dicom/dicm code 110106 = 'Export', stated as 'Export')</td><td>Distribute Document Set on Media (Details: urn:oid:1.3.6.1.4.1.19376.1.2 code ITI-32 = '??', stated as 'Distribute Document Set on Media')</td><td>R</td><td>28/08/2015 9:42:24 AM</td><td>0</td></tr></table><blockquote><p><b>participant</b></p><p><b>role</b>: Source Role ID <span>(Details : {http://nema.org/dicom/dicm code '110153' = 'Source Role ID', given as 'Source Role ID'})</span></p><p><b>userId</b>: ExportToMedia.app</p><p><b>requestor</b>: false</p></blockquote><blockquote><p><b>participant</b></p><p><b>userId</b>: 95</p><p><b>altId</b>: 601847123</p><p><b>name</b>: Grahame Grieve</p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>participant</b></p><p><b>name</b>: Media title: Hello World</p><p><b>requestor</b>: false</p><p><b>media</b>: DVD (Details: http://nema.org/dicom/dicm code 110033 = 'DVD', stated as 'DVD')</p></blockquote><h3>Sources</h3><table><tr><td>-</td><td><b>Identifier</b></td></tr><tr><td>*</td><td>hl7connect.healthintersections.com.au</td></tr></table><blockquote><p><b>object</b></p><p><b>identifier</b>: e3cdfc81a0d24bd^^^&amp;2.16.840.1.113883.4.2&amp;ISO</p><p><b>type</b>: Person (Details: http://hl7.org/fhir/object-type code 1 = 'Person', stated as 'Person')</p><p><b>role</b>: Patient (Details: http://hl7.org/fhir/object-role code 1 = 'Patient', stated as 'Patient')</p></blockquote><blockquote><p><b>object</b></p><p><b>identifier</b>: submission set classificationNode = e3cdfc81a0d24bd^^^&amp;2.16.840.1.113883.4.2&amp;ISO</p><p><b>type</b>: System Object (Details: http://hl7.org/fhir/object-type code 2 = 'System Object', stated as 'System Object')</p><p><b>role</b>: Job (Details: http://hl7.org/fhir/object-role code 20 = 'Job', stated as 'Job')</p></blockquote><blockquote><p><b>object</b></p><p><b>reference</b>: <a>DocumentManifest/example</a></p><p><b>type</b>: System Object (Details: http://hl7.org/fhir/object-type code 2 = 'System Object', stated as 'System Object')</p></blockquote></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-media</p><p><b>type</b>: Export (Details: http://nema.org/dicom/dicm code 110106 = 'Export', stated as 'Export')</p><p><b>subtype</b>: Distribute Document Set on Media (Details: urn:oid:1.3.6.1.4.1.19376.1.2 code ITI-32 = '??', stated as 'Distribute Document Set on Media')</p><p><b>action</b>: R</p><p><b>recorded</b>: 28/08/2015 9:42:24 AM</p><p><b>outcome</b>: 0</p><blockquote><p><b>agent</b></p><p><b>role</b>: Source Role ID <span>(Details : {http://nema.org/dicom/dicm code '110153' = 'Source Role ID', given as 'Source Role ID'})</span></p><p><b>userId</b>: ExportToMedia.app</p><p><b>requestor</b>: false</p></blockquote><blockquote><p><b>agent</b></p><p><b>userId</b>: 95</p><p><b>altId</b>: 601847123</p><p><b>name</b>: Grahame Grieve</p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>agent</b></p><p><b>name</b>: Media title: Hello World</p><p><b>requestor</b>: false</p><p><b>media</b>: DVD (Details: http://nema.org/dicom/dicm code 110033 = 'DVD', stated as 'DVD')</p></blockquote><h3>Sources</h3><table><tr><td>-</td><td><b>Identifier</b></td></tr><tr><td>*</td><td>hl7connect.healthintersections.com.au</td></tr></table><blockquote><p><b>entity</b></p><p><b>identifier</b>: e3cdfc81a0d24bd^^^&amp;2.16.840.1.113883.4.2&amp;ISO</p><p><b>type</b>: Person (Details: http://hl7.org/fhir/object-type code 1 = 'Person', stated as 'Person')</p><p><b>role</b>: Patient (Details: http://hl7.org/fhir/object-role code 1 = 'Patient', stated as 'Patient')</p></blockquote><blockquote><p><b>entity</b></p><p><b>identifier</b>: submission set classificationNode = e3cdfc81a0d24bd^^^&amp;2.16.840.1.113883.4.2&amp;ISO</p><p><b>type</b>: System Object (Details: http://hl7.org/fhir/object-type code 2 = 'System Object', stated as 'System Object')</p><p><b>role</b>: Job (Details: http://hl7.org/fhir/object-role code 20 = 'Job', stated as 'Job')</p></blockquote><blockquote><p><b>entity</b></p><p><b>reference</b>: <a>DocumentManifest/example</a></p><p><b>type</b>: System Object (Details: http://hl7.org/fhir/object-type code 2 = 'System Object', stated as 'System Object')</p></blockquote></div>"
   },
-  "event": {
-    "type": {
-      "system": "http://nema.org/dicom/dicm",
-      "code": "110106",
-      "display": "Export"
-    },
-    "subtype": [
-      {
-        "system": "urn:oid:1.3.6.1.4.1.19376.1.2",
-        "code": "ITI-32",
-        "display": "Distribute Document Set on Media"
-      }
-    ],
-    "action": "R",
-    "dateTime": "2015-08-27T23:42:24Z",
-    "outcome": "0"
+  "type": {
+    "system": "http://nema.org/dicom/dicm",
+    "code": "110106",
+    "display": "Export"
   },
-  "participant": [
+  "subtype": [
+    {
+      "system": "urn:oid:1.3.6.1.4.1.19376.1.2",
+      "code": "ITI-32",
+      "display": "Distribute Document Set on Media"
+    }
+  ],
+  "action": "R",
+  "recorded": "2015-08-27T23:42:24Z",
+  "outcome": "0",
+  "agent": [
     {
       "role": [
         {
@@ -74,7 +72,7 @@
       "value": "hl7connect.healthintersections.com.au"
     }
   },
-  "object": [
+  "entity": [
     {
       "identifier": {
         "fhir_comments": [

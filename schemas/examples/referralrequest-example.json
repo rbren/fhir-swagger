@@ -5,13 +5,14 @@
     "status": "generated",
     "div": "<div>Referral to Dr Dave for Beverly weaver to have grommets inserted in her r) ear</div>"
   },
-  "status": "requested",
   "identifier": [
     {
       "system": "http://orionhealth.com/fhir/apps/referralids",
       "value": "ret4421"
     }
   ],
+  "status": "active",
+  "category": "request",
   "type": {
     "fhir_comments": [
       "  replace with a code from a recognized coding system "
@@ -24,20 +25,9 @@
       }
     ]
   },
-  "specialty": {
-    "fhir_comments": [
-      "  replace with a code from a recognized coding system "
-    ],
-    "coding": [
-      {
-        "system": "http://orionhealth.com/fhir/apps/specialties",
-        "code": "ent",
-        "display": "ENT"
-      }
-    ]
-  },
   "priority": {
     "fhir_comments": [
+      "  replace with a code from a recognized coding system ",
       "  replace with a code from a recognized coding system "
     ],
     "coding": [
@@ -52,9 +42,19 @@
     "reference": "https://fhir.orionhealth.com/blaze/fhir/Patient/77662",
     "display": "Beverly Weaver"
   },
+  "authored": "2014-02-14",
   "requester": {
     "reference": "https://fhir.orionhealth.com/blaze/fhir/Practitioner/77272",
     "display": "Serena Shrink"
+  },
+  "specialty": {
+    "coding": [
+      {
+        "system": "http://orionhealth.com/fhir/apps/specialties",
+        "code": "ent",
+        "display": "ENT"
+      }
+    ]
   },
   "recipient": [
     {
@@ -62,7 +62,6 @@
       "display": "Dr Dave"
     }
   ],
-  "dateSent": "2014-02-14",
   "reason": {
     "text": "For consideration of Grommets"
   },

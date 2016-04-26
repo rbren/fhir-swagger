@@ -67,12 +67,21 @@
     {
       "resourceType": "Coverage",
       "id": "coverage-1",
-      "issuer": {
+      "issuerReference": {
         "reference": "#organization-2"
       },
       "type": {
         "system": "http://hl7.org/fhir/v3/ActCode",
         "code": "EHCPOL"
+      },
+      "planholderReference": {
+        "reference": "#patient-1"
+      },
+      "beneficiaryReference": {
+        "reference": "#patient-1"
+      },
+      "relationship": {
+        "code": "self"
       },
       "identifier": [
         {
@@ -83,10 +92,7 @@
       "plan": "CBI35",
       "subPlan": "123",
       "dependent": 1,
-      "sequence": 1,
-      "subscriber": {
-        "reference": "#patient-1"
-      }
+      "sequence": 1
     }
   ],
   "type": "oral",
@@ -97,10 +103,10 @@
     }
   ],
   "created": "2014-08-16",
-  "target": {
+  "targetReference": {
     "reference": "#organization-2"
   },
-  "organization": {
+  "organizationReference": {
     "reference": "#organization-1"
   },
   "use": "complete",
@@ -120,18 +126,15 @@
       }
     }
   ],
-  "patient": {
+  "patientReference": {
     "reference": "#patient-1"
   },
   "coverage": [
     {
       "sequence": 1,
       "focal": true,
-      "coverage": {
+      "coverageReference": {
         "reference": "#coverage-1"
-      },
-      "relationship": {
-        "code": "self"
       }
     }
   ],
@@ -141,13 +144,13 @@
       "type": {
         "code": "service"
       },
-      "provider": {
+      "providerReference": {
         "reference": "#practitioner-1"
       },
       "service": {
         "code": "1200"
       },
-      "serviceDate": "2014-08-16",
+      "servicedDate": "2014-08-16",
       "unitPrice": {
         "value": 135.57,
         "system": "urn:iso:std:iso:4217",

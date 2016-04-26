@@ -5,21 +5,21 @@
     "status": "generated",
     "div": "<div>Image 1 from Series 3: CT Images on Patient MINT (MINT1234) taken at 1-Jan 2011 01:20 AM</div>"
   },
-  "started": "2011-01-01T11:01:20+03:00",
+  "uid": "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430045",
   "patient": {
     "reference": "Patient/dicom"
   },
-  "uid": "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430045",
+  "started": "2011-01-01T11:01:20+03:00",
   "numberOfSeries": 1,
   "numberOfInstances": 1,
   "series": [
     {
+      "uid": "urn:oid:2.16.124.113543.6003.2588828330.45298.17418.2723805630",
       "number": 3,
       "modality": {
         "system": "http://nema.org/dicom/dicm",
         "code": "CT"
       },
-      "uid": "urn:oid:2.16.124.113543.6003.2588828330.45298.17418.2723805630",
       "description": "CT Surview 180",
       "numberOfInstances": 1,
       "bodySite": {
@@ -34,8 +34,8 @@
       },
       "instance": [
         {
-          "number": 1,
           "uid": "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092903",
+          "number": 1,
           "sopClass": "urn:oid:1.2.840.10008.5.1.4.1.1.2",
           "content": [
             {

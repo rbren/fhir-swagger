@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "allergy-intolerance-criticality",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>AllergyIntoleranceCriticality</h2><p>Estimate of the potential clinical harm, or seriousness, of a reaction to an identified Substance.</p><p>This value set has an inline code system http://hl7.org/fhir/allergy-intolerance-criticality, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>CRITL<a name=\"CRITL\"> </a></td><td>Low Risk</td><td>The potential clinical impact of a future reaction is estimated as low risk: exposure to substance is unlikely to result in a life threatening or organ system threatening outcome. Future exposure to the Substance is considered a relative contra-indication.</td></tr><tr><td>CRITH<a name=\"CRITH\"> </a></td><td>High Risk</td><td>The potential clinical impact of a future reaction is estimated as high risk: exposure to substance may result in a life threatening or organ system threatening outcome. Future exposure to the Substance may be considered an absolute contra-indication.</td></tr><tr><td>CRITU<a name=\"CRITU\"> </a></td><td>Unable to determine</td><td>Unable to assess the potential clinical impact with the information available.</td></tr></table></div>"
+    "div": "<div><h2>AllergyIntoleranceCriticality</h2><p>Estimate of the potential clinical harm, or seriousness, of a reaction to an identified Substance.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-allergy-intolerance-criticality.html\">http://hl7.org/fhir/allergy-intolerance-criticality</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "AllergyIntoleranceCriticality",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified Substance.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.51"
-      }
-    ],
-    "system": "http://hl7.org/fhir/allergy-intolerance-criticality",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "CRITL",
-        "display": "Low Risk",
-        "definition": "The potential clinical impact of a future reaction is estimated as low risk: exposure to substance is unlikely to result in a life threatening or organ system threatening outcome. Future exposure to the Substance is considered a relative contra-indication."
-      },
-      {
-        "code": "CRITH",
-        "display": "High Risk",
-        "definition": "The potential clinical impact of a future reaction is estimated as high risk: exposure to substance may result in a life threatening or organ system threatening outcome. Future exposure to the Substance may be considered an absolute contra-indication."
-      },
-      {
-        "code": "CRITU",
-        "display": "Unable to determine",
-        "definition": "Unable to assess the potential clinical impact with the information available."
+        "system": "http://hl7.org/fhir/allergy-intolerance-criticality"
       }
     ]
   }

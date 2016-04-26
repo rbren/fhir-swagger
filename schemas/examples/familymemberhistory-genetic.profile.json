@@ -21,11 +21,12 @@
   ],
   "date": "2013-10-02",
   "description": "Adds additional information to a family member history supporting both the capture of mother/father relationships as well as additional observations necessary to enable genetics-based risk analysis for patients",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "FamilyMemberHistory",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "baseType": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -49,7 +50,8 @@
           {
             "key": "fhs-1",
             "severity": "error",
-            "human": "Can have age[x] or birth[x], but not both",
+            "human": "Can have age[x] or born[x], but not both",
+            "expression": "age.empty() or born.empty()",
             "xpath": "not (*[starts-with(local-name(.), 'age')] and *[starts-with(local-name(.), 'birth')])"
           }
         ],
@@ -76,9 +78,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -94,9 +96,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -113,9 +115,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -133,9 +135,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -162,9 +164,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -194,7 +196,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -219,29 +221,18 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
             "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
           }
         ]
       },
@@ -253,7 +244,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -275,7 +266,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -300,7 +291,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -687,9 +678,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "FamilyMemberHistory.condition.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -715,7 +706,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.condition.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -744,7 +735,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "FamilyMemberHistory.condition.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -754,6 +745,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -898,13 +890,6 @@
       {
         "path": "FamilyMemberHistory.extension",
         "name": "Parent",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 0,
         "max": "*",
         "type": [

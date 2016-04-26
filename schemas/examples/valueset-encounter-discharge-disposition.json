@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "encounter-discharge-disposition",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>DischargeDisposition</h2><p>This value set defines a set of codes that can be used to where the patient left the hospital.</p><p>This value set has an inline code system http://hl7.org/fhir/discharge-disposition, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>home<a name=\"home\"> </a></td><td>Home</td><td/></tr><tr><td>other-hcf<a name=\"other-hcf\"> </a></td><td>Other healthcare facility</td><td/></tr><tr><td>hosp<a name=\"hosp\"> </a></td><td>Hospice</td><td/></tr><tr><td>long<a name=\"long\"> </a></td><td>Long-term care</td><td/></tr><tr><td>aadvice<a name=\"aadvice\"> </a></td><td>Left against advice</td><td/></tr><tr><td>exp<a name=\"exp\"> </a></td><td>Expired</td><td/></tr><tr><td>psy<a name=\"psy\"> </a></td><td>Psychiatric hospital</td><td/></tr><tr><td>rehab<a name=\"rehab\"> </a></td><td>Rehabilitation</td><td/></tr><tr><td>oth<a name=\"oth\"> </a></td><td>Other</td><td/></tr></table></div>"
+    "div": "<div><h2>DischargeDisposition</h2><p>This value set defines a set of codes that can be used to where the patient left the hospital.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-encounter-discharge-disposition.html\">http://hl7.org/fhir/discharge-disposition</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "DischargeDisposition",
   "status": "draft",
   "experimental": true,
@@ -33,53 +33,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set defines a set of codes that can be used to where the patient left the hospital.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.145"
-      }
-    ],
-    "system": "http://hl7.org/fhir/discharge-disposition",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "home",
-        "display": "Home"
-      },
-      {
-        "code": "other-hcf",
-        "display": "Other healthcare facility"
-      },
-      {
-        "code": "hosp",
-        "display": "Hospice"
-      },
-      {
-        "code": "long",
-        "display": "Long-term care"
-      },
-      {
-        "code": "aadvice",
-        "display": "Left against advice"
-      },
-      {
-        "code": "exp",
-        "display": "Expired"
-      },
-      {
-        "code": "psy",
-        "display": "Psychiatric hospital"
-      },
-      {
-        "code": "rehab",
-        "display": "Rehabilitation"
-      },
-      {
-        "code": "oth",
-        "display": "Other"
+        "system": "http://hl7.org/fhir/discharge-disposition"
       }
     ]
   }

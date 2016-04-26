@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div>A human-readable rendering of the coverage</div>"
   },
-  "issuer": {
+  "issuerReference": {
     "reference": "Organization/2"
   },
   "period": {
@@ -17,6 +17,15 @@
     "code": "EHCPOL",
     "display": "extended healthcare"
   },
+  "planholderReference": {
+    "reference": "Patient/4"
+  },
+  "beneficiaryReference": {
+    "reference": "Patient/4"
+  },
+  "relationship": {
+    "code": "self"
+  },
   "identifier": [
     {
       "system": "http://benefitsinc.com/certificate",
@@ -26,8 +35,5 @@
   "plan": "CBI35",
   "subPlan": "123",
   "dependent": 1,
-  "sequence": 1,
-  "subscriber": {
-    "reference": "Patient/4"
-  }
+  "sequence": 1
 }

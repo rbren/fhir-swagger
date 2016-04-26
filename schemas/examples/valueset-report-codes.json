@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "report-codes",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/report-codes",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "LOINC Diagnostic Report Codes",
   "status": "draft",
   "experimental": true,
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set includes all the LOINC codes which relate to Diagnostic Observations.",
   "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
   "compose": {

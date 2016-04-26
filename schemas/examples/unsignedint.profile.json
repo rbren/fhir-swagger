@@ -19,13 +19,14 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for unsignedInt type: An integer with a value that is not negative (e.g. >= 0)",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "integer",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/integer",
+  "baseType": "integer",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/integer",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {

@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "relationship",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Surface Codes</h2><p>This value set includes the Patient to subscriber relationship codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://hl7.org/fhir/relationship, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td/></tr><tr><td>2<a name=\"2\"> </a></td><td/></tr><tr><td>3<a name=\"3\"> </a></td><td/></tr><tr><td>4<a name=\"4\"> </a></td><td/></tr><tr><td>5<a name=\"5\"> </a></td><td/></tr></table></div>"
+    "div": "<div><h2>Beneficiary Relationship Codes</h2><p>This value set includes the Patient to subscriber relationship codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-relationship.html\">http://hl7.org/fhir/relationship</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,8 +18,8 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/relationship",
-  "version": "1.0.2",
-  "name": "Surface Codes",
+  "version": "1.4.0",
+  "name": "Beneficiary Relationship Codes",
   "status": "draft",
   "experimental": true,
   "publisher": "FHIR Project team",
@@ -33,33 +33,13 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set includes the Patient to subscriber relationship codes.",
   "copyright": "This is an example set.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.23"
-      }
-    ],
-    "system": "http://hl7.org/fhir/relationship",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "1"
-      },
-      {
-        "code": "2"
-      },
-      {
-        "code": "3"
-      },
-      {
-        "code": "4"
-      },
-      {
-        "code": "5"
+        "system": "http://hl7.org/fhir/relationship"
       }
     ]
   }

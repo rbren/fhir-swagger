@@ -17,15 +17,17 @@
   ],
   "date": "2013-07-04",
   "description": "Identifies the desired orientation when rendering a list of choices (typically radio-box or check-box lists).",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
-    "Questionnaire.group.question"
+    "Questionnaire.item",
+    "Questionnaire.item.item"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -44,6 +46,15 @@
           {
             "code": "Extension"
           }
+        ],
+        "constraint": [
+          {
+            "key": "inv-6",
+            "severity": "error",
+            "human": "choiceOrientation can only be present on elements of type \"choice\" or \"open-choice\"",
+            "expression": "$parent.type='choice' or $parent.type='open-choice'",
+            "xpath": "parent::*/f:type/@value=('choice', 'open-choice')"
+          }
         ]
       },
       {
@@ -56,9 +67,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -80,7 +91,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -162,6 +173,15 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-6",
+            "severity": "error",
+            "human": "choiceOrientation can only be present on elements of type \"choice\" or \"open-choice\"",
+            "expression": "$parent.type='choice' or $parent.type='open-choice'",
+            "xpath": "parent::*/f:type/@value=('choice', 'open-choice')"
           }
         ]
       },

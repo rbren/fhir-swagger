@@ -1,0 +1,58 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-set-input",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Set Task Input</h2><p>OPERATION: Set Task Input</p><div><p>Set one of the inputs for a task.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>input</td><td>1..*</td><td></td><td/><td/></tr><tr><td>IN</td><td>input.name</td><td>1..1</td><td>string</td><td/><td><div><p>The name of the input to add or update.</p>\n</div></td></tr><tr><td>IN</td><td>input.value[x]</td><td>0..1</td><td>Type</td><td/><td><div><p>If no value is provided, any current input with that name is removed from the resource.</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-set-input",
+  "name": "Set Task Input",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Set one of the inputs for a task.",
+  "code": "set-input",
+  "system": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "input",
+      "use": "in",
+      "min": 1,
+      "max": "*",
+      "part": [
+        {
+          "name": "name",
+          "use": "in",
+          "min": 1,
+          "max": "1",
+          "documentation": "The name of the input to add or update.",
+          "type": "string"
+        },
+        {
+          "name": "value[x]",
+          "use": "in",
+          "min": 0,
+          "max": "1",
+          "documentation": "If no value is provided, any current input with that name is removed from the resource.",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}

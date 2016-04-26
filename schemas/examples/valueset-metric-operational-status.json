@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "metric-operational-status",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>DeviceMetricOperationalStatus</h2><p>Describes the operational status of the DeviceMetric.</p><p>This value set has an inline code system http://hl7.org/fhir/metric-operational-status, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>on<a name=\"on\"> </a></td><td>On</td><td>The DeviceMetric is operating and will generate DeviceObservations.</td></tr><tr><td>off<a name=\"off\"> </a></td><td>Off</td><td>The DeviceMetric is not operating.</td></tr><tr><td>standby<a name=\"standby\"> </a></td><td>Standby</td><td>The DeviceMetric is operating, but will not generate any DeviceObservations.</td></tr></table></div>"
+    "div": "<div><h2>DeviceMetricOperationalStatus</h2><p>Describes the operational status of the DeviceMetric.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-metric-operational-status.html\">http://hl7.org/fhir/metric-operational-status</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/metric-operational-status",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "DeviceMetricOperationalStatus",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Describes the operational status of the DeviceMetric.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.337"
-      }
-    ],
-    "system": "http://hl7.org/fhir/metric-operational-status",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "on",
-        "display": "On",
-        "definition": "The DeviceMetric is operating and will generate DeviceObservations."
-      },
-      {
-        "code": "off",
-        "display": "Off",
-        "definition": "The DeviceMetric is not operating."
-      },
-      {
-        "code": "standby",
-        "display": "Standby",
-        "definition": "The DeviceMetric is operating, but will not generate any DeviceObservations."
+        "system": "http://hl7.org/fhir/metric-operational-status"
       }
     ]
   }

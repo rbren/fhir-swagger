@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "metric-calibration-state",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>DeviceMetricCalibrationState</h2><p>Describes the state of a metric calibration.</p><p>This value set has an inline code system http://hl7.org/fhir/metric-calibration-state, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>not-calibrated<a name=\"not-calibrated\"> </a></td><td>Not Calibrated</td><td>The metric has not been calibrated.</td></tr><tr><td>calibration-required<a name=\"calibration-required\"> </a></td><td>Calibration Required</td><td>The metric needs to be calibrated.</td></tr><tr><td>calibrated<a name=\"calibrated\"> </a></td><td>Calibrated</td><td>The metric has been calibrated.</td></tr><tr><td>unspecified<a name=\"unspecified\"> </a></td><td>Unspecified</td><td>The state of calibration of this metric is unspecified.</td></tr></table></div>"
+    "div": "<div><h2>DeviceMetricCalibrationState</h2><p>Describes the state of a metric calibration.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-metric-calibration-state.html\">http://hl7.org/fhir/metric-calibration-state</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/metric-calibration-state",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "DeviceMetricCalibrationState",
   "status": "draft",
   "experimental": false,
@@ -37,38 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Describes the state of a metric calibration.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.340"
-      }
-    ],
-    "system": "http://hl7.org/fhir/metric-calibration-state",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "not-calibrated",
-        "display": "Not Calibrated",
-        "definition": "The metric has not been calibrated."
-      },
-      {
-        "code": "calibration-required",
-        "display": "Calibration Required",
-        "definition": "The metric needs to be calibrated."
-      },
-      {
-        "code": "calibrated",
-        "display": "Calibrated",
-        "definition": "The metric has been calibrated."
-      },
-      {
-        "code": "unspecified",
-        "display": "Unspecified",
-        "definition": "The state of calibration of this metric is unspecified."
+        "system": "http://hl7.org/fhir/metric-calibration-state"
       }
     ]
   }

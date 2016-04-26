@@ -13,15 +13,23 @@
     }
   ],
   "created": "2014-08-16",
-  "target": {
+  "targetReference": {
     "reference": "Organization/2"
   },
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/1"
   },
   "use": "complete",
   "priority": {
     "code": "normal"
+  },
+  "entererIdentifier": {
+    "system": "http://jurisdiction.org/facilities/HOSP1234/users",
+    "value": "UC1234"
+  },
+  "facilityIdentifier": {
+    "system": "http://jurisdiction.org/facilities",
+    "value": "HOSP1234"
   },
   "payee": {
     "type": {
@@ -36,18 +44,15 @@
       }
     }
   ],
-  "patient": {
+  "patientReference": {
     "reference": "Patient/1"
   },
   "coverage": [
     {
       "sequence": 1,
       "focal": true,
-      "coverage": {
+      "coverageReference": {
         "reference": "Coverage/9876B1"
-      },
-      "relationship": {
-        "code": "self"
       }
     }
   ],
@@ -57,14 +62,14 @@
       "type": {
         "code": "service"
       },
-      "provider": {
+      "providerReference": {
         "reference": "Practitioner/example"
       },
       "service": {
         "system": "http://hl7.org/fhir/ex-serviceproduct",
         "code": "exam"
       },
-      "serviceDate": "2014-08-16",
+      "servicedDate": "2014-08-16",
       "unitPrice": {
         "value": 125.00,
         "system": "urn:iso:std:iso:4217",
@@ -76,5 +81,10 @@
         "code": "USD"
       }
     }
-  ]
+  ],
+  "total": {
+    "value": 125.00,
+    "system": "urn:iso:std:iso:4217",
+    "code": "USD"
+  }
 }

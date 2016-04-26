@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "template-status-code",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -18,9 +18,9 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/template-status-code",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "TemplateStatusCode",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "publisher": "HL7 (FHIR Project)",
   "contact": [
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The status indicates the level of maturity of the design and may be used to manage the use of the design",
   "compose": {
     "include": [

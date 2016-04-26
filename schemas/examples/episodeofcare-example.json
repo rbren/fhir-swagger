@@ -1,5 +1,8 @@
 {
   "resourceType": "EpisodeOfCare",
+  "fhir_comments": [
+    " <careTeam>\n    <role>\n      <coding>\n        <system value=\"http://example.org/EpisodeOfCare/Role\"/>\n        <code value=\"AO\"/>\n        <display value=\"Assessment Worker\"/>\n      </coding>\n    </role>\n    <period>\n      <start value=\"2014-09-01\"/>\n      <end value=\"2014-09-16\"/>\n    </period>\n    <member>\n      <reference value=\"Practitioner/13\"/>\n      <display value=\"Henry Seven\"/>\n    </member>\n  </careTeam> "
+  ],
   "id": "example",
   "text": {
     "status": "generated",
@@ -75,28 +78,5 @@
   "careManager": {
     "reference": "Practitioner/14",
     "display": "Amanda Assigned"
-  },
-  "careTeam": [
-    {
-      "role": [
-        {
-          "coding": [
-            {
-              "system": "http://example.org/EpisodeOfCare/Role",
-              "code": "AO",
-              "display": "Assessment Worker"
-            }
-          ]
-        }
-      ],
-      "period": {
-        "start": "2014-09-01",
-        "end": "2014-09-16"
-      },
-      "member": {
-        "reference": "Practitioner/13",
-        "display": "Henry Seven"
-      }
-    }
-  ]
+  }
 }

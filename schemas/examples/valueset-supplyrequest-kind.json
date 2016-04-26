@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "supplyrequest-kind",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Supply Type</h2><p>This value sets refers to a Category of supply.</p><p>This value set has an inline code system http://hl7.org/fhir/supply-kind, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>central<a name=\"central\"> </a></td><td>Central Supply</td><td>Supply is stored and requested from central supply.</td></tr><tr><td>nonstock<a name=\"nonstock\"> </a></td><td>Non-Stock</td><td>Supply is not onsite and must be requested from an outside vendor using a non-stock requisition.</td></tr></table></div>"
+    "div": "<div><h2>Supply Type</h2><p>This value sets refers to a Category of supply.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-supplyrequest-kind.html\">http://hl7.org/fhir/supply-kind</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/supplyrequest-kind",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Supply Type",
   "status": "draft",
   "experimental": true,
@@ -33,27 +33,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value sets refers to a Category of supply.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.353"
-      }
-    ],
-    "system": "http://hl7.org/fhir/supply-kind",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "central",
-        "display": "Central Supply",
-        "definition": "Supply is stored and requested from central supply."
-      },
-      {
-        "code": "nonstock",
-        "display": "Non-Stock",
-        "definition": "Supply is not onsite and must be requested from an outside vendor using a non-stock requisition."
+        "system": "http://hl7.org/fhir/supply-kind"
       }
     ]
   }

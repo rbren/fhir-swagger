@@ -5,6 +5,8 @@
     "status": "generated",
     "div": "<div>\n      <p>Add hydroxocobalamin</p>\n      <p>Cancel Morphine Sulphate</p>\n    </div>"
   },
+  "status": "current",
+  "mode": "changes",
   "code": {
     "coding": [
       {
@@ -15,12 +17,10 @@
     ],
     "text": "Medication Review"
   },
+  "date": "2013-11-20T23:10:23+11:00",
   "source": {
     "reference": "Patient/example"
   },
-  "status": "current",
-  "date": "2013-11-20T23:10:23+11:00",
-  "mode": "changes",
   "entry": [
     {
       "fhir_comments": [

@@ -1,0 +1,102 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "qicore-communication-medium",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>QICore Communication Medium Codes</h2><p>Value Set for QICore Communication Medium (Example)</p><p>This code system http://hl7.org/fhir/qicore-communication-medium defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>unspecified<a name=\"unspecified\"> </a></td><td>Not Specified</td><td>The communication medium has not been specified</td></tr><tr><td>telephone<a name=\"telephone\"> </a></td><td>Telephone</td><td>The message was communicated via telephone</td></tr><tr><td>fax<a name=\"fax\"> </a></td><td>Facsimile (fax)</td><td>The message was sent via a fax transmission</td></tr><tr><td>device<a name=\"device\"> </a></td><td>Via medical device</td><td>The message was communicated via a medical device</td></tr><tr><td>video<a name=\"video\"> </a></td><td>Video call</td><td>The message was communicated via a video call</td></tr><tr><td>voicemail<a name=\"voicemail\"> </a></td><td>Voice message (voicemail)</td><td>The message was left on the recipient's voicemail system</td></tr><tr><td>text<a name=\"text\"> </a></td><td>Text message (SMS)</td><td>The message was sent via text message (SMS)</td></tr><tr><td>social-media<a name=\"social-media\"> </a></td><td>Social media</td><td>The message was communicated via a social media platform</td></tr><tr><td>in-person<a name=\"in-person\"> </a></td><td>In person</td><td>The message was communicated in person</td></tr><tr><td>mail<a name=\"mail\"> </a></td><td>Mail (conventional)</td><td>The message was posted via conventional mail</td></tr><tr><td>email<a name=\"email\"> </a></td><td>Electronic mail (email)</td><td>The message was sent as an email</td></tr><tr><td>portal<a name=\"portal\"> </a></td><td>Patient portal</td><td>The message was communicated via a patient portal</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.616"
+    }
+  ],
+  "url": "http://hl7.org/fhir/qicore-communication-medium",
+  "version": "1.4.0",
+  "name": "QICore Communication Medium Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 Clinical Quality Information (CQI) Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Value Set for QICore Communication Medium (Example)",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/qicore-communication-medium",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "unspecified",
+      "display": "Not Specified",
+      "definition": "The communication medium has not been specified"
+    },
+    {
+      "code": "telephone",
+      "display": "Telephone",
+      "definition": "The message was communicated via telephone"
+    },
+    {
+      "code": "fax",
+      "display": "Facsimile (fax)",
+      "definition": "The message was sent via a fax transmission"
+    },
+    {
+      "code": "device",
+      "display": "Via medical device",
+      "definition": "The message was communicated via a medical device"
+    },
+    {
+      "code": "video",
+      "display": "Video call",
+      "definition": "The message was communicated via a video call"
+    },
+    {
+      "code": "voicemail",
+      "display": "Voice message (voicemail)",
+      "definition": "The message was left on the recipient's voicemail system"
+    },
+    {
+      "code": "text",
+      "display": "Text message (SMS)",
+      "definition": "The message was sent via text message (SMS)"
+    },
+    {
+      "code": "social-media",
+      "display": "Social media",
+      "definition": "The message was communicated via a social media platform"
+    },
+    {
+      "code": "in-person",
+      "display": "In person",
+      "definition": "The message was communicated in person"
+    },
+    {
+      "code": "mail",
+      "display": "Mail (conventional)",
+      "definition": "The message was posted via conventional mail"
+    },
+    {
+      "code": "email",
+      "display": "Electronic mail (email)",
+      "definition": "The message was sent as an email"
+    },
+    {
+      "code": "portal",
+      "display": "Patient portal",
+      "definition": "The message was communicated via a patient portal"
+    }
+  ]
+}

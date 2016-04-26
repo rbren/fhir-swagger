@@ -1,34 +1,44 @@
 {
   "resourceType": "MedicationOrder",
+  "fhir_comments": [
+    "  <dispense> and <substitution> are not available for this patient  "
+  ],
   "id": "f202",
   "text": {
     "fhir_comments": [
       "  No identifier could be provided  "
     ],
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>dateWritten</b>: 11/03/2013</p><p><b>status</b>: completed</p><p><b>patient</b>: <a>Roel</a></p><p><b>prescriber</b>: <a>Practitioner/f201</a></p><p><b>encounter</b>: <a>Roel's encounter on March eleventh 2013</a></p><p><b>reason</b>: <a>sepsis</a></p><p><b>medication</b>: <a>Flucloxacilline</a></p><h3>DosageInstructions</h3><table><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td><td><b>Method</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td>*</td><td>Flucloxacilline 12g/24h</td><td>Starting 11/03/2013, Do Once, Until 21/03/2013</td><td>Intravenous route <span>(Details : {SNOMED CT code '47625008' = '47625008', given as 'Intravenous route'})</span></td><td>Injected floxacillin <span>(Details : {SNOMED CT code '323493005' = '323493005', given as 'Injected floxacillin'})</span></td><td>12 gram<span> (Details: SNOMED CT code 258682000 = '258682000')</span>/24 hours<span> (Details: SNOMED CT code 258702006 = '258702006')</span></td></tr></table></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>status</b>: completed</p><p><b>medication</b>: <a>Flucloxacilline</a></p><p><b>patient</b>: <a>Roel</a></p><p><b>encounter</b>: <a>Roel's encounter on March eleventh 2013</a></p><p><b>dateWritten</b>: 11/03/2013</p><p><b>prescriber</b>: <a>Practitioner/f201</a></p><p><b>reasonReference</b>: <a>sepsis</a></p><h3>DosageInstructions</h3><table><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td><td><b>Method</b></td><td><b>MaxDosePerPeriod</b></td></tr><tr><td>*</td><td>Flucloxacilline 12g/24h</td><td>Starting 11/03/2013, Do Once, Until 21/03/2013</td><td>Intravenous route <span>(Details : {SNOMED CT code '47625008' = 'Intravenous route (qualifier value)', given as 'Intravenous route'})</span></td><td>Injected floxacillin <span>(Details : {SNOMED CT code '323493005' = 'Floxacillin 1g powder for injection solution vial (product)', given as 'Injected floxacillin'})</span></td><td>12 gram<span> (Details: SNOMED CT code 258682000 = 'gram (qualifier value)')</span>/24 hours<span> (Details: SNOMED CT code 258702006 = 'hour (qualifier value)')</span></td></tr></table></div>"
   },
-  "dateWritten": "2013-03-11",
   "status": "completed",
-  "patient": {
-    "reference": "Patient/f201",
-    "display": "Roel"
-  },
-  "prescriber": {
-    "reference": "Practitioner/f201"
-  },
-  "encounter": {
-    "reference": "Encounter/f203",
-    "display": "Roel's encounter on March eleventh 2013"
-  },
-  "reasonReference": {
-    "reference": "Condition/f203",
-    "display": "sepsis"
-  },
   "medicationReference": {
     "reference": "Medication/f202",
     "display": "Flucloxacilline"
   },
+  "patient": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "encounter": {
+    "reference": "Encounter/f203",
+    "_reference": {
+      "fhir_comments": [
+        "  TODO <encounter> is not expected...  "
+      ]
+    },
+    "display": "Roel's encounter on March eleventh 2013"
+  },
+  "dateWritten": "2013-03-11",
+  "prescriber": {
+    "reference": "Practitioner/f201"
+  },
+  "reasonReference": [
+    {
+      "reference": "Condition/f203",
+      "display": "sepsis"
+    }
+  ],
   "dosageInstruction": [
     {
       "text": "Flucloxacilline 12g/24h",

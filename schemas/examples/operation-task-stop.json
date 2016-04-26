@@ -1,0 +1,32 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-stop",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Stop Task</h2><p>OPERATION: Stop Task</p><div><p>Stop processing the task.  The task is returned to the ready state.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-stop",
+  "name": "Stop Task",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Stop processing the task.  The task is returned to the ready state.",
+  "code": "stop",
+  "system": false,
+  "instance": true
+}

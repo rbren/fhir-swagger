@@ -32,15 +32,17 @@
             "value": "333333333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Seven"
-          ],
-          "given": [
-            "Henry"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Seven"
+            ],
+            "given": [
+              "Henry"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -59,7 +61,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -92,15 +94,17 @@
             "value": "33344444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Assigned"
-          ],
-          "given": [
-            "Amanda"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Assigned"
+            ],
+            "given": [
+              "Amanda"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -119,7 +123,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -152,15 +156,17 @@
             "value": "444444444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Hippocrates"
-          ],
-          "given": [
-            "Harold"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Hippocrates"
+            ],
+            "given": [
+              "Harold"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -179,7 +185,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -212,15 +218,17 @@
             "value": "555555555"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Primary"
-          ],
-          "given": [
-            "Patricia"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Primary"
+            ],
+            "given": [
+              "Patricia"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -239,7 +247,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -272,15 +280,17 @@
             "value": "666666666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Admit"
-          ],
-          "given": [
-            "Alan"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Admit"
+            ],
+            "given": [
+              "Alan"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -299,7 +309,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -332,15 +342,17 @@
             "value": "777777777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Attend"
-          ],
-          "given": [
-            "Aaron"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Attend"
+            ],
+            "given": [
+              "Aaron"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -359,7 +371,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -392,15 +404,17 @@
             "value": "888888888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Sender"
-          ],
-          "given": [
-            "Sam"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Sender"
+            ],
+            "given": [
+              "Sam"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -419,7 +433,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -452,15 +466,17 @@
             "value": "888222222"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Intern"
-          ],
-          "given": [
-            "Irving"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Intern"
+            ],
+            "given": [
+              "Irving"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -479,7 +495,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -512,15 +528,17 @@
             "value": "888333333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Resident"
-          ],
-          "given": [
-            "Rachel"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Resident"
+            ],
+            "given": [
+              "Rachel"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -539,7 +557,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -572,15 +590,17 @@
             "value": "888444444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Leader"
-          ],
-          "given": [
-            "Linda"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Leader"
+            ],
+            "given": [
+              "Linda"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -599,7 +619,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -632,15 +652,17 @@
             "value": "999999999"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Verify"
-          ],
-          "given": [
-            "Virgil"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Verify"
+            ],
+            "given": [
+              "Virgil"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -659,7 +681,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -692,15 +714,17 @@
             "value": "222333333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Specialize"
-          ],
-          "given": [
-            "Sara"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Specialize"
+            ],
+            "given": [
+              "Sara"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -719,7 +743,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -752,15 +776,17 @@
             "value": "222223333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Reaction"
-          ],
-          "given": [
-            "Ramsey"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Reaction"
+            ],
+            "given": [
+              "Ramsey"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -779,7 +805,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -812,15 +838,17 @@
             "value": "222666666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Sleeper"
-          ],
-          "given": [
-            "Sally"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Sleeper"
+            ],
+            "given": [
+              "Sally"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -839,7 +867,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -872,15 +900,17 @@
             "value": "222334444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Pump"
-          ],
-          "given": [
-            "Patrick"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Pump"
+            ],
+            "given": [
+              "Patrick"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -899,7 +929,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -932,15 +962,17 @@
             "value": "222335555"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Valve"
-          ],
-          "given": [
-            "Vera"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Valve"
+            ],
+            "given": [
+              "Vera"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -959,7 +991,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -992,15 +1024,17 @@
             "value": "222336666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Scratch"
-          ],
-          "given": [
-            "Sophie"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Scratch"
+            ],
+            "given": [
+              "Sophie"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1019,7 +1053,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1052,15 +1086,17 @@
             "value": "222337777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Emergency"
-          ],
-          "given": [
-            "Eric"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Emergency"
+            ],
+            "given": [
+              "Eric"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1079,7 +1115,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1112,15 +1148,17 @@
             "value": "222338888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Hormone"
-          ],
-          "given": [
-            "Horace"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Hormone"
+            ],
+            "given": [
+              "Horace"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1139,7 +1177,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1172,15 +1210,17 @@
             "value": "222339999"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Family"
-          ],
-          "given": [
-            "Fay"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Family"
+            ],
+            "given": [
+              "Fay"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1199,7 +1239,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1232,15 +1272,17 @@
             "value": "222442222"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Tum"
-          ],
-          "given": [
-            "Tony"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Tum"
+            ],
+            "given": [
+              "Tony"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1259,7 +1301,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1292,15 +1334,17 @@
             "value": "222443333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Sage"
-          ],
-          "given": [
-            "Stanley"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Sage"
+            ],
+            "given": [
+              "Stanley"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1319,7 +1363,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1352,15 +1396,17 @@
             "value": "222443344"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Bleeder"
-          ],
-          "given": [
-            "Boris"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Bleeder"
+            ],
+            "given": [
+              "Boris"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1379,7 +1425,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1412,15 +1458,17 @@
             "value": "222445555"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Pasteur"
-          ],
-          "given": [
-            "Paula"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Pasteur"
+            ],
+            "given": [
+              "Paula"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1439,7 +1487,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1472,15 +1520,17 @@
             "value": "222446666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Osler"
-          ],
-          "given": [
-            "Otto"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Osler"
+            ],
+            "given": [
+              "Otto"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1499,7 +1549,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1532,15 +1582,17 @@
             "value": "222447777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Renal"
-          ],
-          "given": [
-            "Rory"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Renal"
+            ],
+            "given": [
+              "Rory"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1559,7 +1611,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1592,15 +1644,17 @@
             "value": "222448888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Brain"
-          ],
-          "given": [
-            "Barry"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Brain"
+            ],
+            "given": [
+              "Barry"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1619,7 +1673,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1652,15 +1706,17 @@
             "value": "222449999"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Cranium"
-          ],
-          "given": [
-            "Carol"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Cranium"
+            ],
+            "given": [
+              "Carol"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1679,7 +1735,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1712,15 +1768,17 @@
             "value": "222552222"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Fem"
-          ],
-          "given": [
-            "Flora"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Fem"
+            ],
+            "given": [
+              "Flora"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1739,7 +1797,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1772,15 +1830,17 @@
             "value": "222553333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Tumor"
-          ],
-          "given": [
-            "Trudy"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Tumor"
+            ],
+            "given": [
+              "Trudy"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1799,7 +1859,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1832,15 +1892,17 @@
             "value": "222554444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Vision"
-          ],
-          "given": [
-            "Victor"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Vision"
+            ],
+            "given": [
+              "Victor"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1859,7 +1921,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1892,15 +1954,17 @@
             "value": "222555545"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Carpenter"
-          ],
-          "given": [
-            "Calvin"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Carpenter"
+            ],
+            "given": [
+              "Calvin"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1919,7 +1983,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -1952,15 +2016,17 @@
             "value": "222556666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Rhino"
-          ],
-          "given": [
-            "Rick"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Rhino"
+            ],
+            "given": [
+              "Rick"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -1979,7 +2045,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2012,15 +2078,17 @@
             "value": "222444444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Slide"
-          ],
-          "given": [
-            "Stan"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Slide"
+            ],
+            "given": [
+              "Stan"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2039,7 +2107,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2072,15 +2140,17 @@
             "value": "222557777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Kidder"
-          ],
-          "given": [
-            "Karen"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Kidder"
+            ],
+            "given": [
+              "Karen"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2099,7 +2169,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2132,15 +2202,17 @@
             "value": "222558888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Hollywood"
-          ],
-          "given": [
-            "Heddie"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Hollywood"
+            ],
+            "given": [
+              "Heddie"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2159,7 +2231,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2192,15 +2264,17 @@
             "value": "222559999"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Shrink"
-          ],
-          "given": [
-            "Serena"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Shrink"
+            ],
+            "given": [
+              "Serena"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2219,7 +2293,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2252,15 +2326,17 @@
             "value": "222662222"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Puffer"
-          ],
-          "given": [
-            "Penny"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Puffer"
+            ],
+            "given": [
+              "Penny"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2279,7 +2355,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2312,15 +2388,17 @@
             "value": "222555555"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Curie"
-          ],
-          "given": [
-            "Christine"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Curie"
+            ],
+            "given": [
+              "Christine"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2339,7 +2417,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2372,15 +2450,17 @@
             "value": "222663333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Joint"
-          ],
-          "given": [
-            "Jeffrey"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Joint"
+            ],
+            "given": [
+              "Jeffrey"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2399,7 +2479,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2432,15 +2512,17 @@
             "value": "222777777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Cutter"
-          ],
-          "given": [
-            "Carl"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Cutter"
+            ],
+            "given": [
+              "Carl"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2459,7 +2541,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2492,15 +2574,17 @@
             "value": "222664444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Plumber"
-          ],
-          "given": [
-            "Peter"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Plumber"
+            ],
+            "given": [
+              "Peter"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2519,7 +2603,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2552,15 +2636,17 @@
             "value": "222665555"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Helper"
-          ],
-          "given": [
-            "Horace"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Helper"
+            ],
+            "given": [
+              "Horace"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2579,7 +2665,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2612,15 +2698,17 @@
             "value": "222888888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Nightingale"
-          ],
-          "given": [
-            "Nancy"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Nightingale"
+            ],
+            "given": [
+              "Nancy"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2639,7 +2727,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2672,15 +2760,17 @@
             "value": "222999999"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Barton"
-          ],
-          "given": [
-            "Clarence"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Barton"
+            ],
+            "given": [
+              "Clarence"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2699,7 +2789,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2732,15 +2822,17 @@
             "value": "222666666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Bender"
-          ],
-          "given": [
-            "Bob"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Bender"
+            ],
+            "given": [
+              "Bob"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2759,7 +2851,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2792,15 +2884,17 @@
             "value": "222667777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Chopper"
-          ],
-          "given": [
-            "Charlie"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Chopper"
+            ],
+            "given": [
+              "Charlie"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2819,7 +2913,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2852,15 +2946,17 @@
             "value": "222668888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Brace"
-          ],
-          "given": [
-            "Ben"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Brace"
+            ],
+            "given": [
+              "Ben"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2879,7 +2975,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2912,15 +3008,17 @@
             "value": "222669999"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Specs"
-          ],
-          "given": [
-            "Sylvia"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Specs"
+            ],
+            "given": [
+              "Sylvia"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2939,7 +3037,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -2972,15 +3070,17 @@
             "value": "333222222"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Script"
-          ],
-          "given": [
-            "Susan"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Script"
+            ],
+            "given": [
+              "Susan"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -2999,7 +3099,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3032,15 +3132,17 @@
             "value": "222772222"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Bunion"
-          ],
-          "given": [
-            "Paul"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Bunion"
+            ],
+            "given": [
+              "Paul"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3059,7 +3161,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3092,15 +3194,17 @@
             "value": "222773333"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Listener"
-          ],
-          "given": [
-            "Larry"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Listener"
+            ],
+            "given": [
+              "Larry"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3119,7 +3223,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3152,15 +3256,17 @@
             "value": "333444444"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Beaker"
-          ],
-          "given": [
-            "Bill"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Beaker"
+            ],
+            "given": [
+              "Bill"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3179,7 +3285,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3212,15 +3318,17 @@
             "value": "333555555"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Chow"
-          ],
-          "given": [
-            "Connie"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Chow"
+            ],
+            "given": [
+              "Connie"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3239,7 +3347,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3272,15 +3380,17 @@
             "value": "000111111"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Helper"
-          ],
-          "given": [
-            "Helen"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Helper"
+            ],
+            "given": [
+              "Helen"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3299,7 +3409,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3332,15 +3442,17 @@
             "value": "222776666"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Player"
-          ],
-          "given": [
-            "Pamela"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Player"
+            ],
+            "given": [
+              "Pamela"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3359,7 +3471,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3392,15 +3504,17 @@
             "value": "222778888"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Stretcher"
-          ],
-          "given": [
-            "Seth"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Stretcher"
+            ],
+            "given": [
+              "Seth"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3419,7 +3533,7 @@
         "gender": "male",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }
@@ -3452,15 +3566,17 @@
             "value": "333777777"
           }
         ],
-        "name": {
-          "use": "official",
-          "family": [
-            "Enter"
-          ],
-          "given": [
-            "Ellen"
-          ]
-        },
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Enter"
+            ],
+            "given": [
+              "Ellen"
+            ]
+          }
+        ],
         "telecom": [
           {
             "system": "phone",
@@ -3479,7 +3595,7 @@
         "gender": "female",
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "reference": "Organization/hl7"
             }
           }

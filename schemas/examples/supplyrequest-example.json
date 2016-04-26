@@ -1,5 +1,8 @@
 {
   "resourceType": "SupplyRequest",
+  "fhir_comments": [
+    "  insert contents here  "
+  ],
   "id": "example",
   "text": {
     "status": "generated",

@@ -4,6 +4,13 @@
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ],
+    "_profile": [
+      {
+        "fhir_comments": [
+          "    many expansions are not shareable, but this one is    "
+        ]
+      }
     ]
   },
   "text": {

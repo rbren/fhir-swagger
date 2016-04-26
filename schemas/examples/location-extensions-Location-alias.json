@@ -6,6 +6,6 @@
   "code": "alias",
   "type": "string",
   "description": "Include Locations that contain the provided alias",
-  "xpath": "f:Location/f:extension[@url='http://hl7.org/fhir/StructureDefinition/location-alias']",
+  "xpath": "f:Location/f:extension[@url='http://hl7.org/fhir/StructureDefinition/location-alias'] | /f:#alias",
   "xpathUsage": "normal"
 }

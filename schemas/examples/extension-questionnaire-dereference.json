@@ -17,7 +17,7 @@
   ],
   "date": "2013-07-04",
   "description": "A reference to the Data Element that corresponds to the question text and answer constraints for this question.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "rim",
@@ -26,20 +26,22 @@
     }
   ],
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
-    "Questionnaire.group.question"
+    "Questionnaire.item",
+    "Questionnaire.item.item"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
         "path": "Extension",
         "short": "Implemented CDE",
         "definition": "A reference to the Data Element that corresponds to the question text and answer constraints for this question.",
-        "comments": "If a code applies to a question, that code should still be conveyed on the question, even if the same code is also referenced as a DataElement.code in the referenced data element.  This extension must not be used in place of specifying the Questionnaire.group.question.concept element.",
+        "comments": "If a code applies to a question, that code should still be conveyed on the question, even if the same code is also referenced as a DataElement.code in the referenced data element.  This extension must not be used in place of specifying the Questionnaire.item.concept element.",
         "min": 0,
         "max": "1",
         "base": {
@@ -50,6 +52,15 @@
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-9",
+            "severity": "error",
+            "human": "Data Element references can't be specified for \"display\" items",
+            "expression": "$parent.type!='display'",
+            "xpath": "not(parent::*/f:type/@value='display')"
           }
         ],
         "mapping": [
@@ -69,9 +80,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -93,7 +104,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -165,12 +176,21 @@
         "path": "Extension",
         "short": "Implemented CDE",
         "definition": "A reference to the Data Element that corresponds to the question text and answer constraints for this question.",
-        "comments": "If a code applies to a question, that code should still be conveyed on the question, even if the same code is also referenced as a DataElement.code in the referenced data element.  This extension must not be used in place of specifying the Questionnaire.group.question.concept element.",
+        "comments": "If a code applies to a question, that code should still be conveyed on the question, even if the same code is also referenced as a DataElement.code in the referenced data element.  This extension must not be used in place of specifying the Questionnaire.item.concept element.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-9",
+            "severity": "error",
+            "human": "Data Element references can't be specified for \"display\" items",
+            "expression": "$parent.type!='display'",
+            "xpath": "not(parent::*/f:type/@value='display')"
           }
         ],
         "mapping": [

@@ -21,11 +21,12 @@
   ],
   "date": "2012-06-24",
   "description": "SubmissionSet",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "DocumentManifest",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/DocumentManifest",
+  "baseType": "DocumentManifest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentManifest",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -65,9 +66,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -83,9 +84,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -102,9 +103,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -122,9 +123,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -151,9 +152,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -183,7 +184,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -211,7 +212,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -239,7 +240,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -653,9 +654,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.content.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -681,7 +682,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.content.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -710,7 +711,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.content.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -720,6 +721,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -797,9 +799,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentManifest.related.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -825,7 +827,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.related.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -854,7 +856,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentManifest.related.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -864,6 +866,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

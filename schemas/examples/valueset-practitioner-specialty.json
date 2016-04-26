@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "practitioner-specialty",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>PractitionerSpecialty</h2><p>This example value set defines a set of codes that can be used to indicate the specialty of a Practitioner.</p><p>This value set has an inline code system http://hl7.org/fhir/practitioner-specialty, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>cardio<a name=\"cardio\"> </a></td><td>Cardiologist</td><td/></tr><tr><td>dent<a name=\"dent\"> </a></td><td>Dentist</td><td/></tr><tr><td>dietary<a name=\"dietary\"> </a></td><td>Dietary consultant</td><td/></tr><tr><td>midw<a name=\"midw\"> </a></td><td>Midwife</td><td/></tr><tr><td>sysarch<a name=\"sysarch\"> </a></td><td>Systems architect</td><td/></tr></table></div>"
+    "div": "<div><h2>PractitionerSpecialty</h2><p>This example value set defines a set of codes that can be used to indicate the specialty of a Practitioner.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-practitioner-specialty.html\">http://hl7.org/fhir/practitioner-specialty</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/practitioner-specialty",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "PractitionerSpecialty",
   "status": "draft",
   "experimental": true,
@@ -33,37 +33,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This example value set defines a set of codes that can be used to indicate the specialty of a Practitioner.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.252"
-      }
-    ],
-    "system": "http://hl7.org/fhir/practitioner-specialty",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "cardio",
-        "display": "Cardiologist"
-      },
-      {
-        "code": "dent",
-        "display": "Dentist"
-      },
-      {
-        "code": "dietary",
-        "display": "Dietary consultant"
-      },
-      {
-        "code": "midw",
-        "display": "Midwife"
-      },
-      {
-        "code": "sysarch",
-        "display": "Systems architect"
+        "system": "http://hl7.org/fhir/practitioner-specialty"
       }
     ]
   }

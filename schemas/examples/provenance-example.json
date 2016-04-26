@@ -19,14 +19,9 @@
   "recorded": "2015-06-27T08:39:24+10:00",
   "reason": [
     {
-      "coding": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "3457005",
-          "display": "Referral"
-        }
-      ],
-      "text": "Accepting a referral"
+      "system": "http://snomed.info/sct",
+      "code": "3457005",
+      "display": "Referral"
     }
   ],
   "location": {
@@ -34,6 +29,13 @@
   },
   "policy": [
     "http://acme.com/fhir/Consent/25"
+  ],
+  "_policy": [
+    {
+      "fhir_comments": [
+        "  reference to a patient consent to share inforamtion  "
+      ]
+    }
   ],
   "agent": [
     {
@@ -64,10 +66,10 @@
       ]
     },
     {
-      "id": "a1",
       "fhir_comments": [
         "  device = software Harold used  "
       ],
+      "id": "a1",
       "role": {
         "system": "http://hl7.org/fhir/v3/ParticipationType",
         "code": "DEV"

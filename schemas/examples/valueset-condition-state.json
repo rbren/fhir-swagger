@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "condition-state",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>ConditionState</h2><p>Enumeration indicating whether the condition is currently active, inactive, or has been resolved.<br/><br/>active| inactive| resolved</p><p>This value set has an inline code system http://hl7.org/fhir/condition-state, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>active<a name=\"active\"> </a></td><td>Active</td><td>The condition is active.</td></tr><tr><td>inactive<a name=\"inactive\"> </a></td><td>Inactive</td><td>The condition inactive but not resolved.</td></tr><tr><td>resolved<a name=\"resolved\"> </a></td><td>Resolved</td><td>The condition is resolved.</td></tr></table></div>"
+    "div": "<div><h2>ConditionState</h2><p>Enumeration indicating whether the condition is currently active, inactive, or has been resolved.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-condition-state.html\">http://hl7.org/fhir/condition-state</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/condition-state",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "ConditionState",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
-  "description": "Enumeration indicating whether the condition is currently active, inactive, or has been resolved.\r\n\r\nactive| inactive| resolved",
-  "codeSystem": {
-    "extension": [
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Enumeration indicating whether the condition is currently active, inactive, or has been resolved.",
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.375"
-      }
-    ],
-    "system": "http://hl7.org/fhir/condition-state",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "active",
-        "display": "Active",
-        "definition": "The condition is active."
-      },
-      {
-        "code": "inactive",
-        "display": "Inactive",
-        "definition": "The condition inactive but not resolved."
-      },
-      {
-        "code": "resolved",
-        "display": "Resolved",
-        "definition": "The condition is resolved."
+        "system": "http://hl7.org/fhir/condition-state"
       }
     ]
   }

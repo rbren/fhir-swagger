@@ -17,15 +17,16 @@
   ],
   "date": "2014-01-31",
   "description": "The XML (schema) type of a property - used for the value attribute of a primitive type (for which there is no type in the FHIR typing system).",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "datatype",
   "context": [
     "ElementDefinition.type.code"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -56,9 +57,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -80,7 +81,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },

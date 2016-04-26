@@ -18,15 +18,16 @@
   ],
   "date": "2014-01-31",
   "description": "This extension associates a structure definition with a data dictionary - a collection of data elements that any instance of data that conforms to the structure definition must also conform to. The value of the extension is a uri the defines a query that identifies the collection of relevant data elements\n\nThis extension can be used on any structure definition that is a constraint on the resource types Observation and Questionnaire. THe profile specifies which elements are mandatory etc., but any elements in a resource that conforms to the structure definition must also conform to one of the defined data elements.\n\nFor Observation:\n* Observation.code must be associated with a matching Data Element by DataElement.code. \n* The structure definition should bind Observation.code to a value set that has the same codes as the collection of data elements (though it can be narrower)\n* the unit and the quantity value should conform to the rules laid down in the matching Data Element\n\nFor Questionnaire:\n* todo.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
     "StructureDefinition"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -57,9 +58,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -81,7 +82,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },

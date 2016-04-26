@@ -61,8 +61,8 @@
     "reference": "Patient/f201",
     "display": "Roel"
   },
+  "created": "2013-05-14",
   "author": {
     "reference": "Practitioner/example"
-  },
-  "created": "2013-05-14"
+  }
 }

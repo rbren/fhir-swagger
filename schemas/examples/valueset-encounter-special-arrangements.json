@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "encounter-special-arrangements",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>SpecialArrangements</h2><p>This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.</p><p>This value set has an inline code system http://hl7.org/fhir/encounter-special-arrangements, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>wheel<a name=\"wheel\"> </a></td><td>Wheelchair</td><td/></tr><tr><td>stret<a name=\"stret\"> </a></td><td>Stretcher</td><td/></tr><tr><td>int<a name=\"int\"> </a></td><td>Interpreter</td><td/></tr><tr><td>att<a name=\"att\"> </a></td><td>Attendant</td><td/></tr><tr><td>dog<a name=\"dog\"> </a></td><td>Guide dog</td><td/></tr></table></div>"
+    "div": "<div><h2>SpecialArrangements</h2><p>This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-encounter-special-arrangements.html\">http://hl7.org/fhir/encounter-special-arrangements</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "SpecialArrangements",
   "status": "draft",
   "experimental": true,
@@ -33,37 +33,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.141"
-      }
-    ],
-    "system": "http://hl7.org/fhir/encounter-special-arrangements",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "wheel",
-        "display": "Wheelchair"
-      },
-      {
-        "code": "stret",
-        "display": "Stretcher"
-      },
-      {
-        "code": "int",
-        "display": "Interpreter"
-      },
-      {
-        "code": "att",
-        "display": "Attendant"
-      },
-      {
-        "code": "dog",
-        "display": "Guide dog"
+        "system": "http://hl7.org/fhir/encounter-special-arrangements"
       }
     ]
   }

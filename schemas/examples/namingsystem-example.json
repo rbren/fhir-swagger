@@ -8,6 +8,7 @@
   "name": "SNOMED CT",
   "status": "active",
   "kind": "codesystem",
+  "date": "2014-12-13",
   "publisher": "HL7 International on behalf of IHTSDO",
   "contact": [
     {
@@ -21,7 +22,6 @@
     }
   ],
   "responsible": "IHTSDO & affiliates",
-  "date": "2014-12-13",
   "description": "SNOMED CT is a concept-based, scientifically validated terminology that provides a unique and permanent concept identifier that can be included in multiple HL7 data types including CD and CE.  The concepts are managed to avoid \"semantic drift\" so the meaning remains constant.  If the concept is found to be ambiguous or the meaning changes, the concept is inactivated but still retained and the identifier is never reused.    SNOMED CT's concepts are interrelated hierarchically and using description logic.    SNOMED CT concepts have a unique \"fully-specified name\", a preferred term, and, optionally, synonyms.  The description languages include English and Spanish.",
   "uniqueId": [
     {

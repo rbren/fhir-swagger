@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "service-pharmacy",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Example Pharmacy Service Codes</h2><p>This value set includes a smattering of Pharmacy Service codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/ex-pharmaservice defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>smokecess<a name=\"smokecess\"> </a></td><td>Smoking cessation</td><td>Smoking cessation</td></tr><tr><td>flushot<a name=\"flushot\"> </a></td><td>Flu Shot</td><td>Flu Shot</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.324"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ex-pharmaservice",
+  "version": "1.4.0",
+  "name": "Example Pharmacy Service Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a smattering of Pharmacy Service codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/service-pharmacy",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "smokecess",
+      "display": "Smoking cessation",
+      "definition": "Smoking cessation"
+    },
+    {
+      "code": "flushot",
+      "display": "Flu Shot",
+      "definition": "Flu Shot"
+    }
+  ]
+}

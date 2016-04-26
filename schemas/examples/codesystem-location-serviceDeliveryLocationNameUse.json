@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-location-serviceDeliveryLocationNameUse",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ServiceDeliveryLocation name use value set</h2><p>The set of values that describe how usage of the service delivery location name.</p><p>This code system http://hl7.org/fhir/location-hspc-serviceDeliveryLocationNameUse defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>ABR<a name=\"ABR\"> </a></td><td>Abbreviation</td><td>A name or word display that has had a number of letters removed in order to fit into limited fields or spaces</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.685"
+    }
+  ],
+  "url": "http://hl7.org/fhir/location-hspc-serviceDeliveryLocationNameUse",
+  "version": "1.4.0",
+  "name": "ServiceDeliveryLocation name use value set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "The set of values that describe how usage of the service delivery location name.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-location-serviceDeliveryLocationNameUse",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ABR",
+      "display": "Abbreviation",
+      "definition": "A name or word display that has had a number of letters removed in order to fit into limited fields or spaces"
+    }
+  ]
+}

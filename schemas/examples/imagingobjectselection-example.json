@@ -9,6 +9,7 @@
   "patient": {
     "reference": "Patient/dicom"
   },
+  "authoringTime": "2014-11-20T11:01:20-08:00",
   "title": {
     "coding": [
       {
@@ -20,7 +21,6 @@
     "text": "A set of objects that have been exported for sharing"
   },
   "description": "1 SC image (screen snapshot) and 2 CT images to share a chest CT exam",
-  "authoringTime": "2014-11-20T11:01:20-08:00",
   "study": [
     {
       "uid": "urn:oid:2.16.124.113543.6003.189642796.63084.16749.2599092904",

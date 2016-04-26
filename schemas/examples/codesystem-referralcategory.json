@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "referralcategory",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ReferralCategory</h2><p>Identifies the degree of intention/authorization associated with the request</p><p>This code system http://hl7.org/fhir/referralcategory defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>proposal<a name=\"proposal\"> </a></td><td>Proposal</td><td>The referral request represents a suggestion or recommendation that a referral be made.</td></tr><tr><td>plan<a name=\"plan\"> </a></td><td>Plan</td><td>The referral request represents an intention by the author to make a referral, but no actual referral has yet been made/authorized.</td></tr><tr><td>request<a name=\"request\"> </a></td><td>Request</td><td>This is an actual referral request which, when active, will have the authorizations needed to allow it to be actioned.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.874"
+    }
+  ],
+  "url": "http://hl7.org/fhir/referralcategory",
+  "version": "1.4.0",
+  "name": "ReferralCategory",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Identifies the degree of intention/authorization associated with the request",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/referralcategory",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "proposal",
+      "display": "Proposal",
+      "definition": "The referral request represents a suggestion or recommendation that a referral be made."
+    },
+    {
+      "code": "plan",
+      "display": "Plan",
+      "definition": "The referral request represents an intention by the author to make a referral, but no actual referral has yet been made/authorized."
+    },
+    {
+      "code": "request",
+      "display": "Request",
+      "definition": "This is an actual referral request which, when active, will have the authorizations needed to allow it to be actioned."
+    }
+  ]
+}

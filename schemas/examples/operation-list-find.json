@@ -9,6 +9,7 @@
   "name": "Find a functional list",
   "status": "draft",
   "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
   "publisher": "HL7 (FHIR Project)",
   "contact": [
     {
@@ -24,10 +25,9 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
   "description": "This operation allows a client to find an identified list for a particular function by its function. The operation takes two parameters, the identity of a patient, and the name of a functional list.   The list of defined functional lists can be found at [Current Resource Lists](lifecycle.html#lists). Applications are not required to support all the lists, and may define additional lists of their own.   If the system is able to locate a list that serves the identified purpose, it returns it as the body of the response with a 200 OK status. If the resource cannot be located, the server returns a 404 not found (optionally with an OperationOutcome resource)",
   "code": "find",
-  "notes": "Note that servers may support searching by a functional list, and not support this operation that allows clients to find the list directly",
+  "comment": "Note that servers may support searching by a functional list, and not support this operation that allows clients to find the list directly",
   "system": false,
   "type": [
     "List"

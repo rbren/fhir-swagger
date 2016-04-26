@@ -7,6 +7,6 @@
   "base": "DataElement",
   "type": "token",
   "description": "Matches on the 11179-objectClassProperty extension value",
-  "xpath": "f:DataElement/f:element/f:mapping/f:extension[@url='http://hl7.org/fhir/StructureDefinition/11179-objectClassProperty']",
+  "xpath": "f:DataElement/f:element/f:mapping/f:extension[@url='http://hl7.org/fhir/StructureDefinition/11179-objectClassProperty'] | f:DataElement/f:element/f:mapping/f:extension[@url='http://hl7.org/fhir/StructureDefinition/11179-objectClassProperty']",
   "xpathUsage": "normal"
 }

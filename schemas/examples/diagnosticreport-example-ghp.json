@@ -5,16 +5,17 @@
     "lastUpdated": "2015-08-16T10:35:23Z"
   },
   "text": {
-    "fhir_comments": [
-      "   ************** CBC observation panel************************  "
-    ],
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ghp</p><p><b>meta</b>: </p><p><b>contained</b>: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , </p><p><b>identifier</b>: ghp-example</p><p><b>status</b>: final</p><p><b>code</b>: General Health Profile <span>(Details : {http://acme.com/labs/reports code 'GHP' = '??', given as 'General Health Profile'})</span></p><p><b>subject</b>: <a>Patient/pat2</a></p><p><b>effective</b>: 16/08/2015 4:40:17 PM</p><p><b>issued</b>: 17/08/2015 4:40:17 PM</p><p><b>performer</b>: <a>Acme Laboratory, Inc</a></p><p><b>specimen</b>: </p><ul><li>Red Top Tube. Generated Summary: id: rtt; Serum sample <span>(Details : {SNOMED CT code '119364003' = '119364003', given as 'Serum sample'})</span>; Patient/pat2; 20150816-00124</li><li>Lavender Top Tube. Generated Summary: id: ltt; Blood specimen with EDTA <span>(Details : {SNOMED CT code '445295009' = '445295009', given as 'Blood specimen with EDTA'})</span>; Patient/pat2; 20150816-00124</li><li>Urine Sample. Generated Summary: id: urine; Urine specimen <span>(Details : {SNOMED CT code '122575003' = '122575003', given as 'Urine specimen'})</span>; Patient/pat2; 20150816-00124</li></ul><p><b>result</b>: </p><ul><li>Chemistry Panel. Generated Summary: id: p1; status: final; Comprehensive metabolic 2000 panel - Serum or Plasma <span>(Details : {LOINC code '24323-8' = 'Comprehensive metabolic 2000 panel - Serum or Plasma', given as 'Comprehensive metabolic 2000 panel - Serum or Plasma'})</span>; effective: 16/08/2015 4:40:17 PM; issued: 17/08/2015 4:40:17 PM; Acme Laboratory, Inc</li><li>CBC. Generated Summary: id: p2; status: final; Complete blood count (hemogram) panel - Blood by Automated count <span>(Details : {LOINC code '58410-2' = 'Complete blood count (hemogram) panel - Blood by Automated count', given as 'Complete blood count (hemogram) panel - Blood by Automated count'})</span>; effective: 16/08/2015 4:40:17 PM; issued: 17/08/2015 4:40:17 PM; Acme Laboratory, Inc</li><li>Urinalysis. Generated Summary: id: p3; status: final; Urinalysis macro (dipstick) panel - Urine <span>(Details : {LOINC code '24357-6' = 'Urinalysis macro (dipstick) panel - Urine', given as 'Urinalysis macro (dipstick) panel - Urine'})</span>; effective: 16/08/2015 4:40:17 PM; issued: 17/08/2015 4:40:17 PM; Acme Laboratory, Inc</li></ul></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: ghp</p><p><b>meta</b>: </p><p><b>contained</b>: , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , </p><p><b>identifier</b>: ghp-example</p><p><b>status</b>: final</p><p><b>code</b>: General Health Profile <span>(Details : {http://acme.com/labs/reports code 'GHP' = '??', given as 'General Health Profile'})</span></p><p><b>subject</b>: <a>Patient/pat2</a></p><p><b>effective</b>: 16/08/2015 4:40:17 PM</p><p><b>issued</b>: 17/08/2015 4:40:17 PM</p><p><b>performer</b>: <a>Acme Laboratory, Inc</a></p><p><b>specimen</b>: </p><ul><li>Red Top Tube. Generated Summary: id: rtt; 20150816-00124; Serum sample <span>(Details : {SNOMED CT code '119364003' = 'Serum specimen (specimen)', given as 'Serum sample'})</span>; Patient/pat2</li><li>Lavender Top Tube. Generated Summary: id: ltt; 20150816-00124; Blood specimen with EDTA <span>(Details : {SNOMED CT code '445295009' = 'Blood specimen with edetic acid (specimen)', given as 'Blood specimen with EDTA'})</span>; Patient/pat2</li><li>Urine Sample. Generated Summary: id: urine; 20150816-00124; Urine specimen <span>(Details : {SNOMED CT code '122575003' = 'Urine specimen (specimen)', given as 'Urine specimen'})</span>; Patient/pat2</li></ul><p><b>result</b>: </p><ul><li>Chemistry Panel. Generated Summary: id: p1; status: final; Comprehensive metabolic 2000 panel - Serum or Plasma <span>(Details : {LOINC code '24323-8' = 'Comprehensive metabolic 2000 panel - Serum or Plasma', given as 'Comprehensive metabolic 2000 panel - Serum or Plasma'})</span>; effective: 16/08/2015 4:40:17 PM; issued: 17/08/2015 4:40:17 PM; Acme Laboratory, Inc</li><li>CBC. Generated Summary: id: p2; status: final; Complete blood count (hemogram) panel - Blood by Automated count <span>(Details : {LOINC code '58410-2' = 'Complete blood count (hemogram) panel - Blood by Automated count', given as 'Complete blood count (hemogram) panel - Blood by Automated count'})</span>; effective: 16/08/2015 4:40:17 PM; issued: 17/08/2015 4:40:17 PM; Acme Laboratory, Inc</li><li>Urinalysis. Generated Summary: id: p3; status: final; Urinalysis macro (dipstick) panel - Urine <span>(Details : {LOINC code '24357-6' = 'Urinalysis macro (dipstick) panel - Urine', given as 'Urinalysis macro (dipstick) panel - Urine'})</span>; effective: 16/08/2015 4:40:17 PM; issued: 17/08/2015 4:40:17 PM; Acme Laboratory, Inc</li></ul></div>"
   },
   "contained": [
     {
       "resourceType": "Specimen",
       "id": "rtt",
+      "accessionIdentifier": {
+        "system": "http://acme.com/labs/accession-ids",
+        "value": "20150816-00124"
+      },
       "type": {
         "coding": [
           {
@@ -26,10 +27,6 @@
       },
       "subject": {
         "reference": "Patient/pat2"
-      },
-      "accessionIdentifier": {
-        "system": "http://acme.com/labs/accession-ids",
-        "value": "20150816-00124"
       },
       "collection": {
         "collector": {
@@ -54,6 +51,10 @@
     {
       "resourceType": "Specimen",
       "id": "ltt",
+      "accessionIdentifier": {
+        "system": "http://acme.com/labs/accession-ids",
+        "value": "20150816-00124"
+      },
       "type": {
         "coding": [
           {
@@ -65,10 +66,6 @@
       },
       "subject": {
         "reference": "Patient/pat2"
-      },
-      "accessionIdentifier": {
-        "system": "http://acme.com/labs/accession-ids",
-        "value": "20150816-00124"
       },
       "collection": {
         "collector": {
@@ -93,6 +90,10 @@
     {
       "resourceType": "Specimen",
       "id": "urine",
+      "accessionIdentifier": {
+        "system": "http://acme.com/labs/accession-ids",
+        "value": "20150816-00124"
+      },
       "type": {
         "coding": [
           {
@@ -104,10 +105,6 @@
       },
       "subject": {
         "reference": "Patient/pat2"
-      },
-      "accessionIdentifier": {
-        "system": "http://acme.com/labs/accession-ids",
-        "value": "20150816-00124"
       },
       "collection": {
         "collector": {
@@ -262,12 +259,6 @@
     {
       "resourceType": "Observation",
       "id": "r1",
-      "_id": {
-        "fhir_comments": [
-          "    \n  all the data items (= Observations) are contained\n  in this diagnostic report. It would be equally\n    valid - and normal - for them to be separate trackable\n    items. However for the purposes of this example, it's\n  more convenient to have them here. For more discussion,\n  see under\"Contained Resources\" on the Resource Definitions\n  topic page      ",
-          "      for users steeped in v2, each observation roughly corresponds with an\n    OBX, and the Diagnostic Report with an ORU_R01 message      "
-        ]
-      },
       "status": "final",
       "code": {
         "coding": [

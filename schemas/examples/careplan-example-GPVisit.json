@@ -99,7 +99,12 @@
     {
       "actionResulting": [
         {
-          "reference": "Encounter/example"
+          "reference": "Encounter/example",
+          "_reference": {
+            "fhir_comments": [
+              "  This is a link to the nurse encounter. The assumption is that all contacts with practitioners\n            are modelled as separate encounters. Ideally, there will be  a 'master/parent' encounter that ties them together.\n            If there is a single encounter, then all participants will be linked to that encounter. "
+            ]
+          }
         }
       ],
       "detail": {
@@ -137,6 +142,11 @@
         "performer": [
           {
             "reference": "Practitioner/13",
+            "_reference": {
+              "fhir_comments": [
+                "  refer to the participant (the nurse) in this resource "
+              ]
+            },
             "display": "Nurse Nancy"
           }
         ]
@@ -172,6 +182,11 @@
               "  The status is 'scheduled' so the doctor knows the patient is waiting.   "
             ],
             "reference": "Practitioner/14",
+            "_reference": {
+              "fhir_comments": [
+                "  refer to the participant (the nurse) in this resource "
+              ]
+            },
             "display": "Doctor Dave"
           }
         ]

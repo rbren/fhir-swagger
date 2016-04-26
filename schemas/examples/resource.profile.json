@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Resource",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00"
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
   },
   "text": {
     "status": "generated",
@@ -36,9 +36,9 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for Resource Resource",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "rim",

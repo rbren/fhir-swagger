@@ -18,7 +18,7 @@
   ],
   "date": "2013-12-03",
   "description": "This email address is associated with a \"direct\" service - e.g. http://wiki.directproject.org/Addressing+Specification.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "v2",
@@ -32,13 +32,14 @@
     }
   ],
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "datatype",
   "context": [
     "ContactPoint"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -79,9 +80,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -103,7 +104,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },

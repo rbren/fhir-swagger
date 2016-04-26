@@ -3,7 +3,7 @@
   "id": "f201",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>identifier</b>: UZI-nummer = 12345678901 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Dokter Bronsig(OFFICIAL)</p><p><b>telecom</b>: ph: +31715269111(WORK)</p><p><b>address</b>: Walvisbaai 3 C4 - Automatisering Den helder 2333ZA NLD (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 24/12/1956</p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>ManagingOrganization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>AUMC</a></td><td>Implementation of planned interventions <span>(Details : {SNOMED CT code '225304007' = '225304007', given as 'Implementation of planned interventions'})</span></td><td>Medical oncologist <span>(Details : {SNOMED CT code '310512001' = '310512001', given as 'Medical oncologist'})</span></td></tr></table><h3>Qualifications</h3><table><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Pulmonologist <span>(Details : {SNOMED CT code '41672002' = '41672002', given as 'Pulmonologist'})</span></td></tr></table></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>identifier</b>: UZI-nummer = 12345678901 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Dokter Bronsig(OFFICIAL)</p><p><b>telecom</b>: ph: +31715269111(WORK)</p><p><b>address</b>: Walvisbaai 3 C4 - Automatisering Den helder 2333ZA NLD (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 24/12/1956</p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>Organization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>AUMC</a></td><td>Implementation of planned interventions <span>(Details : {SNOMED CT code '225304007' = 'Implementation of planned interventions (procedure)', given as 'Implementation of planned interventions'})</span></td><td>Medical oncologist <span>(Details : {SNOMED CT code '310512001' = 'Medical oncologist (occupation)', given as 'Medical oncologist'})</span></td></tr></table><h3>Qualifications</h3><table><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Pulmonologist <span>(Details : {SNOMED CT code '41672002' = 'Respiratory disease specialist (occupation)', given as 'Pulmonologist'})</span></td></tr></table></div>"
   },
   "identifier": [
     {
@@ -21,27 +21,29 @@
     }
   ],
   "active": true,
-  "name": {
-    "fhir_comments": [
-      "  Practitioner's personal demographics  "
-    ],
-    "use": "official",
-    "_use": {
+  "name": [
+    {
       "fhir_comments": [
-        "  The name of the practitioner  "
+        "  Practitioner's personal demographics  "
+      ],
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "  The name of the practitioner  "
+        ]
+      },
+      "text": "Dokter Bronsig",
+      "family": [
+        "Bronsig"
+      ],
+      "given": [
+        "Arend"
+      ],
+      "prefix": [
+        "Dr."
       ]
-    },
-    "text": "Dokter Bronsig",
-    "family": [
-      "Bronsig"
-    ],
-    "given": [
-      "Arend"
-    ],
-    "prefix": [
-      "Dr."
-    ]
-  },
+    }
+  ],
   "telecom": [
     {
       "system": "phone",
@@ -82,7 +84,7 @@
         "  Fortunately, the doctor is still alive!  ",
         "          <photo>\n            <reference value=\"Media/AB-201.bmp\"/>\n            <display value=\"Picture_Dokter_Bronsig\"/>\n        </photo>   "
       ],
-      "managingOrganization": {
+      "organization": {
         "reference": "Organization/f201",
         "display": "AUMC"
       },

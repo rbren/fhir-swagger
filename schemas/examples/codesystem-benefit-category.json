@@ -1,0 +1,63 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "benefit-category",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Benefit Category Codes</h2><p>This value set includes a smattering of Benefit Category codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/benefit-category defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>oral<a name=\"oral\"> </a></td><td>Dental and Oral Health Coverage</td><td>Dental and Oral Health Coverage</td></tr><tr><td>vision<a name=\"vision\"> </a></td><td>Vision Health Coverage</td><td>Vision Health Coverage</td></tr><tr><td>medical<a name=\"medical\"> </a></td><td>Medical Health Coverage</td><td>Medical Health Coverage</td></tr><tr><td>pharmacy<a name=\"pharmacy\"> </a></td><td>Pharmacy Coverage</td><td>Pharmacy Coverage</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.481"
+    }
+  ],
+  "url": "http://hl7.org/fhir/benefit-category",
+  "version": "1.4.0",
+  "name": "Benefit Category Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a smattering of Benefit Category codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/benefit-category",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "oral",
+      "display": "Dental and Oral Health Coverage",
+      "definition": "Dental and Oral Health Coverage"
+    },
+    {
+      "code": "vision",
+      "display": "Vision Health Coverage",
+      "definition": "Vision Health Coverage"
+    },
+    {
+      "code": "medical",
+      "display": "Medical Health Coverage",
+      "definition": "Medical Health Coverage"
+    },
+    {
+      "code": "pharmacy",
+      "display": "Pharmacy Coverage",
+      "definition": "Pharmacy Coverage"
+    }
+  ]
+}

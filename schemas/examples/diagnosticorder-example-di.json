@@ -5,6 +5,7 @@
     "status": "generated",
     "div": "<div>\n\t\t\t<p>Chest CT - ordered May 8, 2013 by Dr. Adam Careful</p>\n\t\t</div>"
   },
+  "status": "requested",
   "subject": {
     "reference": "Patient/dicom"
   },
@@ -17,7 +18,6 @@
       "text": "Check for metastatic disease"
     }
   ],
-  "status": "requested",
   "event": [
     {
       "status": "requested",

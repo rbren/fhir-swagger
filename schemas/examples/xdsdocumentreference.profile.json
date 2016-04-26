@@ -21,11 +21,12 @@
   ],
   "date": "2012-06-24",
   "description": "XDSDocumentEntry",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "DocumentReference",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "baseType": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -66,9 +67,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -84,9 +85,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -103,9 +104,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -123,9 +124,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -152,9 +153,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -184,7 +185,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -212,7 +213,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -240,7 +241,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -763,9 +764,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.relatesTo.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -791,7 +792,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.relatesTo.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -820,7 +821,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.relatesTo.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -830,6 +831,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1013,9 +1015,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.content.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1041,7 +1043,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.content.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1070,7 +1072,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.content.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1080,6 +1082,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1129,9 +1132,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Attachment.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1157,7 +1160,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Attachment.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1258,7 +1261,6 @@
             "code": "base64Binary"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",
@@ -1475,9 +1477,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.context.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1503,7 +1505,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.context.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1532,7 +1534,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.context.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1542,6 +1544,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1788,9 +1791,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DocumentReference.context.related.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1816,7 +1819,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.context.related.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1845,7 +1848,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DocumentReference.context.related.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1855,6 +1858,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

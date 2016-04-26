@@ -21,7 +21,8 @@
     {
       "coding": [
         {
-          "code": "attending"
+          "system": "http://hl7.org/fhir/v3/ParticipationType",
+          "code": "ATND"
         }
       ]
     }

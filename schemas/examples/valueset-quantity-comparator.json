@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "quantity-comparator",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>QuantityComparator</h2><p>How the Quantity should be understood and represented.</p><p>This value set has an inline code system http://hl7.org/fhir/quantity-comparator, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>&lt;<a name=\".60\"> </a></td><td>Less than</td><td>The actual value is less than the given value.</td></tr><tr><td>&lt;=<a name=\".60.61\"> </a></td><td>Less or Equal to</td><td>The actual value is less than or equal to the given value.</td></tr><tr><td>&gt;=<a name=\".62.61\"> </a></td><td>Greater or Equal to</td><td>The actual value is greater than or equal to the given value.</td></tr><tr><td>&gt;<a name=\".62\"> </a></td><td>Greater than</td><td>The actual value is greater than the given value.</td></tr></table></div>"
+    "div": "<div><h2>QuantityComparator</h2><p>How the Quantity should be understood and represented.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-quantity-comparator.html\">http://hl7.org/fhir/quantity-comparator</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/quantity-comparator",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "QuantityComparator",
   "status": "draft",
   "experimental": false,
@@ -37,38 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "How the Quantity should be understood and represented.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.34"
-      }
-    ],
-    "system": "http://hl7.org/fhir/quantity-comparator",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "<",
-        "display": "Less than",
-        "definition": "The actual value is less than the given value."
-      },
-      {
-        "code": "<=",
-        "display": "Less or Equal to",
-        "definition": "The actual value is less than or equal to the given value."
-      },
-      {
-        "code": ">=",
-        "display": "Greater or Equal to",
-        "definition": "The actual value is greater than or equal to the given value."
-      },
-      {
-        "code": ">",
-        "display": "Greater than",
-        "definition": "The actual value is greater than the given value."
+        "system": "http://hl7.org/fhir/quantity-comparator"
       }
     ]
   }

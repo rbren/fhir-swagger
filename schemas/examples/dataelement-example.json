@@ -3,7 +3,7 @@
   "id": "gender",
   "text": {
     "status": "generated",
-    "div": "<div>\n      \n      \n      \n      \n      <p>\n        \n        \n        \n        \n        <b>Gender Code</b>: The code representing the gender of a person\n      \n      \n      \n      </p>\n      \n      \n      \n      \n      <table>\n        \n        \n        \n        \n        <tbody>\n          \n          \n          \n          \n          <tr>\n            \n            \n            \n            \n            <th>Code</th>\n            \n            \n            \n            \n            <th>Display</th>\n            \n            \n            \n            \n            <th>Definition</th>\n          \n          \n          \n          \n          </tr>\n          \n          \n          \n          \n          <tr>\n            \n            \n            \n            \n            <td>0</td>\n            \n            \n            \n            \n            <td>Unknown</td>\n            \n            \n            \n            \n            <td>Not known, not observed, not recorded, or refused.</td>\n          \n          \n          \n          \n          </tr>\n          \n          \n          \n          \n          <tr>\n            \n            \n            \n            \n            <td>1</td>\n            \n            \n            \n            \n            <td>Male</td>\n            \n            \n            \n            \n            <td>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</td>\n          \n          \n          \n          \n          </tr>\n          \n          \n          \n          \n          <tr>\n            \n            \n            \n            \n            <td>2</td>\n            \n            \n            \n            \n            <td>Female</td>\n            \n            \n            \n            \n            <td>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</td>\n          \n          \n          \n          \n          </tr>\n          \n          \n          \n          \n          <tr>\n            \n            \n            \n            \n            <td>3</td>\n            \n            \n            \n            \n            <td>Not specified</td>\n            \n            \n            \n            \n            <td>Not specified</td>\n          \n          \n          \n          \n          </tr>\n        \n        \n        \n        \n        </tbody>\n      \n      \n      \n      \n      </table>\n      \n      \n      \n      \n      <ul>\n        \n        \n        \n        \n        <li/>\n      \n      \n      \n      \n      </ul>\n    \n    \n    \n    \n    </div>"
+    "div": "<div>\n\t\t\t<p>\n\t\t\t\t<b>Gender Code</b>: The code representing the gender of a person\n      \n      \n      \n      </p>\n\t\t\t<table>\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>Code</th>\n\t\t\t\t\t\t<th>Display</th>\n\t\t\t\t\t\t<th>Definition</th>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>0</td>\n\t\t\t\t\t\t<td>Unknown</td>\n\t\t\t\t\t\t<td>Not known, not observed, not recorded, or refused.</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>1</td>\n\t\t\t\t\t\t<td>Male</td>\n\t\t\t\t\t\t<td>A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>2</td>\n\t\t\t\t\t\t<td>Female</td>\n\t\t\t\t\t\t<td>A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>3</td>\n\t\t\t\t\t\t<td>Not specified</td>\n\t\t\t\t\t\t<td>Not specified</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t\t<ul>\n\t\t\t\t<li/>\n\t\t\t</ul>\n\t\t</div>"
   },
   "contained": [
     {
@@ -50,6 +50,28 @@
       }
     },
     {
+      "resourceType": "CodeSystem",
+      "id": "2179414-permitted-cs",
+      "url": "http://example.org/fhir/2179414",
+      "status": "active",
+      "caseSensitive": true,
+      "content": "complete",
+      "concept": [
+        {
+          "code": "0"
+        },
+        {
+          "code": "1"
+        },
+        {
+          "code": "2"
+        },
+        {
+          "code": "3"
+        }
+      ]
+    },
+    {
       "resourceType": "ValueSet",
       "id": "2179414-permitted",
       "_id": {
@@ -58,21 +80,10 @@
         ]
       },
       "status": "active",
-      "codeSystem": {
-        "system": "http://example.org/fhir/2179414",
-        "caseSensitive": true,
-        "concept": [
+      "compose": {
+        "include": [
           {
-            "code": "0"
-          },
-          {
-            "code": "1"
-          },
-          {
-            "code": "2"
-          },
-          {
-            "code": "3"
+            "system": "http://example.org/fhir/2179414"
           }
         ]
       }
@@ -133,9 +144,9 @@
     }
   ],
   "version": "1.0",
-  "name": "Gender Code",
   "status": "active",
   "publisher": "DCP",
+  "name": "Gender Code",
   "useContext": [
     {
       "coding": [

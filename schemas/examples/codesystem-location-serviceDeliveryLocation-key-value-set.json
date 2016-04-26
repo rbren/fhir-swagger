@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-location-serviceDeliveryLocation-key-value-set",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ServiceDeliveryLocation key value set</h2><p>This value set defines the set of codes used to identify the service delivery location.</p><p>This code system http://hl7.org/fhir/location-hspc-serviceDeliveryLocation-key-value-set defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>119<a name=\"119\"> </a></td><td>Facility</td><td>A location that is categorized by the nursing skill, specialty, or type of care delivered</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.683"
+    }
+  ],
+  "url": "http://hl7.org/fhir/location-hspc-serviceDeliveryLocation-key-value-set",
+  "version": "1.4.0",
+  "name": "ServiceDeliveryLocation key value set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines the set of codes used to identify the service delivery location.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-location-serviceDeliveryLocation-key-value-set",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "119",
+      "display": "Facility",
+      "definition": "A location that is categorized by the nursing skill, specialty, or type of care delivered"
+    }
+  ]
+}

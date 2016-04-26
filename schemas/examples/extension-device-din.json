@@ -1,0 +1,186 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "device-din",
+  "url": "http://hl7.org/fhir/StructureDefinition/device-din",
+  "name": "Donation Identification Number (DIN)",
+  "display": "Donation Identification Number (DIN)",
+  "status": "draft",
+  "publisher": "Health Level Seven, Inc. - FHIR WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "HL7"
+        }
+      ]
+    }
+  ],
+  "date": "2015-02-21",
+  "description": "The distinct identification code required by §1271.290(c) for a human cell, tissue, or cellular and tissue-based product (HCT/P) regulated as a device - which is a conditional, variable portion of the production identifier (PI) of a [Unique device Identifier (UDI)](http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIBasics/default.htm).   If the content is from an [ICCBBA](https://www.iccbba.org/)-encoded UDI, the URI to use for the system is:  http://hl7.org/fhir/NamingSystem/iccbba-din.  GS1 and HIBCC formatted UDIs do not currently convey the DIN element.\n\n*Note to balloters: The Ordesr and Observations Workgroup has not yet determined whether the Device resource will include Devices of Human (or other) Origin (tissue, blood, etc.) and so the need for Donation Identification number is currently being met through this extension.  If it is determined a separate resource is to be used for Devices of Human (or other) Origin (tissue, blood, etc.)  then this extension may be deprecated in the future.  Feedback on this issues is welcome.",
+  "fhirVersion": "1.4.0",
+  "kind": "datatype",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "Device"
+  ],
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "DIN | DIC | Distinct Idendification Code",
+        "definition": "The distinct identification code required by §1271.290(c) for a human cell, tissue, or cellular and tissue-based product (HCT/P) regulated as a device - which is a conditional, variable portion of the production identifier (PI) of a [Unique device Identifier (UDI)](http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIBasics/default.htm).   If the content is from an [ICCBBA](https://www.iccbba.org/)-encoded UDI, the URI to use for the system is:  http://hl7.org/fhir/NamingSystem/iccbba-din.  GS1 and HIBCC formatted UDIs do not currently convey the DIN element.\n\n*Note to balloters: The Ordesr and Observations Workgroup has not yet determined whether the Device resource will include Devices of Human (or other) Origin (tissue, blood, etc.) and so the need for Donation Identification number is currently being met through this extension.  If it is determined a separate resource is to be used for Devices of Human (or other) Origin (tissue, blood, etc.)  then this extension may be deprecated in the future.  Feedback on this issues is welcome.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "extension",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/device-din",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.valueIdentifier",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "DIN | DIC | Distinct Idendification Code",
+        "definition": "The distinct identification code required by §1271.290(c) for a human cell, tissue, or cellular and tissue-based product (HCT/P) regulated as a device - which is a conditional, variable portion of the production identifier (PI) of a [Unique device Identifier (UDI)](http://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/UniqueDeviceIdentification/UDIBasics/default.htm).   If the content is from an [ICCBBA](https://www.iccbba.org/)-encoded UDI, the URI to use for the system is:  http://hl7.org/fhir/NamingSystem/iccbba-din.  GS1 and HIBCC formatted UDIs do not currently convey the DIN element.\n\n*Note to balloters: The Ordesr and Observations Workgroup has not yet determined whether the Device resource will include Devices of Human (or other) Origin (tissue, blood, etc.) and so the need for Donation Identification number is currently being met through this extension.  If it is determined a separate resource is to be used for Devices of Human (or other) Origin (tissue, blood, etc.)  then this extension may be deprecated in the future.  Feedback on this issues is welcome.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "extension",
+        "max": "0"
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/device-din"
+      },
+      {
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "namingsystem-type",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>NamingSystemType</h2><p>Identifies the purpose of the naming system.</p><p>This value set has an inline code system http://hl7.org/fhir/namingsystem-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>codesystem<a name=\"codesystem\"> </a></td><td>Code System</td><td>The naming system is used to define concepts and symbols to represent those concepts; e.g. UCUM, LOINC, NDC code, local lab codes, etc.</td></tr><tr><td>identifier<a name=\"identifier\"> </a></td><td>Identifier</td><td>The naming system is used to manage identifiers (e.g. license numbers, order numbers, etc.).</td></tr><tr><td>root<a name=\"root\"> </a></td><td>Root</td><td>The naming system is used as the root for other identifiers and naming systems.</td></tr></table></div>"
+    "div": "<div><h2>NamingSystemType</h2><p>Identifies the purpose of the naming system.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-namingsystem-type.html\">http://hl7.org/fhir/namingsystem-type</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/namingsystem-type",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "NamingSystemType",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Identifies the purpose of the naming system.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.290"
-      }
-    ],
-    "system": "http://hl7.org/fhir/namingsystem-type",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "codesystem",
-        "display": "Code System",
-        "definition": "The naming system is used to define concepts and symbols to represent those concepts; e.g. UCUM, LOINC, NDC code, local lab codes, etc."
-      },
-      {
-        "code": "identifier",
-        "display": "Identifier",
-        "definition": "The naming system is used to manage identifiers (e.g. license numbers, order numbers, etc.)."
-      },
-      {
-        "code": "root",
-        "display": "Root",
-        "definition": "The naming system is used as the root for other identifiers and naming systems."
+        "system": "http://hl7.org/fhir/namingsystem-type"
       }
     ]
   }

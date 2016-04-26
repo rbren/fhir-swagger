@@ -19,13 +19,14 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for markdown type: A string that may contain markdown syntax for optional processing by a mark down presentation engine",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "string",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/string",
+  "baseType": "string",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/string",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {

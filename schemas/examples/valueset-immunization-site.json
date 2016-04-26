@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "immunization-site",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Codes for Immunization Site of Administration</h2><p>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"v3/ActSite/index.html\">http://hl7.org/fhir/v3/ActSite</a><table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>LA</td><td>Left arm</td><td>left arm</td></tr><tr><td>RA</td><td>Right arm</td><td>right arm</td></tr></table></li></ul></div>"
+    "div": "<div><h2>Codes for Immunization Site of Administration</h2><p>The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"v3/ActSite/cs.html\">http://hl7.org/fhir/v3/ActSite</a><table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>LA</td><td>Left arm</td><td>left arm</td></tr><tr><td>RA</td><td>Right arm</td><td>right arm</td></tr></table></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/immunization-site",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Codes for Immunization Site of Administration",
   "status": "draft",
   "experimental": true,
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the medication process, in particular the process and reasons for dispensing. This value set is provided as a suggestive example.",
   "compose": {
     "include": [

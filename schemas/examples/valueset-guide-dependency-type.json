@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "guide-dependency-type",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>GuideDependencyType</h2><p>How a dependency is represented when the guide is published.</p><p>This value set has an inline code system http://hl7.org/fhir/guide-dependency-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>reference<a name=\"reference\"> </a></td><td>Reference</td><td>The guide is referred to by URL.</td></tr><tr><td>inclusion<a name=\"inclusion\"> </a></td><td>Inclusion</td><td>The guide is embedded in this guide when published.</td></tr></table></div>"
+    "div": "<div><h2>GuideDependencyType</h2><p>How a dependency is represented when the guide is published.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-guide-dependency-type.html\">http://hl7.org/fhir/guide-dependency-type</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/guide-dependency-type",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "GuideDependencyType",
   "status": "draft",
   "experimental": false,
@@ -37,28 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "How a dependency is represented when the guide is published.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.170"
-      }
-    ],
-    "system": "http://hl7.org/fhir/guide-dependency-type",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "reference",
-        "display": "Reference",
-        "definition": "The guide is referred to by URL."
-      },
-      {
-        "code": "inclusion",
-        "display": "Inclusion",
-        "definition": "The guide is embedded in this guide when published."
+        "system": "http://hl7.org/fhir/guide-dependency-type"
       }
     ]
   }

@@ -12,17 +12,19 @@
     {
       "resourceType": "Practitioner",
       "id": "a2",
-      "name": {
-        "family": [
-          "Smitty"
-        ],
-        "given": [
-          "Gerald"
-        ]
-      },
+      "name": [
+        {
+          "family": [
+            "Smitty"
+          ],
+          "given": [
+            "Gerald"
+          ]
+        }
+      ],
       "practitionerRole": [
         {
-          "managingOrganization": {
+          "organization": {
             "display": "Cleveland Clinic"
           },
           "role": {

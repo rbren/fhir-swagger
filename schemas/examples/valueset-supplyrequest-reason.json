@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "supplyrequest-reason",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>SupplyRequestReason</h2><p>Why the supply item was requested</p><p>This value set has an inline code system http://hl7.org/fhir/supplyrequest-reason, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>patient-care<a name=\"patient-care\"> </a></td><td>Patient Care</td><td>The supply has been requested for use in direct patient care.</td></tr><tr><td>ward-stock<a name=\"ward-stock\"> </a></td><td>Ward Stock</td><td>The supply has been requested for for creating or replenishing ward stock.</td></tr></table></div>"
+    "div": "<div><h2>SupplyRequestReason</h2><p>Why the supply item was requested</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-supplyrequest-reason.html\">http://hl7.org/fhir/supplyrequest-reason</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/supplyrequest-reason",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "SupplyRequestReason",
   "status": "draft",
   "experimental": false,
@@ -37,28 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Why the supply item was requested",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.464"
-      }
-    ],
-    "system": "http://hl7.org/fhir/supplyrequest-reason",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "patient-care",
-        "display": "Patient Care",
-        "definition": "The supply has been requested for use in direct patient care."
-      },
-      {
-        "code": "ward-stock",
-        "display": "Ward Stock",
-        "definition": "The supply has been requested for for creating or replenishing ward stock."
+        "system": "http://hl7.org/fhir/supplyrequest-reason"
       }
     ]
   }

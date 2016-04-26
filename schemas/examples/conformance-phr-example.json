@@ -6,6 +6,8 @@
     "div": "<div>\n     \n      <p>Prototype Conformance Statement for September 2013 Connectathon</p>\n     \n      <p>The server offers read and search support on the following resource types:</p>\n     \n      <ul>\n      \n        <li>Patient</li>\n      \n        <li>DocumentReference</li>\n      \n        <li>Condition</li>\n      \n        <li>DiagnosticReport</li>\n    \n      </ul>\n    \n    </div>"
   },
   "name": "PHR Template",
+  "status": "draft",
+  "date": "2013-06-18",
   "publisher": "FHIR Project",
   "contact": [
     {
@@ -17,7 +19,6 @@
       ]
     }
   ],
-  "date": "2013-06-18",
   "description": "Prototype Conformance Statement for September 2013 Connectathon",
   "kind": "capability",
   "software": {
@@ -38,6 +39,14 @@
   "format": [
     "json",
     "xml"
+  ],
+  "_format": [
+    {
+      "fhir_comments": [
+        "  \n    for the connectathon, servers should support both xml and json. Clients can use only one. \n    "
+      ]
+    },
+    null
   ],
   "rest": [
     {

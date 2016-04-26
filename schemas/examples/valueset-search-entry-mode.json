@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "search-entry-mode",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>SearchEntryMode</h2><p>Why an entry is in the result set - whether it's included as a match or because of an _include requirement.</p><p>This value set has an inline code system http://hl7.org/fhir/search-entry-mode, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>match<a name=\"match\"> </a></td><td>Match</td><td>This resource matched the search specification.</td></tr><tr><td>include<a name=\"include\"> </a></td><td>Include</td><td>This resource is returned because it is referred to from another resource in the search set.</td></tr><tr><td>outcome<a name=\"outcome\"> </a></td><td>Outcome</td><td>An OperationOutcome that provides additional information about the processing of a search.</td></tr></table></div>"
+    "div": "<div><h2>SearchEntryMode</h2><p>Why an entry is in the result set - whether it's included as a match or because of an _include requirement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-search-entry-mode.html\">http://hl7.org/fhir/search-entry-mode</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/search-entry-mode",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "SearchEntryMode",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Why an entry is in the result set - whether it's included as a match or because of an _include requirement.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.328"
-      }
-    ],
-    "system": "http://hl7.org/fhir/search-entry-mode",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "match",
-        "display": "Match",
-        "definition": "This resource matched the search specification."
-      },
-      {
-        "code": "include",
-        "display": "Include",
-        "definition": "This resource is returned because it is referred to from another resource in the search set."
-      },
-      {
-        "code": "outcome",
-        "display": "Outcome",
-        "definition": "An OperationOutcome that provides additional information about the processing of a search."
+        "system": "http://hl7.org/fhir/search-entry-mode"
       }
     ]
   }

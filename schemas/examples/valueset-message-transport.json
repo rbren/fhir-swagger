@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "message-transport",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>MessageTransport</h2><p>The protocol used for message transport.</p><p>This value set has an inline code system http://hl7.org/fhir/message-transport, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>http<a name=\"http\"> </a></td><td>HTTP</td><td>The application sends or receives messages using HTTP POST (may be over http: or https:).</td></tr><tr><td>ftp<a name=\"ftp\"> </a></td><td>FTP</td><td>The application sends or receives messages using File Transfer Protocol.</td></tr><tr><td>mllp<a name=\"mllp\"> </a></td><td>MLLP</td><td>The application sends or receives messages using HL7's Minimal Lower Level Protocol.</td></tr></table></div>"
+    "div": "<div><h2>MessageTransport</h2><p>The protocol used for message transport.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-message-transport.html\">http://hl7.org/fhir/message-transport</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/message-transport",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "MessageTransport",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The protocol used for message transport.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.86"
-      }
-    ],
-    "system": "http://hl7.org/fhir/message-transport",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "http",
-        "display": "HTTP",
-        "definition": "The application sends or receives messages using HTTP POST (may be over http: or https:)."
-      },
-      {
-        "code": "ftp",
-        "display": "FTP",
-        "definition": "The application sends or receives messages using File Transfer Protocol."
-      },
-      {
-        "code": "mllp",
-        "display": "MLLP",
-        "definition": "The application sends or receives messages using HL7's Minimal Lower Level Protocol."
+        "system": "http://hl7.org/fhir/message-transport"
       }
     ]
   }

@@ -12,15 +12,42 @@
     }
   ],
   "status": "proposed",
-  "type": {
+  "serviceCategory": {
     "coding": [
       {
-        "code": "52",
-        "display": "General Discussion"
+        "system": "http://example.org/service-category",
+        "code": "gp",
+        "display": "General Practice"
+      }
+    ]
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://example.org/specialty",
+          "code": "gp",
+          "display": "General Practice"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://example.org/appointment-type",
+        "code": "wi",
+        "display": "Walk in"
       }
     ]
   },
   "reason": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "413095006"
+      }
+    ],
     "text": "Clinical Review"
   },
   "priority": 5,
@@ -31,6 +58,7 @@
       "reference": "Slot/example"
     }
   ],
+  "created": "2015-12-02",
   "comment": "Further expand on the results of the MRI and determine the next actions that may be appropriate.",
   "participant": [
     {
@@ -46,7 +74,8 @@
         {
           "coding": [
             {
-              "code": "attending"
+              "system": "http://hl7.org/fhir/v3/ParticipationType",
+              "code": "ATND"
             }
           ]
         }

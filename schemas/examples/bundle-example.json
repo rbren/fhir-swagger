@@ -45,13 +45,13 @@
             "   snip   "
           ],
           "status": "generated",
-          "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3123</p><p><b>patient</b>: <a>Patient/347</a></p><p><b>medication</b>: <a>Medication/example</a></p></div>"
-        },
-        "patient": {
-          "reference": "Patient/347"
+          "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3123</p><p><b>medication</b>: <a>Medication/example</a></p><p><b>patient</b>: <a>Patient/347</a></p></div>"
         },
         "medicationReference": {
           "reference": "Medication/example"
+        },
+        "patient": {
+          "reference": "Patient/347"
         }
       },
       "search": {

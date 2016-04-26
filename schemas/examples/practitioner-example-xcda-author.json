@@ -5,15 +5,17 @@
     "status": "generated",
     "div": "<div>\n      <p>Harold Hippocrates, MD</p>\n    </div>"
   },
-  "name": {
-    "family": [
-      "Hippocrates"
-    ],
-    "given": [
-      "Harold"
-    ],
-    "suffix": [
-      "MD"
-    ]
-  }
+  "name": [
+    {
+      "family": [
+        "Hippocrates"
+      ],
+      "given": [
+        "Harold"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ]
 }

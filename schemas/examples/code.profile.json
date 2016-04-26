@@ -19,13 +19,14 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for code type: A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "string",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/string",
+  "baseType": "string",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/string",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {
@@ -89,7 +90,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-regex",
-                "valueString": "[^\\s]+([\\s][^\\s]+)*"
+                "valueString": "[^\\s]+([\\s]?[^\\s]+)*"
               }
             ],
             "_code": {
@@ -140,7 +141,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-regex",
-                "valueString": "[^\\s]+([\\s][^\\s]+)*"
+                "valueString": "[^\\s]+([\\s]?[^\\s]+)*"
               }
             ],
             "_code": {

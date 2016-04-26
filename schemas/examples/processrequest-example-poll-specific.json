@@ -13,10 +13,10 @@
     }
   ],
   "created": "2014-08-16",
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/1"
   },
-  "request": {
+  "requestReference": {
     "reference": "http://benefitco.com/oralhealthclaim/12345"
   }
 }

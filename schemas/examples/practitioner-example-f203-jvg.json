@@ -3,7 +3,7 @@
   "id": "f203",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f203</p><p><b>identifier</b>: UZI-nummer = 12345678903 (OFFICIAL), BIG-nummer = 12345678903 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juri van Gelder(OFFICIAL)</p><p><b>telecom</b>: ph: +31715269111(WORK)</p><p><b>address</b>: Walvisbaai 3 Den helder 2333ZA NLD (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 20/04/1983</p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>ManagingOrganization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>AUMC</a></td><td>Physical therapist <span>(Details : {SNOMED CT code '36682004' = '36682004', given as 'Physical therapist'})</span></td><td>Assess physical therapist service <span>(Details : {SNOMED CT code '410158009' = '410158009', given as 'Assess physical therapist service'})</span></td></tr></table></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f203</p><p><b>identifier</b>: UZI-nummer = 12345678903 (OFFICIAL), BIG-nummer = 12345678903 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juri van Gelder(OFFICIAL)</p><p><b>telecom</b>: ph: +31715269111(WORK)</p><p><b>address</b>: Walvisbaai 3 Den helder 2333ZA NLD (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 20/04/1983</p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>Organization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>AUMC</a></td><td>Physical therapist <span>(Details : {SNOMED CT code '36682004' = 'Physiotherapist (occupation)', given as 'Physical therapist'})</span></td><td>Assess physical therapist service <span>(Details : {SNOMED CT code '410158009' = 'Physical therapy assessment (procedure)', given as 'Assess physical therapist service'})</span></td></tr></table></div>"
   },
   "identifier": [
     {
@@ -34,15 +34,17 @@
     }
   ],
   "active": true,
-  "name": {
-    "use": "official",
-    "_use": {
-      "fhir_comments": [
-        "  The name of the practitioner  "
-      ]
-    },
-    "text": "Juri van Gelder"
-  },
+  "name": [
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "  The name of the practitioner  "
+        ]
+      },
+      "text": "Juri van Gelder"
+    }
+  ],
   "telecom": [
     {
       "system": "phone",
@@ -86,7 +88,7 @@
       "fhir_comments": [
         "      <photo>    \n        <reference value=\"Media/JvG-203.bmp\"/>\n        <display value=\"Picture_Juri_van_Gelder\"/>\n    </photo>  "
       ],
-      "managingOrganization": {
+      "organization": {
         "reference": "Organization/f201",
         "display": "AUMC"
       },

@@ -12,12 +12,30 @@
       "value": "45"
     }
   ],
-  "type": [
+  "serviceCategory": {
+    "coding": [
+      {
+        "code": "17",
+        "display": "General Practice"
+      }
+    ]
+  },
+  "serviceType": [
     {
       "coding": [
         {
-          "code": "45",
-          "display": "Physiotherapy"
+          "code": "57",
+          "display": "Immunisation"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "408480009",
+          "display": "Clinical immunology"
         }
       ]
     }
@@ -30,5 +48,5 @@
     "start": "2013-12-25T09:15:00Z",
     "end": "2013-12-25T09:30:00Z"
   },
-  "comment": "Assessments should be performed before requesting appointments in this slot."
+  "comment": "The slots attached to this schedule should be specialized to cover immunizations within the clinic"
 }

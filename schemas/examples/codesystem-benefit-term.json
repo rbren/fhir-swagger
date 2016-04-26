@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "benefit-term",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Benefit Term Codes</h2><p>This value set includes a smattering of Benefit Term codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/benefit-term defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>annual<a name=\"annual\"> </a></td><td>Annual</td><td>Annual, renewing on the anniversary</td></tr><tr><td>lifetime<a name=\"lifetime\"> </a></td><td>Lifetime</td><td>For the total term, lifetime, of the policy or coverage</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.486"
+    }
+  ],
+  "url": "http://hl7.org/fhir/benefit-term",
+  "version": "1.4.0",
+  "name": "Benefit Term Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a smattering of Benefit Term codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/benefit-term",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "annual",
+      "display": "Annual",
+      "definition": "Annual, renewing on the anniversary"
+    },
+    {
+      "code": "lifetime",
+      "display": "Lifetime",
+      "definition": "For the total term, lifetime, of the policy or coverage"
+    }
+  ]
+}

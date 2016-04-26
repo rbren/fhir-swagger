@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "action-behavior-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ActionBehaviorType</h2><p>The type of behavior to be defined</p><p>This code system http://hl7.org/fhir/action-behavior-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>grouping<a name=\"grouping\"> </a></td><td>Grouping Behavior</td><td>Specifies grouping behavior using the action-group-behavior valueset</td></tr><tr><td>selection<a name=\"selection\"> </a></td><td>Selection Behavior</td><td>Specifies selection behavior using the action-selection-behavior valueset</td></tr><tr><td>required<a name=\"required\"> </a></td><td>Required Behavior</td><td>Specifies required behavior using the action-required-behavior valueset</td></tr><tr><td>precheck<a name=\"precheck\"> </a></td><td>Precheck Behavior</td><td>Specifies precheck behavior using the action-precheck-behavior valueset</td></tr><tr><td>cardinality<a name=\"cardinality\"> </a></td><td>Cardinality Behavior</td><td>Specifies cardinality behavior using the action-cardinality behavior valueset</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.514"
+    }
+  ],
+  "url": "http://hl7.org/fhir/action-behavior-type",
+  "version": "1.4.0",
+  "name": "ActionBehaviorType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of behavior to be defined",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/action-behavior-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "grouping",
+      "display": "Grouping Behavior",
+      "definition": "Specifies grouping behavior using the action-group-behavior valueset"
+    },
+    {
+      "code": "selection",
+      "display": "Selection Behavior",
+      "definition": "Specifies selection behavior using the action-selection-behavior valueset"
+    },
+    {
+      "code": "required",
+      "display": "Required Behavior",
+      "definition": "Specifies required behavior using the action-required-behavior valueset"
+    },
+    {
+      "code": "precheck",
+      "display": "Precheck Behavior",
+      "definition": "Specifies precheck behavior using the action-precheck-behavior valueset"
+    },
+    {
+      "code": "cardinality",
+      "display": "Cardinality Behavior",
+      "definition": "Specifies cardinality behavior using the action-cardinality behavior valueset"
+    }
+  ]
+}

@@ -15,8 +15,8 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "323418000",
-        "display": "Fix me up"
+        "code": "303653007",
+        "display": "Computed tomography of head"
       }
     ]
   }

@@ -62,6 +62,10 @@
       "name": "V2",
       "path": "fhir:Patient/fhir:name/fhir:given/@value",
       "sourceId": "R3"
+    },
+    {
+      "name": "DefaultValue",
+      "defaultValue": "Replace at Runtime"
     }
   ],
   "setup": {
@@ -191,7 +195,7 @@
         },
         {
           "fhir_comments": [
-            "    Search for the resource but this time using the birthdate \n\t\t\t\tas a search parameter to make sure search by birthDate works    "
+            "    Search for the resource but this time using the birthdate\n\t\t\t\tas a search parameter to make sure search by birthDate works    "
           ],
           "operation": {
             "type": {
@@ -253,7 +257,7 @@
         },
         {
           "fhir_comments": [
-            "    The response code of 200 verifies that the resource \n\t\t\t\talready exists and did not get created    "
+            "    The response code of 200 verifies that the resource\n\t\t\t\talready exists and did not get created    "
           ],
           "assert": {
             "responseCode": "200"

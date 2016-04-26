@@ -5,31 +5,29 @@
     "status": "generated",
     "div": "<div>Disclosure by some idiot, for marketing reasons, to places unknown, of a Poor Sap, data about Everthing important.</div>"
   },
-  "event": {
-    "type": {
-      "system": "http://nema.org/dicom/dicm",
-      "code": "110106",
-      "display": "Export"
-    },
-    "subtype": [
-      {
-        "code": "Disclosure",
-        "display": "HIPAA disclosure"
-      }
-    ],
-    "action": "R",
-    "dateTime": "2013-09-22T00:08:00Z",
-    "outcome": "0",
-    "outcomeDesc": "Successful  Disclosure",
-    "purposeOfEvent": [
-      {
-        "system": "http://hl7.org/fhir/v3/ActReason",
-        "code": "HMARKT",
-        "display": "healthcare marketing"
-      }
-    ]
+  "type": {
+    "system": "http://nema.org/dicom/dicm",
+    "code": "110106",
+    "display": "Export"
   },
-  "participant": [
+  "subtype": [
+    {
+      "code": "Disclosure",
+      "display": "HIPAA disclosure"
+    }
+  ],
+  "action": "R",
+  "recorded": "2013-09-22T00:08:00Z",
+  "outcome": "0",
+  "outcomeDesc": "Successful  Disclosure",
+  "purposeOfEvent": [
+    {
+      "system": "http://hl7.org/fhir/v3/ActReason",
+      "code": "HMARKT",
+      "display": "healthcare marketing"
+    }
+  ],
+  "agent": [
     {
       "role": [
         {
@@ -115,7 +113,7 @@
       }
     ]
   },
-  "object": [
+  "entity": [
     {
       "reference": {
         "fhir_comments": [

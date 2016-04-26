@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "module-metadata-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ModuleMetadataType</h2><p>The type of knowledge module being described</p><p>This code system http://hl7.org/fhir/module-metadata-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>module<a name=\"module\"> </a></td><td>Module</td><td>The resource is a description of a knowledge module</td></tr><tr><td>library<a name=\"library\"> </a></td><td>Library</td><td>The resource is a shareable library of formalized knowledge</td></tr><tr><td>decision-support-rule<a name=\"decision-support-rule\"> </a></td><td>Decision Support Rule</td><td>An Event-Condition-Action Rule Artifact</td></tr><tr><td>documentation-template<a name=\"documentation-template\"> </a></td><td>Documentation Template</td><td>A Documentation Template Artifact</td></tr><tr><td>order-set<a name=\"order-set\"> </a></td><td>Order Set</td><td>An Order Set Artifact</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.491"
+    }
+  ],
+  "url": "http://hl7.org/fhir/module-metadata-type",
+  "version": "1.4.0",
+  "name": "ModuleMetadataType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of knowledge module being described",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/module-metadata-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "module",
+      "display": "Module",
+      "definition": "The resource is a description of a knowledge module"
+    },
+    {
+      "code": "library",
+      "display": "Library",
+      "definition": "The resource is a shareable library of formalized knowledge"
+    },
+    {
+      "code": "decision-support-rule",
+      "display": "Decision Support Rule",
+      "definition": "An Event-Condition-Action Rule Artifact"
+    },
+    {
+      "code": "documentation-template",
+      "display": "Documentation Template",
+      "definition": "A Documentation Template Artifact"
+    },
+    {
+      "code": "order-set",
+      "display": "Order Set",
+      "definition": "An Order Set Artifact"
+    }
+  ]
+}

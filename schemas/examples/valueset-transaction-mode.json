@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "transaction-mode",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>TransactionMode</h2><p>A code that indicates how transactions are supported.</p><p>This value set has an inline code system http://hl7.org/fhir/transaction-mode, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>not-supported<a name=\"not-supported\"> </a></td><td>None</td><td>Neither batch or transaction is supported.</td></tr><tr><td>batch<a name=\"batch\"> </a></td><td>Batches supported</td><td>Batches are  supported.</td></tr><tr><td>transaction<a name=\"transaction\"> </a></td><td>Transactions Supported</td><td>Transactions are supported.</td></tr><tr><td>both<a name=\"both\"> </a></td><td>Batches &amp; Transactions</td><td>Both batches and transactions are supported.</td></tr></table></div>"
+    "div": "<div><h2>TransactionMode</h2><p>A code that indicates how transactions are supported.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-transaction-mode.html\">http://hl7.org/fhir/transaction-mode</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/transaction-mode",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "TransactionMode",
   "status": "draft",
   "experimental": false,
@@ -37,38 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "A code that indicates how transactions are supported.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.90"
-      }
-    ],
-    "system": "http://hl7.org/fhir/transaction-mode",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "not-supported",
-        "display": "None",
-        "definition": "Neither batch or transaction is supported."
-      },
-      {
-        "code": "batch",
-        "display": "Batches supported",
-        "definition": "Batches are  supported."
-      },
-      {
-        "code": "transaction",
-        "display": "Transactions Supported",
-        "definition": "Transactions are supported."
-      },
-      {
-        "code": "both",
-        "display": "Batches & Transactions",
-        "definition": "Both batches and transactions are supported."
+        "system": "http://hl7.org/fhir/transaction-mode"
       }
     ]
   }

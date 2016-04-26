@@ -21,14 +21,16 @@
     {
       "resourceType": "Practitioner",
       "id": "pr1",
-      "name": {
-        "family": [
-          "Dietician"
-        ],
-        "given": [
-          "Dorothy"
-        ]
-      },
+      "name": [
+        {
+          "family": [
+            "Dietician"
+          ],
+          "given": [
+            "Dorothy"
+          ]
+        }
+      ],
       "practitionerRole": [
         {
           "specialty": [
@@ -135,7 +137,7 @@
           "repeat": {
             "frequency": 1,
             "period": 1,
-            "periodUnits": "d"
+            "periodUnit": "d"
           }
         },
         "performer": [

@@ -1,437 +1,2206 @@
 {
   "resourceType": "Questionnaire",
   "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for EligibilityResponse.request[x]",
+      "status": "active",
+      "description": "Type options for EligibilityResponse.request[x]",
+      "expansion": {
+        "identifier": "urn:uuid:dd6aeb22-650d-4b67-ac1a-0ff93e565083",
+        "timestamp": "2016-03-31T08:08:48+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Identifier",
+            "display": "Identifier"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "EligibilityRequest",
+            "display": "EligibilityRequest"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for EligibilityResponse.organization[x]",
+      "status": "active",
+      "description": "Type options for EligibilityResponse.organization[x]",
+      "expansion": {
+        "identifier": "urn:uuid:54680561-c20c-429a-8ba7-9976e3e12924",
+        "timestamp": "2016-03-31T08:08:48+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Identifier",
+            "display": "Identifier"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs4",
+      "name": "Type options for EligibilityResponse.requestProvider[x]",
+      "status": "active",
+      "description": "Type options for EligibilityResponse.requestProvider[x]",
+      "expansion": {
+        "identifier": "urn:uuid:eef6b04d-2a76-4df1-8af2-ee36b44bce5d",
+        "timestamp": "2016-03-31T08:08:48+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Identifier",
+            "display": "Identifier"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs5",
+      "name": "Type options for EligibilityResponse.requestOrganization[x]",
+      "status": "active",
+      "description": "Type options for EligibilityResponse.requestOrganization[x]",
+      "expansion": {
+        "identifier": "urn:uuid:25ae6d11-a947-4dd9-b053-dbc3b24d5082",
+        "timestamp": "2016-03-31T08:08:48+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Identifier",
+            "display": "Identifier"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs6",
+      "name": "Type options for EligibilityResponse.benefitBalance.financial.benefit[x]",
+      "status": "active",
+      "description": "Type options for EligibilityResponse.benefitBalance.financial.benefit[x]",
+      "expansion": {
+        "identifier": "urn:uuid:d6a4903a-c529-4537-b614-c797e74e7aa7",
+        "timestamp": "2016-03-31T08:08:48+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "unsignedInt",
+            "display": "unsignedInt"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "http://hl7.org/fhir/StructureDefinition/Money",
+            "display": "Quantity"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs7",
+      "name": "Type options for EligibilityResponse.benefitBalance.financial.benefitUsed[x]",
+      "status": "active",
+      "description": "Type options for EligibilityResponse.benefitBalance.financial.benefitUsed[x]",
+      "expansion": {
+        "identifier": "urn:uuid:50965182-30da-4272-8abd-b572ad0f1de0",
+        "timestamp": "2016-03-31T08:08:48+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "unsignedInt",
+            "display": "unsignedInt"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "http://hl7.org/fhir/StructureDefinition/Money",
+            "display": "Quantity"
+          }
+        ]
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986"
     }
   ],
   "status": "draft",
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "publisher": "Health Level Seven International (Financial Management)",
-  "group": {
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-        "valueString": "This resource provides eligibility and plan details from the processing of an Eligibility resource."
-      }
-    ],
-    "linkId": "EligibilityResponse",
-    "title": "EligibilityResponse resource",
-    "required": false,
-    "repeats": true,
-    "group": [
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "string"
-          }
-        ],
-        "linkId": "EligibilityResponse.id",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.id.value",
-            "text": "Logical id of this artifact",
-            "type": "string",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource."
-          }
-        ],
-        "linkId": "EligibilityResponse.meta",
-        "text": "Metadata about the resource",
-        "required": false,
-        "repeats": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "uri"
-          }
-        ],
-        "linkId": "EligibilityResponse.implicitRules",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.implicitRules.value",
-            "text": "A set of rules under which this content was created",
-            "type": "string",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute)."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "code"
-          }
-        ],
-        "linkId": "EligibilityResponse.language",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.language.value",
-            "text": "language",
-            "type": "choice",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative."
-          }
-        ],
-        "linkId": "EligibilityResponse.text",
-        "text": "Text summary of the resource, for human interpretation",
-        "required": false,
-        "repeats": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again."
-          }
-        ],
-        "linkId": "EligibilityResponse.contained",
-        "text": "Contained, inline Resources",
-        "required": false,
-        "repeats": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
-          }
-        ],
-        "linkId": "EligibilityResponse.extension",
-        "text": "Additional Content defined by implementations",
-        "required": false,
-        "repeats": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."
-          }
-        ],
-        "linkId": "EligibilityResponse.modifierExtension",
-        "text": "Extensions that cannot be ignored",
-        "required": false,
-        "repeats": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The Response business identifier."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Identifier"
-          }
-        ],
-        "linkId": "EligibilityResponse.identifier",
-        "text": "Business Identifier",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.identifier.label",
-            "text": "label:",
-            "type": "string",
-            "required": false,
-            "repeats": false
-          },
-          {
-            "linkId": "EligibilityResponse.identifier.system",
-            "text": "system:",
-            "type": "string",
-            "required": false,
-            "repeats": false
-          },
-          {
-            "linkId": "EligibilityResponse.identifier.value",
-            "text": "value:",
-            "type": "string",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "Original request resource reference."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Reference"
-          }
-        ],
-        "linkId": "EligibilityResponse.request",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "extension": [
-              {
-                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
-                "valueString": "/EligibilityRequest?subject=$subj&patient=$subj&encounter=$encounter"
+  "item": [
+    {
+      "linkId": "EligibilityResponse",
+      "text": "EligibilityResponse resource",
+      "type": "group",
+      "required": false,
+      "repeats": true,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "flyover",
+                    "display": "Fly-over"
+                  }
+                ]
               }
-            ],
-            "linkId": "EligibilityResponse.request.value",
-            "text": "Claim reference",
-            "type": "reference",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "Transaction status: error, complete."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "code"
-          }
-        ],
-        "linkId": "EligibilityResponse.outcome",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.outcome.value",
-            "text": "outcome",
-            "type": "choice",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "A description of the status of the adjudication."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "string"
-          }
-        ],
-        "linkId": "EligibilityResponse.disposition",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.disposition.value",
-            "text": "Disposition Message",
-            "type": "string",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The version of the style of resource contents. This should be mapped to the allowable profiles for this and supporting resources."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Coding"
-          }
-        ],
-        "linkId": "EligibilityResponse.ruleset",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.ruleset.value",
-            "text": "Resource version",
-            "type": "open-choice",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The style (standard) and version of the original material which was converted into this resource."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Coding"
-          }
-        ],
-        "linkId": "EligibilityResponse.originalRuleset",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.originalRuleset.value",
-            "text": "Original version",
-            "type": "open-choice",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The date when the enclosed suite of services were performed or completed."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "datetime"
-          }
-        ],
-        "linkId": "EligibilityResponse.created",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "linkId": "EligibilityResponse.created.value",
-            "text": "Creation date",
-            "type": "dateTime",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The Insurer who produced this adjudicated response."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Reference"
-          }
-        ],
-        "linkId": "EligibilityResponse.organization",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "extension": [
-              {
-                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
-                "valueString": "/Organization?subject=$subj&patient=$subj&encounter=$encounter"
-              }
-            ],
-            "linkId": "EligibilityResponse.organization.value",
-            "text": "Insurer",
-            "type": "reference",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The practitioner who is responsible for the services rendered to the patient."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Reference"
-          }
-        ],
-        "linkId": "EligibilityResponse.requestProvider",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "extension": [
-              {
-                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
-                "valueString": "/Practitioner?subject=$subj&patient=$subj&encounter=$encounter"
-              }
-            ],
-            "linkId": "EligibilityResponse.requestProvider.value",
-            "text": "Responsible practitioner",
-            "type": "reference",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/Profile/questionnaire-extensions#flyover",
-            "valueString": "The organization which is responsible for the services rendered to the patient."
-          },
-          {
-            "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#type",
-            "valueString": "Reference"
-          }
-        ],
-        "linkId": "EligibilityResponse.requestOrganization",
-        "required": false,
-        "repeats": true,
-        "question": [
-          {
-            "extension": [
-              {
-                "url": "http://www.healthintersections.com.au/fhir/Profile/metadata#reference",
-                "valueString": "/Organization?subject=$subj&patient=$subj&encounter=$encounter"
-              }
-            ],
-            "linkId": "EligibilityResponse.requestOrganization.value",
-            "text": "Responsible organization",
-            "type": "reference",
-            "required": false,
-            "repeats": false
-          }
-        ]
-      }
-    ]
-  }
+            }
+          ],
+          "text": "This resource provides eligibility and plan details from the processing of an Eligibility resource.",
+          "type": "display"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "string"
+            }
+          ],
+          "linkId": "EligibilityResponse.id",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.id.value",
+              "text": "Logical id of this artifact",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "EligibilityResponse.meta",
+          "text": "Metadata about the resource",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "uri"
+            }
+          ],
+          "linkId": "EligibilityResponse.implicitRules",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.implicitRules.value",
+              "text": "A set of rules under which this content was created",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "code"
+            }
+          ],
+          "linkId": "EligibilityResponse.language",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.language.value",
+              "text": "language",
+              "type": "choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "EligibilityResponse.text",
+          "text": "Text summary of the resource, for human interpretation",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "EligibilityResponse.contained",
+          "text": "Contained, inline Resources",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "EligibilityResponse.extension",
+          "text": "Additional Content defined by implementations",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "EligibilityResponse.modifierExtension",
+          "text": "Extensions that cannot be ignored",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Identifier"
+            }
+          ],
+          "linkId": "EligibilityResponse.identifier",
+          "text": "Business Identifier",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The Response business identifier.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.identifier.label",
+              "text": "label:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "EligibilityResponse.identifier.system",
+              "text": "system:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "EligibilityResponse.identifier.value",
+              "text": "value:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "EligibilityResponse.request[x]",
+          "text": "Claim reference",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Original request resource reference.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.request[x]._type",
+              "text": "type",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "options": {
+                "reference": "#vs2"
+              },
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Identifier"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.request[x]._Identifier",
+                  "text": "Identifier",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "EligibilityResponse.request[x]._Identifier.label",
+                      "text": "label:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.request[x]._Identifier.system",
+                      "text": "system:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.request[x]._Identifier.value",
+                      "text": "value:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.request[x]._EligibilityRequest",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "EligibilityRequest"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "EligibilityResponse.request[x]._EligibilityRequest.value",
+                      "text": "EligibilityRequest",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "code"
+            }
+          ],
+          "linkId": "EligibilityResponse.outcome",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Transaction status: error, complete.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.outcome.value",
+              "text": "outcome",
+              "type": "choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "string"
+            }
+          ],
+          "linkId": "EligibilityResponse.disposition",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A description of the status of the adjudication.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.disposition.value",
+              "text": "Disposition Message",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Coding"
+            }
+          ],
+          "linkId": "EligibilityResponse.ruleset",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The version of the style of resource contents. This should be mapped to the allowable profiles for this and supporting resources.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.ruleset.value",
+              "text": "Resource version",
+              "type": "open-choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Coding"
+            }
+          ],
+          "linkId": "EligibilityResponse.originalRuleset",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The style (standard) and version of the original material which was converted into this resource.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.originalRuleset.value",
+              "text": "Original version",
+              "type": "open-choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "datetime"
+            }
+          ],
+          "linkId": "EligibilityResponse.created",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The date when the enclosed suite of services were performed or completed.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.created.value",
+              "text": "Creation date",
+              "type": "dateTime",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "EligibilityResponse.organization[x]",
+          "text": "Insurer",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The Insurer who produced this adjudicated response.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.organization[x]._type",
+              "text": "type",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "options": {
+                "reference": "#vs3"
+              },
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Identifier"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.organization[x]._Identifier",
+                  "text": "Identifier",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "EligibilityResponse.organization[x]._Identifier.label",
+                      "text": "label:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.organization[x]._Identifier.system",
+                      "text": "system:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.organization[x]._Identifier.value",
+                      "text": "value:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.organization[x]._Organization",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Organization"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "EligibilityResponse.organization[x]._Organization.value",
+                      "text": "Organization",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "EligibilityResponse.requestProvider[x]",
+          "text": "Responsible practitioner",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The practitioner who is responsible for the services rendered to the patient.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.requestProvider[x]._type",
+              "text": "type",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "options": {
+                "reference": "#vs4"
+              },
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Identifier"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.requestProvider[x]._Identifier",
+                  "text": "Identifier",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "EligibilityResponse.requestProvider[x]._Identifier.label",
+                      "text": "label:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.requestProvider[x]._Identifier.system",
+                      "text": "system:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.requestProvider[x]._Identifier.value",
+                      "text": "value:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.requestProvider[x]._Practitioner",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Practitioner"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "EligibilityResponse.requestProvider[x]._Practitioner.value",
+                      "text": "Practitioner",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "EligibilityResponse.requestOrganization[x]",
+          "text": "Responsible organization",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The organization which is responsible for the services rendered to the patient.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.requestOrganization[x]._type",
+              "text": "type",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "options": {
+                "reference": "#vs5"
+              },
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Identifier"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.requestOrganization[x]._Identifier",
+                  "text": "Identifier",
+                  "type": "group",
+                  "item": [
+                    {
+                      "linkId": "EligibilityResponse.requestOrganization[x]._Identifier.label",
+                      "text": "label:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.requestOrganization[x]._Identifier.system",
+                      "text": "system:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    },
+                    {
+                      "linkId": "EligibilityResponse.requestOrganization[x]._Identifier.value",
+                      "text": "value:",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.requestOrganization[x]._Organization",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Organization"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "EligibilityResponse.requestOrganization[x]._Organization.value",
+                      "text": "Organization",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "boolean"
+            }
+          ],
+          "linkId": "EligibilityResponse.inforce",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Flag indicating if the coverage provided is inforce currently  if no service date(s) specified or for the whole duration of the service dates.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.inforce.value",
+              "text": "Coverage inforce",
+              "type": "boolean",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Reference"
+            }
+          ],
+          "linkId": "EligibilityResponse.contract",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The contract resource which may provide more detailed information.",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                  "valueCode": "Contract"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                  "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                }
+              ],
+              "linkId": "EligibilityResponse.contract.value",
+              "text": "Contract details",
+              "type": "reference",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Coding"
+            }
+          ],
+          "linkId": "EligibilityResponse.form",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The form to be used for printing the content.",
+              "type": "display"
+            },
+            {
+              "linkId": "EligibilityResponse.form.value",
+              "text": "Printed Form Identifier",
+              "type": "choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "linkId": "EligibilityResponse.benefitBalance",
+          "text": "Benefits by Category",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Benefits and optionally current balances by Category.",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "string"
+                }
+              ],
+              "linkId": "EligibilityResponse.benefitBalance.id",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "unique id for the element within a resource (for internal references).",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.id.value",
+                  "text": "xml:id (or equivalent in JSON)",
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "EligibilityResponse.benefitBalance.extension",
+              "text": "Additional Content defined by implementations",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "linkId": "EligibilityResponse.benefitBalance.modifierExtension",
+              "text": "Extensions that cannot be ignored",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "Coding"
+                }
+              ],
+              "linkId": "EligibilityResponse.benefitBalance.category",
+              "type": "group",
+              "required": true,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "Dental, Vision, Medical, Pharmacy, Rehab etc.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.category.value",
+                  "text": "Benefit Category",
+                  "type": "open-choice",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "Coding"
+                }
+              ],
+              "linkId": "EligibilityResponse.benefitBalance.subCategory",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "Dental: basic, major, ortho; Vision exam, glasses, contacts; etc.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.subCategory.value",
+                  "text": "Benefit SubCategory",
+                  "type": "open-choice",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "Coding"
+                }
+              ],
+              "linkId": "EligibilityResponse.benefitBalance.network",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "Network designation.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.network.value",
+                  "text": "In or out of network",
+                  "type": "open-choice",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "Coding"
+                }
+              ],
+              "linkId": "EligibilityResponse.benefitBalance.unit",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "Unit designation: individual or family.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.unit.value",
+                  "text": "Individual or family",
+                  "type": "open-choice",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "Coding"
+                }
+              ],
+              "linkId": "EligibilityResponse.benefitBalance.term",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "The term or period of the values such as 'maximum lifetime benefit' or 'maximum annual vistis'.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.term.value",
+                  "text": "Annual or lifetime",
+                  "type": "open-choice",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "EligibilityResponse.benefitBalance.financial",
+              "text": "Benefit Summary",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "Benefits Used to date.",
+                  "type": "display"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "string"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.benefitBalance.financial.id",
+                  "type": "group",
+                  "required": false,
+                  "repeats": true,
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "flyover",
+                                "display": "Fly-over"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "text": "unique id for the element within a resource (for internal references).",
+                      "type": "display"
+                    },
+                    {
+                      "linkId": "EligibilityResponse.benefitBalance.financial.id.value",
+                      "text": "xml:id (or equivalent in JSON)",
+                      "type": "string",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.financial.extension",
+                  "text": "Additional Content defined by implementations",
+                  "type": "group",
+                  "required": false,
+                  "repeats": true,
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "flyover",
+                                "display": "Fly-over"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "text": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                      "type": "display"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "EligibilityResponse.benefitBalance.financial.modifierExtension",
+                  "text": "Extensions that cannot be ignored",
+                  "type": "group",
+                  "required": false,
+                  "repeats": true,
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "flyover",
+                                "display": "Fly-over"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "text": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                      "type": "display"
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                      "valueInteger": 1
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Coding"
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.benefitBalance.financial.type",
+                  "type": "group",
+                  "required": true,
+                  "repeats": true,
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "flyover",
+                                "display": "Fly-over"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "text": "Deductable, visits, benefit amount.",
+                      "type": "display"
+                    },
+                    {
+                      "linkId": "EligibilityResponse.benefitBalance.financial.type.value",
+                      "text": "Deductable, visits, benefit amount",
+                      "type": "open-choice",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]",
+                  "text": "Benefits allowed",
+                  "type": "group",
+                  "required": false,
+                  "repeats": true,
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "flyover",
+                                "display": "Fly-over"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "text": "Benefits allowed.",
+                      "type": "display"
+                    },
+                    {
+                      "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._type",
+                      "text": "type",
+                      "type": "choice",
+                      "required": false,
+                      "repeats": false,
+                      "options": {
+                        "reference": "#vs6"
+                      },
+                      "item": [
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                              "valueString": "integer"
+                            }
+                          ],
+                          "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._unsignedInt",
+                          "type": "group",
+                          "item": [
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._unsignedInt.value",
+                              "text": "unsignedInt",
+                              "type": "integer",
+                              "required": false,
+                              "repeats": false
+                            }
+                          ]
+                        },
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                              "valueString": "Quantity"
+                            }
+                          ],
+                          "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._http://hl7.org/fhir/StructureDefinition/Money",
+                          "text": "http://hl7.org/fhir/StructureDefinition/Money",
+                          "type": "group",
+                          "item": [
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._http://hl7.org/fhir/StructureDefinition/Money.comparator",
+                              "text": "comp:",
+                              "type": "choice",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._http://hl7.org/fhir/StructureDefinition/Money.value",
+                              "text": "value:",
+                              "type": "decimal",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._http://hl7.org/fhir/StructureDefinition/Money.units",
+                              "text": "units:",
+                              "type": "string",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._http://hl7.org/fhir/StructureDefinition/Money.code",
+                              "text": "coded units:",
+                              "type": "string",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefit[x]._http://hl7.org/fhir/StructureDefinition/Money.system",
+                              "text": "units system:",
+                              "type": "string",
+                              "required": false,
+                              "repeats": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                      "valueInteger": 1
+                    }
+                  ],
+                  "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]",
+                  "text": "Benefits used",
+                  "type": "group",
+                  "required": false,
+                  "repeats": true,
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                          "valueCodeableConcept": {
+                            "coding": [
+                              {
+                                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                "code": "flyover",
+                                "display": "Fly-over"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "text": "Benefits used.",
+                      "type": "display"
+                    },
+                    {
+                      "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._type",
+                      "text": "type",
+                      "type": "choice",
+                      "required": false,
+                      "repeats": false,
+                      "options": {
+                        "reference": "#vs7"
+                      },
+                      "item": [
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                              "valueString": "integer"
+                            }
+                          ],
+                          "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._unsignedInt",
+                          "type": "group",
+                          "item": [
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._unsignedInt.value",
+                              "text": "unsignedInt",
+                              "type": "integer",
+                              "required": false,
+                              "repeats": false
+                            }
+                          ]
+                        },
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                              "valueString": "Quantity"
+                            }
+                          ],
+                          "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._http://hl7.org/fhir/StructureDefinition/Money",
+                          "text": "http://hl7.org/fhir/StructureDefinition/Money",
+                          "type": "group",
+                          "item": [
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._http://hl7.org/fhir/StructureDefinition/Money.comparator",
+                              "text": "comp:",
+                              "type": "choice",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._http://hl7.org/fhir/StructureDefinition/Money.value",
+                              "text": "value:",
+                              "type": "decimal",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._http://hl7.org/fhir/StructureDefinition/Money.units",
+                              "text": "units:",
+                              "type": "string",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._http://hl7.org/fhir/StructureDefinition/Money.code",
+                              "text": "coded units:",
+                              "type": "string",
+                              "required": false,
+                              "repeats": false
+                            },
+                            {
+                              "linkId": "EligibilityResponse.benefitBalance.financial.benefitUsed[x]._http://hl7.org/fhir/StructureDefinition/Money.system",
+                              "text": "units system:",
+                              "type": "string",
+                              "required": false,
+                              "repeats": false
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "EligibilityResponse.error",
+          "text": "Processing errors",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Mutually exclusive with Services Provided (Item).",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "string"
+                }
+              ],
+              "linkId": "EligibilityResponse.error.id",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "unique id for the element within a resource (for internal references).",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.error.id.value",
+                  "text": "xml:id (or equivalent in JSON)",
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "EligibilityResponse.error.extension",
+              "text": "Additional Content defined by implementations",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "linkId": "EligibilityResponse.error.modifierExtension",
+              "text": "Extensions that cannot be ignored",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "Coding"
+                }
+              ],
+              "linkId": "EligibilityResponse.error.code",
+              "type": "group",
+              "required": true,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "An error code,from a specified code system, which details why the eligibility check could not be performed.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "EligibilityResponse.error.code.value",
+                  "text": "Error code detailing processing issues",
+                  "type": "choice",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

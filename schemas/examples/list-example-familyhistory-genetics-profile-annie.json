@@ -1281,6 +1281,8 @@
       }
     }
   ],
+  "status": "current",
+  "mode": "snapshot",
   "code": {
     "coding": [
       {
@@ -1297,8 +1299,6 @@
     "reference": "Patient/proband",
     "display": "Annie Proband, female, born 1966"
   },
-  "status": "current",
-  "mode": "snapshot",
   "entry": [
     {
       "item": {

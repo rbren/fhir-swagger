@@ -21,11 +21,12 @@
   ],
   "date": "2012-05-12",
   "description": "HDL Cholesterol Result",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "Observation",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseType": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -56,13 +57,15 @@
           {
             "key": "obs-6",
             "severity": "error",
-            "human": "SHALL only be present if Observation.value[x] is not present",
+            "human": "dataAbsentReason SHALL only be present if Observation.value[x] is not present",
+            "expression": "dataAbsentReason.empty() or value.empty()",
             "xpath": "not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))"
           },
           {
             "key": "obs-7",
             "severity": "error",
             "human": "Component code SHALL not be same as observation code",
+            "expression": "component.where(code = $context.code).empty()",
             "xpath": "not(exists(f:component/f:code)) or count(for $coding in f:code/f:coding return parent::*/f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value and f:system/@value=$coding/f:system/@value])=0"
           }
         ],
@@ -89,9 +92,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -107,9 +110,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -126,9 +129,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -146,9 +149,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -175,9 +178,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -207,7 +210,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -235,7 +238,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -263,7 +266,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -768,14 +771,14 @@
         ]
       },
       {
-        "path": "Observation.comments",
+        "path": "Observation.comment",
         "short": "Comments about result",
         "definition": "Comments about result.",
         "requirements": "Need to be able to provide free text additional information.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.comments",
+          "path": "Observation.comment",
           "min": 0,
           "max": "1"
         },
@@ -937,6 +940,7 @@
         ]
       },
       {
+        "id": "referenceRange",
         "path": "Observation.referenceRange",
         "short": "Provides guide for interpretation",
         "definition": "Guidance on how to interpret the value by comparison to a normal or recommended range.",
@@ -959,6 +963,7 @@
             "key": "obs-3",
             "severity": "error",
             "human": "Must have at least a low or a high or text",
+            "expression": "low or high or text",
             "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))"
           }
         ],
@@ -984,9 +989,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.referenceRange.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1012,7 +1017,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.referenceRange.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1041,7 +1046,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.referenceRange.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1051,6 +1056,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1060,7 +1066,8 @@
       },
       {
         "path": "Observation.referenceRange.low",
-        "short": "A fixed quantity (no comparator)",
+        "name": "SimpleQuantity",
+        "short": "Low Range, if relevant",
         "definition": ">1.5 mmol/L.",
         "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 1,
@@ -1086,16 +1093,17 @@
             "key": "qty-3",
             "severity": "error",
             "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system",
             "xpath": "not(exists(f:code)) or exists(f:system)"
           },
           {
             "key": "sqty-1",
             "severity": "error",
             "human": "The comparator is not used on a SimpleQuantity",
+            "expression": "comparator.empty()",
             "xpath": "not(exists(f:comparator))"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",
@@ -1268,9 +1276,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.related.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1296,7 +1304,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.related.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1325,7 +1333,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.related.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1335,6 +1343,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1450,9 +1459,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Observation.component.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1478,7 +1487,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.component.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1507,7 +1516,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Observation.component.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1517,6 +1526,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1676,7 +1686,7 @@
           "min": 0,
           "max": "*"
         },
-        "nameReference": "referenceRange",
+        "contentReference": "#referenceRange",
         "mapping": [
           {
             "identity": "v2",
@@ -1754,7 +1764,7 @@
         "mustSupport": true
       },
       {
-        "path": "Observation.comments",
+        "path": "Observation.comment",
         "short": "Comments about result",
         "definition": "Comments about result.",
         "min": 0,

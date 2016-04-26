@@ -5,18 +5,18 @@
     "status": "generated",
     "div": "<div>\n\t\t\t25 Dec 2013 9:30am - 9:45am: <b>Unavailable</b> Physiotherapy<br/>\n\t\t\tDr Careful is out of the office\n\t\t</div>"
   },
-  "type": {
+  "serviceCategory": {
     "coding": [
       {
-        "code": "45",
-        "display": "Physiotherapy"
+        "code": "17",
+        "display": "General Practice"
       }
     ]
   },
   "schedule": {
     "reference": "Schedule/example"
   },
-  "freeBusyType": "busy-unavailable",
+  "status": "busy-unavailable",
   "start": "2013-12-25T09:30:00Z",
   "end": "2013-12-25T09:45:00Z",
   "comment": "Dr Careful is out of the office"

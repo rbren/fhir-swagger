@@ -18,7 +18,7 @@
   ],
   "date": "2014-04-21",
   "description": "Expresses the linkage between the internal codes used for storage and the codes used for exchange.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "v2",
@@ -37,16 +37,17 @@
     }
   ],
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
     "StructureDefinition.snapshot.element.binding.valueSetReference",
     "StructureDefinition.differential.element.binding.valueSetReference",
     "DataElement.element.binding.valueSetReference",
-    "Questionnaire.group.question.options"
+    "Questionnaire.item.options"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -91,9 +92,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -115,7 +116,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },

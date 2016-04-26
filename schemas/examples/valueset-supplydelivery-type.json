@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "supplydelivery-type",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Supply Item Type</h2><p>This value sets refers to a specific supply item.</p><p>This value set has an inline code system http://hl7.org/fhir/supply-item-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>medication<a name=\"medication\"> </a></td><td>Medication</td><td>Supply is a kind of medication.</td></tr><tr><td>device<a name=\"device\"> </a></td><td>Device</td><td>What is supplied (or requested) is a device.</td></tr></table></div>"
+    "div": "<div><h2>Supply Item Type</h2><p>This value sets refers to a specific supply item.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-supplydelivery-type.html\">http://hl7.org/fhir/supply-item-type</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/supplydelivery-type",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Supply Item Type",
   "status": "draft",
   "experimental": true,
@@ -33,27 +33,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value sets refers to a specific supply item.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.356"
-      }
-    ],
-    "system": "http://hl7.org/fhir/supply-item-type",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "medication",
-        "display": "Medication",
-        "definition": "Supply is a kind of medication."
-      },
-      {
-        "code": "device",
-        "display": "Device",
-        "definition": "What is supplied (or requested) is a device."
+        "system": "http://hl7.org/fhir/supply-item-type"
       }
     ]
   }

@@ -11,25 +11,25 @@
       "value": "781234"
     }
   ],
-  "request": {
+  "requestReference": {
     "reference": "http://www.BenefitsInc.com/fhir/eligibility/225476332402"
   },
   "outcome": "complete",
   "disposition": "2014 August mid-month settlement.",
   "created": "2014-08-16",
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/2"
-  },
-  "requestOrganization": {
-    "reference": "Organization/1"
   },
   "detail": [
     {
+      "fhir_comments": [
+        " \n  <requestOrganizationReference>\n    <reference value=\"Organization/1\"/>\n  </requestOrganizationReference>\n   "
+      ],
       "type": {
         "system": "http://hl7.org/fhir/paymenttype",
         "code": "payment"
       },
-      "request": {
+      "requestReference": {
         "reference": "http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332402"
       },
       "date": "2014-08-16",
@@ -44,7 +44,7 @@
         "system": "http://hl7.org/fhir/paymenttype",
         "code": "payment"
       },
-      "request": {
+      "requestReference": {
         "reference": "http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332699"
       },
       "date": "2014-08-12",

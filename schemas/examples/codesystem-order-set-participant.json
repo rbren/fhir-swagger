@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "order-set-participant",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>OrderSetParticipantType</h2><p>The type of participant for an action in the orderset</p><p>This code system http://hl7.org/fhir/order-set-participant defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>patient<a name=\"patient\"> </a></td><td>Patient</td><td>The participant is the patient under evaluation</td></tr><tr><td>person<a name=\"person\"> </a></td><td>Person</td><td>The participant is a person</td></tr><tr><td>practitioner<a name=\"practitioner\"> </a></td><td>Practitioner</td><td>The participant is a practitioner involved in the patient's care</td></tr><tr><td>related-person<a name=\"related-person\"> </a></td><td>Related Person</td><td>The participant is a person related to the patient</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.501"
+    }
+  ],
+  "url": "http://hl7.org/fhir/order-set-participant",
+  "version": "1.4.0",
+  "name": "OrderSetParticipantType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of participant for an action in the orderset",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/order-set-participant",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "patient",
+      "display": "Patient",
+      "definition": "The participant is the patient under evaluation"
+    },
+    {
+      "code": "person",
+      "display": "Person",
+      "definition": "The participant is a person"
+    },
+    {
+      "code": "practitioner",
+      "display": "Practitioner",
+      "definition": "The participant is a practitioner involved in the patient's care"
+    },
+    {
+      "code": "related-person",
+      "display": "Related Person",
+      "definition": "The participant is a person related to the patient"
+    }
+  ]
+}

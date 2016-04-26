@@ -6,10 +6,11 @@
     "div": "<div><h2>Base FHIR Conformance Statement (Empty)</h2><p>This is the base conformance statement for FHIR. It represents a server that provides the none of the functionality defined by FHIR. It is provided to use as a template for system designers to build their own conformance statements from. A conformance profile has to contain something, so this contains a read of a Conformance Statement</p><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td>An empty conformance statement</td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b>Read</b></th><th><b>V-Read</b></th><th><b>Search</b></th><th><b>Update</b></th><th><b>Updates</b></th><th><b>Create</b></th><th><b>Delete</b></th><th><b>History</b></th></tr><tr><td>Conformance</td><td>y</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/Conformance/base2",
-  "version": "1.0.2-7202",
+  "version": "1.4.0-8139",
   "name": "Base FHIR Conformance Statement (Empty)",
   "status": "draft",
   "experimental": true,
+  "date": "2016-03-31T08:01:25+11:00",
   "publisher": "FHIR Project Team",
   "contact": [
     {
@@ -21,13 +22,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
   "description": "This is the base conformance statement for FHIR. It represents a server that provides the none of the functionality defined by FHIR. It is provided to use as a template for system designers to build their own conformance statements from. A conformance profile has to contain something, so this contains a read of a Conformance Statement",
   "kind": "capability",
   "software": {
     "name": "Insert your softwware name here..."
   },
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "acceptUnknown": "no",
   "format": [
     "xml",

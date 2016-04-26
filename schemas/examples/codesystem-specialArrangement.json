@@ -1,0 +1,73 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-specialArrangement",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Special Arrangement value set</h2><p>The list of codes that describe how the data came into being.</p><p><b>Copyright Statement:</b> Intermountain Healthcare HDD</p><p>This code system http://hl7.org/fhir/hspc-specialArrangement defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>182850<a name=\"182850\"> </a></td><td>Wheelchair</td><td>A device, comprising a chair with wheels, used for individuals that cannot walk.</td></tr><tr><td>528123036<a name=\"528123036\"> </a></td><td>Interpreter</td><td>An individual that translates spoken language to a language that is understood by the receiver.</td></tr><tr><td>182847<a name=\"182847\"> </a></td><td>Stretcher</td><td>A device used to convey an individual from one place to another where the individual is in a lying position and is carried by others.</td></tr><tr><td>528123037<a name=\"528123037\"> </a></td><td>Seeing eye dog</td><td>A canine that has been trained to lead an idividual that is blind.</td></tr><tr><td>30719<a name=\"30719\"> </a></td><td>Oxygen</td><td>A suuplimental substance given to patients who cannot obtain appropriate level of environmental oxygen through natural breathing.</td></tr><tr><td>528123038<a name=\"528123038\"> </a></td><td>Heart monitor</td><td>A device that monitors an idividual's heart rate.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.756"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-specialArrangement",
+  "version": "1.4.0",
+  "name": "HSPC Special Arrangement value set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "The list of codes that describe how the data came into being.",
+  "copyright": "Intermountain Healthcare HDD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-specialArrangement",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "182850",
+      "display": "Wheelchair",
+      "definition": "A device, comprising a chair with wheels, used for individuals that cannot walk."
+    },
+    {
+      "code": "528123036",
+      "display": "Interpreter",
+      "definition": "An individual that translates spoken language to a language that is understood by the receiver."
+    },
+    {
+      "code": "182847",
+      "display": "Stretcher",
+      "definition": "A device used to convey an individual from one place to another where the individual is in a lying position and is carried by others."
+    },
+    {
+      "code": "528123037",
+      "display": "Seeing eye dog",
+      "definition": "A canine that has been trained to lead an idividual that is blind."
+    },
+    {
+      "code": "30719",
+      "display": "Oxygen",
+      "definition": "A suuplimental substance given to patients who cannot obtain appropriate level of environmental oxygen through natural breathing."
+    },
+    {
+      "code": "528123038",
+      "display": "Heart monitor",
+      "definition": "A device that monitors an idividual's heart rate."
+    }
+  ]
+}

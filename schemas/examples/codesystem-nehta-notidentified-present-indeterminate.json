@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-notidentified-present-indeterminate",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NotIdentifiedPresentIndeterminate</h2><p>This is the code has the options of Not identified, Present or Indeterminate.</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright Â&copy; 2002+ International       Health Terminology Standards Development Organisation (IHTSDO), and distributed by    agreement    between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this    agreement</p><p>This code system http://hl7.org/fhir/nehta-notidentified-present-indeterminate defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>not_identified<a name=\"not_identified\"> </a></td><td>Not identified</td><td>Indicates whether the value was not identified</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.835"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-notidentified-present-indeterminate",
+  "version": "20151105",
+  "name": "NotIdentifiedPresentIndeterminate",
+  "status": "active",
+  "experimental": true,
+  "publisher": "NEHTA",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "This is the code has the options of Not identified, Present or Indeterminate.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright Â© 2002+ International       Health Terminology Standards Development Organisation (IHTSDO), and distributed by    agreement    between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this    agreement",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-notidentified-present-indeterminate",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "not_identified",
+      "display": "Not identified",
+      "definition": "Indicates whether the value was not identified"
+    }
+  ]
+}

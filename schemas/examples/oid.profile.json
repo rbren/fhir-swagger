@@ -19,13 +19,14 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for oid type: An oid represented as a URI",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "uri",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/uri",
+  "baseType": "uri",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/uri",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {

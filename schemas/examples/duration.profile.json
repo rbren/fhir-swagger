@@ -19,13 +19,14 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "A length of time",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Quantity",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Quantity",
+  "baseType": "Quantity",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Quantity",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -51,16 +52,17 @@
             "key": "qty-3",
             "severity": "error",
             "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system",
             "xpath": "not(exists(f:code)) or exists(f:system)"
           },
           {
             "key": "drt-1",
             "severity": "error",
             "human": "There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.",
+            "expression": "(code or value.empty()) and (system.empty() or system = %ucum)",
             "xpath": "(f:code or not(f:value)) and (not(exists(f:system)) or f:system/@value='http://unitsofmeasure.org')"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",
@@ -82,9 +84,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Quantity.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -110,7 +112,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Quantity.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -307,6 +309,7 @@
             "key": "drt-1",
             "severity": "error",
             "human": "There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.",
+            "expression": "(code or value.empty()) and (system.empty() or system = %ucum)",
             "xpath": "(f:code or not(f:value)) and (not(exists(f:system)) or f:system/@value='http://unitsofmeasure.org')"
           }
         ],

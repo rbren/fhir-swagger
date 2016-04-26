@@ -19,9 +19,9 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for Reference Type",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "rim",
@@ -31,7 +31,9 @@
   ],
   "kind": "datatype",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Element",
+  "baseType": "Element",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {
@@ -50,10 +52,10 @@
             "key": "ref-1",
             "severity": "error",
             "human": "SHALL have a local reference if the resource is provided inline",
+            "expression": "reference.startsWith('#').not() or ($context.reference.substring(1).trace('url') in $resource.contained.id.trace('ids'))",
             "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -70,6 +72,11 @@
         "definition": "unique id for the element within a resource (for internal references).",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "id"
@@ -93,6 +100,11 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Extension"
@@ -168,10 +180,10 @@
             "key": "ref-1",
             "severity": "error",
             "human": "SHALL have a local reference if the resource is provided inline",
+            "expression": "reference.startsWith('#').not() or ($context.reference.substring(1).trace('url') in $resource.contained.id.trace('ids'))",
             "xpath": "not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

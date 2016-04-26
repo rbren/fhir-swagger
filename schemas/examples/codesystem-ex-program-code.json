@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ex-program-code",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Example Program Reason Codes</h2><p>This value set includes sample Program Reason Span codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/ex-programcode defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>AS<a name=\"AS\"> </a></td><td>Child Asthma</td><td>Child Asthma Program</td></tr><tr><td>HD<a name=\"HD\"> </a></td><td>Heamodialisis</td><td>Heamodialisis Program.</td></tr><tr><td>AUSCR<a name=\"AUSCR\"> </a></td><td>Autism Screening</td><td>Autism Screening Program.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.876"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ex-programcode",
+  "version": "1.4.0",
+  "name": "Example Program Reason Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes sample Program Reason Span codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/ex-program-code",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "AS",
+      "display": "Child Asthma",
+      "definition": "Child Asthma Program"
+    },
+    {
+      "code": "HD",
+      "display": "Heamodialisis",
+      "definition": "Heamodialisis Program."
+    },
+    {
+      "code": "AUSCR",
+      "display": "Autism Screening",
+      "definition": "Autism Screening Program."
+    }
+  ]
+}

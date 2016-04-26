@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "investigation-sets",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Condition/Diagnosis Certainty</h2><p>Example value set for Condition/Problem/Diagnosis certainty</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in http://snomed.info/sct<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>271336007</td><td>Examination / signs</td><td/></tr><tr><td>160237006</td><td>History/symptoms</td><td/></tr></table></li></ul></div>"
+    "div": "<div><h2>Investigation Type</h2><p>Example value set for investigation type</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in http://snomed.info/sct<table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>271336007</td><td>Examination / signs</td><td/></tr><tr><td>160237006</td><td>History/symptoms</td><td/></tr></table></li></ul></div>"
   },
   "extension": [
     {
@@ -18,8 +18,8 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/investigation-sets",
-  "version": "1.0.2",
-  "name": "Condition/Diagnosis Certainty",
+  "version": "1.4.0",
+  "name": "Investigation Type",
   "status": "draft",
   "experimental": true,
   "publisher": "FHIR Project team",
@@ -33,8 +33,8 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
-  "description": "Example value set for Condition/Problem/Diagnosis certainty",
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Example value set for investigation type",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
   "compose": {
     "include": [

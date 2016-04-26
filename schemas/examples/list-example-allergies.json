@@ -5,6 +5,8 @@
     "status": "generated",
     "div": "<div>\n      <p>Patient Peter Chalmers, DOB = Dec 25, 1974, MRN = 12345 (Acme Healthcare) has the following allergies</p>\n      <ul>\n        <li>cashew nut allergenic extract Injectable Product (<b>High</b>)</li>\n        <li>Allergenic extract, penicillin (high)</li>\n      </ul>\n    </div>"
   },
+  "status": "current",
+  "mode": "working",
   "title": "Current Allergy List",
   "code": {
     "coding": [
@@ -16,11 +18,10 @@
     ],
     "text": "Current Allergy List"
   },
+  "date": "2015-07-14T23:10:23+11:00",
   "source": {
     "reference": "Patient/example"
   },
-  "status": "current",
-  "date": "2015-07-14T23:10:23+11:00",
   "orderedBy": {
     "coding": [
       {
@@ -29,7 +30,6 @@
       }
     ]
   },
-  "mode": "working",
   "entry": [
     {
       "item": {

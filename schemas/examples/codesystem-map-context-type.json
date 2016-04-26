@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "map-context-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>StructureMapContextType</h2><p>How to interpret the context</p><p>This code system http://hl7.org/fhir/map-context-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>type<a name=\"type\"> </a></td><td>Type</td><td>The context specifies a type</td></tr><tr><td>variable<a name=\"variable\"> </a></td><td>Variable</td><td>The context specifies a variable</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.536"
+    }
+  ],
+  "url": "http://hl7.org/fhir/map-context-type",
+  "version": "1.4.0",
+  "name": "StructureMapContextType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "How to interpret the context",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/map-context-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "type",
+      "display": "Type",
+      "definition": "The context specifies a type"
+    },
+    {
+      "code": "variable",
+      "display": "Variable",
+      "definition": "The context specifies a variable"
+    }
+  ]
+}

@@ -9,6 +9,7 @@
   "name": "Closure Table Maintenance",
   "status": "draft",
   "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
   "publisher": "HL7 (FHIR Project)",
   "contact": [
     {
@@ -24,7 +25,6 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
   "description": "This operation provides support for ongoing maintenance of a client-side closure table based on server-side terminological logic. For details of how this is used, see [Maintaining a Closure Table](terminology-service.html#closure)",
   "code": "closure",
   "system": true,

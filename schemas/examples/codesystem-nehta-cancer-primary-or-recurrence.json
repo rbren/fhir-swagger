@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-cancer-primary-or-recurrence",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NehtaCancerPrimaryOrRecurrence</h2><p>Indicates whether a new primary cancer or a regional recurrence or distant metastases.</p><p>This code system http://hl7.org/fhir/nehta-cancer-primary-or-recurrence defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>new_primary<a name=\"new_primary\"> </a></td><td>New primary</td><td>The cancer is a new primary</td></tr><tr><td>local_recurrence<a name=\"local_recurrence\"> </a></td><td>Regional (local) recurrence</td><td>The cancer is a regional (local) recurrence</td></tr><tr><td>distant_metastases<a name=\"distant_metastases\"> </a></td><td>Distant metastases</td><td>The cancer is a distant metastases</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.781"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-cancer-primary-or-recurrence",
+  "version": "20150619",
+  "name": "NehtaCancerPrimaryOrRecurrence",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Indicates whether a new primary cancer or a regional recurrence or distant metastases.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-cancer-primary-or-recurrence",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "new_primary",
+      "display": "New primary",
+      "definition": "The cancer is a new primary"
+    },
+    {
+      "code": "local_recurrence",
+      "display": "Regional (local) recurrence",
+      "definition": "The cancer is a regional (local) recurrence"
+    },
+    {
+      "code": "distant_metastases",
+      "display": "Distant metastases",
+      "definition": "The cancer is a distant metastases"
+    }
+  ]
+}

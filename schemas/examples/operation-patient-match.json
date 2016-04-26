@@ -1,0 +1,151 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Patient-match",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Find patient matches using MPI based logic</h2><p>OPERATION: Find patient matches using MPI based logic</p><div><p>A Master Patient Index (<a href=\"http://en.wikipedia.org/wiki/Enterprise_master_patient_index\">MPI</a> ) is a service used to manage patient identification in a context where multiple patient databases exist. Healthcare applications and middleware use the MPI to match patients between the databases, and as new patient details are encountered. MPIs are highly specialized applications, often tailored extensively to the institution's particular mix of patients. MPIs can also be run on a regional and national basis.</p>\n<p>To ask an MPI to match a patient, clients use the &quot;mpi&quot; query, which takes either a candidate patient resource, or a set of normal search parameters defined for patient. The data provided is interpreted as an MPI input and  passed to an MPI algorithm of some kind that uses them to determine the most appropriate matches in the patient set.</p>\n<p>Note that different MPI matching algorithms have different required inputs. The generic $match operation does not specify any particular algorithm, nor a minimum set of information that must be provided when asking for an MPI match operation to be performed, but may implementations will have a set of minimum information, which may be declared in their definition of the $match operation</p>\n</div><p>URL: [base]/Patient/$match</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td>0..1</td><td>Patient</td><td/><td><div><p>Use this to provide an entire set of patient details for the MPI to match against (e.g. POST a patient record to Patient/$match). If a patient record is not provided, then one or more of the other parameters must be provided</p>\n</div></td></tr><tr><td>IN</td><td>family</td><td>0..1</td><td>string</td><td/><td><div><p>The family name for matching</p>\n</div></td></tr><tr><td>IN</td><td>given</td><td>0..1</td><td>string</td><td/><td><div><p>The given name for matching</p>\n</div></td></tr><tr><td>IN</td><td>gender</td><td>0..1</td><td>string</td><td/><td><div><p>The gender for matching</p>\n</div></td></tr><tr><td>IN</td><td>birthdate</td><td>0..1</td><td>string</td><td/><td><div><p>The birth date of the patient for matching</p>\n</div></td></tr><tr><td>IN</td><td>identifier</td><td>0..1</td><td>string</td><td/><td><div><p>An identifier to use for the matching</p>\n</div></td></tr><tr><td>IN</td><td>telecom</td><td>0..1</td><td>string</td><td/><td><div><p>Some kind of telecom to use for the matching</p>\n</div></td></tr><tr><td>IN</td><td>phone</td><td>0..1</td><td>string</td><td/><td><div><p>A phone number to use for matching</p>\n</div></td></tr><tr><td>IN</td><td>email</td><td>0..1</td><td>string</td><td/><td><div><p>An email address to use for matching</p>\n</div></td></tr><tr><td>IN</td><td>postcode</td><td>0..1</td><td>string</td><td/><td><div><p>A postcode to use for matching</p>\n</div></td></tr><tr><td>IN</td><td>userid</td><td>0..1</td><td>string</td><td/><td><div><p>This optional parameter is used to pass the user details from a trusted client to the MPI. This may be used by the MPI to restrict the possible matches that are returned, based on the user's rights. For example, a staff member covered by policies, etc., may well get a different result than a patient trying to find their own record. Note that this parameter is used where the user would not be expected to log in to the MPI directly; whether this is appropriate or not is a deployment choice.</p>\n</div></td></tr><tr><td>IN</td><td>count</td><td>0..1</td><td>integer</td><td/><td><div><p>The maximum number of records to return. If no value is provided, the server decides how many matches to return. Note that clients should be careful when using this, as it may prevent probable - and valid - matches from being returned</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td>1..1</td><td>Bundle</td><td/><td><div><p>A bundle contain a set of Patient records that represent possible matches</p>\n</div></td></tr></table><div><p>The response from an &quot;mpi&quot; query is a bundle containing patient records, ordered from most likely to least likely. If there are no patient matches, the MPI SHALL return an empty search set with no error, but may include an operation outcome with further advice regarding patient selection. All patient records SHALL have a search score from 0 to 1, where 1 is the most certain match, along with an extension &quot;<a href=\"extension-match-grade.html\">match-grade</a>&quot; that indicates the MPI's position on the match quality.</p>\n</div></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Patient-match",
+  "name": "Find patient matches using MPI based logic",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "A Master Patient Index ([MPI](http://en.wikipedia.org/wiki/Enterprise_master_patient_index) ) is a service used to manage patient identification in a context where multiple patient databases exist. Healthcare applications and middleware use the MPI to match patients between the databases, and as new patient details are encountered. MPIs are highly specialized applications, often tailored extensively to the institution's particular mix of patients. MPIs can also be run on a regional and national basis.\n\nTo ask an MPI to match a patient, clients use the \"mpi\" query, which takes either a candidate patient resource, or a set of normal search parameters defined for patient. The data provided is interpreted as an MPI input and  passed to an MPI algorithm of some kind that uses them to determine the most appropriate matches in the patient set. \n\nNote that different MPI matching algorithms have different required inputs. The generic $match operation does not specify any particular algorithm, nor a minimum set of information that must be provided when asking for an MPI match operation to be performed, but may implementations will have a set of minimum information, which may be declared in their definition of the $match operation",
+  "code": "match",
+  "comment": "The response from an \"mpi\" query is a bundle containing patient records, ordered from most likely to least likely. If there are no patient matches, the MPI SHALL return an empty search set with no error, but may include an operation outcome with further advice regarding patient selection. All patient records SHALL have a search score from 0 to 1, where 1 is the most certain match, along with an extension \"[match-grade](extension-match-grade.html)\" that indicates the MPI's position on the match quality.",
+  "system": false,
+  "type": [
+    "Patient"
+  ],
+  "instance": false,
+  "parameter": [
+    {
+      "name": "patient",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Use this to provide an entire set of patient details for the MPI to match against (e.g. POST a patient record to Patient/$match). If a patient record is not provided, then one or more of the other parameters must be provided",
+      "type": "Patient"
+    },
+    {
+      "name": "family",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The family name for matching",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "given",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The given name for matching",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "gender",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The gender for matching",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "birthdate",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The birth date of the patient for matching",
+      "type": "string",
+      "searchType": "date"
+    },
+    {
+      "name": "identifier",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "An identifier to use for the matching",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "telecom",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "Some kind of telecom to use for the matching",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "phone",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A phone number to use for matching",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "email",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "An email address to use for matching",
+      "type": "string",
+      "searchType": "token"
+    },
+    {
+      "name": "postcode",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "A postcode to use for matching",
+      "type": "string",
+      "searchType": "string"
+    },
+    {
+      "name": "userid",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "This optional parameter is used to pass the user details from a trusted client to the MPI. This may be used by the MPI to restrict the possible matches that are returned, based on the user's rights. For example, a staff member covered by policies, etc., may well get a different result than a patient trying to find their own record. Note that this parameter is used where the user would not be expected to log in to the MPI directly; whether this is appropriate or not is a deployment choice.",
+      "type": "string"
+    },
+    {
+      "name": "count",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The maximum number of records to return. If no value is provided, the server decides how many matches to return. Note that clients should be careful when using this, as it may prevent probable - and valid - matches from being returned",
+      "type": "integer"
+    },
+    {
+      "name": "return",
+      "use": "out",
+      "min": 1,
+      "max": "1",
+      "documentation": "A bundle contain a set of Patient records that represent possible matches",
+      "type": "Bundle"
+    }
+  ]
+}

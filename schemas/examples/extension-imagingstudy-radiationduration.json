@@ -18,15 +18,16 @@
   ],
   "date": "2015-02-21",
   "description": "The duration of exposure to radiation for this study.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
     "ImagingStudy"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -56,9 +57,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -80,7 +81,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -120,8 +121,9 @@
       },
       {
         "path": "Extension.valueQuantity",
-        "short": "A length of time",
-        "definition": "There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.",
+        "name": "Duration",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
         "comments": "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.",
         "min": 1,
         "max": "1",
@@ -143,16 +145,17 @@
             "key": "qty-3",
             "severity": "error",
             "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system",
             "xpath": "not(exists(f:code)) or exists(f:system)"
           },
           {
             "key": "drt-1",
             "severity": "error",
             "human": "There SHALL be a code if there is a value and it SHALL be an expression of time.  If system is present, it SHALL be UCUM.",
+            "expression": "(code or value.empty()) and (system.empty() or system = %ucum)",
             "xpath": "(f:code or not(f:value)) and (not(exists(f:system)) or f:system/@value='http://unitsofmeasure.org')"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",

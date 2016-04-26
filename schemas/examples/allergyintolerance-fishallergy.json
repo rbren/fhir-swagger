@@ -14,23 +14,11 @@
       "value": "49476535"
     }
   ],
-  "recordedDate": "2015-08-06T15:37:31-06:00",
-  "_recordedDate": {
+  "category": "food",
+  "_category": {
     "fhir_comments": [
-      "  the date that this entry was recorded  "
+      "  this categorisation is implied by \"cashew nut\" and therefore basically \n    redundant, but many systems collect this field anyway, since it's either \n    useful when the substance is not coded, or it's quicker to sort/filter on\n    than using terminology based reasoning  "
     ]
-  },
-  "recorder": {
-    "fhir_comments": [
-      "  who made the record / last updated it  "
-    ],
-    "reference": "Practitioner/example"
-  },
-  "patient": {
-    "fhir_comments": [
-      "  the patient that actually has the risk of adverse reaction  "
-    ],
-    "reference": "Patient/example"
   },
   "substance": {
     "fhir_comments": [
@@ -45,10 +33,22 @@
     ],
     "text": "Allergic to fresh fish. Tolerates canned fish"
   },
-  "category": "food",
-  "_category": {
+  "patient": {
     "fhir_comments": [
-      "  this categorisation is implied by \"cashew nut\" and therefore basically \n    redundant, but many systems collect this field anyway, since it's either \n    useful when the substance is not coded, or it's quicker to sort/filter on\n    than using terminology based reasoning  "
+      "  the patient that actually has the risk of adverse reaction  "
+    ],
+    "reference": "Patient/example"
+  },
+  "recordedDate": "2015-08-06T15:37:31-06:00",
+  "_recordedDate": {
+    "fhir_comments": [
+      "  the date that this entry was recorded  "
     ]
+  },
+  "recorder": {
+    "fhir_comments": [
+      "  who made the record / last updated it  "
+    ],
+    "reference": "Practitioner/example"
   }
 }

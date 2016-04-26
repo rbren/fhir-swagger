@@ -1,0 +1,247 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "testscript-operation-codes",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>TestScriptOperationCode</h2><p>This value set defines a set of codes that are used to indicate the supported operations of a testing engine or tool.</p><p>This code system http://hl7.org/fhir/testscript-operation-codes defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>read<a name=\"read\"> </a></td><td>Read</td><td>Read the current state of the resource.</td></tr><tr><td>vread<a name=\"vread\"> </a></td><td>Version Read</td><td>Read the state of a specific version of the resource.</td></tr><tr><td>update<a name=\"update\"> </a></td><td>Update</td><td>Update an existing resource by its id (or create it if it is new).</td></tr><tr><td>delete<a name=\"delete\"> </a></td><td>Delete</td><td>Delete a resource.</td></tr><tr><td>history<a name=\"history\"> </a></td><td>History</td><td>Retrieve the change history for a particular resource or resource type.</td></tr><tr><td>create<a name=\"create\"> </a></td><td>Create</td><td>Create a new resource with a server assigned id.</td></tr><tr><td>search<a name=\"search\"> </a></td><td>Search</td><td>Search based on some filter criteria.</td></tr><tr><td>batch<a name=\"batch\"> </a></td><td>Batch</td><td>Update, create or delete a set of resources as independent actions.</td></tr><tr><td>transaction<a name=\"transaction\"> </a></td><td>Transaction</td><td>Update, create or delete a set of resources as a single transaction.</td></tr><tr><td>conformance<a name=\"conformance\"> </a></td><td>Conformance</td><td>Get a conformance statement for the system.</td></tr><tr><td>cancel<a name=\"cancel\"> </a></td><td>$cancel</td><td>Cancel Task</td></tr><tr><td>cds-hook<a name=\"cds-hook\"> </a></td><td>$cds-hook</td><td>The CDS Hook operation is the core API request for CDS Hooks</td></tr><tr><td>closure<a name=\"closure\"> </a></td><td>$closure</td><td>Closure Table Maintenance</td></tr><tr><td>document<a name=\"document\"> </a></td><td>$document</td><td>Generate a Document</td></tr><tr><td>evaluate<a name=\"evaluate\"> </a></td><td>$evaluate</td><td>Evaluate DecisionSupportRule / DecisionSupportServiceModule</td></tr><tr><td>evaluate-measure<a name=\"evaluate-measure\"> </a></td><td>$evaluate-measure</td><td>Evaluate Measure</td></tr><tr><td>everything<a name=\"everything\"> </a></td><td>$everything</td><td>Fetch Encounter/Patient Record</td></tr><tr><td>expand<a name=\"expand\"> </a></td><td>$expand</td><td>Value Set Expansion</td></tr><tr><td>fail<a name=\"fail\"> </a></td><td>$fail</td><td>Fail Task</td></tr><tr><td>find<a name=\"find\"> </a></td><td>$find</td><td>Find a functional list</td></tr><tr><td>finish<a name=\"finish\"> </a></td><td>$finish</td><td>Finish Task</td></tr><tr><td>lookup<a name=\"lookup\"> </a></td><td>$lookup</td><td>Concept Look Up</td></tr><tr><td>match<a name=\"match\"> </a></td><td>$match</td><td>Find patient matches using MPI based logic</td></tr><tr><td>meta<a name=\"meta\"> </a></td><td>$meta</td><td>Access a list of profiles, tags, and security labels</td></tr><tr><td>meta-add<a name=\"meta-add\"> </a></td><td>$meta-add</td><td>Add profiles, tags, and security labels to a resource</td></tr><tr><td>meta-delete<a name=\"meta-delete\"> </a></td><td>$meta-delete</td><td>Delete profiles, tags, and security labels for a resource</td></tr><tr><td>place<a name=\"place\"> </a></td><td>$place</td><td>Place OrderSet</td></tr><tr><td>populate<a name=\"populate\"> </a></td><td>$populate</td><td>Populate Questionnaire</td></tr><tr><td>process-message<a name=\"process-message\"> </a></td><td>$process-message</td><td>Process Message</td></tr><tr><td>questionnaire<a name=\"questionnaire\"> </a></td><td>$questionnaire</td><td>Build Questionnaire</td></tr><tr><td>release<a name=\"release\"> </a></td><td>$release</td><td>Release Task</td></tr><tr><td>reserve<a name=\"reserve\"> </a></td><td>$reserve</td><td>Reserve Task</td></tr><tr><td>resume<a name=\"resume\"> </a></td><td>$resume</td><td>Resume Task</td></tr><tr><td>set-input<a name=\"set-input\"> </a></td><td>$set-input</td><td>Set Task Input</td></tr><tr><td>set-output<a name=\"set-output\"> </a></td><td>$set-output</td><td>Set Task Output</td></tr><tr><td>start<a name=\"start\"> </a></td><td>$start</td><td>Start Task</td></tr><tr><td>stop<a name=\"stop\"> </a></td><td>$stop</td><td>Stop Task</td></tr><tr><td>suspend<a name=\"suspend\"> </a></td><td>$suspend</td><td>Suspend Task</td></tr><tr><td>translate<a name=\"translate\"> </a></td><td>$translate</td><td>Concept Translation</td></tr><tr><td>validate<a name=\"validate\"> </a></td><td>$validate</td><td>Validate a resource</td></tr><tr><td>validate-code<a name=\"validate-code\"> </a></td><td>$validate-code</td><td>Value Set based Validation</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.879"
+    }
+  ],
+  "url": "http://hl7.org/fhir/testscript-operation-codes",
+  "version": "1.4.0",
+  "name": "TestScriptOperationCode",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines a set of codes that are used to indicate the supported operations of a testing engine or tool.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/testscript-operation-codes",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "read",
+      "display": "Read",
+      "definition": "Read the current state of the resource."
+    },
+    {
+      "code": "vread",
+      "display": "Version Read",
+      "definition": "Read the state of a specific version of the resource."
+    },
+    {
+      "code": "update",
+      "display": "Update",
+      "definition": "Update an existing resource by its id (or create it if it is new)."
+    },
+    {
+      "code": "delete",
+      "display": "Delete",
+      "definition": "Delete a resource."
+    },
+    {
+      "code": "history",
+      "display": "History",
+      "definition": "Retrieve the change history for a particular resource or resource type."
+    },
+    {
+      "code": "create",
+      "display": "Create",
+      "definition": "Create a new resource with a server assigned id."
+    },
+    {
+      "code": "search",
+      "display": "Search",
+      "definition": "Search based on some filter criteria."
+    },
+    {
+      "code": "batch",
+      "display": "Batch",
+      "definition": "Update, create or delete a set of resources as independent actions."
+    },
+    {
+      "code": "transaction",
+      "display": "Transaction",
+      "definition": "Update, create or delete a set of resources as a single transaction."
+    },
+    {
+      "code": "conformance",
+      "display": "Conformance",
+      "definition": "Get a conformance statement for the system."
+    },
+    {
+      "code": "cancel",
+      "display": "$cancel",
+      "definition": "Cancel Task"
+    },
+    {
+      "code": "cds-hook",
+      "display": "$cds-hook",
+      "definition": "The CDS Hook operation is the core API request for CDS Hooks"
+    },
+    {
+      "code": "closure",
+      "display": "$closure",
+      "definition": "Closure Table Maintenance"
+    },
+    {
+      "code": "document",
+      "display": "$document",
+      "definition": "Generate a Document"
+    },
+    {
+      "code": "evaluate",
+      "display": "$evaluate",
+      "definition": "Evaluate DecisionSupportRule / DecisionSupportServiceModule"
+    },
+    {
+      "code": "evaluate-measure",
+      "display": "$evaluate-measure",
+      "definition": "Evaluate Measure"
+    },
+    {
+      "code": "everything",
+      "display": "$everything",
+      "definition": "Fetch Encounter/Patient Record"
+    },
+    {
+      "code": "expand",
+      "display": "$expand",
+      "definition": "Value Set Expansion"
+    },
+    {
+      "code": "fail",
+      "display": "$fail",
+      "definition": "Fail Task"
+    },
+    {
+      "code": "find",
+      "display": "$find",
+      "definition": "Find a functional list"
+    },
+    {
+      "code": "finish",
+      "display": "$finish",
+      "definition": "Finish Task"
+    },
+    {
+      "code": "lookup",
+      "display": "$lookup",
+      "definition": "Concept Look Up"
+    },
+    {
+      "code": "match",
+      "display": "$match",
+      "definition": "Find patient matches using MPI based logic"
+    },
+    {
+      "code": "meta",
+      "display": "$meta",
+      "definition": "Access a list of profiles, tags, and security labels"
+    },
+    {
+      "code": "meta-add",
+      "display": "$meta-add",
+      "definition": "Add profiles, tags, and security labels to a resource"
+    },
+    {
+      "code": "meta-delete",
+      "display": "$meta-delete",
+      "definition": "Delete profiles, tags, and security labels for a resource"
+    },
+    {
+      "code": "place",
+      "display": "$place",
+      "definition": "Place OrderSet"
+    },
+    {
+      "code": "populate",
+      "display": "$populate",
+      "definition": "Populate Questionnaire"
+    },
+    {
+      "code": "process-message",
+      "display": "$process-message",
+      "definition": "Process Message"
+    },
+    {
+      "code": "questionnaire",
+      "display": "$questionnaire",
+      "definition": "Build Questionnaire"
+    },
+    {
+      "code": "release",
+      "display": "$release",
+      "definition": "Release Task"
+    },
+    {
+      "code": "reserve",
+      "display": "$reserve",
+      "definition": "Reserve Task"
+    },
+    {
+      "code": "resume",
+      "display": "$resume",
+      "definition": "Resume Task"
+    },
+    {
+      "code": "set-input",
+      "display": "$set-input",
+      "definition": "Set Task Input"
+    },
+    {
+      "code": "set-output",
+      "display": "$set-output",
+      "definition": "Set Task Output"
+    },
+    {
+      "code": "start",
+      "display": "$start",
+      "definition": "Start Task"
+    },
+    {
+      "code": "stop",
+      "display": "$stop",
+      "definition": "Stop Task"
+    },
+    {
+      "code": "suspend",
+      "display": "$suspend",
+      "definition": "Suspend Task"
+    },
+    {
+      "code": "translate",
+      "display": "$translate",
+      "definition": "Concept Translation"
+    },
+    {
+      "code": "validate",
+      "display": "$validate",
+      "definition": "Validate a resource"
+    },
+    {
+      "code": "validate-code",
+      "display": "$validate-code",
+      "definition": "Value Set based Validation"
+    }
+  ]
+}

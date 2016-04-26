@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "group-type",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>GroupType</h2><p>Types of resources that are part of group</p><p>This value set has an inline code system http://hl7.org/fhir/group-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>person<a name=\"person\"> </a></td><td>Person</td><td>Group contains &quot;person&quot; Patient resources</td></tr><tr><td>animal<a name=\"animal\"> </a></td><td>Animal</td><td>Group contains &quot;animal&quot; Patient resources</td></tr><tr><td>practitioner<a name=\"practitioner\"> </a></td><td>Practitioner</td><td>Group contains healthcare practitioner resources</td></tr><tr><td>device<a name=\"device\"> </a></td><td>Device</td><td>Group contains Device resources</td></tr><tr><td>medication<a name=\"medication\"> </a></td><td>Medication</td><td>Group contains Medication resources</td></tr><tr><td>substance<a name=\"substance\"> </a></td><td>Substance</td><td>Group contains Substance resources</td></tr></table></div>"
+    "div": "<div><h2>GroupType</h2><p>Types of resources that are part of group</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-group-type.html\">http://hl7.org/fhir/group-type</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/group-type",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "GroupType",
   "status": "draft",
   "experimental": false,
@@ -37,48 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Types of resources that are part of group",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.156"
-      }
-    ],
-    "system": "http://hl7.org/fhir/group-type",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "person",
-        "display": "Person",
-        "definition": "Group contains \"person\" Patient resources"
-      },
-      {
-        "code": "animal",
-        "display": "Animal",
-        "definition": "Group contains \"animal\" Patient resources"
-      },
-      {
-        "code": "practitioner",
-        "display": "Practitioner",
-        "definition": "Group contains healthcare practitioner resources"
-      },
-      {
-        "code": "device",
-        "display": "Device",
-        "definition": "Group contains Device resources"
-      },
-      {
-        "code": "medication",
-        "display": "Medication",
-        "definition": "Group contains Medication resources"
-      },
-      {
-        "code": "substance",
-        "display": "Substance",
-        "definition": "Group contains Substance resources"
+        "system": "http://hl7.org/fhir/group-type"
       }
     ]
   }

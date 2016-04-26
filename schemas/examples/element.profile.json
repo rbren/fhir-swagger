@@ -19,9 +19,9 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for Element Type",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "rim",
@@ -47,6 +47,7 @@
             "key": "ele-1",
             "severity": "error",
             "human": "All FHIR elements must have a @value or children",
+            "expression": "*",
             "xpath": "@value|f:*|h:div"
           }
         ],
@@ -119,6 +120,7 @@
             "key": "ele-1",
             "severity": "error",
             "human": "All FHIR elements must have a @value or children",
+            "expression": "*",
             "xpath": "@value|f:*|h:div"
           }
         ],

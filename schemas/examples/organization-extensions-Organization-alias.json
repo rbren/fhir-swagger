@@ -6,6 +6,6 @@
   "code": "alias",
   "type": "string",
   "description": "Include Organizations that contain the provided alias",
-  "xpath": "f:Organization/f:extension[@url='http://hl7.org/fhir/StructureDefinition/organization-alias']",
+  "xpath": "f:Organization/f:extension[@url='http://hl7.org/fhir/StructureDefinition/organization-alias'] | /f:#alias",
   "xpathUsage": "normal"
 }

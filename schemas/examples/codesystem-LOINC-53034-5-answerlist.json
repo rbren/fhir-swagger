@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "LOINC-53034-5-answerlist",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>LOINC 53034-5 answerlist</h2><p>LOINC answer list for AllelicState</p><p>This code system http://hl7.org/fhir/LOINC-53034-5-answerlist defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>LA6703-8<a name=\"LA6703-8\"> </a></td><td>Heteroplasmic</td><td>Heteroplasmic</td></tr><tr><td>LA6704-6<a name=\"LA6704-6\"> </a></td><td>Homoplasmic</td><td>Homoplasmic</td></tr><tr><td>LA6705-3<a name=\"LA6705-3\"> </a></td><td>Homozygous</td><td>Homozygous</td></tr><tr><td>LA6706-1<a name=\"LA6706-1\"> </a></td><td>Heterozygous</td><td>Heterozygous</td></tr><tr><td>LA6707-9<a name=\"LA6707-9\"> </a></td><td>Hemizygous</td><td>Hemizygous</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.472"
+    }
+  ],
+  "url": "http://hl7.org/fhir/LOINC-53034-5-answerlist",
+  "version": "1.4.0",
+  "name": "LOINC 53034-5 answerlist",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "LOINC answer list for AllelicState",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/LOINC-53034-5-answerlist",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "LA6703-8",
+      "display": "Heteroplasmic",
+      "definition": "Heteroplasmic"
+    },
+    {
+      "code": "LA6704-6",
+      "display": "Homoplasmic",
+      "definition": "Homoplasmic"
+    },
+    {
+      "code": "LA6705-3",
+      "display": "Homozygous",
+      "definition": "Homozygous"
+    },
+    {
+      "code": "LA6706-1",
+      "display": "Heterozygous",
+      "definition": "Heterozygous"
+    },
+    {
+      "code": "LA6707-9",
+      "display": "Hemizygous",
+      "definition": "Hemizygous"
+    }
+  ]
+}

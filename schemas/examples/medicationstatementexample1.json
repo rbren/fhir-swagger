@@ -5,14 +5,23 @@
     "status": "generated",
     "div": "<div>\n      <p>Tylenol No 1 tablet - Taking 1 tablet four times daily as needed for pain</p>\n    </div>"
   },
+  "status": "completed",
+  "medicationReference": {
+    "reference": "Medication/MedicationExample7",
+    "_reference": {
+      "fhir_comments": [
+        "  Linked to a RESOURCE Medication  "
+      ]
+    }
+  },
   "patient": {
     "reference": "Patient/pat1"
   },
+  "effectiveDateTime": "2015-01-23",
   "informationSource": {
     "reference": "Patient/pat2"
   },
   "dateAsserted": "2015-02-22",
-  "status": "completed",
   "wasNotTaken": false,
   "reasonForUseCodeableConcept": {
     "coding": [
@@ -23,11 +32,11 @@
       }
     ]
   },
-  "effectiveDateTime": "2015-01-23",
-  "note": "Patient indicates they miss the occasional dose",
-  "medicationReference": {
-    "reference": "Medication/MedicationExample7"
-  },
+  "note": [
+    {
+      "text": "Patient indicates they miss the occasional dose"
+    }
+  ],
   "dosage": [
     {
       "text": "one tablet four times daily as needed for pain",
@@ -35,7 +44,7 @@
         "repeat": {
           "frequency": 4,
           "period": 1,
-          "periodUnits": "d"
+          "periodUnit": "d"
         }
       },
       "asNeededBoolean": true,

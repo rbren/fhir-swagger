@@ -3,7 +3,7 @@
   "id": "f005",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f005</p><p><b>identifier</b>: 118265112 (OFFICIAL), 191REW8WE916 (USUAL)</p><p><b>name</b>: Langeveld Anne (OFFICIAL)</p><p><b>telecom</b>: ph: 0205563847(WORK), a.langeveld@bmc.nl(WORK), fax: 0205668916(WORK)</p><p><b>address</b>: Galapagosweg 9 Amsterdam 1105 AZ NLD (WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 11/03/1959</p><p><b>photo</b>: </p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>ManagingOrganization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>BMC</a></td><td>Care role <span>(Details : {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.000' = '??', given as 'Arts'})</span></td><td>specialization <span>(Details : {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.018' = '??', given as 'Keel- neus- en oorarts'})</span></td></tr></table><p><b>communication</b>: France <span>(Details : {urn:oid:2.16.840.1.113883.6.121 code 'fr' = '??', given as 'France'})</span></p></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f005</p><p><b>identifier</b>: 118265112 (OFFICIAL), 191REW8WE916 (USUAL)</p><p><b>name</b>: Langeveld Anne (OFFICIAL)</p><p><b>telecom</b>: ph: 0205563847(WORK), a.langeveld@bmc.nl(WORK), fax: 0205668916(WORK)</p><p><b>address</b>: Galapagosweg 9 Amsterdam 1105 AZ NLD (WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 11/03/1959</p><p><b>photo</b>: </p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>Organization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>BMC</a></td><td>Care role <span>(Details : {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.000' = '??', given as 'Arts'})</span></td><td>specialization <span>(Details : {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.018' = '??', given as 'Keel- neus- en oorarts'})</span></td></tr></table><p><b>communication</b>: France <span>(Details : {urn:oid:2.16.840.1.113883.6.121 code 'fr' = '??', given as 'France'})</span></p></div>"
   },
   "identifier": [
     {
@@ -27,18 +27,20 @@
       }
     }
   ],
-  "name": {
-    "use": "official",
-    "family": [
-      "Anne"
-    ],
-    "given": [
-      "Langeveld"
-    ],
-    "suffix": [
-      "MD"
-    ]
-  },
+  "name": [
+    {
+      "use": "official",
+      "family": [
+        "Anne"
+      ],
+      "given": [
+        "Langeveld"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
   "telecom": [
     {
       "system": "phone",
@@ -90,7 +92,7 @@
   ],
   "practitionerRole": [
     {
-      "managingOrganization": {
+      "organization": {
         "reference": "Organization/f001",
         "display": "BMC"
       },

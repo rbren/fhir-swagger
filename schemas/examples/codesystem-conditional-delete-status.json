@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "conditional-delete-status",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ConditionalDeleteStatus</h2><p>A code that indicates how the server supports conditional delete.</p><p>This code system http://hl7.org/fhir/conditional-delete-status defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>not-supported<a name=\"not-supported\"> </a></td><td>Not Supported</td><td>No support for conditional deletes.</td></tr><tr><td>single<a name=\"single\"> </a></td><td>Single Deletes Supported</td><td>Conditional deletes are supported, but only single resources at a time.</td></tr><tr><td>multiple<a name=\"multiple\"> </a></td><td>Multiple Deletes Supported</td><td>Conditional deletes are supported, and multiple resources can be deleted in a single interaction.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.91"
+    }
+  ],
+  "url": "http://hl7.org/fhir/conditional-delete-status",
+  "version": "1.4.0",
+  "name": "ConditionalDeleteStatus",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "A code that indicates how the server supports conditional delete.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/conditional-delete-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "not-supported",
+      "display": "Not Supported",
+      "definition": "No support for conditional deletes."
+    },
+    {
+      "code": "single",
+      "display": "Single Deletes Supported",
+      "definition": "Conditional deletes are supported, but only single resources at a time."
+    },
+    {
+      "code": "multiple",
+      "display": "Multiple Deletes Supported",
+      "definition": "Conditional deletes are supported, and multiple resources can be deleted in a single interaction."
+    }
+  ]
+}

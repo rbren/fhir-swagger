@@ -21,14 +21,16 @@
     {
       "resourceType": "Practitioner",
       "id": "pr1",
-      "name": {
-        "family": [
-          "Midwife"
-        ],
-        "given": [
-          "Mavis"
-        ]
-      },
+      "name": [
+        {
+          "family": [
+            "Midwife"
+          ],
+          "given": [
+            "Mavis"
+          ]
+        }
+      ],
       "practitionerRole": [
         {
           "specialty": [
@@ -42,14 +44,16 @@
     {
       "resourceType": "Practitioner",
       "id": "pr2",
-      "name": {
-        "family": [
-          "Obstetrician"
-        ],
-        "given": [
-          "Oscar"
-        ]
-      },
+      "name": [
+        {
+          "family": [
+            "Obstetrician"
+          ],
+          "given": [
+            "Oscar"
+          ]
+        }
+      ],
       "practitionerRole": [
         {
           "specialty": [
@@ -116,6 +120,11 @@
       },
       "member": {
         "reference": "#pr1",
+        "_reference": {
+          "fhir_comments": [
+            "  This links to the clinician resource, so we get all the stuff related to that like address, contact etc...  "
+          ]
+        },
         "display": "Mavis Midwife"
       }
     },
@@ -134,6 +143,11 @@
       },
       "member": {
         "reference": "#pr2",
+        "_reference": {
+          "fhir_comments": [
+            "  This links to the clinician resource, so we get all the stuff related to that like address, contact etc...  "
+          ]
+        },
         "display": "Oscar Obstetrician"
       }
     }
@@ -239,6 +253,11 @@
         "performer": [
           {
             "reference": "#pr1",
+            "_reference": {
+              "fhir_comments": [
+                "  The performer is known, but the actual appointment is not yet made, hence there is no action element...  "
+              ]
+            },
             "display": "Mavis Midwife"
           }
         ],
@@ -289,6 +308,11 @@
               "  Where the delivery is to occur... \n          Commented out for now because location resource isn't defined\n        <location>\n            <url value=\"loc100\"/>\n            <display value=\"St Albans delivery suite\"/>\n        </location> "
             ],
             "reference": "#pr1",
+            "_reference": {
+              "fhir_comments": [
+                "  The intention is that Maris will be performing the delivery...  "
+              ]
+            },
             "display": "Mavis Midwife"
           }
         ],

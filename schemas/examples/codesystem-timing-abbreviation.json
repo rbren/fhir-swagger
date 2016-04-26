@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "timing-abbreviation",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>TimingAbbreviation</h2><p>Code for a known / defined timing pattern.</p><p>This code system http://hl7.org/fhir/timing-abbreviation defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>QD<a name=\"QD\"> </a></td><td>QD</td><td>Every Day at institution specified times</td></tr><tr><td>QOD<a name=\"QOD\"> </a></td><td>QOD</td><td>Every Other Day at institution specified times</td></tr><tr><td>Q4H<a name=\"Q4H\"> </a></td><td>Q4H</td><td>Every 4 hours at institution specified times</td></tr><tr><td>Q6H<a name=\"Q6H\"> </a></td><td>Q6H</td><td>Every 6 Hours  at institution specified times</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.43"
+    }
+  ],
+  "url": "http://hl7.org/fhir/timing-abbreviation",
+  "version": "1.4.0",
+  "name": "TimingAbbreviation",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Code for a known / defined timing pattern.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "QD",
+      "display": "QD",
+      "definition": "Every Day at institution specified times"
+    },
+    {
+      "code": "QOD",
+      "display": "QOD",
+      "definition": "Every Other Day at institution specified times"
+    },
+    {
+      "code": "Q4H",
+      "display": "Q4H",
+      "definition": "Every 4 hours at institution specified times"
+    },
+    {
+      "code": "Q6H",
+      "display": "Q6H",
+      "definition": "Every 6 Hours  at institution specified times"
+    }
+  ]
+}

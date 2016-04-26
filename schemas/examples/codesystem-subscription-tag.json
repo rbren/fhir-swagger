@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "subscription-tag",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>SubscriptionTag</h2><p>Tags to put on a resource after subscriptions have been sent.</p><p>This code system http://hl7.org/fhir/subscription-tag defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>queued<a name=\"queued\"> </a></td><td>Queued</td><td>The message has been queued for processing on a destination systems.</td></tr><tr><td>delivered<a name=\"delivered\"> </a></td><td>Delivered</td><td>The message has been delivered to its intended recipient.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.296"
+    }
+  ],
+  "url": "http://hl7.org/fhir/subscription-tag",
+  "version": "1.4.0",
+  "name": "SubscriptionTag",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Tags to put on a resource after subscriptions have been sent.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/subscription-tag",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "queued",
+      "display": "Queued",
+      "definition": "The message has been queued for processing on a destination systems."
+    },
+    {
+      "code": "delivered",
+      "display": "Delivered",
+      "definition": "The message has been delivered to its intended recipient."
+    }
+  ]
+}

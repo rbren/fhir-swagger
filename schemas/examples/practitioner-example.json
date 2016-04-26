@@ -12,20 +12,22 @@
     }
   ],
   "active": true,
-  "name": {
-    "family": [
-      "Careful"
-    ],
-    "given": [
-      "Adam"
-    ],
-    "prefix": [
-      "Dr"
-    ]
-  },
+  "name": [
+    {
+      "family": [
+        "Careful"
+      ],
+      "given": [
+        "Adam"
+      ],
+      "prefix": [
+        "Dr"
+      ]
+    }
+  ],
   "practitionerRole": [
     {
-      "managingOrganization": {
+      "organization": {
         "reference": "Organization/f001"
       },
       "role": {

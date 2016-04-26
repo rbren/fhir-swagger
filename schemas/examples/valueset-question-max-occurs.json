@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "question-max-occurs",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>MaxOccurs</h2><p>Flags an element as having unlimited repetitions</p><p>This value set has an inline code system http://hl7.org/fhir/question-max-occurs, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>*<a name=\".42\"> </a></td><td>Repeating</td><td>Element can repeat an unlimited number of times</td></tr></table></div>"
+    "div": "<div><h2>MaxOccurs</h2><p>Flags an element as having unlimited repetitions</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-question-max-occurs.html\">http://hl7.org/fhir/question-max-occurs</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/question-max-occurs",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "MaxOccurs",
   "status": "draft",
   "experimental": false,
@@ -37,23 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Flags an element as having unlimited repetitions",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.380"
-      }
-    ],
-    "system": "http://hl7.org/fhir/question-max-occurs",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "*",
-        "display": "Repeating",
-        "definition": "Element can repeat an unlimited number of times"
+        "system": "http://hl7.org/fhir/question-max-occurs"
       }
     ]
   }

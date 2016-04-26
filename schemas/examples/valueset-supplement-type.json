@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "supplement-type",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/supplement-type",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Supplement Type Codes",
   "status": "draft",
   "experimental": true,
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "SupplementType :  Codes for nutritional supplements to be provided to the patient. This value set is is composed of SNOMED CT (US Extension) Concepts from SCTID 470581016 Enteral+supplement feeds hierarchy and is provided as a suggestive example.",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
   "compose": {

@@ -17,7 +17,7 @@
   ],
   "date": "2013-07-04",
   "description": "The maximum number of times the group must appear or the minimum number of answers for a question - when greater than 1 and not unlimited.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "rim",
@@ -26,15 +26,15 @@
     }
   ],
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
-    "Questionnaire.group",
-    "Questionnaire.group.group",
-    "Questionnaire.group.question"
+    "Questionnaire.item",
+    "Questionnaire.item.item"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -59,7 +59,15 @@
             "key": "inv-2",
             "severity": "error",
             "human": "maxOccurs can't be more than one if repeats is false",
+            "expression": "valueInteger <= 1 or $parent.repeats",
             "xpath": "f:valueInteger/@value<=1 or parent::*/f:repeats/@value=true()"
+          },
+          {
+            "key": "inv-4",
+            "severity": "error",
+            "human": "maxOccurs can't exist for display items",
+            "expression": "$parent.type!='display'",
+            "xpath": "not(parent::*/f:type/@value='display')"
           }
         ],
         "mapping": [
@@ -79,9 +87,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -103,7 +111,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -185,7 +193,15 @@
             "key": "inv-2",
             "severity": "error",
             "human": "maxOccurs can't be more than one if repeats is false",
+            "expression": "valueInteger <= 1 or $parent.repeats",
             "xpath": "f:valueInteger/@value<=1 or parent::*/f:repeats/@value=true()"
+          },
+          {
+            "key": "inv-4",
+            "severity": "error",
+            "human": "maxOccurs can't exist for display items",
+            "expression": "$parent.type!='display'",
+            "xpath": "not(parent::*/f:type/@value='display')"
           }
         ],
         "mapping": [

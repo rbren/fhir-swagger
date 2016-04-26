@@ -9,6 +9,7 @@
   "name": "Concept Translation",
   "status": "draft",
   "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
   "publisher": "HL7 (FHIR Project)",
   "contact": [
     {
@@ -24,7 +25,6 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
   "description": "Translate a code from one value set to another, based on the existing value set and concept maps resources, and/or other additional knowledge available to the server. || One (and only one) of the in parameters (code, coding, codeableConcept) must be provided, to identify the code that is to be translated.  || The operation returns a set of parameters including a 'result' for whether there is an acceptable match, and a list of possible matches. Note that the list of matches may include notes of codes for which mapping is specifically excluded, so implementers have to check the match.equivalence for each match",
   "code": "translate",
   "system": false,

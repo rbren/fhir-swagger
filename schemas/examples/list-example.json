@@ -11,21 +11,21 @@
       "value": "23974652"
     }
   ],
+  "status": "current",
+  "mode": "changes",
   "subject": {
     "fhir_comments": [
       "  This list doesn't have a code. In actual fact, \n    it's a Condition list produced at the end of an encounter \n    to a regular primary care practitioner. But the only way\n    to know this is to hunt down the place it is used \n    and find out  "
     ],
     "reference": "Patient/example"
   },
-  "source": {
-    "reference": "Patient/example"
-  },
   "encounter": {
     "reference": "Encounter/example"
   },
-  "status": "current",
   "date": "2012-11-25T22:17:00+11:00",
-  "mode": "changes",
+  "source": {
+    "reference": "Patient/example"
+  },
   "entry": [
     {
       "flag": {

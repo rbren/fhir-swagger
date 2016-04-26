@@ -1,0 +1,1 @@
+{"base":"Observation","code":"gene-dnavariant","description":"HGNC gene symbol and HGVS DNA Variant","id":"observation-genetics-Observation-gene-dnavariant","name":"gene-dnavariant","resourceType":"SearchParameter","type":"string","url":"http://hl7.org/fhir/SearchParameter/observation-genetics-Observation-gene-dnavariant","xpathUsage":"normal"}

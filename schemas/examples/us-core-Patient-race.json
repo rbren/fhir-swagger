@@ -7,6 +7,6 @@
   "base": "Patient",
   "type": "token",
   "description": "Returns patients with a race extension matching the specified code.",
-  "xpath": "f:Patient/f:extension[@url='http://hl7.org/fhir/StructureDefinition/us-core-race']",
+  "xpath": "f:Patient/f:extension[@url='http://hl7.org/fhir/StructureDefinition/us-core-race'] | f:Patient/f:extension[@url='http://hl7.org/fhir/StructureDefinition/us-core-race']",
   "xpathUsage": "normal"
 }

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "fips-county",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/fips-county",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "US counties and county equivalent entities codes",
   "status": "draft",
   "experimental": true,
@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set defines FIPS codes for US counties and county equivalent entities.",
   "compose": {
     "include": [

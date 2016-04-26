@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "body-site",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>SNOMED CT Body Structures</h2><p>This value set includes all the &quot;Anatomical Structure&quot; SNOMED CT codes (i.e. codes with an is-a relationship with 91723000: Anatomical structure).</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from http://snomed.info/sct where concept  is-a  91723000</li></ul></div>"
+    "div": "<div><h2>SNOMED CT Body Structures</h2><p>This value set includes all the &quot;Anatomical Structure&quot; SNOMED CT codes (i.e. codes with an is-a relationship with 442083009: Anatomical or acquired body site).</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from http://snomed.info/sct where concept  is-a  442083009</li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/body-site",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "SNOMED CT Body Structures",
   "status": "draft",
   "experimental": true,
@@ -33,8 +33,8 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
-  "description": "This value set includes all the \"Anatomical Structure\" SNOMED CT codes (i.e. codes with an is-a relationship with 91723000: Anatomical structure).",
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "This value set includes all the \"Anatomical Structure\" SNOMED CT codes (i.e. codes with an is-a relationship with 442083009: Anatomical or acquired body site).",
   "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
   "compose": {
     "include": [
@@ -44,7 +44,7 @@
           {
             "property": "concept",
             "op": "is-a",
-            "value": "91723000"
+            "value": "442083009"
           }
         ]
       }

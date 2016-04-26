@@ -8,8 +8,8 @@
   "name": "SNOMED CT Spanish",
   "status": "retired",
   "kind": "codesystem",
-  "publisher": "Not HL7!",
   "date": "2005-01-25",
+  "publisher": "Not HL7!",
   "description": "This was a wrong registration for the spanish editions of SNOMED CT. Do not use",
   "uniqueId": [
     {

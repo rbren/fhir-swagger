@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "qicore-observation-verification",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>QICore Observation Verification Method</h2><p>Code for method by which the observation result was validated, e.g., human review, sliding average.</p><p>This code system http://hl7.org/fhir/qicore-observation-verification-method defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td>Human review</td><td>The observation was reviewed and verified by a person</td></tr><tr><td>2<a name=\"2\"> </a></td><td>Sliding average</td><td>The observation was verified against a sliding average</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.641"
+    }
+  ],
+  "url": "http://hl7.org/fhir/qicore-observation-verification-method",
+  "version": "1.4.0",
+  "name": "QICore Observation Verification Method",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 Clinical Quality Information (CQI) Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Code for method by which the observation result was validated, e.g., human review, sliding average.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/qicore-observation-verification",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Human review",
+      "definition": "The observation was reviewed and verified by a person"
+    },
+    {
+      "code": "2",
+      "display": "Sliding average",
+      "definition": "The observation was verified against a sliding average"
+    }
+  ]
+}

@@ -13,15 +13,18 @@
     }
   ],
   "created": "2015-03-16",
-  "target": {
+  "targetReference": {
     "reference": "Organization/2"
   },
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/1"
   },
   "use": "proposed",
   "priority": {
     "code": "normal"
+  },
+  "fundsReserve": {
+    "code": "provider"
   },
   "payee": {
     "type": {
@@ -37,18 +40,15 @@
       }
     }
   ],
-  "patient": {
+  "patientReference": {
     "reference": "Patient/1"
   },
   "coverage": [
     {
       "sequence": 1,
       "focal": true,
-      "coverage": {
+      "coverageReference": {
         "reference": "Coverage/9876B1"
-      },
-      "relationship": {
-        "code": "self"
       }
     }
   ],
@@ -62,7 +62,7 @@
         "system": "http://hl7.org/fhir/v3/ActCode",
         "code": "FRAMEING"
       },
-      "provider": {
+      "providerReference": {
         "reference": "Practitioner/example"
       },
       "diagnosisLinkId": [
@@ -72,7 +72,7 @@
         "system": "http://hl7.org/fhir/oralservicecodes",
         "code": "ORTHPLAN"
       },
-      "serviceDate": "2015-05-16",
+      "servicedDate": "2015-05-16",
       "unitPrice": {
         "fhir_comments": [
           "  Start Date  "
@@ -215,14 +215,14 @@
       "type": {
         "code": "service"
       },
-      "provider": {
+      "providerReference": {
         "reference": "Practitioner/example"
       },
       "service": {
         "system": "http://hl7.org/fhir/oralservicecodes",
         "code": "21211"
       },
-      "serviceDate": "2014-08-16",
+      "servicedDate": "2014-08-16",
       "unitPrice": {
         "value": 105.00,
         "system": "urn:iso:std:iso:4217",
@@ -249,14 +249,14 @@
       "type": {
         "code": "group"
       },
-      "provider": {
+      "providerReference": {
         "reference": "Practitioner/example"
       },
       "service": {
         "system": "http://hl7.org/fhir/oralservicecodes",
         "code": "27211"
       },
-      "serviceDate": "2014-08-16",
+      "servicedDate": "2014-08-16",
       "unitPrice": {
         "value": 1100.00,
         "system": "urn:iso:std:iso:4217",

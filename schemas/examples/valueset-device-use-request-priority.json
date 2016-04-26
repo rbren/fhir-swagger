@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "device-use-request-priority",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>DeviceUseRequestPriority</h2><p>Codes representing the priority of the request.</p><p>This value set has an inline code system http://hl7.org/fhir/device-use-request-priority, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>routine<a name=\"routine\"> </a></td><td>Routine</td><td>The request has a normal priority.</td></tr><tr><td>urgent<a name=\"urgent\"> </a></td><td>Urgent</td><td>The request should be done urgently.</td></tr><tr><td>stat<a name=\"stat\"> </a></td><td>Stat</td><td>The request is time-critical.</td></tr><tr><td>asap<a name=\"asap\"> </a></td><td>ASAP</td><td>The request should be acted on as soon as possible.</td></tr></table></div>"
+    "div": "<div><h2>DeviceUseRequestPriority</h2><p>Codes representing the priority of the request.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-device-use-request-priority.html\">http://hl7.org/fhir/device-use-request-priority</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/device-use-request-priority",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "DeviceUseRequestPriority",
   "status": "draft",
   "experimental": false,
@@ -37,38 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Codes representing the priority of the request.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.109"
-      }
-    ],
-    "system": "http://hl7.org/fhir/device-use-request-priority",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "routine",
-        "display": "Routine",
-        "definition": "The request has a normal priority."
-      },
-      {
-        "code": "urgent",
-        "display": "Urgent",
-        "definition": "The request should be done urgently."
-      },
-      {
-        "code": "stat",
-        "display": "Stat",
-        "definition": "The request is time-critical."
-      },
-      {
-        "code": "asap",
-        "display": "ASAP",
-        "definition": "The request should be acted on as soon as possible."
+        "system": "http://hl7.org/fhir/device-use-request-priority"
       }
     ]
   }

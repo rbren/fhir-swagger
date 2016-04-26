@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "property-representation",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>PropertyRepresentation</h2><p>How a property is represented on the wire.</p><p>This value set has an inline code system http://hl7.org/fhir/property-representation, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>xmlAttr<a name=\"xmlAttr\"> </a></td><td>XML Attribute</td><td>In XML, this property is represented as an attribute not an element.</td></tr></table></div>"
+    "div": "<div><h2>PropertyRepresentation</h2><p>How a property is represented on the wire.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-property-representation.html\">http://hl7.org/fhir/property-representation</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/property-representation",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "PropertyRepresentation",
   "status": "draft",
   "experimental": false,
@@ -37,23 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "How a property is represented on the wire.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.47"
-      }
-    ],
-    "system": "http://hl7.org/fhir/property-representation",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "xmlAttr",
-        "display": "XML Attribute",
-        "definition": "In XML, this property is represented as an attribute not an element."
+        "system": "http://hl7.org/fhir/property-representation"
       }
     ]
   }

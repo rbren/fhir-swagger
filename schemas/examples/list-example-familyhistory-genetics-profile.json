@@ -315,6 +315,8 @@
       }
     }
   ],
+  "status": "current",
+  "mode": "snapshot",
   "code": {
     "coding": [
       {
@@ -326,15 +328,8 @@
   },
   "subject": {
     "reference": "Patient/example",
-    "display": "Peter Patient",
-    "_display": {
-      "fhir_comments": [
-        "  Should be 'Bob', but didn't make sense to define a new patient  "
-      ]
-    }
+    "display": "Peter Patient"
   },
-  "status": "current",
-  "mode": "snapshot",
   "entry": [
     {
       "item": {

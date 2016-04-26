@@ -23,42 +23,40 @@
   ],
   "serviceType": [
     {
-      "type": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "394913002",
-            "display": "Psychotherapy"
-          }
-        ]
-      }
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394913002",
+          "display": "Psychotherapy"
+        }
+      ]
     },
     {
-      "type": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "394587001",
-            "display": "Psychiatry"
-          }
-        ]
-      },
-      "specialty": [
+      "coding": [
         {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "47505003",
-              "display": "Posttraumatic stress disorder"
-            }
-          ]
+          "system": "http://snomed.info/sct",
+          "code": "394587001",
+          "display": "Psychiatry"
         }
       ]
     }
   ],
-  "location": {
-    "reference": "Location/1"
-  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "47505003",
+          "display": "Posttraumatic stress disorder"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/1"
+    }
+  ],
   "serviceName": "Consulting psychologists and/or psychology services",
   "comment": "Providing Specialist psychology services to the greater Den Burg area, many years of experience dealing with PTSD issues",
   "extraDetails": "Several assessments are required for these specialist services, and the waiting times can be greater than 3 months at times. Existing patients are prioritized when requesting appointments on the schedule.",

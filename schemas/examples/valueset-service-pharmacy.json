@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "service-pharmacy",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Example Pharmacy Service Codes</h2><p>This value set includes a smattering of Pharmacy Service codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://hl7.org/fhir/ex-pharmaservice, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>smokecess<a name=\"smokecess\"> </a></td><td>Smoking cessation</td><td>Smoking cessation</td></tr><tr><td>flushot<a name=\"flushot\"> </a></td><td>Flu Shot</td><td>Flu Shot</td></tr></table></div>"
+    "div": "<div><h2>Example Pharmacy Service Codes</h2><p>This value set includes a smattering of Pharmacy Service codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-service-pharmacy.html\">http://hl7.org/fhir/ex-pharmaservice</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/service-pharmacy",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Example Pharmacy Service Codes",
   "status": "draft",
   "experimental": true,
@@ -33,28 +33,13 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set includes a smattering of Pharmacy Service codes.",
   "copyright": "This is an example set.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.324"
-      }
-    ],
-    "system": "http://hl7.org/fhir/ex-pharmaservice",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "smokecess",
-        "display": "Smoking cessation",
-        "definition": "Smoking cessation"
-      },
-      {
-        "code": "flushot",
-        "display": "Flu Shot",
-        "definition": "Flu Shot"
+        "system": "http://hl7.org/fhir/ex-pharmaservice"
       }
     ]
   }

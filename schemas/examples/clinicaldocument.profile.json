@@ -21,11 +21,12 @@
   ],
   "date": "2015-03-17",
   "description": "The base Composition is a general resource for compositions or documents about any kind of subject that might be encountered in healthcare including such things as guidelines, medicines, etc. A clinical document is focused on documents related to the provision of care process, where the subject is a patient, a group of patients, or a closely related concept. A clinical document has additional reqiurements around confidentiality that do not apply in the same way to other kinds of documents",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "Composition",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "baseType": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -69,9 +70,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -87,9 +88,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -106,9 +107,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -126,9 +127,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -155,9 +156,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -187,7 +188,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -215,7 +216,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -243,7 +244,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -672,9 +673,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.attester.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -700,7 +701,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.attester.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -729,7 +730,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.attester.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -739,6 +740,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -933,9 +935,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.event.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -961,7 +963,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.event.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -990,7 +992,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.event.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1000,6 +1002,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1139,6 +1142,7 @@
         ]
       },
       {
+        "id": "section",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -1146,7 +1150,6 @@
           }
         ],
         "path": "Composition.section",
-        "name": "section",
         "short": "Composition is broken into sections",
         "definition": "The root of the sections that make up the composition.",
         "min": 0,
@@ -1166,12 +1169,14 @@
             "key": "cmp-2",
             "severity": "error",
             "human": "A section can only have an emptyReason if it is empty",
+            "expression": "emptyReason.empty() or entry.empty()",
             "xpath": "not(exists(f:emptyReason) and exists(f:entry))"
           },
           {
             "key": "cmp-1",
             "severity": "error",
             "human": "A section must at least one of text, entries, or sub-sections",
+            "expression": "text or entry or section",
             "xpath": "exists(f:text) or exists(f:entry) or exists(f:section)"
           }
         ],
@@ -1196,9 +1201,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Composition.section.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1224,7 +1229,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.section.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1253,7 +1258,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Composition.section.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1263,6 +1268,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1533,7 +1539,7 @@
           "min": 0,
           "max": "*"
         },
-        "nameReference": "section",
+        "contentReference": "#section",
         "condition": [
           "cmp-1"
         ],

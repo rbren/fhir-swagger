@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "copy-number-event",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>CopyNumberEvent</h2><p>Copy Number Event</p><p>This code system http://hl7.org/fhir/copy-number-event defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>amp<a name=\"amp\"> </a></td><td>amplificaiton</td><td>amplificaiton</td></tr><tr><td>del<a name=\"del\"> </a></td><td>deletion</td><td>deletion</td></tr><tr><td>lof<a name=\"lof\"> </a></td><td>loss of function</td><td>loss of function</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.524"
+    }
+  ],
+  "url": "http://hl7.org/fhir/copy-number-event",
+  "version": "1.4.0",
+  "name": "CopyNumberEvent",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Copy Number Event",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/copy-number-event",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "amp",
+      "display": "amplificaiton",
+      "definition": "amplificaiton"
+    },
+    {
+      "code": "del",
+      "display": "deletion",
+      "definition": "deletion"
+    },
+    {
+      "code": "lof",
+      "display": "loss of function",
+      "definition": "loss of function"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "reference-version-rules",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ReferenceVersionRules</h2><p>Whether a reference needs to be version specific or version independent, or whetehr either can be used</p><p>This code system http://hl7.org/fhir/reference-version-rules defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>either<a name=\"either\"> </a></td><td>Either Specific or independent</td><td>The reference may be either version independent or version specific</td></tr><tr><td>independent<a name=\"independent\"> </a></td><td>Version independent</td><td>The reference must be version independent</td></tr><tr><td>specific<a name=\"specific\"> </a></td><td>Version Specific</td><td>The reference must be version specific</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.869"
+    }
+  ],
+  "url": "http://hl7.org/fhir/reference-version-rules",
+  "version": "1.4.0",
+  "name": "ReferenceVersionRules",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Whether a reference needs to be version specific or version independent, or whetehr either can be used",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/reference-version-rules",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "either",
+      "display": "Either Specific or independent",
+      "definition": "The reference may be either version independent or version specific"
+    },
+    {
+      "code": "independent",
+      "display": "Version independent",
+      "definition": "The reference must be version independent"
+    },
+    {
+      "code": "specific",
+      "display": "Version Specific",
+      "definition": "The reference must be version specific"
+    }
+  ]
+}

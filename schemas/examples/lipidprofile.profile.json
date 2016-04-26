@@ -5,6 +5,12 @@
     "status": "generated",
     "div": "<div>to do</div>"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-summary",
+      "valueMarkdown": "This is a test summary [lipids](observation.html)"
+    }
+  ],
   "url": "http://hl7.org/fhir/StructureDefinition/lipidprofile",
   "name": "Example Lipid Profile",
   "status": "draft",
@@ -21,11 +27,12 @@
   ],
   "date": "2012-05-12",
   "description": "Lipid Lab Report",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "DiagnosticReport",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseType": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -77,9 +84,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DiagnosticReport.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -95,9 +102,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DiagnosticReport.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -114,9 +121,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DiagnosticReport.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -134,9 +141,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DiagnosticReport.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -163,9 +170,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DiagnosticReport.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -195,7 +202,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DiagnosticReport.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -223,7 +230,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DiagnosticReport.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -251,7 +258,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DiagnosticReport.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -763,7 +770,7 @@
           "Organizer"
         ],
         "min": 0,
-        "max": "*",
+        "max": "1",
         "base": {
           "path": "DiagnosticReport.result",
           "min": 0,
@@ -1041,9 +1048,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DiagnosticReport.image.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1069,7 +1076,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DiagnosticReport.image.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1098,7 +1105,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "DiagnosticReport.image.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1108,6 +1115,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1306,7 +1314,6 @@
       },
       {
         "path": "DiagnosticReport.result",
-        "name": "Cholesterol",
         "slicing": {
           "discriminator": [
             "reference.code"
@@ -1314,6 +1321,11 @@
           "ordered": true,
           "rules": "closed"
         },
+        "max": "1"
+      },
+      {
+        "path": "DiagnosticReport.result",
+        "name": "Cholesterol",
         "short": "Cholesterol Result",
         "definition": "Reference to Cholesterol Result.",
         "min": 1,

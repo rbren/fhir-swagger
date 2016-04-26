@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "remittance-outcome",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>RemittanceOutcome</h2><p>The outcome of the processing.</p><p>This value set has an inline code system http://hl7.org/fhir/remittance-outcome, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>complete<a name=\"complete\"> </a></td><td>Complete</td><td>The processing completed without errors.</td></tr><tr><td>error<a name=\"error\"> </a></td><td>Error</td><td>The processing identified errors.</td></tr></table></div>"
+    "div": "<div><h2>RemittanceOutcome</h2><p>The outcome of the processing.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-remittance-outcome.html\">http://hl7.org/fhir/remittance-outcome</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/remittance-outcome",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "RemittanceOutcome",
   "status": "draft",
   "experimental": false,
@@ -37,28 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The outcome of the processing.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.7"
-      }
-    ],
-    "system": "http://hl7.org/fhir/remittance-outcome",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "complete",
-        "display": "Complete",
-        "definition": "The processing completed without errors."
-      },
-      {
-        "code": "error",
-        "display": "Error",
-        "definition": "The processing identified errors."
+        "system": "http://hl7.org/fhir/remittance-outcome"
       }
     ]
   }

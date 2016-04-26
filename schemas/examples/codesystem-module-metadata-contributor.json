@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "module-metadata-contributor",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ModuleMetadataContributorType</h2><p>The type of contributor</p><p>This code system http://hl7.org/fhir/module-metadata-contributor defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>author<a name=\"author\"> </a></td><td>Author</td><td>An author of the content of the module</td></tr><tr><td>editor<a name=\"editor\"> </a></td><td>Editor</td><td>An editor of the content of the module</td></tr><tr><td>reviewer<a name=\"reviewer\"> </a></td><td>Reviewer</td><td>A reviewer of the content of the module</td></tr><tr><td>endorser<a name=\"endorser\"> </a></td><td>Endorser</td><td>An endorser of the content of the module</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.494"
+    }
+  ],
+  "url": "http://hl7.org/fhir/module-metadata-contributor",
+  "version": "1.4.0",
+  "name": "ModuleMetadataContributorType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of contributor",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/module-metadata-contributor",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "author",
+      "display": "Author",
+      "definition": "An author of the content of the module"
+    },
+    {
+      "code": "editor",
+      "display": "Editor",
+      "definition": "An editor of the content of the module"
+    },
+    {
+      "code": "reviewer",
+      "display": "Reviewer",
+      "definition": "A reviewer of the content of the module"
+    },
+    {
+      "code": "endorser",
+      "display": "Endorser",
+      "definition": "An endorser of the content of the module"
+    }
+  ]
+}

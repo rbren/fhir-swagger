@@ -5,6 +5,6 @@
   "name": "keyword",
   "code": "keyword",
   "type": "string",
-  "xpath": "f:ValueSet/f:extension[@url='http://hl7.org/fhir/StructureDefinition/valueset-keyWord']",
+  "xpath": "f:ValueSet/f:extension[@url='http://hl7.org/fhir/StructureDefinition/valueset-keyWord'] | /f:#keyWord",
   "xpathUsage": "normal"
 }

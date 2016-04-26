@@ -1,0 +1,119 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-organization-organizationtype",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Organization Type</h2><p>The set of codes that describe a kind of organization.</p><p><b>Copyright Statement:</b> Intermountain Healthcare</p><p>This code system http://hl7,org/fhir/organization-hspc-organizationtype defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>526758010<a name=\"526758010\"> </a></td><td>Clinic</td><td>A place where outpatients are provided medical treatments or advices.</td></tr><tr><td>526758011<a name=\"526758011\"> </a></td><td>Cancer Center</td><td>A center where patients with cancer are cared and treated.</td></tr><tr><td>526758012<a name=\"526758012\"> </a></td><td>Dental Office</td><td>A place where dental services are provided.</td></tr><tr><td>526758013<a name=\"526758013\"> </a></td><td>Diagnostic Imaging Center</td><td>A center where patients are provided imaging services.</td></tr><tr><td>526758014<a name=\"526758014\"> </a></td><td>Dialysis Center</td><td>A center where patients with kidney diseases are provided dialysis services.</td></tr><tr><td>526758015<a name=\"526758015\"> </a></td><td>Educational Institute</td><td>A place where people of different ages gain an education.</td></tr><tr><td>526758016<a name=\"526758016\"> </a></td><td>Federal Agency</td><td>A government organization set up for a specific purpose such as the management of resources, financial oversight of industries or national security issues.</td></tr><tr><td>526758017<a name=\"526758017\"> </a></td><td>Home Health</td><td>An organization which provides assistant health care for people at their homes.</td></tr><tr><td>526758018<a name=\"526758018\"> </a></td><td>Hospital</td><td>An institution where the sick or injuried people are provided medical and surgical treatments and nursing cares.</td></tr><tr><td>526758019<a name=\"526758019\"> </a></td><td>Hospital Network</td><td>A network or group of hospitals that work together to coordinate and deliver a broad spectrum of services to their community.</td></tr><tr><td>526758020<a name=\"526758020\"> </a></td><td>Insurance Company</td><td>A financial institution that sells insurance.</td></tr><tr><td>526758021<a name=\"526758021\"> </a></td><td>Medical Laboratory</td><td>A laboratory where tests are done on clinical specimens in order to get information about the health of a patient as pertaining to the diagnosis, treatment, and prevention of disease.</td></tr><tr><td>526758022<a name=\"526758022\"> </a></td><td>Nursing Care Facility</td><td>A facility providing skilled, intermediate or custodial nursing care.</td></tr><tr><td>526758023<a name=\"526758023\"> </a></td><td>Pharmacy</td><td>A store or a place in the hospital where drugs and medicines are dispensed and sold.</td></tr><tr><td>526758024<a name=\"526758024\"> </a></td><td>Surgical Center</td><td>A center where outpatients are provided surgical services.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.228"
+    }
+  ],
+  "url": "http://hl7,org/fhir/organization-hspc-organizationtype",
+  "version": "0.01",
+  "name": "HSPC Organization Type",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-05-18T17:00:00+03:00",
+  "description": "The set of codes that describe a kind of organization.",
+  "copyright": "Intermountain Healthcare",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-organization-organizationtype",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "526758010",
+      "display": "Clinic",
+      "definition": "A place where outpatients are provided medical treatments or advices."
+    },
+    {
+      "code": "526758011",
+      "display": "Cancer Center",
+      "definition": "A center where patients with cancer are cared and treated."
+    },
+    {
+      "code": "526758012",
+      "display": "Dental Office",
+      "definition": "A place where dental services are provided."
+    },
+    {
+      "code": "526758013",
+      "display": "Diagnostic Imaging Center",
+      "definition": "A center where patients are provided imaging services."
+    },
+    {
+      "code": "526758014",
+      "display": "Dialysis Center",
+      "definition": "A center where patients with kidney diseases are provided dialysis services."
+    },
+    {
+      "code": "526758015",
+      "display": "Educational Institute",
+      "definition": "A place where people of different ages gain an education."
+    },
+    {
+      "code": "526758016",
+      "display": "Federal Agency",
+      "definition": "A government organization set up for a specific purpose such as the management of resources, financial oversight of industries or national security issues."
+    },
+    {
+      "code": "526758017",
+      "display": "Home Health",
+      "definition": "An organization which provides assistant health care for people at their homes."
+    },
+    {
+      "code": "526758018",
+      "display": "Hospital",
+      "definition": "An institution where the sick or injuried people are provided medical and surgical treatments and nursing cares."
+    },
+    {
+      "code": "526758019",
+      "display": "Hospital Network",
+      "definition": "A network or group of hospitals that work together to coordinate and deliver a broad spectrum of services to their community."
+    },
+    {
+      "code": "526758020",
+      "display": "Insurance Company",
+      "definition": "A financial institution that sells insurance."
+    },
+    {
+      "code": "526758021",
+      "display": "Medical Laboratory",
+      "definition": "A laboratory where tests are done on clinical specimens in order to get information about the health of a patient as pertaining to the diagnosis, treatment, and prevention of disease."
+    },
+    {
+      "code": "526758022",
+      "display": "Nursing Care Facility",
+      "definition": "A facility providing skilled, intermediate or custodial nursing care."
+    },
+    {
+      "code": "526758023",
+      "display": "Pharmacy",
+      "definition": "A store or a place in the hospital where drugs and medicines are dispensed and sold."
+    },
+    {
+      "code": "526758024",
+      "display": "Surgical Center",
+      "definition": "A center where outpatients are provided surgical services."
+    }
+  ]
+}

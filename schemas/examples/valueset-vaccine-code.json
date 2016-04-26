@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "vaccine-code",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -15,14 +15,10 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
       "valueUri": "urn:oid:2.16.840.1.113883.3.88.12.80.22"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.414"
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/vaccine-code",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Vaccine Administered Value Set",
   "status": "active",
   "experimental": true,
@@ -37,7 +33,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This identifies the vaccine substance administered - CVX codes.",
   "compose": {
     "include": [

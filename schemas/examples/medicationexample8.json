@@ -24,8 +24,8 @@
     },
     "ingredient": [
       {
-        "item": {
-          "display": "Hydrocortisone Powder"
+        "itemCodeableConcept": {
+          "text": "Hydrocortisone Powder"
         },
         "amount": {
           "numerator": {
@@ -41,8 +41,8 @@
         }
       },
       {
-        "item": {
-          "display": "Salicyclic Acid"
+        "itemCodeableConcept": {
+          "text": "Salicyclic Acid"
         },
         "amount": {
           "numerator": {
@@ -58,8 +58,8 @@
         }
       },
       {
-        "item": {
-          "display": "Glaxal Base"
+        "itemCodeableConcept": {
+          "text": "Glaxal Base"
         },
         "amount": {
           "numerator": {

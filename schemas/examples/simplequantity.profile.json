@@ -19,13 +19,14 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "A fixed quantity (no comparator)",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Quantity",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Quantity",
+  "baseType": "Quantity",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Quantity",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -51,16 +52,17 @@
             "key": "qty-3",
             "severity": "error",
             "human": "If a code for the unit is present, the system SHALL also be present",
+            "expression": "code.empty() or system",
             "xpath": "not(exists(f:code)) or exists(f:system)"
           },
           {
             "key": "sqty-1",
             "severity": "error",
             "human": "The comparator is not used on a SimpleQuantity",
+            "expression": "comparator.empty()",
             "xpath": "not(exists(f:comparator))"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",
@@ -82,9 +84,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Quantity.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -110,7 +112,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "Quantity.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -307,6 +309,7 @@
             "key": "sqty-1",
             "severity": "error",
             "human": "The comparator is not used on a SimpleQuantity",
+            "expression": "comparator.empty()",
             "xpath": "not(exists(f:comparator))"
           }
         ],

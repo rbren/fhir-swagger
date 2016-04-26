@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "operation-kind",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>OperationKind</h2><p>Whether an operation is a normal operation or a query.</p><p>This value set has an inline code system http://hl7.org/fhir/operation-kind, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>operation<a name=\"operation\"> </a></td><td>Operation</td><td>This operation is invoked as an operation.</td></tr><tr><td>query<a name=\"query\"> </a></td><td>Query</td><td>This operation is a named query, invoked using the search mechanism.</td></tr></table></div>"
+    "div": "<div><h2>OperationKind</h2><p>Whether an operation is a normal operation or a query.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-operation-kind.html\">http://hl7.org/fhir/operation-kind</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/operation-kind",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "OperationKind",
   "status": "draft",
   "experimental": false,
@@ -37,28 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Whether an operation is a normal operation or a query.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.297"
-      }
-    ],
-    "system": "http://hl7.org/fhir/operation-kind",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "operation",
-        "display": "Operation",
-        "definition": "This operation is invoked as an operation."
-      },
-      {
-        "code": "query",
-        "display": "Query",
-        "definition": "This operation is a named query, invoked using the search mechanism."
+        "system": "http://hl7.org/fhir/operation-kind"
       }
     ]
   }

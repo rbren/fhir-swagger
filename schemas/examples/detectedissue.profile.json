@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "DetectedIssue",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00"
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
   },
   "text": {
     "status": "generated",
@@ -36,9 +36,9 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for DetectedIssue Resource",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "v2",
@@ -58,7 +58,9 @@
   ],
   "kind": "resource",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "baseType": "DomainResource",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {
@@ -100,6 +102,11 @@
         "comments": "The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Resource.id",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "id"
@@ -113,6 +120,11 @@
         "definition": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Resource.meta",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Meta"
@@ -127,6 +139,11 @@
         "comments": "Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Resource.implicitRules",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "uri"
@@ -142,6 +159,11 @@
         "comments": "Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Resource.language",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "code"
@@ -166,6 +188,11 @@
         ],
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "DomainResource.text",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Narrative"
@@ -193,6 +220,11 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "DomainResource.contained",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Resource"
@@ -216,6 +248,11 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Extension"
@@ -239,6 +276,11 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "DomainResource.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Extension"
@@ -543,6 +585,11 @@
         "definition": "unique id for the element within a resource (for internal references).",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "id"
@@ -566,6 +613,11 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Extension"
@@ -590,12 +642,18 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "BackboneElement.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Extension"
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",

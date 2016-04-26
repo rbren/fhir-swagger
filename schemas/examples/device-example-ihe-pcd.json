@@ -22,7 +22,7 @@
   "type": {
     "text": "Vital Signs Monitor"
   },
+  "lotNumber": "12345",
   "manufacturer": "Acme Devices, Inc",
-  "model": "A.1.1",
-  "lotNumber": "12345"
+  "model": "A.1.1"
 }

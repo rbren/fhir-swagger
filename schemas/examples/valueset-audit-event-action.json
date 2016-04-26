@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "audit-event-action",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>AuditEventAction</h2><p>Indicator for type of action performed during the event that generated the audit.</p><p>This value set has an inline code system http://hl7.org/fhir/audit-event-action, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>C<a name=\"C\"> </a></td><td>Create</td><td>Create a new database object, such as placing an order.</td></tr><tr><td>R<a name=\"R\"> </a></td><td>Read/View/Print</td><td>Display or print data, such as a doctor census.</td></tr><tr><td>U<a name=\"U\"> </a></td><td>Update</td><td>Update data, such as revise patient information.</td></tr><tr><td>D<a name=\"D\"> </a></td><td>Delete</td><td>Delete items, such as a doctor master file record.</td></tr><tr><td>E<a name=\"E\"> </a></td><td>Execute</td><td>Perform a system or application function such as log-on, program execution or use of an object's method, or perform a query/search operation.</td></tr></table></div>"
+    "div": "<div><h2>AuditEventAction</h2><p>Indicator for type of action performed during the event that generated the audit.</p><p><b>Copyright Statement:</b> These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright &copy; 2011 by the National Electrical Manufacturers Association.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-audit-event-action.html\">http://hl7.org/fhir/audit-event-action</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/audit-event-action",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "AuditEventAction",
   "status": "draft",
   "experimental": false,
@@ -37,43 +37,13 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Indicator for type of action performed during the event that generated the audit.",
-  "codeSystem": {
-    "extension": [
+  "copyright": "These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright © 2011 by the National Electrical Manufacturers Association.",
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.263"
-      }
-    ],
-    "system": "http://hl7.org/fhir/audit-event-action",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "C",
-        "display": "Create",
-        "definition": "Create a new database object, such as placing an order."
-      },
-      {
-        "code": "R",
-        "display": "Read/View/Print",
-        "definition": "Display or print data, such as a doctor census."
-      },
-      {
-        "code": "U",
-        "display": "Update",
-        "definition": "Update data, such as revise patient information."
-      },
-      {
-        "code": "D",
-        "display": "Delete",
-        "definition": "Delete items, such as a doctor master file record."
-      },
-      {
-        "code": "E",
-        "display": "Execute",
-        "definition": "Perform a system or application function such as log-on, program execution or use of an object's method, or perform a query/search operation."
+        "system": "http://hl7.org/fhir/audit-event-action"
       }
     ]
   }

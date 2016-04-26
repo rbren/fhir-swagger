@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "vision-product",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>Example Vision Prescription Product Codes</h2><p>This value set includes a smattering of Prescription Product codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://hl7.org/fhir/ex-visionprescriptionproduct, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td></tr><tr><td>lens<a name=\"lens\"> </a></td><td/></tr><tr><td>contact<a name=\"contact\"> </a></td><td/></tr></table></div>"
+    "div": "<div><h2>Example Vision Prescription Product Codes</h2><p>This value set includes a smattering of Prescription Product codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-vision-product.html\">http://hl7.org/fhir/ex-visionprescriptionproduct</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/vision-product",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Example Vision Prescription Product Codes",
   "status": "draft",
   "experimental": true,
@@ -33,24 +33,13 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set includes a smattering of Prescription Product codes.",
   "copyright": "This is an example set.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.343"
-      }
-    ],
-    "system": "http://hl7.org/fhir/ex-visionprescriptionproduct",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "lens"
-      },
-      {
-        "code": "contact"
+        "system": "http://hl7.org/fhir/ex-visionprescriptionproduct"
       }
     ]
   }

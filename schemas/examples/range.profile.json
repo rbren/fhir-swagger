@@ -19,10 +19,10 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Base StructureDefinition for Range Type",
   "requirements": "Need to be able to specify ranges of values.",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "v2",
@@ -37,7 +37,9 @@
   ],
   "kind": "datatype",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/Element",
+  "baseType": "Element",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
   "snapshot": {
     "element": [
       {
@@ -57,10 +59,10 @@
             "key": "rng-2",
             "severity": "error",
             "human": "If present, low SHALL have a lower value than high",
+            "expression": "low.empty() or high.empty() or (low <= high)",
             "xpath": "not(exists(f:low/f:value/@value)) or not(exists(f:high/f:value/@value)) or (number(f:low/f:value/@value) <= number(f:high/f:value/@value))"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",
@@ -81,6 +83,11 @@
         "definition": "unique id for the element within a resource (for internal references).",
         "min": 0,
         "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "id"
@@ -104,6 +111,11 @@
         ],
         "min": 0,
         "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
         "type": [
           {
             "code": "Extension"
@@ -197,10 +209,10 @@
             "key": "rng-2",
             "severity": "error",
             "human": "If present, low SHALL have a lower value than high",
+            "expression": "low.empty() or high.empty() or (low <= high)",
             "xpath": "not(exists(f:low/f:value/@value)) or not(exists(f:high/f:value/@value)) or (number(f:low/f:value/@value) <= number(f:high/f:value/@value))"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "v2",

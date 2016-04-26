@@ -21,11 +21,12 @@
   ],
   "date": "2015-02-28",
   "description": "Identifies how the ElementDefinition data type is used when it appears within a data element",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "kind": "resource",
-  "constrainedType": "ElementDefinition",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/ElementDefinition",
+  "baseType": "ElementDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ElementDefinition",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -50,58 +51,66 @@
             "key": "eld-13",
             "severity": "error",
             "human": "Types must be unique by the combination of code and profile",
+            "expression": "type.select(code+profile).distinct()",
             "xpath": "not(exists(for $type in f:type return $type/preceding-sibling::f:type[f:code/@value=$type/f:code/@value and f:profile/@value = $type/f:profile/@value]))"
           },
           {
             "key": "eld-14",
             "severity": "error",
             "human": "Constraints must be unique by key",
+            "expression": "constraint.select(key).distinct()",
             "xpath": "count(f:constraint) = count(distinct-values(f:constraint/f:key/@value))"
           },
           {
             "key": "eld-11",
             "severity": "error",
             "human": "Binding can only be present for coded elements, string, and uri",
+            "expression": "binding.empty() or type.code.empty() or type.select((code = 'code') or (code = 'Coding') or (code='CodeableConcept') or (code = 'Quantity') or (code = 'Extension') or (code = 'string') or (code = 'uri')).exists()",
             "xpath": "not(exists(f:binding)) or (count(f:type/f:code) = 0) or  f:type/f:code/@value=('code','Coding','CodeableConcept','Quantity','Extension', 'string', 'uri')"
           },
           {
             "key": "eld-8",
             "severity": "error",
             "human": "Pattern and value are mutually exclusive",
+            "expression": "pattern.empty() or fixed.empty()",
             "xpath": "not(exists(f:*[starts-with(local-name(.), 'pattern')])) or not(exists(f:*[starts-with(local-name(.), 'value')]))"
           },
           {
             "key": "eld-15",
             "severity": "error",
             "human": "default value and meaningWhenMissing are mutually exclusive",
+            "expression": "defaultValue.empty() or meaningWhenMissing.empty()",
             "xpath": "not(exists(f:*[starts-with(local-name(.), 'fixed')])) or not(exists(f:meaningWhenMissing))"
           },
           {
             "key": "eld-2",
             "severity": "error",
             "human": "Min <= Max",
+            "expression": "min.empty() or max.empty() or (max = '*') or (min <= max.toInteger())",
             "xpath": "not(exists(f:min)) or not(exists(f:max)) or (not(f:max/@value) and not(f:min/@value)) or (f:max/@value = '*') or (number(f:max/@value) >= f:min/@value)"
           },
           {
             "key": "eld-7",
             "severity": "error",
             "human": "Pattern may only be specified if there is one type",
+            "expression": "pattern.empty() or (type.count() = 1)",
             "xpath": "not(exists(f:*[starts-with(local-name(.), 'pattern')])) or (count(f:type)=1)"
           },
           {
             "key": "eld-6",
             "severity": "error",
             "human": "Fixed value may only be specified if there is one type",
+            "expression": "fixed.empty() or (type.count() = 1)",
             "xpath": "not(exists(f:*[starts-with(local-name(.), 'fixed')])) or (count(f:type)=1)"
           },
           {
             "key": "eld-5",
             "severity": "error",
-            "human": "Either a namereference or a fixed value (but not both) is permitted",
-            "xpath": "not(exists(f:nameReference) and exists(f:*[starts-with(local-name(.), 'value')]))"
+            "human": "if the element definition has a contentReference, it cannot have type, defaultValue, fixed, pattern, example, minValue, maxValue, maxLength, or binding",
+            "expression": "contentReference.empty() or (type.empty() and defaultValue.empty() and fixed.empty() and pattern.empty() and example.empty() and minValue.empty() and maxValue.empty() and maxLength.empty() and binding.empty())",
+            "xpath": "not(exists(f:contentReference) and (exists(f:type) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:*[starts-with(local-name(.), 'defaultValue')])  or exists(f:*[starts-with(local-name(.), 'fixed')]) or exists(f:*[starts-with(local-name(.), 'pattern')]) or exists(f:*[starts-with(local-name(.), 'example')]) or exists(f:*[starts-with(local-name(.), 'f:minValue')]) or exists(f:*[starts-with(local-name(.), 'f:maxValue')]) or exists(f:maxLength) or exists(f:binding)))"
           }
         ],
-        "isSummary": true,
         "mapping": [
           {
             "identity": "dex",
@@ -131,9 +140,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -156,29 +165,18 @@
           "ordered": false,
           "rules": "open"
         },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
         "type": [
           {
             "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
           }
         ]
       },
@@ -190,7 +188,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -211,7 +209,7 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -258,7 +256,7 @@
       },
       {
         "path": "ElementDefinition.representation",
-        "short": "How this element is represented in instances",
+        "short": "xmlAttr | xmlText | typeAttr | cdaText",
         "definition": "Codes that define how this element is represented in instances, when the deviation varies from the normal case.",
         "comments": "This is rarely used except for special cases where the representation deviates from the normal, which is done only very reluctantly, and can only be done in the base standard (and profiles must reproduce what the base standard does).",
         "min": 0,
@@ -299,9 +297,9 @@
       {
         "path": "ElementDefinition.name",
         "short": "Name for this particular element definition (reference target)",
-        "definition": "The name of this element definition (to refer to it from other element definitions using ElementDefinition.nameReference). This is a unique name referring to a specific set of constraints applied to this element. One use of this is to provide a name to different slices of the same element.",
+        "definition": "The name of this element definition. This is a unique name referring to a specific set of constraints applied to this element, used to provide a name to different slices of the same element.",
         "comments": "The name SHALL be unique within the structure within the context of the constrained resource element.  (Though to avoid confusion, uniqueness across all elements is recommended.).",
-        "requirements": "Allows referencing a defined element.  May also be used for code generation purposes.",
+        "requirements": "May also be used for code generation purposes.",
         "min": 0,
         "max": "1",
         "base": {
@@ -426,6 +424,7 @@
             "key": "eld-1",
             "severity": "error",
             "human": "If there are no discriminators, there must be a definition",
+            "expression": "discriminator or description",
             "xpath": "(f:discriminator) or (f:description)"
           }
         ],
@@ -451,9 +450,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.slicing.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -479,7 +478,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.slicing.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -497,7 +496,7 @@
       },
       {
         "path": "ElementDefinition.slicing.discriminator",
-        "short": "Element values that used to distinguish the slices",
+        "short": "Element values that are used to distinguish the slices",
         "definition": "Designates which child elements are used to discriminate between the slices when processing an instance. If one or more discriminators are provided, the value of the child elements in the instance data SHALL completely distinguish which slice the element in the resource matches based on the allowed values for those elements in each of the slices.",
         "comments": "If there is no discriminator, the content is hard to process, so this should be avoided. If the base element has a cardinality of ..1, and there is a choice of types, the discriminator most be \"@type\".",
         "min": 0,
@@ -727,7 +726,7 @@
       },
       {
         "path": "ElementDefinition.requirements",
-        "short": "Why is this needed?",
+        "short": "Why this resource has been created",
         "definition": "This element is for traceability of why the element was created and why the constraints exist as they do. This may be used to point to source materials or specifications that drove the structure of this element.",
         "comments": "This element does not describe the usage of the element (that's done in comments), rather it's for traceability of *why* the element is either needed or why the constraints exist as they do.  This may be used to point to source materials or specifications that drove the structure of this data element.",
         "min": 0,
@@ -855,6 +854,7 @@
             "key": "eld-3",
             "severity": "error",
             "human": "Max SHALL be a number or \"*\"",
+            "expression": "max.empty() or (max = '*') or (max.toInteger() >= 0)",
             "xpath": "@value='*' or (normalize-space(@value)!='' and normalize-space(translate(@value, '0123456789',''))='')"
           }
         ],
@@ -877,7 +877,7 @@
       {
         "path": "ElementDefinition.base",
         "short": "Base definition information for tools",
-        "definition": "Information about the base definition of the element, provided to make it unncessary for tools to trace the deviation of the element through the derived and related profiles. This information is only provided where the element definition represents a constraint on another element definition, and must be present if there is a base element definition.",
+        "definition": "Information about the base definition of the element, provided to make it unnecessary for tools to trace the deviation of the element through the derived and related profiles. This information is only provided where the element definition represents a constraint on another element definition, and must be present if there is a base element definition.",
         "comments": "The base information does not carry any information that could not be determined from the path and related profiles, but making this determination requires both that the related profiles are available, and that the algorithm to determine them be available. So they are deformalised into this location for tooling convenience, and to ensure that the base information is available without dependencies.",
         "min": 0,
         "max": "1",
@@ -913,9 +913,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.base.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -941,7 +941,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.base.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1044,6 +1044,33 @@
         ]
       },
       {
+        "path": "ElementDefinition.contentReference",
+        "short": "Reference to definition of content for the element",
+        "definition": "Identifies the identity of an element defined elsewhere in the profile whose content rules should be applied to the current element.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ElementDefinition.contentReference",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "condition": [
+          "eld-5"
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -1074,6 +1101,7 @@
             "key": "eld-4",
             "severity": "error",
             "human": "Aggregation may only be specified if one of the allowed types for the element is a resource",
+            "expression": "aggregation.empty() or (code = 'Reference')",
             "xpath": "not(exists(f:aggregation)) or exists(f:code[@value = 'Reference'])"
           }
         ],
@@ -1111,9 +1139,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.type.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1139,7 +1167,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.type.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1266,36 +1294,41 @@
         ]
       },
       {
-        "path": "ElementDefinition.nameReference",
-        "short": "To another element constraint (by element.name)",
-        "definition": "Identifies the name of a slice defined elsewhere in the profile whose constraints should be applied to the current element.",
-        "comments": "If child components of this element are defined, they act as constraints on the referenced slice.",
+        "path": "ElementDefinition.type.versioning",
+        "short": "either | independent | specific",
+        "definition": "Whether this reference needs to be version specific or version independent, or whetehr either can be used.",
+        "comments": "The base specification never makes a rule as to which form is allowed, but implementation guides may do this.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
-          "path": "ElementDefinition.nameReference",
+          "path": "ElementDefinition.type.versioning",
           "min": 0,
           "max": "1"
         },
         "type": [
           {
-            "code": "string"
+            "code": "code"
           }
         ],
-        "condition": [
-          "eld-5"
-        ],
+        "defaultValueCode": "either",
         "isSummary": true,
+        "binding": {
+          "strength": "required",
+          "description": "Whether a reference needs to be version specific or version independent, or whetehr either can be used",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/reference-version-rules"
+          }
+        },
         "mapping": [
           {
             "identity": "rim",
-            "map": "N/A"
+            "map": "N/A (MIF territory)"
           }
         ]
       },
       {
         "path": "ElementDefinition.defaultValue[x]",
-        "short": "Specified value it missing from instance",
+        "short": "Specified value if missing from instance",
         "definition": "The value that should be used if there is no value stated in the instance (e.g. 'if not otherwise specified, the abstract is false').",
         "comments": "Default values can only be specified on a resource, data type, or extension definition, and never in a profile that applies to one of these. Specifying a default value means that the property can never been unknown - it must always have a value. Further, the default value can never be changed. For these reasons, default values are (and should be) used extremely sparingly.\r\n  This element should only be used on child elements of complex data elements.",
         "min": 0,
@@ -1703,7 +1736,7 @@
       },
       {
         "path": "ElementDefinition.example[x]",
-        "short": "Example value: [as defined for type]",
+        "short": "Example value (as defined for type)",
         "definition": "A sample value for this element demonstrating the type of information that would typically be captured.",
         "comments": "This will most commonly be present for data where it's not implicitly obvious from either the data type or value set what the values might be.  (I.e. Example values for dates or quantities would generally be unnecessary.)  If the example value is fully populated, the publication tool can generate an instance automatically.",
         "min": 0,
@@ -2158,9 +2191,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.constraint.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -2186,7 +2219,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.constraint.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2225,7 +2258,7 @@
       },
       {
         "path": "ElementDefinition.constraint.requirements",
-        "short": "Why this constraint necessary or appropriate",
+        "short": "Why this constraint is necessary or appropriate",
         "definition": "Description of why this constraint is necessary or appropriate.",
         "comments": "To be used if the reason for the constraint may not be intuitive to all implementers.",
         "min": 0,
@@ -2278,6 +2311,25 @@
         "base": {
           "path": "ElementDefinition.constraint.human",
           "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "isSummary": true
+      },
+      {
+        "path": "ElementDefinition.constraint.expression",
+        "short": "FluentPath expression of constraint",
+        "definition": "A [FluentPath](fluentpath.html) expression of constraint that can be executed to see if this constraint is met.",
+        "requirements": "Used by validation tooling tests of the validity of the resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ElementDefinition.constraint.expression",
+          "min": 0,
           "max": "1"
         },
         "type": [
@@ -2412,6 +2464,7 @@
             "key": "eld-10",
             "severity": "error",
             "human": "provide either a reference or a description (or both)",
+            "expression": "valueSet or description",
             "xpath": "(exists(f:valueSetUri) or exists(f:valueSetReference)) or exists(f:description)"
           }
         ],
@@ -2445,9 +2498,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.binding.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -2473,7 +2526,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.binding.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2595,8 +2648,9 @@
           {
             "key": "eld-12",
             "severity": "error",
-            "human": "URI SHALL start with http:// or https://",
-            "xpath": "starts-with(string(@value), 'http:') or starts-with(string(@value), 'https:')"
+            "human": "URI SHALL start with http:// or https:// urn:",
+            "expression": "startsWith('http:') or startsWith('https') or startsWith('urn:')",
+            "xpath": "starts-with(string(@value), 'http:') or starts-with(string(@value), 'https:') or starts-with(string(@value), 'urn:')"
           }
         ],
         "isSummary": true,
@@ -2663,9 +2717,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ElementDefinition.mapping.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -2691,7 +2745,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ElementDefinition.mapping.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2806,15 +2860,13 @@
         ]
       },
       {
+        "path": "ElementDefinition.nameReference",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "path": "ElementDefinition.extension",
         "name": "Question",
-        "slicing": {
-          "discriminator": [
-            "url"
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 0,
         "max": "*",
         "type": [
@@ -2865,11 +2917,6 @@
       },
       {
         "path": "ElementDefinition.type.aggregation",
-        "min": 0,
-        "max": "0"
-      },
-      {
-        "path": "ElementDefinition.nameReference",
         "min": 0,
         "max": "0"
       },

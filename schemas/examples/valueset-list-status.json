@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "list-status",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>ListStatus</h2><p>The current state of the list</p><p>This value set has an inline code system http://hl7.org/fhir/list-status, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>current<a name=\"current\"> </a></td><td>Current</td><td>The list is considered to be an active part of the patient's record.</td></tr><tr><td>retired<a name=\"retired\"> </a></td><td>Retired</td><td>The list is &quot;old&quot; and should no longer be considered accurate or relevant.</td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered In Error</td><td>The list was never accurate.  It is retained for medico-legal purposes only.</td></tr></table></div>"
+    "div": "<div><h2>ListStatus</h2><p>The current state of the list</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-list-status.html\">http://hl7.org/fhir/list-status</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/list-status",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "ListStatus",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The current state of the list",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.178"
-      }
-    ],
-    "system": "http://hl7.org/fhir/list-status",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "current",
-        "display": "Current",
-        "definition": "The list is considered to be an active part of the patient's record."
-      },
-      {
-        "code": "retired",
-        "display": "Retired",
-        "definition": "The list is \"old\" and should no longer be considered accurate or relevant."
-      },
-      {
-        "code": "entered-in-error",
-        "display": "Entered In Error",
-        "definition": "The list was never accurate.  It is retained for medico-legal purposes only."
+        "system": "http://hl7.org/fhir/list-status"
       }
     ]
   }

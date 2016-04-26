@@ -13,10 +13,10 @@
     }
   ],
   "created": "2014-08-16",
-  "target": {
+  "targetReference": {
     "reference": "Organization/2"
   },
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/1"
   },
   "use": "complete",
@@ -36,18 +36,15 @@
       }
     }
   ],
-  "patient": {
+  "patientReference": {
     "reference": "Patient/1"
   },
   "coverage": [
     {
       "sequence": 1,
       "focal": true,
-      "coverage": {
+      "coverageReference": {
         "reference": "Coverage/9876B1"
-      },
-      "relationship": {
-        "code": "self"
       }
     }
   ],
@@ -57,7 +54,7 @@
       "type": {
         "code": "service"
       },
-      "provider": {
+      "providerReference": {
         "reference": "Practitioner/example"
       },
       "service": {
@@ -67,7 +64,7 @@
         "system": "http://hl7.org/fhir/ex-pharmaservice",
         "code": "smokecess"
       },
-      "serviceDate": "2014-08-16",
+      "servicedDate": "2014-08-16",
       "unitPrice": {
         "value": 60.00,
         "system": "urn:iso:std:iso:4217",

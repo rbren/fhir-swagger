@@ -16,7 +16,7 @@
         "repeat": {
           "frequency": 3,
           "period": 1,
-          "periodUnits": "d"
+          "periodUnit": "d"
         }
       },
       "route": {

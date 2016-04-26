@@ -6,11 +6,42 @@
     "div": "<div>Brian MRI results discussion</div>"
   },
   "status": "booked",
-  "type": {
+  "serviceCategory": {
     "coding": [
       {
-        "code": "52",
-        "display": "General Discussion"
+        "system": "http://example.org/service-category",
+        "code": "gp",
+        "display": "General Practice"
+      }
+    ]
+  },
+  "serviceType": [
+    {
+      "coding": [
+        {
+          "code": "52",
+          "display": "General Discussion"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://example.org/specialty",
+          "code": "gp",
+          "display": "General Practice"
+        }
+      ]
+    }
+  ],
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://example.org/appointment-type",
+        "code": "wi",
+        "display": "Walk in"
       }
     ]
   },

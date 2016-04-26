@@ -16,25 +16,25 @@
     }
   ],
   "date": "2013-07-04",
-  "description": "If true, indicates that the containing group or question should not be displayed to the user for data entry.",
-  "fhirVersion": "1.0.2",
+  "description": "If true, indicates that the extended item should not be displayed to the user.",
+  "fhirVersion": "1.4.0",
   "kind": "datatype",
-  "constrainedType": "Extension",
   "abstract": false,
   "contextType": "resource",
   "context": [
-    "Questionnaire.group",
-    "Questionnaire.group.group",
-    "Questionnaire.group.question"
+    "Questionnaire.item",
+    "Questionnaire.item.item"
   ],
-  "base": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
         "path": "Extension",
         "short": "Don't display to user",
-        "definition": "If true, indicates that the containing group or question should not be displayed to the user for data entry.",
-        "comments": "If a group is hidden, all descendant content of the group is automatically hidden.",
+        "definition": "If true, indicates that the extended item should not be displayed to the user.",
+        "comments": "If an item is hidden, all descendant items are hidden as well.",
         "min": 0,
         "max": "1",
         "base": {
@@ -58,9 +58,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "Extension.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -82,7 +82,7 @@
         "min": 0,
         "max": "0",
         "base": {
-          "path": "Extension.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -150,8 +150,8 @@
       {
         "path": "Extension",
         "short": "Don't display to user",
-        "definition": "If true, indicates that the containing group or question should not be displayed to the user for data entry.",
-        "comments": "If a group is hidden, all descendant content of the group is automatically hidden.",
+        "definition": "If true, indicates that the extended item should not be displayed to the user.",
+        "comments": "If an item is hidden, all descendant items are hidden as well.",
         "min": 0,
         "max": "1",
         "type": [

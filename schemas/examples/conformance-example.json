@@ -15,6 +15,7 @@
   "name": "ACME EHR Conformance statement",
   "status": "draft",
   "experimental": true,
+  "date": "2012-01-04",
   "publisher": "ACME Corporation",
   "contact": [
     {
@@ -27,7 +28,6 @@
       ]
     }
   ],
-  "date": "2012-01-04",
   "description": "This is the FHIR conformance statement for the main EHR at ACME for the private interface - it does not describe the public interface",
   "requirements": "Main EHR conformance statement, published for contracting and operational support",
   "copyright": "Copyright © Acme Healthcare and GoodCorp EHR Systems",
@@ -56,6 +56,14 @@
   "format": [
     "xml",
     "json"
+  ],
+  "_format": [
+    {
+      "fhir_comments": [
+        "   this system can do either xml or json. (Listing both implies full support for either, with interconversion)   "
+      ]
+    },
+    null
   ],
   "rest": [
     {
@@ -175,6 +183,13 @@
               "type": "reference",
               "target": [
                 "Organization"
+              ],
+              "_target": [
+                {
+                  "fhir_comments": [
+                    "  there's not a lot of value in saying this, since it's the only \n          choice anyway. but in other cases it's pretty important  "
+                  ]
+                }
               ],
               "modifier": [
                 "missing"

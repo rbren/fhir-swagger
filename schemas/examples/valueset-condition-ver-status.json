@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "condition-ver-status",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>ConditionVerificationStatus</h2><p>The verification status to support or decline the clinical status of the condition or diagnosis.</p><p>This value set has an inline code system http://hl7.org/fhir/condition-ver-status, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>provisional<a name=\"provisional\"> </a></td><td>Provisional</td><td>This is a tentative diagnosis - still a candidate that is under consideration.</td></tr><tr><td>differential<a name=\"differential\"> </a></td><td>Differential</td><td>One of a set of potential (and typically mutually exclusive) diagnosis asserted to further guide the diagnostic process and preliminary treatment.</td></tr><tr><td>confirmed<a name=\"confirmed\"> </a></td><td>Confirmed</td><td>There is sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition.</td></tr><tr><td>refuted<a name=\"refuted\"> </a></td><td>Refuted</td><td>This condition has been ruled out by diagnostic and clinical evidence.</td></tr><tr><td>entered-in-error<a name=\"entered-in-error\"> </a></td><td>Entered In Error</td><td>The statement was entered in error and is not valid.</td></tr><tr><td>unknown<a name=\"unknown\"> </a></td><td>Unknown</td><td>The condition status is unknown.  Note that &quot;unknown&quot; is a value of last resort and every attempt should be made to provide a meaningful value other than &quot;unknown&quot;.</td></tr></table></div>"
+    "div": "<div><h2>ConditionVerificationStatus</h2><p>The verification status to support or decline the clinical status of the condition or diagnosis.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-condition-ver-status.html\">http://hl7.org/fhir/condition-ver-status</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/condition-ver-status",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "ConditionVerificationStatus",
   "status": "draft",
   "experimental": false,
@@ -37,48 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The verification status to support or decline the clinical status of the condition or diagnosis.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.75"
-      }
-    ],
-    "system": "http://hl7.org/fhir/condition-ver-status",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "provisional",
-        "display": "Provisional",
-        "definition": "This is a tentative diagnosis - still a candidate that is under consideration."
-      },
-      {
-        "code": "differential",
-        "display": "Differential",
-        "definition": "One of a set of potential (and typically mutually exclusive) diagnosis asserted to further guide the diagnostic process and preliminary treatment."
-      },
-      {
-        "code": "confirmed",
-        "display": "Confirmed",
-        "definition": "There is sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition."
-      },
-      {
-        "code": "refuted",
-        "display": "Refuted",
-        "definition": "This condition has been ruled out by diagnostic and clinical evidence."
-      },
-      {
-        "code": "entered-in-error",
-        "display": "Entered In Error",
-        "definition": "The statement was entered in error and is not valid."
-      },
-      {
-        "code": "unknown",
-        "display": "Unknown",
-        "definition": "The condition status is unknown.  Note that \"unknown\" is a value of last resort and every attempt should be made to provide a meaningful value other than \"unknown\"."
+        "system": "http://hl7.org/fhir/condition-ver-status"
       }
     ]
   }

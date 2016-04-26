@@ -33,8 +33,8 @@
     },
     "ingredient": [
       {
-        "item": {
-          "display": "Amoxicillin"
+        "itemCodeableConcept": {
+          "text": "Amoxicillin"
         },
         "amount": {
           "numerator": {
@@ -69,8 +69,8 @@
     },
     "content": [
       {
-        "item": {
-          "reference": "MedicationExample14"
+        "itemReference": {
+          "reference": "Medication/medexample014"
         },
         "amount": {
           "value": 7.5,

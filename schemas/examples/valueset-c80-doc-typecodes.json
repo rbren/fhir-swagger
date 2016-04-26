@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "c80-doc-typecodes",
   "meta": {
-    "lastUpdated": "2015-10-23T20:41:03.495+00:00",
+    "lastUpdated": "2016-03-30T21:01:25.570+00:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -15,10 +15,6 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
       "valueUri": "urn:oid:2.16.840.1.113883.3.88.12.80.47"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.129"
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
@@ -41,7 +37,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This is the code specifying the precise type of document (e.g. Pulmonary History and  Physical, Discharge Summary, Ultrasound Report, etc.). The Document Type value set includes all LOINC  values listed in HITSP C80 Table 2-144 Document Class Value Set Definition above used for Document Class,  and all LOINC values whose SCALE is DOC in the LOINC database.",
   "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
   "compose": {

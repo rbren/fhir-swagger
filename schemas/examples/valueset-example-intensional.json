@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div>\n      <p>Value set &quot;LOINC Codes for Cholesterol&quot;: This is an example value set that includes \n        all the  codes for serum cholesterol from LOINC v2.36.</p>\n      <p>Developed by: FHIR project team (example)</p>\n      <p>Published for testing on 13-June 2012</p>\n      <p>This value set includes all the LOINC codes in LOINC Part Concept Cholesterol | Bld-Ser-Plas (LP43571-6), except for 5932-9 Cholesterol [Presence] in Blood by Test strip</p>\n      <p>This content from LOINC&reg; is copyright &copy; 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p>\n    </div>"
+    "div": "<div>\n      <p>Value set &quot;LOINC Codes for Cholesterol&quot;: This is an example value set that includes \n        all the  codes for serum cholesterol from LOINC v2.36.</p>\n      <p>Developed by: FHIR project team (example)</p>\n      <p>Published for testing on 13-June 2012</p>\n      <p>This value set includes all the LOINC codes in LOINC Part Concept Cholesterol | Bld-Ser-Plas (LP43571-6), except for 5932-9 Cholesterol [Presence] in Blood by Test strip</p>\n      <p>This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p>\n    </div>"
   },
   "url": "http://hl7.org/fhir/ValueSet/example-intensional",
   "_url": {

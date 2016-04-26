@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "conditional-delete-status",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>ConditionalDeleteStatus</h2><p>A code that indicates how the server supports conditional delete.</p><p>This value set has an inline code system http://hl7.org/fhir/conditional-delete-status, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>not-supported<a name=\"not-supported\"> </a></td><td>Not Supported</td><td>No support for conditional deletes.</td></tr><tr><td>single<a name=\"single\"> </a></td><td>Single Deletes Supported</td><td>Conditional deletes are supported, but only single resources at a time.</td></tr><tr><td>multiple<a name=\"multiple\"> </a></td><td>Multiple Deletes Supported</td><td>Conditional deletes are supported, and multiple resources can be deleted in a single interaction.</td></tr></table></div>"
+    "div": "<div><h2>ConditionalDeleteStatus</h2><p>A code that indicates how the server supports conditional delete.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-conditional-delete-status.html\">http://hl7.org/fhir/conditional-delete-status</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/conditional-delete-status",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "ConditionalDeleteStatus",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "A code that indicates how the server supports conditional delete.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.91"
-      }
-    ],
-    "system": "http://hl7.org/fhir/conditional-delete-status",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "not-supported",
-        "display": "Not Supported",
-        "definition": "No support for conditional deletes."
-      },
-      {
-        "code": "single",
-        "display": "Single Deletes Supported",
-        "definition": "Conditional deletes are supported, but only single resources at a time."
-      },
-      {
-        "code": "multiple",
-        "display": "Multiple Deletes Supported",
-        "definition": "Conditional deletes are supported, and multiple resources can be deleted in a single interaction."
+        "system": "http://hl7.org/fhir/conditional-delete-status"
       }
     ]
   }

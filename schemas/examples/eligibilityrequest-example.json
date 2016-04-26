@@ -12,7 +12,19 @@
     }
   ],
   "created": "2014-08-16",
-  "organization": {
+  "targetReference": {
     "reference": "Organization/2"
+  },
+  "organizationReference": {
+    "reference": "Organization/1"
+  },
+  "priority": {
+    "code": "normal"
+  },
+  "patientReference": {
+    "reference": "Patient/pat1"
+  },
+  "coverageReference": {
+    "reference": "Coverage/9876B1"
   }
 }

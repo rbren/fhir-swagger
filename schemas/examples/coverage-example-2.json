@@ -5,7 +5,7 @@
     "status": "generated",
     "div": "<div>A human-readable rendering of the coverage</div>"
   },
-  "issuer": {
+  "issuerReference": {
     "reference": "Organization/2"
   },
   "period": {
@@ -17,6 +17,15 @@
     "code": "EHCPOL",
     "display": "extended healthcare"
   },
+  "planholderReference": {
+    "reference": "Patient/5"
+  },
+  "beneficiaryReference": {
+    "reference": "Patient/5"
+  },
+  "relationship": {
+    "code": "self"
+  },
   "identifier": [
     {
       "system": "http://xyz.com/codes/identifier",
@@ -25,8 +34,5 @@
   ],
   "plan": "11024",
   "subPlan": "D15C9",
-  "dependent": 1,
-  "subscriber": {
-    "reference": "Patient/5"
-  }
+  "dependent": 1
 }

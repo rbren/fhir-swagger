@@ -3,7 +3,7 @@
   "id": "micro",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: micro</p><p><b>contained</b>: , , , , , , , , , , , , , , , , , , , , , , , , , </p><p><b>identifier</b>: 290741144</p><p><b>status</b>: final</p><p><b>category</b>: Microbiology <span>(Details : {http://hl7.org/fhir/v2/0074 code 'MB' = 'Microbiology)</span></p><p><b>code</b>: Culture, MRSA <span>(Details : {LOINC code '632-0' = 'Bacteria identified in Wound by Aerobe culture)</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 07/08/2009 7:00:00 PM</p><p><b>issued</b>: 10/08/2009 8:25:44 AM</p><p><b>performer</b>: Todd Ashby</p><p><b>request</b>: id: req; Patient/example; 255337816</p><p><b>result</b>: id: org1; status: final; Staphylococcus aureus Panel <span>(Details : {http://acme.org/lab/codes/organisms code 'Staaur' = '??)</span>; Patient/example</p></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: micro</p><p><b>contained</b>: , , , , , , , , , , , , , , , , , , , , , , , , , </p><p><b>identifier</b>: 290741144</p><p><b>status</b>: final</p><p><b>category</b>: Microbiology <span>(Details : {http://hl7.org/fhir/v2/0074 code 'MB' = 'Microbiology)</span></p><p><b>code</b>: Culture, MRSA <span>(Details : {LOINC code '632-0' = 'Bacteria identified in Wound by Aerobe culture)</span></p><p><b>subject</b>: <a>Patient/example</a></p><p><b>effective</b>: 07/08/2009 7:00:00 PM</p><p><b>issued</b>: 10/08/2009 8:25:44 AM</p><p><b>performer</b>: Todd Ashby</p><p><b>request</b>: id: req; 255337816; Patient/example</p><p><b>result</b>: id: org1; status: final; Staphylococcus aureus Panel <span>(Details : {http://acme.org/lab/codes/organisms code 'Staaur' = '??)</span>; Patient/example</p></div>"
   },
   "contained": [
     {
@@ -1101,17 +1101,17 @@
     {
       "resourceType": "DiagnosticOrder",
       "id": "req",
+      "identifier": [
+        {
+          "value": "255337816"
+        }
+      ],
       "subject": {
         "fhir_comments": [
           "     patient chosen at random     "
         ],
         "reference": "Patient/example"
-      },
-      "identifier": [
-        {
-          "value": "255337816"
-        }
-      ]
+      }
     }
   ],
   "identifier": [

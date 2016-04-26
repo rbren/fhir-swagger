@@ -94,7 +94,7 @@
             "resource": "Parameters",
             "_resource": {
               "fhir_comments": [
-                "  What we really want here is an illegal type, but the validation in the build process won't that. \n          But Parameters is a valid resource which doesn't have an end-point so should fail.  "
+                "  What we really want here is an illegal type, but the validation in the build process won't that.\n\t\t  But Parameters is a valid resource which doesn't have an end-point so should fail.  "
               ]
             },
             "params": "/1"

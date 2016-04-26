@@ -9,7 +9,22 @@
   "name": "Multiserver Test Script",
   "status": "draft",
   "description": "Multiserver Test Script",
-  "multiserver": true,
+  "origin": [
+    {
+      "index": 1,
+      "profile": {
+        "code": "FHIR-Client"
+      }
+    }
+  ],
+  "destination": [
+    {
+      "index": 1,
+      "profile": {
+        "code": "FHIR-Server"
+      }
+    }
+  ],
   "fixture": [
     {
       "id": "F1",
@@ -29,7 +44,12 @@
       "capability": [
         {
           "required": true,
+          "validated": true,
           "description": "Patient Create Operation",
+          "origin": [
+            1
+          ],
+          "destination": 1,
           "link": [
             "http://hl7.org/implement/standards/FHIR-Develop/http.html#create"
           ],
@@ -47,6 +67,7 @@
           },
           "contentType": "xml",
           "destination": 0,
+          "origin": 0,
           "sourceId": "F1"
         }
       }
@@ -60,8 +81,13 @@
       "metadata": {
         "capability": [
           {
+            "required": true,
             "validated": true,
             "description": "Patient Read Operation",
+            "origin": [
+              1
+            ],
+            "destination": 1,
             "link": [
               "http://hl7.org/implement/standards/FHIR-Develop/http.html#read"
             ],

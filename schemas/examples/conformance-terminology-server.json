@@ -17,6 +17,7 @@
   "url": "http://hl7.org/fhir/terminology-server",
   "name": "Terminology Service Conformance Statement",
   "status": "draft",
+  "date": "2015-07-05",
   "publisher": "HL7, Inc",
   "contact": [
     {
@@ -29,13 +30,12 @@
       ]
     }
   ],
-  "date": "2015-07-05",
   "description": "Basic conformance statement for a Terminology Server. A server can support more fucntionality than defined here, but this is the minimum amount",
   "kind": "capability",
   "software": {
     "name": "ACME Terminology Server"
   },
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "acceptUnknown": "both",
   "_acceptUnknown": {
     "fhir_comments": [
@@ -45,6 +45,18 @@
   "format": [
     "json",
     "xml"
+  ],
+  "_format": [
+    {
+      "fhir_comments": [
+        "    json is mandatory, for support of mobile clients    "
+      ]
+    },
+    {
+      "fhir_comments": [
+        "    xml is optional, but strongly recommended    "
+      ]
+    }
   ],
   "rest": [
     {
@@ -214,7 +226,7 @@
         {
           "name": "lookup",
           "definition": {
-            "reference": "OperationDefinition/ValueSet-lookup"
+            "reference": "OperationDefinition/CodeSystem-lookup"
           }
         },
         {

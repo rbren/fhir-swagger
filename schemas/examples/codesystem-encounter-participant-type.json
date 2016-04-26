@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "encounter-participant-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ParticipantType</h2><p>This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.</p><p>This code system http://hl7.org/fhir/participant-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>translator<a name=\"translator\"> </a></td><td>Translator</td><td>A translator who is facilitating communication with the patient during the encounter.</td></tr><tr><td>emergency<a name=\"emergency\"> </a></td><td>Emergency</td><td>A person to be contacted in case of an emergency during the encounter.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.139"
+    }
+  ],
+  "url": "http://hl7.org/fhir/participant-type",
+  "version": "1.4.0",
+  "name": "ParticipantType",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "translator",
+      "display": "Translator",
+      "definition": "A translator who is facilitating communication with the patient during the encounter."
+    },
+    {
+      "code": "emergency",
+      "display": "Emergency",
+      "definition": "A person to be contacted in case of an emergency during the encounter."
+    }
+  ]
+}

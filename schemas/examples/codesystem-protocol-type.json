@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "protocol-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ProtocolType</h2><p>High-level categorization of the protocol</p><p>This code system http://hl7.org/fhir/protocol-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>condition<a name=\"condition\"> </a></td><td>Condition</td><td>The protocol describes the steps to manage a particular health condition including monitoring, treatment, mitigation and/or follow-up</td></tr><tr><td>device<a name=\"device\"> </a></td><td>Device</td><td>The protocol describes the appropriate use of a particular device (medical device, software, etc.)</td></tr><tr><td>drug<a name=\"drug\"> </a></td><td>Drug</td><td>The protocol describes the appropriate use of a particular medication including indications for use, dosages, treatment cycles, etc.</td></tr><tr><td>study<a name=\"study\"> </a></td><td>Study</td><td>The protocol describes the set of steps to occur for study subjects enrolled in an interventional study</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.544"
+    }
+  ],
+  "url": "http://hl7.org/fhir/protocol-type",
+  "version": "1.4.0",
+  "name": "ProtocolType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "High-level categorization of the protocol",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/protocol-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "condition",
+      "display": "Condition",
+      "definition": "The protocol describes the steps to manage a particular health condition including monitoring, treatment, mitigation and/or follow-up"
+    },
+    {
+      "code": "device",
+      "display": "Device",
+      "definition": "The protocol describes the appropriate use of a particular device (medical device, software, etc.)"
+    },
+    {
+      "code": "drug",
+      "display": "Drug",
+      "definition": "The protocol describes the appropriate use of a particular medication including indications for use, dosages, treatment cycles, etc."
+    },
+    {
+      "code": "study",
+      "display": "Study",
+      "definition": "The protocol describes the set of steps to occur for study subjects enrolled in an interventional study"
+    }
+  ]
+}

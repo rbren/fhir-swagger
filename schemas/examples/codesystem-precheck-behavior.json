@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "precheck-behavior",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>OrderSetItemPrecheckBehavior</h2><p>Defines selection frequency behavior for an action or group</p><p>This code system http://hl7.org/fhir/precheck-behavior defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>yes<a name=\"yes\"> </a></td><td>Yes</td><td>An item with this behavior is one of the most frequent items that is, or should be, included by an end user, for the particular context in which the item occurs. The system displaying the item to the end user should consider &quot;pre-checking&quot; such an item as a convenience for the user</td></tr><tr><td>no<a name=\"no\"> </a></td><td>No</td><td>An item with this behavior is one of the less frequent items included by the end user, for the particular context in which the item occurs. The system displaying the items to the end user would typically not &quot;pre-check&quot; such an item</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.506"
+    }
+  ],
+  "url": "http://hl7.org/fhir/precheck-behavior",
+  "version": "1.4.0",
+  "name": "OrderSetItemPrecheckBehavior",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Defines selection frequency behavior for an action or group",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/precheck-behavior",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "yes",
+      "display": "Yes",
+      "definition": "An item with this behavior is one of the most frequent items that is, or should be, included by an end user, for the particular context in which the item occurs. The system displaying the item to the end user should consider \"pre-checking\" such an item as a convenience for the user"
+    },
+    {
+      "code": "no",
+      "display": "No",
+      "definition": "An item with this behavior is one of the less frequent items included by the end user, for the particular context in which the item occurs. The system displaying the items to the end user would typically not \"pre-check\" such an item"
+    }
+  ]
+}

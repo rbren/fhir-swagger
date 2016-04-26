@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "usps-state",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/usps-state",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "USPS Two Letter Alphabetic Codes",
   "status": "draft",
   "experimental": true,
@@ -38,7 +38,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "This value set defines two letter USPS alphabetic codes.",
   "copyright": "On July 1, 1963, the Post Office Department implemented the five-digit ZIP Code, which was placed after the state name in the last line of an address. To provide room for the ZIP Code, the Department issued two-letter abbreviations for all states and territories. Publication 59, Abbreviations for Use with ZIP Code, issued by the Department in October 1963. Currently there is no copyright restriction on this value set.",
   "compose": {

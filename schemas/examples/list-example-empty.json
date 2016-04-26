@@ -5,6 +5,8 @@
     "status": "generated",
     "div": "<div>\n      <p>The patient is not on any medications</p>\n    </div>"
   },
+  "status": "current",
+  "mode": "snapshot",
   "code": {
     "coding": [
       {
@@ -15,12 +17,10 @@
     ],
     "text": "Medication Review"
   },
+  "date": "2012-11-26T07:30:23+11:00",
   "source": {
     "reference": "Patient/example"
   },
-  "status": "current",
-  "date": "2012-11-26T07:30:23+11:00",
-  "mode": "snapshot",
   "emptyReason": {
     "coding": [
       {

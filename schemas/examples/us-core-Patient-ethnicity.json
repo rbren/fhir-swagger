@@ -7,6 +7,6 @@
   "base": "Patient",
   "type": "token",
   "description": "Returns patients with an ethnicity extension matching the specified code.",
-  "xpath": "f:Patient/f:extension[@url='http://hl7.org/fhir/StructureDefinition/us-core-ethnicity']",
+  "xpath": "f:Patient/f:extension[@url='http://hl7.org/fhir/StructureDefinition/us-core-ethnicity'] | f:Patient/f:extension[@url='http://hl7.org/fhir/StructureDefinition/us-core-ethnicity']",
   "xpathUsage": "normal"
 }

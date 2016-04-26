@@ -17,15 +17,6 @@
       "valueUri": "urn:oid:1.2.840.10008.1.2.1"
     }
   ],
-  "type": "photo",
-  "subtype": {
-    "coding": [
-      {
-        "system": "http://nema.org/dicom/dicm",
-        "code": "US"
-      }
-    ]
-  },
   "identifier": [
     {
       "use": "official",
@@ -62,8 +53,14 @@
       "value": "urn:oid:1.2.840.113619.2.21.3408.700.0.757923840.3.0"
     }
   ],
-  "subject": {
-    "reference": "Patient/example"
+  "type": "photo",
+  "subtype": {
+    "coding": [
+      {
+        "system": "http://nema.org/dicom/dicm",
+        "code": "US"
+      }
+    ]
   },
   "view": {
     "coding": [
@@ -73,6 +70,9 @@
         "display": "Lateral projection"
       }
     ]
+  },
+  "subject": {
+    "reference": "Patient/example"
   },
   "deviceName": "G.E. Medical Systems",
   "height": 480,

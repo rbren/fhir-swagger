@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "resource-slicing-rules",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>SlicingRules</h2><p>How slices are interpreted when evaluating an instance.</p><p>This value set has an inline code system http://hl7.org/fhir/resource-slicing-rules, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>closed<a name=\"closed\"> </a></td><td>Closed</td><td>No additional content is allowed other than that described by the slices in this profile.</td></tr><tr><td>open<a name=\"open\"> </a></td><td>Open</td><td>Additional content is allowed anywhere in the list.</td></tr><tr><td>openAtEnd<a name=\"openAtEnd\"> </a></td><td>Open at End</td><td>Additional content is allowed, but only at the end of the list. Note that using this requires that the slices be ordered, which makes it hard to share uses. This should only be done where absolutely required.</td></tr></table></div>"
+    "div": "<div><h2>SlicingRules</h2><p>How slices are interpreted when evaluating an instance.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-resource-slicing-rules.html\">http://hl7.org/fhir/resource-slicing-rules</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/resource-slicing-rules",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "SlicingRules",
   "status": "draft",
   "experimental": false,
@@ -37,33 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "How slices are interpreted when evaluating an instance.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.45"
-      }
-    ],
-    "system": "http://hl7.org/fhir/resource-slicing-rules",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "closed",
-        "display": "Closed",
-        "definition": "No additional content is allowed other than that described by the slices in this profile."
-      },
-      {
-        "code": "open",
-        "display": "Open",
-        "definition": "Additional content is allowed anywhere in the list."
-      },
-      {
-        "code": "openAtEnd",
-        "display": "Open at End",
-        "definition": "Additional content is allowed, but only at the end of the list. Note that using this requires that the slices be ordered, which makes it hard to share uses. This should only be done where absolutely required."
+        "system": "http://hl7.org/fhir/resource-slicing-rules"
       }
     ]
   }

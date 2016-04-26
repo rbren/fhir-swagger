@@ -65,17 +65,12 @@
   ],
   "address": [
     {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/us-core-county",
-          "valueString": "Orange County"
-        }
-      ],
       "use": "home",
       "line": [
         "534 Erewhon St"
       ],
       "city": "PleasantVille",
+      "district": "Orange County",
       "state": "Vic",
       "postalCode": "3999"
     }

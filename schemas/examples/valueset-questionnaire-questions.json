@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "questionnaire-questions",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
@@ -14,11 +14,11 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.255"
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.476"
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/questionnaire-questions",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "Questionnaire Question Codes",
   "status": "draft",
   "experimental": true,
@@ -33,7 +33,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Example list of codes for questions and groups of questions. (Not necessariliy complete or appropriate.)",
   "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
   "compose": {

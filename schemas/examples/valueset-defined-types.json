@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "defined-types",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>FHIRDefinedType</h2><p>Either a resource or a data type.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"valueset-data-types.html\">http://hl7.org/fhir/data-types</a></li><li>Include all codes defined in <a href=\"valueset-resource-types.html\">http://hl7.org/fhir/resource-types</a></li></ul></div>"
+    "div": "<div><h2>FHIRDefinedType</h2><p>Either a resource or a data type.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-data-types.html\">http://hl7.org/fhir/data-types</a></li><li>Include all codes defined in <a href=\"codesystem-resource-types.html\">http://hl7.org/fhir/resource-types</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/defined-types",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "FHIRDefinedType",
   "status": "draft",
   "experimental": false,
@@ -37,7 +37,7 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Either a resource or a data type.",
   "compose": {
     "include": [

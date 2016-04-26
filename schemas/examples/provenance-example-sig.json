@@ -16,23 +16,15 @@
   "recorded": "2015-08-27T08:39:24+10:00",
   "reason": [
     {
-      "coding": [
-        {
-          "system": "http://hl7.org/fhir/v3/ActReason",
-          "code": "TREAT",
-          "display": "treatment"
-        }
-      ]
+      "system": "http://hl7.org/fhir/v3/ActReason",
+      "code": "TREAT",
+      "display": "treatment"
     }
   ],
   "activity": {
-    "coding": [
-      {
-        "system": "http://hl7.org/fhir/v3/DocumentCompletion",
-        "code": "AU",
-        "display": "authenticated"
-      }
-    ]
+    "system": "http://hl7.org/fhir/v3/DocumentCompletion",
+    "code": "AU",
+    "display": "authenticated"
   },
   "agent": [
     {
@@ -64,7 +56,7 @@
           ],
           "system": "http://hl7.org/fhir/valueset-signature-type",
           "code": "1.2.840.10065.1.12.1.5",
-          "display": "Verification"
+          "display": "Verification Signature"
         }
       ],
       "when": "2015-08-27T08:39:24+10:00",

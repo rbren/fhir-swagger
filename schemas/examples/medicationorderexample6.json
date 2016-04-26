@@ -14,11 +14,11 @@
       }
     ]
   },
-  "patient": {
-    "reference": "Patient/f001"
-  },
   "medicationReference": {
     "reference": "Medication/MedicationExample15"
+  },
+  "patient": {
+    "reference": "Patient/f001"
   },
   "dosageInstruction": [
     {
@@ -26,10 +26,10 @@
       "timing": {
         "repeat": {
           "duration": 21,
-          "durationUnits": "d",
+          "durationUnit": "d",
           "frequency": 2,
           "period": 1,
-          "periodUnits": "d"
+          "periodUnit": "d"
         }
       },
       "route": {

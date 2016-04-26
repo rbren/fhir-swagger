@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "constraint-severity",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>ConstraintSeverity</h2><p>SHALL applications comply with this constraint?</p><p>This value set has an inline code system http://hl7.org/fhir/constraint-severity, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>error<a name=\"error\"> </a></td><td>Error</td><td>If the constraint is violated, the resource is not conformant.</td></tr><tr><td>warning<a name=\"warning\"> </a></td><td>Warning</td><td>If the constraint is violated, the resource is conformant, but it is not necessarily following best practice.</td></tr></table></div>"
+    "div": "<div><h2>ConstraintSeverity</h2><p>SHALL applications comply with this constraint?</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-constraint-severity.html\">http://hl7.org/fhir/constraint-severity</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/constraint-severity",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "ConstraintSeverity",
   "status": "draft",
   "experimental": false,
@@ -37,28 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "SHALL applications comply with this constraint?",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.44"
-      }
-    ],
-    "system": "http://hl7.org/fhir/constraint-severity",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "error",
-        "display": "Error",
-        "definition": "If the constraint is violated, the resource is not conformant."
-      },
-      {
-        "code": "warning",
-        "display": "Warning",
-        "definition": "If the constraint is violated, the resource is conformant, but it is not necessarily following best practice."
+        "system": "http://hl7.org/fhir/constraint-severity"
       }
     ]
   }

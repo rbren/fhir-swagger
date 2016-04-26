@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "network-type",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>AuditEventParticipantNetworkType</h2><p>The type of network access point of this participant in the audit event</p><p>This value set has an inline code system http://hl7.org/fhir/network-type, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td>Machine Name</td><td>The machine name, including DNS name.</td></tr><tr><td>2<a name=\"2\"> </a></td><td>IP Address</td><td>The assigned Internet Protocol (IP) address.</td></tr><tr><td>3<a name=\"3\"> </a></td><td>Telephone Number</td><td>The assigned telephone number.</td></tr><tr><td>4<a name=\"4\"> </a></td><td>Email address</td><td>The assigned email address.</td></tr><tr><td>5<a name=\"5\"> </a></td><td>URI</td><td>URI (User directory, HTTP-PUT, ftp, etc.).</td></tr></table></div>"
+    "div": "<div><h2>AuditEventParticipantNetworkType</h2><p>The type of network access point of this participant in the audit event</p><p><b>Copyright Statement:</b> These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright &copy; 2011 by the National Electrical Manufacturers Association.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-network-type.html\">http://hl7.org/fhir/network-type</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/network-type",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "AuditEventParticipantNetworkType",
   "status": "draft",
   "experimental": false,
@@ -37,43 +37,13 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "The type of network access point of this participant in the audit event",
-  "codeSystem": {
-    "extension": [
+  "copyright": "These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright © 2011 by the National Electrical Manufacturers Association.",
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.265"
-      }
-    ],
-    "system": "http://hl7.org/fhir/network-type",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "1",
-        "display": "Machine Name",
-        "definition": "The machine name, including DNS name."
-      },
-      {
-        "code": "2",
-        "display": "IP Address",
-        "definition": "The assigned Internet Protocol (IP) address."
-      },
-      {
-        "code": "3",
-        "display": "Telephone Number",
-        "definition": "The assigned telephone number."
-      },
-      {
-        "code": "4",
-        "display": "Email address",
-        "definition": "The assigned email address."
-      },
-      {
-        "code": "5",
-        "display": "URI",
-        "definition": "URI (User directory, HTTP-PUT, ftp, etc.)."
+        "system": "http://hl7.org/fhir/network-type"
       }
     ]
   }

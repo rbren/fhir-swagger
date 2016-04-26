@@ -11,18 +11,18 @@
       "value": "123132"
     }
   ],
-  "type": {
+  "serviceCategory": {
     "coding": [
       {
-        "code": "45",
-        "display": "Physiotherapy"
+        "code": "17",
+        "display": "General Practice"
       }
     ]
   },
   "schedule": {
     "reference": "Schedule/example"
   },
-  "freeBusyType": "busy",
+  "status": "busy",
   "start": "2013-12-25T09:00:00Z",
   "end": "2013-12-25T09:15:00Z",
   "overbooked": true,

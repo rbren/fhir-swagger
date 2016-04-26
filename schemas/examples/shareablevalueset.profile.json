@@ -9,9 +9,9 @@
   "name": "Shareable ValueSet",
   "status": "draft",
   "publisher": "HL7",
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "Enforces the minimum information set for the value set metadata required by HL7 and other organisations that share and publish value sets",
-  "fhirVersion": "1.0.2",
+  "fhirVersion": "1.4.0",
   "mapping": [
     {
       "identity": "rim",
@@ -20,9 +20,10 @@
     }
   ],
   "kind": "resource",
-  "constrainedType": "ValueSet",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+  "baseType": "ValueSet",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ValueSet",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {
@@ -44,22 +45,18 @@
         ],
         "constraint": [
           {
-            "key": "vsd-7",
-            "severity": "error",
-            "human": "A defined code system (if present) SHALL have a different url than the value set url",
-            "xpath": "not(f:codeSystem/f:system/@value = f:url/@value)"
-          },
-          {
             "key": "vsd-5",
             "severity": "error",
-            "human": "Value set SHALL contain at least one of a codeSystem, a compose, or an expansion element",
-            "xpath": "exists(f:codeSystem) or exists(f:compose) or exists(f:expansion)"
+            "human": "Value set SHALL contain at least one of a a compose, or an expansion element",
+            "expression": "compose or expansion",
+            "xpath": "exists(f:compose) or exists(f:expansion)"
           },
           {
             "key": "vsd-2",
             "severity": "error",
-            "human": "A value set with only one import SHALL also have an include and/or an exclude unless the value set includes and inline code system",
-            "xpath": "not(exists(f:compose)) or (count(f:compose/f:import)!=1 or exists(f:compose/f:include) or exists(f:compose/f:exclude) or exists(f:codeSystem))"
+            "human": "A value set with only one import SHALL also have an include and/or an exclude unless the value set includes an inline code system",
+            "expression": "compose.import.count() != 1 or compose.include or compose.exclude",
+            "xpath": "not(exists(f:compose)) or (count(f:compose/f:import)!=1 or exists(f:compose/f:include) or exists(f:compose/f:exclude))"
           }
         ],
         "mapping": [
@@ -81,9 +78,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.id",
+          "path": "Resource.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -99,9 +96,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.meta",
+          "path": "Resource.meta",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -118,9 +115,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.implicitRules",
+          "path": "Resource.implicitRules",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -138,9 +135,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.language",
+          "path": "Resource.language",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -167,9 +164,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.text",
+          "path": "DomainResource.text",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -199,7 +196,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.contained",
+          "path": "DomainResource.contained",
           "min": 0,
           "max": "*"
         },
@@ -227,7 +224,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.extension",
+          "path": "DomainResource.extension",
           "min": 0,
           "max": "*"
         },
@@ -255,7 +252,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.modifierExtension",
+          "path": "DomainResource.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -505,9 +502,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.contact.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -533,7 +530,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.contact.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -562,7 +559,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.contact.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -572,6 +569,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -813,540 +811,6 @@
         "isSummary": true
       },
       {
-        "path": "ValueSet.codeSystem",
-        "short": "An inline code system, which is part of this value set",
-        "definition": "A definition of a code system, inlined into the value set (as a packaging convenience). Note that the inline code system may be used from other value sets by referring to its (codeSystem.system) directly.",
-        "comments": "All code systems defined as part of a FHIR value set have an implicit valueset that includes all of the codes in the code system - the value set in which they are defined.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ],
-        "condition": [
-          "vsd-5"
-        ],
-        "constraint": [
-          {
-            "key": "vsd-8",
-            "severity": "error",
-            "human": "Codes must be unique",
-            "xpath": "count(descendant::f:concept)=count(distinct-values(descendant::f:concept/f:code/@value))"
-          },
-          {
-            "key": "vsd-3",
-            "severity": "error",
-            "human": "Within a code system definition, all the codes SHALL be unique",
-            "xpath": "count(distinct-values(descendant::f:concept/f:code/@value))=count(descendant::f:concept)"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "path": "ValueSet.codeSystem.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "id"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.system",
-        "short": "URI to identify the code system (e.g. in Coding.system)",
-        "definition": "An absolute URI that is used to reference this code system, including in [Coding]{datatypes.html#Coding}.system.",
-        "comments": "Servers that support  the shareable value set profile SHALL confirm that the system reference is resolvable when accepting value sets (e.g. PUT/POST).",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.system",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "uri"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "path": "ValueSet.codeSystem.version",
-        "short": "Version (for use in Coding.version)",
-        "definition": "The version of this code system that defines the codes. Note that the version is optional because a well maintained code system does not suffer from versioning, and therefore the version does not need to be maintained. However many code systems are not well maintained, and the version needs to be defined and tracked.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.version",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "path": "ValueSet.codeSystem.caseSensitive",
-        "short": "If code comparison is case sensitive",
-        "definition": "If code comparison is case sensitive when codes within this system are compared to each other.",
-        "comments": "If this value is missing, then it is not specified whether a code system is case sensitive or not. When the rule is not known, Postel's law should be followed: produce codes with the correct case, and accept codes in any case. This element is primarily provided to support validation software.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.caseSensitive",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "isSummary": true
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
-            "valueString": "ConceptDefinition"
-          }
-        ],
-        "path": "ValueSet.codeSystem.concept",
-        "name": "concept",
-        "short": "Concepts in the code system",
-        "definition": "Concepts that are in the code system. The concept definitions are inherently hierarchical, but the definitions must be consulted to determine what the meaning of the hierarchical relationships are.",
-        "min": 1,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept",
-          "min": 1,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "id"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.code",
-        "short": "Code that identifies concept",
-        "definition": "A code - a text symbol - that uniquely identifies the concept within the code system.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.code",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.abstract",
-        "short": "If this code is not for use as a real concept",
-        "definition": "If this code is not for use as a real concept.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.abstract",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
-        "defaultValueBoolean": false
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.display",
-        "short": "Text to display to the user",
-        "definition": "A human readable string that is the recommended default way to present this concept to a user.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.display",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.definition",
-        "short": "Formal definition",
-        "definition": "The formal definition of the concept. The value set resource does not make formal definitions required, because of the prevalence of legacy systems. However, they are highly recommended, as without them there is no formal meaning associated with the concept.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.definition",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation",
-        "name": "designation",
-        "short": "Additional representations for the concept",
-        "definition": "Additional representations for the concept - other languages, aliases, specialized purposes, used for particular purposes, etc.",
-        "requirements": "Many concept definition systems support multiple representations, in multiple languages, and for multiple purposes.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references).",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "id"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation.extension",
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation.modifierExtension",
-        "short": "Extensions that cannot be ignored",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
-        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content",
-          "modifiers"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation.modifierExtension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "isModifier": true,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation.language",
-        "short": "Human language of the designation",
-        "definition": "The language this designation is defined for.",
-        "comments": "In the absence of a language, the resource language applies.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation.language",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
-        "binding": {
-          "strength": "required",
-          "description": "A human language.",
-          "valueSetUri": "http://tools.ietf.org/html/bcp47"
-        }
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation.use",
-        "short": "Details how this designation would be used",
-        "definition": "A code that details how this designation would be used.",
-        "comments": "If no use is provided, the designation can be assumed to be suitable for general display to a human user.",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation.use",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ],
-        "binding": {
-          "strength": "extensible",
-          "description": "Details of how a designation would be used.",
-          "valueSetReference": {
-            "reference": "http://hl7.org/fhir/ValueSet/designation-use"
-          }
-        }
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.designation.value",
-        "short": "The text value for this designation",
-        "definition": "The text value for this designation.",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.designation.value",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.concept",
-        "short": "Child Concepts (is-a/contains/categorizes)",
-        "definition": "Defines children of a concept to produce a hierarchy of concepts. The nature of the relationships is variable (is-a/contains/categorizes) and can only be determined by examining the definitions of the concepts.",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "ValueSet.codeSystem.concept.concept",
-          "min": 0,
-          "max": "*"
-        },
-        "nameReference": "concept"
-      },
-      {
         "path": "ValueSet.compose",
         "short": "When value set includes codes from elsewhere",
         "definition": "A set of criteria that provide the content logical definition of the value set by including or excluding codes from outside this value set.",
@@ -1370,6 +834,7 @@
             "key": "vsd-1",
             "severity": "error",
             "human": "A value set composition SHALL have an include or an import",
+            "expression": "include or import",
             "xpath": "exists(f:include) or exists(f:import)"
           }
         ]
@@ -1384,9 +849,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.compose.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1412,7 +877,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1441,7 +906,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1451,6 +916,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1487,6 +953,7 @@
         ]
       },
       {
+        "id": "include",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
@@ -1494,7 +961,6 @@
           }
         ],
         "path": "ValueSet.compose.include",
-        "name": "include",
         "short": "Include one or more codes from a code system",
         "definition": "Include one or more codes from a code system.",
         "comments": "If there are no codes or filters, the entire code system is included. Note that the set of codes that are included may contain abstract codes.",
@@ -1518,6 +984,7 @@
             "key": "vsd-11",
             "severity": "error",
             "human": "Cannot have both concept and filter",
+            "expression": "concept.empty() or filter.empty()",
             "xpath": "not(exists(f:concept)) or not(exists(f:filter))"
           }
         ],
@@ -1539,9 +1006,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.compose.include.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1567,7 +1034,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.include.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1596,7 +1063,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.include.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1606,6 +1073,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1714,9 +1182,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.compose.include.concept.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1742,7 +1210,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.include.concept.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1771,7 +1239,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.include.concept.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1781,6 +1249,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -1847,7 +1316,161 @@
           "min": 0,
           "max": "*"
         },
-        "nameReference": "designation"
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.compose.include.concept.designation.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.compose.include.concept.designation.extension",
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.compose.include.concept.designation.modifierExtension",
+        "short": "Extensions that cannot be ignored",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.",
+        "comments": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content",
+          "modifiers"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "BackboneElement.modifierExtension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "isModifier": true,
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.compose.include.concept.designation.language",
+        "short": "Human language of the designation",
+        "definition": "The language this designation is defined for.",
+        "comments": "In the absence of a language, the resource language applies.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ValueSet.compose.include.concept.designation.language",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "A human language.",
+          "valueSetUri": "http://tools.ietf.org/html/bcp47"
+        }
+      },
+      {
+        "path": "ValueSet.compose.include.concept.designation.use",
+        "short": "Details how this designation would be used",
+        "definition": "A code that details how this designation would be used.",
+        "comments": "If no use is provided, the designation can be assumed to be suitable for general display to a human user.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ValueSet.compose.include.concept.designation.use",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "description": "Details of how a designation would be used.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/designation-use"
+          }
+        }
+      },
+      {
+        "path": "ValueSet.compose.include.concept.designation.value",
+        "short": "The text value for this designation",
+        "definition": "The text value for this designation.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ValueSet.compose.include.concept.designation.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
       },
       {
         "path": "ValueSet.compose.include.filter",
@@ -1886,9 +1509,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.compose.include.filter.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -1914,7 +1537,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.include.filter.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -1943,7 +1566,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.compose.include.filter.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -1953,6 +1576,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -2049,7 +1673,7 @@
           "min": 0,
           "max": "*"
         },
-        "nameReference": "include",
+        "contentReference": "#include",
         "condition": [
           "vsd-2"
         ],
@@ -2091,9 +1715,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.expansion.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -2119,7 +1743,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.expansion.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2148,7 +1772,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.expansion.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -2158,6 +1782,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -2266,9 +1891,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.expansion.parameter.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -2294,7 +1919,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.expansion.parameter.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2323,7 +1948,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.expansion.parameter.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -2333,6 +1958,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -2391,8 +2017,8 @@
         ]
       },
       {
+        "id": "contains",
         "path": "ValueSet.expansion.contains",
-        "name": "contains",
         "short": "Codes in the value set",
         "definition": "The codes that are contained in the value set expansion.",
         "min": 0,
@@ -2412,18 +2038,21 @@
             "key": "vsd-9",
             "severity": "error",
             "human": "Must have a code if not abstract",
+            "expression": "code or abstract = true",
             "xpath": "exists(f:code) or (f:abstract/@value = true())"
           },
           {
             "key": "vsd-6",
             "severity": "error",
             "human": "SHALL have a code or a display",
+            "expression": "code or display",
             "xpath": "exists(f:code) or exists(f:display)"
           },
           {
             "key": "vsd-10",
             "severity": "error",
             "human": "Must have a system if a code is present",
+            "expression": "code.empty() or system",
             "xpath": "exists(f:system) or not(exists(f:code))"
           }
         ]
@@ -2438,9 +2067,9 @@
         "min": 0,
         "max": "1",
         "base": {
-          "path": "ValueSet.expansion.contains.id",
+          "path": "Element.id",
           "min": 0,
-          "max": "1"
+          "max": "*"
         },
         "type": [
           {
@@ -2466,7 +2095,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.expansion.contains.extension",
+          "path": "Element.extension",
           "min": 0,
           "max": "*"
         },
@@ -2495,7 +2124,7 @@
         "min": 0,
         "max": "*",
         "base": {
-          "path": "ValueSet.expansion.contains.modifierExtension",
+          "path": "BackboneElement.modifierExtension",
           "min": 0,
           "max": "*"
         },
@@ -2505,6 +2134,7 @@
           }
         ],
         "isModifier": true,
+        "isSummary": true,
         "mapping": [
           {
             "identity": "rim",
@@ -2617,7 +2247,7 @@
           "min": 0,
           "max": "*"
         },
-        "nameReference": "contains"
+        "contentReference": "#contains"
       }
     ]
   },
@@ -2631,6 +2261,94 @@
         "type": [
           {
             "code": "ValueSet"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.codeSystem",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "path": "ValueSet.codeSystem.caseSensitive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "concept",
+        "path": "ValueSet.codeSystem.concept",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "path": "ValueSet.codeSystem.concept.abstract",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.codeSystem.concept.code",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.codeSystem.concept.concept",
+        "min": 0,
+        "max": "*",
+        "contentReference": "#concept"
+      },
+      {
+        "path": "ValueSet.codeSystem.concept.definition",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.codeSystem.concept.display",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.codeSystem.system",
+        "comments": "Servers that support  the shareable value set profile SHALL confirm that the system reference is resolvable when accepting value sets (e.g. PUT/POST).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "path": "ValueSet.codeSystem.version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
           }
         ]
       },
@@ -2731,94 +2449,6 @@
             "code": "boolean"
           }
         ]
-      },
-      {
-        "path": "ValueSet.codeSystem",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "path": "ValueSet.codeSystem.system",
-        "comments": "Servers that support  the shareable value set profile SHALL confirm that the system reference is resolvable when accepting value sets (e.g. PUT/POST).",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "uri"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.version",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.caseSensitive",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept",
-        "name": "concept",
-        "min": 1,
-        "max": "*"
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.code",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.abstract",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.display",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.definition",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "path": "ValueSet.codeSystem.concept.concept",
-        "min": 0,
-        "max": "*",
-        "nameReference": "concept"
       }
     ]
   }

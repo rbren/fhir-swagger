@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "network-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>AuditEventParticipantNetworkType</h2><p>The type of network access point of this participant in the audit event</p><p>This code system http://hl7.org/fhir/network-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td>Machine Name</td><td>The machine name, including DNS name.</td></tr><tr><td>2<a name=\"2\"> </a></td><td>IP Address</td><td>The assigned Internet Protocol (IP) address.</td></tr><tr><td>3<a name=\"3\"> </a></td><td>Telephone Number</td><td>The assigned telephone number.</td></tr><tr><td>4<a name=\"4\"> </a></td><td>Email address</td><td>The assigned email address.</td></tr><tr><td>5<a name=\"5\"> </a></td><td>URI</td><td>URI (User directory, HTTP-PUT, ftp, etc.).</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.265"
+    }
+  ],
+  "url": "http://hl7.org/fhir/network-type",
+  "version": "1.4.0",
+  "name": "AuditEventParticipantNetworkType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of network access point of this participant in the audit event",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/network-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Machine Name",
+      "definition": "The machine name, including DNS name."
+    },
+    {
+      "code": "2",
+      "display": "IP Address",
+      "definition": "The assigned Internet Protocol (IP) address."
+    },
+    {
+      "code": "3",
+      "display": "Telephone Number",
+      "definition": "The assigned telephone number."
+    },
+    {
+      "code": "4",
+      "display": "Email address",
+      "definition": "The assigned email address."
+    },
+    {
+      "code": "5",
+      "display": "URI",
+      "definition": "URI (User directory, HTTP-PUT, ftp, etc.)."
+    }
+  ]
+}

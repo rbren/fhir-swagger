@@ -15,7 +15,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div>\n            \n            <a href=\"http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32\">Document: urn:oid:129.6.58.92.88336</a>undefined, created 24/12/2005\n          </div>"
+          "div": "<div>\n\n            <a href=\"http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32\">Document: urn:oid:129.6.58.92.88336</a>undefined, created 24/12/2005\n          </div>"
         },
         "masterIdentifier": {
           "system": "urn:ietf:rfc:3986",
@@ -33,6 +33,15 @@
             }
           ]
         },
+        "class": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "47039-3",
+              "display": "Inpatient Admission history and physical note"
+            }
+          ]
+        },
         "author": [
           {
             "reference": "Practitioner/a3"
@@ -45,6 +54,17 @@
         "indexed": "2013-07-01T23:11:33+10:00",
         "status": "current",
         "description": "Physical",
+        "securityLabel": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/v3/Confidentiality",
+                "code": "N",
+                "display": "normal"
+              }
+            ]
+          }
+        ],
         "content": [
           {
             "attachment": {
@@ -131,18 +151,20 @@
           "status": "generated",
           "div": "<div>Author Gerald Smitty @ Cleveland Clinic</div>"
         },
-        "name": {
-          "use": "usual",
-          "family": [
-            "Smitty"
-          ],
-          "given": [
-            "Gerald"
-          ]
-        },
+        "name": [
+          {
+            "use": "usual",
+            "family": [
+              "Smitty"
+            ],
+            "given": [
+              "Gerald"
+            ]
+          }
+        ],
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "display": "Cleveland Clinic"
             },
             "role": {
@@ -163,7 +185,7 @@
             ]
           },
           {
-            "managingOrganization": {
+            "organization": {
               "display": "Parma Community"
             }
           }
@@ -189,18 +211,20 @@
           "status": "generated",
           "div": "<div>Author Person @ Cleveland Clinic</div>"
         },
-        "name": {
-          "use": "usual",
-          "family": [
-            "Dopplemeyer"
-          ],
-          "given": [
-            "Sherry"
-          ]
-        },
+        "name": [
+          {
+            "use": "usual",
+            "family": [
+              "Dopplemeyer"
+            ],
+            "given": [
+              "Sherry"
+            ]
+          }
+        ],
         "practitionerRole": [
           {
-            "managingOrganization": {
+            "organization": {
               "display": "Cleveland Clinic"
             },
             "role": {
@@ -221,7 +245,7 @@
             ]
           },
           {
-            "managingOrganization": {
+            "organization": {
               "display": "Berea Community"
             }
           }

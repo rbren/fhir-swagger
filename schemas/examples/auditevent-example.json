@@ -5,24 +5,22 @@
     "status": "generated",
     "div": "<div>Application Start for under service login &quot;Grahame&quot; (id: Grahame's Test HL7Connect)</div>"
   },
-  "event": {
-    "type": {
-      "system": "http://nema.org/dicom/dicm",
-      "code": "110100",
-      "display": "Application Activity"
-    },
-    "subtype": [
-      {
-        "system": "http://nema.org/dicom/dicm",
-        "code": "110120",
-        "display": "Application Start"
-      }
-    ],
-    "action": "E",
-    "dateTime": "2012-10-25T22:04:27+11:00",
-    "outcome": "0"
+  "type": {
+    "system": "http://nema.org/dicom/dicm",
+    "code": "110100",
+    "display": "Application Activity"
   },
-  "participant": [
+  "subtype": [
+    {
+      "system": "http://nema.org/dicom/dicm",
+      "code": "110120",
+      "display": "Application Start"
+    }
+  ],
+  "action": "E",
+  "recorded": "2012-10-25T22:04:27+11:00",
+  "outcome": "0",
+  "agent": [
     {
       "role": [
         {
@@ -51,7 +49,7 @@
       }
     ]
   },
-  "object": [
+  "entity": [
     {
       "identifier": {
         "type": {
@@ -73,7 +71,7 @@
       "role": {
         "system": "http://hl7.org/fhir/object-role",
         "code": "4",
-        "display": "DomainResource"
+        "display": "Domain Resource"
       },
       "lifecycle": {
         "system": "http://hl7.org/fhir/object-lifecycle",

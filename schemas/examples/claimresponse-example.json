@@ -11,17 +11,23 @@
       "value": "R3500"
     }
   ],
-  "request": {
+  "requestReference": {
     "reference": "http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402"
   },
   "created": "2014-08-16",
-  "organization": {
-    "reference": "Organization/2"
-  },
-  "requestOrganization": {
-    "reference": "Organization/1"
+  "organizationIdentifier": {
+    "fhir_comments": [
+      "  \n  <OrganizationReference>\n    <reference value=\"Organization/2\"/>\n  </OrganizationReference>\n  "
+    ],
+    "system": "http://www.jurisdiction.org/insurers",
+    "value": "555123"
   },
   "outcome": "complete",
+  "_outcome": {
+    "fhir_comments": [
+      "  <requestOrganizationReference>\n    <reference value=\"Organization/1\"/>\n  </requestOrganizationReference>\n "
+    ]
+  },
   "disposition": "Claim settled as per contract.",
   "payeeType": {
     "system": "http://hl7.org/fhir/payeetype",
@@ -35,7 +41,7 @@
       "sequenceLinkId": 1,
       "adjudication": [
         {
-          "code": {
+          "category": {
             "code": "eligible"
           },
           "amount": {
@@ -45,7 +51,7 @@
           }
         },
         {
-          "code": {
+          "category": {
             "code": "copay"
           },
           "amount": {
@@ -55,13 +61,13 @@
           }
         },
         {
-          "code": {
+          "category": {
             "code": "eligpercent"
           },
           "value": 80.00
         },
         {
-          "code": {
+          "category": {
             "code": "benefit"
           },
           "amount": {

@@ -1,5 +1,8 @@
 {
   "resourceType": "ProcessResponse",
+  "fhir_comments": [
+    " \n  <requestOrganizationReference>\n    <reference value=\"Organization/1\"/>\n  </requestOrganizationReference>\n  "
+  ],
   "id": "SR2500",
   "text": {
     "status": "generated",
@@ -11,7 +14,7 @@
       "value": "881234"
     }
   ],
-  "request": {
+  "requestReference": {
     "reference": "http://www.BenefitsInc.com/fhir/eligibility/225476332402"
   },
   "outcome": {
@@ -20,10 +23,7 @@
   },
   "disposition": "Specified coverage is currently in-force.",
   "created": "2014-08-16",
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/2"
-  },
-  "requestOrganization": {
-    "reference": "Organization/1"
   }
 }

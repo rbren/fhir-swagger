@@ -8,6 +8,7 @@
   "name": "Austalian Healthcare Identifier - Individual",
   "status": "active",
   "kind": "identifier",
+  "date": "2015-08-31",
   "publisher": "HL7 Australia on behalf of NEHTA",
   "contact": [
     {
@@ -21,7 +22,6 @@
     }
   ],
   "responsible": "HI Service Operator / NEHTA",
-  "date": "2015-08-31",
   "type": {
     "coding": [
       {

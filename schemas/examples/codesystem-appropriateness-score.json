@@ -1,0 +1,89 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "qicore-appropriateness-score",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>QICoreAppropriatenessScore</h2><p>The RAND scoring for appropriateness of the procedure.</p><p>This code system http://hl7.org/fhir/appropriateness-score defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>extremely-inappropriate<a name=\"extremely-inappropriate\"> </a></td><td>Extremely Inappropriate</td><td>The procedure is extremely inappropriate</td></tr><tr><td>inappropriate<a name=\"inappropriate\"> </a></td><td>Inappropriate</td><td>The procedure is inappropriate</td></tr><tr><td>probably-inappropriate<a name=\"probably-inappropriate\"> </a></td><td>Probably Inappropriate</td><td>The procedure is probably inappropriate</td></tr><tr><td>uncertain-inappropriate<a name=\"uncertain-inappropriate\"> </a></td><td>Uncertain Inappropriate</td><td>The appropriateness of the procedure is uncertain, leaning towards inappropriate</td></tr><tr><td>uncertain<a name=\"uncertain\"> </a></td><td>Uncertain</td><td>The appropriateness of the procedure is uncertain</td></tr><tr><td>uncertain-appropriate<a name=\"uncertain-appropriate\"> </a></td><td>Uncertain Appropriate</td><td>The appropriateness of the procedure is uncertain, leaning towards appropriate</td></tr><tr><td>probably-appropriate<a name=\"probably-appropriate\"> </a></td><td>Probably Appropriate</td><td>The procedure is probably appropriate</td></tr><tr><td>appropriate<a name=\"appropriate\"> </a></td><td>Appropriate</td><td>The procedure is appropriate</td></tr><tr><td>extremely-appropriate<a name=\"extremely-appropriate\"> </a></td><td>Extremely Appropriate</td><td>The procedure is extremely appropriate</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.652"
+    }
+  ],
+  "url": "http://hl7.org/fhir/appropriateness-score",
+  "version": "1.4.0",
+  "name": "QICoreAppropriatenessScore",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The RAND scoring for appropriateness of the procedure.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/qicore-appropriateness-score",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "extremely-inappropriate",
+      "display": "Extremely Inappropriate",
+      "definition": "The procedure is extremely inappropriate"
+    },
+    {
+      "code": "inappropriate",
+      "display": "Inappropriate",
+      "definition": "The procedure is inappropriate"
+    },
+    {
+      "code": "probably-inappropriate",
+      "display": "Probably Inappropriate",
+      "definition": "The procedure is probably inappropriate"
+    },
+    {
+      "code": "uncertain-inappropriate",
+      "display": "Uncertain Inappropriate",
+      "definition": "The appropriateness of the procedure is uncertain, leaning towards inappropriate"
+    },
+    {
+      "code": "uncertain",
+      "display": "Uncertain",
+      "definition": "The appropriateness of the procedure is uncertain"
+    },
+    {
+      "code": "uncertain-appropriate",
+      "display": "Uncertain Appropriate",
+      "definition": "The appropriateness of the procedure is uncertain, leaning towards appropriate"
+    },
+    {
+      "code": "probably-appropriate",
+      "display": "Probably Appropriate",
+      "definition": "The procedure is probably appropriate"
+    },
+    {
+      "code": "appropriate",
+      "display": "Appropriate",
+      "definition": "The procedure is appropriate"
+    },
+    {
+      "code": "extremely-appropriate",
+      "display": "Extremely Appropriate",
+      "definition": "The procedure is extremely appropriate"
+    }
+  ]
+}

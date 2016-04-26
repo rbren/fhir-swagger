@@ -2,14 +2,14 @@
   "resourceType": "ValueSet",
   "id": "resource-aggregation-mode",
   "meta": {
-    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div><h2>AggregationMode</h2><p>How resource references can be aggregated.</p><p>This value set has an inline code system http://hl7.org/fhir/resource-aggregation-mode, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td>contained<a name=\"contained\"> </a></td><td>Contained</td><td>The reference is a local reference to a contained resource.</td></tr><tr><td>1</td><td>referenced<a name=\"referenced\"> </a></td><td>Referenced</td><td>The reference to a resource that has to be resolved externally to the resource that includes the reference.</td></tr><tr><td>2</td><td>&nbsp;&nbsp;bundled<a name=\"bundled\"> </a></td><td>Bundled</td><td>The resource the reference points to will be found in the same bundle as the resource that includes the reference.</td></tr></table></div>"
+    "div": "<div><h2>AggregationMode</h2><p>How resource references can be aggregated.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-resource-aggregation-mode.html\">http://hl7.org/fhir/resource-aggregation-mode</a></li></ul></div>"
   },
   "extension": [
     {
@@ -18,7 +18,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/ValueSet/resource-aggregation-mode",
-  "version": "1.0.2",
+  "version": "1.4.0",
   "name": "AggregationMode",
   "status": "draft",
   "experimental": false,
@@ -37,35 +37,12 @@
       ]
     }
   ],
-  "date": "2015-10-24T07:41:03+11:00",
+  "date": "2016-03-31T08:01:25+11:00",
   "description": "How resource references can be aggregated.",
-  "codeSystem": {
-    "extension": [
+  "compose": {
+    "include": [
       {
-        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
-        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.46"
-      }
-    ],
-    "system": "http://hl7.org/fhir/resource-aggregation-mode",
-    "version": "1.0.2",
-    "caseSensitive": true,
-    "concept": [
-      {
-        "code": "contained",
-        "display": "Contained",
-        "definition": "The reference is a local reference to a contained resource."
-      },
-      {
-        "code": "referenced",
-        "display": "Referenced",
-        "definition": "The reference to a resource that has to be resolved externally to the resource that includes the reference.",
-        "concept": [
-          {
-            "code": "bundled",
-            "display": "Bundled",
-            "definition": "The resource the reference points to will be found in the same bundle as the resource that includes the reference."
-          }
-        ]
+        "system": "http://hl7.org/fhir/resource-aggregation-mode"
       }
     ]
   }

@@ -12,10 +12,10 @@
     }
   ],
   "created": "2014-08-16",
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/1"
   },
-  "request": {
+  "requestReference": {
     "reference": "http://benefitsinc.com/fhir/oralhealthclaim/12345"
   },
   "paymentStatus": {

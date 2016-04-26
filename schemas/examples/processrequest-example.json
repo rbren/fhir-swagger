@@ -13,7 +13,7 @@
     }
   ],
   "created": "2014-08-16",
-  "organization": {
+  "organizationReference": {
     "reference": "Organization/1"
   }
 }

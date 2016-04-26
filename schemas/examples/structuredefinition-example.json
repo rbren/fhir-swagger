@@ -3,7 +3,7 @@
   "id": "example",
   "text": {
     "status": "generated",
-    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>url</b>: <a>http://hl7.org/fhir/StructureDefinition/example</a></p><p><b>identifier</b>: 1.2.36.90146595217.4.2</p><p><b>version</b>: 2</p><p><b>name</b>: Example Lipid Profile</p><p><b>display</b>: Example Lipid Profile</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>publisher</b>: Health Intersections Pty Ltd</p><h3>Contacts</h3><table><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Grahame Grieve</td><td>grahame@healthintersections.com.au</td></tr></table><p><b>date</b>: 12/05/2012</p><p><b>description</b>: Describes how the lab report is used for a standard Lipid Profile - Cholesterol, Triglyceride and Cholesterol fractions. Uses LOINC codes</p><p><b>useContext</b>: ?? <span>(Details : {urn:iso:std:iso:3166 code 'AU' = '??)</span></p><p><b>requirements</b>: Provide an example to demonstrate how to use StructureDefinition</p><p><b>copyright</b>: Createive Commons 0, per FHIR specification</p><p><b>code</b>: 314079002 (Details: SNOMED CT code 314079002 = '314079002', stated as '314079002')</p><p><b>fhirVersion</b>: 1.0.0</p><h3>Mappings</h3><table><tr><td>-</td><td><b>Identity</b></td><td><b>Uri</b></td><td><b>Name</b></td><td><b>Comments</b></td></tr><tr><td>*</td><td>m1</td><td><a>https://www.rcpa.edu.au/getattachment/0961c6d1-ec80-4500-8dc0-de516500e05b/Lipid-and-lipoprotein-testing.aspx</a></td><td>RCPA Lipid Report recommendations</td><td>Actual mappings haven't yet been filled out</td></tr></table><p><b>kind</b>: resource</p><p><b>constrainedType</b>: DiagnosticReport</p><p><b>abstract</b>: false</p><p><b>base</b>: <a>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</a></p><h3>Snapshots</h3><table><tr><td>-</td><td><b>Element</b></td></tr><tr><td>*</td><td>todo-bundle</td></tr></table></div>"
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>url</b>: <a>http://hl7.org/fhir/StructureDefinition/example</a></p><p><b>identifier</b>: 1.2.36.90146595217.4.2</p><p><b>version</b>: 2</p><p><b>name</b>: Example Lipid Profile</p><p><b>display</b>: Example Lipid Profile</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>publisher</b>: Health Intersections Pty Ltd</p><h3>Contacts</h3><table><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Grahame Grieve</td><td>grahame@healthintersections.com.au</td></tr></table><p><b>date</b>: 12/05/2012</p><p><b>description</b>: Describes how the lab report is used for a standard Lipid Profile - Cholesterol, Triglyceride and Cholesterol fractions. Uses LOINC codes</p><p><b>useContext</b>: ?? <span>(Details : {urn:iso:std:iso:3166 code 'AU' = '??)</span></p><p><b>requirements</b>: Provide an example to demonstrate how to use StructureDefinition</p><p><b>copyright</b>: Createive Commons 0, per FHIR specification</p><p><b>code</b>: 314079002 (Details: SNOMED CT code 314079002 = 'Hyperlipidemia screening test (procedure)', stated as '314079002')</p><p><b>fhirVersion</b>: 1.0.0</p><h3>Mappings</h3><table><tr><td>-</td><td><b>Identity</b></td><td><b>Uri</b></td><td><b>Name</b></td><td><b>Comments</b></td></tr><tr><td>*</td><td>m1</td><td><a>https://www.rcpa.edu.au/getattachment/0961c6d1-ec80-4500-8dc0-de516500e05b/Lipid-and-lipoprotein-testing.aspx</a></td><td>RCPA Lipid Report recommendations</td><td>Actual mappings haven't yet been filled out</td></tr></table><p><b>kind</b>: resource</p><p><b>abstract</b>: false</p><p><b>baseType</b>: DiagnosticReport</p><p><b>baseDefinition</b>: <a>http://hl7.org/fhir/StructureDefinition/DiagnosticReport</a></p><p><b>derivation</b>: constraint</p><h3>Snapshots</h3><table><tr><td>-</td><td><b>Element</b></td></tr><tr><td>*</td><td>todo-bundle</td></tr></table></div>"
   },
   "url": "http://hl7.org/fhir/StructureDefinition/example",
   "identifier": [
@@ -81,9 +81,10 @@
     }
   ],
   "kind": "resource",
-  "constrainedType": "DiagnosticReport",
   "abstract": false,
-  "base": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseType": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
   "snapshot": {
     "element": [
       {

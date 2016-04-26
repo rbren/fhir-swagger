@@ -28,13 +28,7 @@
       },
       "doseNumber": 1,
       "forecastStatus": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/immunization-recommendation-status",
-            "code": "Not Complete",
-            "display": "Not Complete"
-          }
-        ]
+        "text": "Not Complete"
       },
       "dateCriterion": [
         {

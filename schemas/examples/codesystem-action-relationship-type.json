@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "action-relationship-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ActionRelationshipType</h2><p>Defines the types of relationships between actions</p><p>This code system http://hl7.org/fhir/action-relationship-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>before<a name=\"before\"> </a></td><td>Before</td><td>The action must be performed before the related action</td></tr><tr><td>after<a name=\"after\"> </a></td><td>After</td><td>The action must be performed after the related action</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.553"
+    }
+  ],
+  "url": "http://hl7.org/fhir/action-relationship-type",
+  "version": "1.4.0",
+  "name": "ActionRelationshipType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Defines the types of relationships between actions",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/action-relationship-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "before",
+      "display": "Before",
+      "definition": "The action must be performed before the related action"
+    },
+    {
+      "code": "after",
+      "display": "After",
+      "definition": "The action must be performed after the related action"
+    }
+  ]
+}
