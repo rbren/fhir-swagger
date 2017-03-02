@@ -6,8 +6,9 @@ Generate Swagger from a FHIR conformance profile
 ```bash
 npm install -g fhir-swagger
 fhir-swagger \
---fhir_url http://argonaut.healthintersections.com.au/open \
+--fhir_url "http://fhirtest.uhn.ca/baseDstu3" \
 --conformance_path="/metadata?_format=application/json" \
+--dstu3
 --output swagger.json
 ```
 
@@ -19,7 +20,7 @@ npm install --save fhir-swagger
 ```js
 var fhirToSwagger = require('fhir-swagger')
 var options = {
-  fhir_url: 'http://argonaut.healthintersections.com.au/open',
+  fhir_url: 'http://fhirtest.uhn.ca/baseDstu3',
   conformance_path: '/metadata?_format=application/json',
 }
 
@@ -48,3 +49,4 @@ fhirToSwagger({
 
 })
 ```
+
