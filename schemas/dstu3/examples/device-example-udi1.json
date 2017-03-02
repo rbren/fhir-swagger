@@ -1,0 +1,58 @@
+{
+  "resourceType": "Device",
+  "id": "example-udi1",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example-udi1</p><p><b>identifier</b>: 1234-5678-90AB-CDEF, Serial Number = 10987654d321</p><p><b>udiCarrier</b>: Universal Device Identifier = {01}09504000059118{17}141120{10}7654321D{21}10987654d321</p><p><b>status</b>: not-available</p><p><b>type</b>: Coated femoral stem prosthesis, modular <span>(Details : {http://hl7.org/fhir/NamingSystem/gs1-di code '09504000059118' = '??; {SNOMED CT code '468063009' = 'Coated femoral stem prosthesis, modular (physical object)', given as 'Coated femoral stem prosthesis, modular'})</span></p><p><b>lotNumber</b>: 7654321D</p><p><b>manufacturer</b>: Acme Devices, Inc</p><p><b>expirationDate</b>: 20/11/2014</p><p><b>model</b>: PM/Octane 2014</p><p><b>patient</b>: <a>Patient/example</a></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.com/devices/pacemakers/octane/serial",
+      "value": "1234-5678-90AB-CDEF"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/identifier-type",
+            "code": "SNO"
+          }
+        ]
+      },
+      "value": "10987654d321"
+    }
+  ],
+  "udiCarrier": {
+    "type": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/identifier-type",
+          "code": "UDI"
+        }
+      ]
+    },
+    "system": "http://hl7.org/fhir/NamingSystem/fda-udi",
+    "value": "{01}09504000059118{17}141120{10}7654321D{21}10987654d321"
+  },
+  "status": "not-available",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/NamingSystem/gs1-di",
+        "code": "09504000059118"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "468063009",
+        "display": "Coated femoral stem prosthesis, modular"
+      }
+    ]
+  },
+  "lotNumber": "7654321D",
+  "manufacturer": "Acme Devices, Inc",
+  "expirationDate": "2014-11-20",
+  "model": "PM/Octane 2014",
+  "patient": {
+    "reference": "Patient/example"
+  }
+}

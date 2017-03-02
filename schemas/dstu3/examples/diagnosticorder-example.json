@@ -1,0 +1,114 @@
+{
+  "resourceType": "DiagnosticOrder",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t\t<p>\n\t\t\t\t<b>Generated Narrative with Details</b>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>id</b>: example</p>\n\t\t\t<p>\n\t\t\t\t<b>contained</b>: </p>\n\t\t\t<p>\n\t\t\t\t<b>subject</b>: <a>Patient/example</a>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>orderer</b>: <a>Practitioner/example</a>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>identifier</b>: Placer = 2345234234234</p>\n\t\t\t<p>\n\t\t\t\t<b>encounter</b>: <a>Encounter/example</a>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>reason</b>: Fam hx-ischem heart dis <span>(Details : {ICD-9 code 'V173' = '??', given as 'Fam hx-ischem heart dis'})</span>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>supportingInformation</b>: id: fasting; status: final; Fasting status - Reported <span>(Details : {LOINC code '49541-6' = 'Fasting status - Reported', given as 'Fasting status - Reported'})</span>; Patient/example; Yes <span>(Details : {http://hl7.org/fhir/v2/0136 code 'Y' = 'Yes', given as 'Yes'})</span>\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<b>status</b>: received</p>\n\t\t\t<h3>Events</h3>\n\t\t\t<table>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>-</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<b>Status</b>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<b>DateTime</b>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<b>Actor</b>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>*</td>\n\t\t\t\t\t<td>requested</td>\n\t\t\t\t\t<td>May 2, 2013 4:16:00 PM</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<a>Practitioner/example</a>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table>\n\t\t\t<h3>Items</h3>\n\t\t\t<table>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>-</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<b>Code</b>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<b>Specimen</b>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td>*</td>\n\t\t\t\t\t<td>Lipid Panel <span>(Details : {http://acme.org/tests code 'LIPID' = '??)</span>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<a>Specimen/101</a>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table>\n\t\t\t<p>\n\t\t\t\t<b>note</b>: patient is afraid of needles</p>\n\t\t</div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Observation",
+      "id": "fasting",
+      "status": "final",
+      "_status": {
+        "fhir_comments": [
+          "     the mandatory quality flag:     "
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "49541-6",
+            "display": "Fasting status - Reported"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/example"
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0136",
+            "code": "Y",
+            "display": "Yes"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/identifier-type",
+            "code": "PLAC"
+          }
+        ],
+        "text": "Placer"
+      },
+      "system": "urn:oid:1.3.4.5.6.7",
+      "value": "2345234234234"
+    }
+  ],
+  "status": "received",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
+  "orderer": {
+    "reference": "Practitioner/example"
+  },
+  "reason": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/icd-9",
+          "code": "V173",
+          "display": "Fam hx-ischem heart dis"
+        }
+      ]
+    }
+  ],
+  "supportingInformation": [
+    {
+      "reference": "#fasting"
+    }
+  ],
+  "event": [
+    {
+      "status": "requested",
+      "dateTime": "2013-05-02T16:16:00-07:00",
+      "actor": {
+        "reference": "Practitioner/example"
+      }
+    }
+  ],
+  "item": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://acme.org/tests",
+            "code": "LIPID"
+          }
+        ],
+        "text": "Lipid Panel"
+      },
+      "specimen": [
+        {
+          "reference": "Specimen/101"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "patient is afraid of needles"
+    }
+  ]
+}

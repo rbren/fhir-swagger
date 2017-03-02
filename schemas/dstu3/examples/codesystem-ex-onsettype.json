@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ex-onsettype",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Example Onset Type (Reason) Codes</h2><p>This value set includes sample Service Modifier codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/ex-onsettype defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>LXM<a name=\"LXM\"> </a></td><td>Last Exam</td><td>Date of last examination.</td></tr><tr><td>SYM<a name=\"SYM\"> </a></td><td>Start of Symptoms</td><td>Date when symptoms were first noticed..</td></tr><tr><td>LMN<a name=\"LMN\"> </a></td><td>Last Menstruation</td><td>Start date of last menstruation.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.877"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ex-onsettype",
+  "version": "1.4.0",
+  "name": "Example Onset Type (Reason) Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes sample Service Modifier codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/ex-onsettype",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "LXM",
+      "display": "Last Exam",
+      "definition": "Date of last examination."
+    },
+    {
+      "code": "SYM",
+      "display": "Start of Symptoms",
+      "definition": "Date when symptoms were first noticed.."
+    },
+    {
+      "code": "LMN",
+      "display": "Last Menstruation",
+      "definition": "Start date of last menstruation."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "goal-status-reason",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>GoalStatusReason</h2><p>Example codes indicating the reason for a current status.  Note that these are in no way complete and may not even be appropriate for some uses.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-goal-status-reason.html\">http://hl7.org/fhir/goal-status-reason</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.412"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/goal-status-reason",
+  "version": "1.4.0",
+  "name": "GoalStatusReason",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Patient Care WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/patientcare/"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Example codes indicating the reason for a current status.  Note that these are in no way complete and may not even be appropriate for some uses.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/goal-status-reason"
+      }
+    ]
+  }
+}

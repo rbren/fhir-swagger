@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "adjudication-reason",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Adjudication Reason Codes</h2><p>This value set includes smattering of Adjudication Reason codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/adjudication-reason defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>ar001<a name=\"ar001\"> </a></td><td>Not covered</td><td>Not covered</td></tr><tr><td>ar002<a name=\"ar002\"> </a></td><td>Plan Limit Reached</td><td>Plan Limit Reached</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.479"
+    }
+  ],
+  "url": "http://hl7.org/fhir/adjudication-reason",
+  "version": "1.4.0",
+  "name": "Adjudication Reason Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes smattering of Adjudication Reason codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/adjudication-reason",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "ar001",
+      "display": "Not covered",
+      "definition": "Not covered"
+    },
+    {
+      "code": "ar002",
+      "display": "Plan Limit Reached",
+      "definition": "Plan Limit Reached"
+    }
+  ]
+}

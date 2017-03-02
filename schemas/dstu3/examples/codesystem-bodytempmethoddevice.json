@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-bodytempmethoddevice",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Body Temperature Measurement Method/Device</h2><p>SELECT SNOMED CT code system values.</p><p><b>Copyright Statement:</b> TBD</p><p>This code system http://hl7.org/fhir/hspc-bodytempmethoddevice defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>30277<a name=\"30277\"> </a></td><td>Digital Thermometer</td><td>The electronic thermometer that displays body temperature in numeric values.</td></tr><tr><td>30522<a name=\"30522\"> </a></td><td>Infrared Thermometer</td><td>The thermometer that measure the temperature by the intensity of infrared light emission. </td></tr><tr><td>82735<a name=\"82735\"> </a></td><td>Thermoluminescent diode thermometer</td><td>Thermoluminescent diode thermometer is a thermometer that measures the temperature of the emitted heat from the surface of an area.</td></tr><tr><td>84301<a name=\"84301\"> </a></td><td>MRI diffusion thermometer</td><td>MRI diffusion thermometer is an instrument that uses MRI diffusion to indicate the temperature of a substance.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.727"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-bodytempmethoddevice",
+  "version": "0.01",
+  "name": "HSPC Body Temperature Measurement Method/Device",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "date": "2015-06-10T17:00:00+03:00",
+  "description": "SELECT SNOMED CT code system values.",
+  "copyright": "TBD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-bodytempmethoddevice",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "30277",
+      "display": "Digital Thermometer",
+      "definition": "The electronic thermometer that displays body temperature in numeric values."
+    },
+    {
+      "code": "30522",
+      "display": "Infrared Thermometer",
+      "definition": "The thermometer that measure the temperature by the intensity of infrared light emission. "
+    },
+    {
+      "code": "82735",
+      "display": "Thermoluminescent diode thermometer",
+      "definition": "Thermoluminescent diode thermometer is a thermometer that measures the temperature of the emitted heat from the surface of an area."
+    },
+    {
+      "code": "84301",
+      "display": "MRI diffusion thermometer",
+      "definition": "MRI diffusion thermometer is an instrument that uses MRI diffusion to indicate the temperature of a substance."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType": "Account",
+  "fhir_comments": [
+    "  insert contents here  "
+  ],
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>[Put rendering here]</div>"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "name-v3-representation",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NameRepresentationUse</h2><p>A set of codes for each different representation of a name</p><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"v3/EntityNameUse/cs.html\">http://hl7.org/fhir/v3/EntityNameUse</a><table><tr><td><b>Code</b></td><td><b>Display</b></td></tr><tr><td>ABC</td><td>Alphabetic</td><td>Alphabetic transcription of name (Japanese: romaji)</td></tr><tr><td>IDE</td><td>Ideographic</td><td>Ideographic representation of name (e.g., Japanese kanji, Chinese characters)</td></tr><tr><td>SYL</td><td>Syllabic</td><td>Syllabic transcription of name (e.g., Japanese kana, Korean hangul)</td></tr></table></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.881"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/name-v3-representation",
+  "version": "1.4.0",
+  "name": "NameRepresentationUse",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "A set of codes for each different representation of a name",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/v3/EntityNameUse",
+        "concept": [
+          {
+            "code": "ABC"
+          },
+          {
+            "code": "IDE"
+          },
+          {
+            "code": "SYL"
+          }
+        ]
+      }
+    ]
+  }
+}

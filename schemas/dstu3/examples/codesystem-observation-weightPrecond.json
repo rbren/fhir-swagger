@@ -1,0 +1,109 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-observation-weightPrecond",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Body Weight Associated Precondition</h2><p>SNOMED CT code system values descending from the following:'body position finding' 9851009</p><p><b>Copyright Statement:</b> TBD</p><p>This code system http://hl7.org/fhir/observation-hspc-weightPrecond defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>84123<a name=\"84123\"> </a></td><td>Weight with street clothes</td><td>Body weight measured while clothed</td></tr><tr><td>84124<a name=\"84124\"> </a></td><td>Weight without street clothes</td><td>Body weight measured while unclothed</td></tr><tr><td>84127<a name=\"84127\"> </a></td><td>Weight with diapers</td><td>Infant weight while wearing a diaper</td></tr><tr><td>84128<a name=\"84128\"> </a></td><td>Weight without diapers</td><td>Infant weight without a diaper</td></tr><tr><td>84129<a name=\"84129\"> </a></td><td>Weight with cast</td><td>Body weight that includes a cast</td></tr><tr><td>84130<a name=\"84130\"> </a></td><td>Weight without cast</td><td>Body weight minus the weight of a cast</td></tr><tr><td>84131<a name=\"84131\"> </a></td><td>Weight with limb prosthesis</td><td>Body weight including a prosthetic limb</td></tr><tr><td>84132<a name=\"84132\"> </a></td><td>Weight without limb prosthesis</td><td>Body weight minus the weight of a prosthetic limb</td></tr><tr><td>84133<a name=\"84133\"> </a></td><td>Weight with brace</td><td>Body weight including a brace</td></tr><tr><td>84134<a name=\"84134\"> </a></td><td>Weight without brace</td><td>Body weight minus the weight of a brace</td></tr><tr><td>84135<a name=\"84135\"> </a></td><td>Weight with gown or drape</td><td>Body weight including a gown or drape</td></tr><tr><td>84136<a name=\"84136\"> </a></td><td>Weight with added-on weight</td><td>Body weight the includes some other weight</td></tr><tr><td>84137<a name=\"84137\"> </a></td><td>Weight without added-on weight</td><td>Body weight after subtracting some other included weight</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.707"
+    }
+  ],
+  "url": "http://hl7.org/fhir/observation-hspc-weightPrecond",
+  "version": "0.01",
+  "name": "HSPC Body Weight Associated Precondition",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-05-18T17:00:00+03:00",
+  "description": "SNOMED CT code system values descending from the following:'body position finding' 9851009",
+  "copyright": "TBD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-observation-weightPrecond",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "84123",
+      "display": "Weight with street clothes",
+      "definition": "Body weight measured while clothed"
+    },
+    {
+      "code": "84124",
+      "display": "Weight without street clothes",
+      "definition": "Body weight measured while unclothed"
+    },
+    {
+      "code": "84127",
+      "display": "Weight with diapers",
+      "definition": "Infant weight while wearing a diaper"
+    },
+    {
+      "code": "84128",
+      "display": "Weight without diapers",
+      "definition": "Infant weight without a diaper"
+    },
+    {
+      "code": "84129",
+      "display": "Weight with cast",
+      "definition": "Body weight that includes a cast"
+    },
+    {
+      "code": "84130",
+      "display": "Weight without cast",
+      "definition": "Body weight minus the weight of a cast"
+    },
+    {
+      "code": "84131",
+      "display": "Weight with limb prosthesis",
+      "definition": "Body weight including a prosthetic limb"
+    },
+    {
+      "code": "84132",
+      "display": "Weight without limb prosthesis",
+      "definition": "Body weight minus the weight of a prosthetic limb"
+    },
+    {
+      "code": "84133",
+      "display": "Weight with brace",
+      "definition": "Body weight including a brace"
+    },
+    {
+      "code": "84134",
+      "display": "Weight without brace",
+      "definition": "Body weight minus the weight of a brace"
+    },
+    {
+      "code": "84135",
+      "display": "Weight with gown or drape",
+      "definition": "Body weight including a gown or drape"
+    },
+    {
+      "code": "84136",
+      "display": "Weight with added-on weight",
+      "definition": "Body weight the includes some other weight"
+    },
+    {
+      "code": "84137",
+      "display": "Weight without added-on weight",
+      "definition": "Body weight after subtracting some other included weight"
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "questionnaire-lookupQuestionnaire",
+  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-lookupQuestionnaire",
+  "name": "Questionnaire to populate a reference",
+  "status": "draft",
+  "publisher": "HL7",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2013-07-04",
+  "description": "For items of type reference, the reference can be populated either by picking an existing entity or by creating a new one.  In the later case, this Questionnaire allows specifying the Questionnaire to use in creating the target instance.  This can be direct (if the Reference is to a Questionnaire) or indirect via mapping if the Reference is to some other sort of resource.",
+  "fhirVersion": "1.4.0",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM"
+    }
+  ],
+  "kind": "datatype",
+  "abstract": false,
+  "contextType": "resource",
+  "context": [
+    "Questionnaire.item",
+    "Questionnaire.item.item"
+  ],
+  "baseType": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Questionnaire to populate a reference",
+        "definition": "For items of type reference, the reference can be populated either by picking an existing entity or by creating a new one.  In the later case, this Questionnaire allows specifying the Questionnaire to use in creating the target instance.  This can be direct (if the Reference is to a Questionnaire) or indirect via mapping if the Reference is to some other sort of resource.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-15",
+            "severity": "error",
+            "human": "Lookup Questionnaire can only be specified for questions with a type of \"reference\"",
+            "expression": "$parent.type='reference'",
+            "xpath": "parent::*/f:type/@value='reference'"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          }
+        ]
+      },
+      {
+        "path": "Extension.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "extension",
+        "short": "Extension",
+        "definition": "An Extension",
+        "min": 0,
+        "max": "0",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ]
+      },
+      {
+        "path": "Extension.url",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "identifies the meaning of the extension",
+        "definition": "Source of the definition for the extension code - a logical name or a URL.",
+        "comments": "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.url",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/questionnaire-lookupQuestionnaire",
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "path": "Extension.valueUri",
+        "short": "Value of extension",
+        "definition": "Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Extension.value[x]",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "path": "Extension",
+        "short": "Questionnaire to populate a reference",
+        "definition": "For items of type reference, the reference can be populated either by picking an existing entity or by creating a new one.  In the later case, this Questionnaire allows specifying the Questionnaire to use in creating the target instance.  This can be direct (if the Reference is to a Questionnaire) or indirect via mapping if the Reference is to some other sort of resource.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "inv-15",
+            "severity": "error",
+            "human": "Lookup Questionnaire can only be specified for questions with a type of \"reference\"",
+            "expression": "$parent.type='reference'",
+            "xpath": "parent::*/f:type/@value='reference'"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "N/A (MIF-level)"
+          }
+        ]
+      },
+      {
+        "path": "Extension.extension",
+        "name": "extension",
+        "max": "0"
+      },
+      {
+        "path": "Extension.url",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "fixedUri": "http://hl7.org/fhir/StructureDefinition/questionnaire-lookupQuestionnaire"
+      },
+      {
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}

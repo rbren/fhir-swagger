@@ -1,0 +1,64 @@
+{
+  "resourceType": "ValueSet",
+  "id": "anzsco-occupations",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ANZSCO -- Australian and New Zealand Standard Classification of Occupations, 2013, Version 1.2</h2><p>Developed for use in the collection, analysis and dissemination of occupation statistics in Australia and New Zealand.</p><p><b>Copyright Statement:</b> Copyright Australian Bureau of Statistics</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-anzsco-occupations.html\">http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.253"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/anzsco-occupations",
+  "version": "1.4.0",
+  "name": "ANZSCO -- Australian and New Zealand Standard Classification of Occupations, 2013, Version 1.2",
+  "status": "active",
+  "experimental": true,
+  "publisher": "Australian Bureau of Statistics",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Developed for use in the collection, analysis and dissemination of occupation statistics in Australia and New Zealand.",
+  "useContext": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "AU"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "NZ"
+        }
+      ]
+    }
+  ],
+  "copyright": "Copyright Australian Bureau of Statistics",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"
+      }
+    ]
+  }
+}

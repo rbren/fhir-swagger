@@ -1,0 +1,43 @@
+{
+  "resourceType": "MedicationOrder",
+  "id": "medrx007",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p><big>AC followed by Paclitaxel + Trastuzumab Course 2</big></p>\n      <p>Name: Paclitaxel in Dose-dense Paclitaxel (Q14D) + Trastuzumab (Q7D)</p>\n      <p>Course: 2</p>\n      <p>Agent Protocols Options:</p>\n      <p><b>Paclitaxel 175 mg/m^2 IV over 3 hours D1 in cycles 1-4</b></p>\n      <p>Offset: None</p>\n      <p>Cycle length: Q14D x 4 cycles</p>\n    </div>"
+  },
+  "status": "on-hold",
+  "medicationReference": {
+    "reference": "Medication/medicationexample16"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Paclitaxel 175 mg/m^2 IV over 3 hours D1",
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47625008",
+            "display": "Intravenous route"
+          }
+        ]
+      },
+      "rateRatio": {
+        "numerator": {
+          "fhir_comments": [
+            "    175 mg/m^2 over 3 hours   "
+          ],
+          "value": 175,
+          "unit": "mg/m^2",
+          "system": "http://snomed.info/sct",
+          "code": "258682000"
+        },
+        "denominator": {
+          "value": 3,
+          "unit": "hours",
+          "system": "http://snomed.info/sct",
+          "code": "258702006"
+        }
+      }
+    }
+  ]
+}

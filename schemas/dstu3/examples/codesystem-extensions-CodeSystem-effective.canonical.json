@@ -1,0 +1,1 @@
+{"code":"effective","id":"codesystem-extensions-CodeSystem-effective","name":"effective","resourceType":"SearchParameter","type":"date","url":"http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-effective","xpath":"f:CodeSystem/f:extension[@url='http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate'] | /f:#effectiveDate","xpathUsage":"normal"}

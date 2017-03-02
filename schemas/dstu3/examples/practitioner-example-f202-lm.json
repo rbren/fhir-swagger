@@ -1,0 +1,127 @@
+{
+  "resourceType": "Practitioner",
+  "id": "f202",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>identifier</b>: UZI-nummer = 12345678902 (OFFICIAL), BIG-nummer = 12345678902 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Luigi Maas(OFFICIAL)</p><p><b>telecom</b>: ph: +31715269111(WORK)</p><p><b>address</b>: Walvisbaai 3 C4 - Automatisering Den helder 2333ZA NLD (WORK)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 12/06/1960</p><h3>PractitionerRoles</h3><table><tr><td>-</td><td><b>Organization</b></td><td><b>Role</b></td><td><b>Specialty</b></td></tr><tr><td>*</td><td><a>AUMC</a></td><td>Electronic laboratory reporting <span>(Details : {SNOMED CT code '33526004' = 'Laboratory reporting, electronic (procedure)', given as 'Electronic laboratory reporting'})</span></td><td>Medical laboratory technician <span>(Details : {SNOMED CT code '159285000' = 'Medical laboratory technician (occupation)', given as 'Medical laboratory technician'})</span></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "  The identifier for the person as this practitioner (fictive)  "
+        ]
+      },
+      "type": {
+        "text": "UZI-nummer"
+      },
+      "system": "urn:oid:2.16.528.1.1007.3.1",
+      "value": "12345678902"
+    },
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "  The identifier for this individual  "
+        ]
+      },
+      "type": {
+        "text": "BIG-nummer"
+      },
+      "system": "https://www.bigregister.nl/",
+      "value": "12345678902"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "_use": {
+        "fhir_comments": [
+          "  The name of the practitioner  "
+        ]
+      },
+      "text": "Luigi Maas",
+      "family": [
+        "Maas"
+      ],
+      "given": [
+        "Luigi"
+      ],
+      "prefix": [
+        "Dr."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "_system": {
+        "fhir_comments": [
+          "  A contact detail for the individual  "
+        ]
+      },
+      "value": "+31715269111",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "fhir_comments": [
+        "  ISO 3166 3 letter code  "
+      ],
+      "use": "work",
+      "_use": {
+        "fhir_comments": [
+          "  Work address for the individual  "
+        ]
+      },
+      "line": [
+        "Walvisbaai 3",
+        "C4 - Automatisering"
+      ],
+      "city": "Den helder",
+      "postalCode": "2333ZA",
+      "country": "NLD"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1960-06-12",
+  "_birthDate": {
+    "fhir_comments": [
+      "  The practitioner's administrative gender  "
+    ]
+  },
+  "practitionerRole": [
+    {
+      "fhir_comments": [
+        "      <photo>    \n        <reference value=\"Media/LM-203.bmp\"/>\n        <display value=\"Picture_Luigi_Maas\"/>\n    </photo>  "
+      ],
+      "organization": {
+        "reference": "Organization/f201",
+        "display": "AUMC"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "33526004",
+            "display": "Electronic laboratory reporting"
+          }
+        ]
+      },
+      "specialty": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "159285000",
+              "display": "Medical laboratory technician"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

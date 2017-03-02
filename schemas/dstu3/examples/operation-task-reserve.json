@@ -1,0 +1,42 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-reserve",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Reserve Task</h2><p>OPERATION: Reserve Task</p><div><p>Reserve this task for the specified entity.  Makes the specified entity the task owner, and transitions the task to the Ready state.  This operation may be used by an entity to claim a task for itself, or to delegate or forward the task to another entity.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>owner</td><td>1..1</td><td>Reference</td><td/><td><div><p>The entity who is to be assigned ownership of this task.</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-reserve",
+  "name": "Reserve Task",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Reserve this task for the specified entity.  Makes the specified entity the task owner, and transitions the task to the Ready state.  This operation may be used by an entity to claim a task for itself, or to delegate or forward the task to another entity.",
+  "code": "reserve",
+  "system": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "owner",
+      "use": "in",
+      "min": 1,
+      "max": "1",
+      "documentation": "The entity who is to be assigned ownership of this task.",
+      "type": "Reference"
+    }
+  ]
+}

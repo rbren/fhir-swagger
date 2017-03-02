@@ -1,0 +1,84 @@
+{
+  "resourceType": "AuditEvent",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>Application Start for under service login &quot;Grahame&quot; (id: Grahame's Test HL7Connect)</div>"
+  },
+  "type": {
+    "system": "http://nema.org/dicom/dicm",
+    "code": "110100",
+    "display": "Application Activity"
+  },
+  "subtype": [
+    {
+      "system": "http://nema.org/dicom/dicm",
+      "code": "110120",
+      "display": "Application Start"
+    }
+  ],
+  "action": "E",
+  "recorded": "2012-10-25T22:04:27+11:00",
+  "outcome": "0",
+  "agent": [
+    {
+      "role": [
+        {
+          "text": "Service User (Logon)"
+        }
+      ],
+      "userId": {
+        "value": "Grahame"
+      },
+      "requestor": false,
+      "network": {
+        "address": "127.0.0.1",
+        "type": "2"
+      }
+    }
+  ],
+  "source": {
+    "site": "Development",
+    "identifier": {
+      "value": "Grahame's Laptop"
+    },
+    "type": [
+      {
+        "system": "http://hl7.org/fhir/audit-event-sub-type",
+        "code": "1"
+      }
+    ]
+  },
+  "entity": [
+    {
+      "identifier": {
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/identifier-type",
+              "code": "SNO"
+            }
+          ],
+          "text": "Dell Serial Number"
+        },
+        "value": "ABCDEF"
+      },
+      "type": {
+        "system": "http://hl7.org/fhir/object-type",
+        "code": "4",
+        "display": "Other"
+      },
+      "role": {
+        "system": "http://hl7.org/fhir/object-role",
+        "code": "4",
+        "display": "Domain Resource"
+      },
+      "lifecycle": {
+        "system": "http://hl7.org/fhir/object-lifecycle",
+        "code": "6",
+        "display": "Access / Use"
+      },
+      "name": "Grahame's Laptop"
+    }
+  ]
+}

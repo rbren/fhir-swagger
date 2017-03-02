@@ -1,0 +1,58 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-set-output",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Set Task Output</h2><p>OPERATION: Set Task Output</p><div><p>Set one of the outputs of a task.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>output</td><td>1..*</td><td></td><td/><td/></tr><tr><td>OUT</td><td>output.name</td><td>1..1</td><td>string</td><td/><td><div><p>The name of the output to add or update.</p>\n</div></td></tr><tr><td>OUT</td><td>output.value[x]</td><td>0..1</td><td>Type</td><td/><td><div><p>If no value is provided, any current output with that name is removed from the resource.</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-set-output",
+  "name": "Set Task Output",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Set one of the outputs of a task.",
+  "code": "set-output",
+  "system": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "output",
+      "use": "out",
+      "min": 1,
+      "max": "*",
+      "part": [
+        {
+          "name": "name",
+          "use": "out",
+          "min": 1,
+          "max": "1",
+          "documentation": "The name of the output to add or update.",
+          "type": "string"
+        },
+        {
+          "name": "value[x]",
+          "use": "out",
+          "min": 0,
+          "max": "1",
+          "documentation": "If no value is provided, any current output with that name is removed from the resource.",
+          "type": "Type"
+        }
+      ]
+    }
+  ]
+}

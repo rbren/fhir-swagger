@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-arrivalStatus",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Patient Arrival Status</h2><p>The codes that describe whether or not the patient has arrived at the specified location for the encounter.</p><p><b>Copyright Statement:</b> This value set includes content from and copyrighted by Intermountain Healthcare HDD</p><p>This code system http://hl7.org/fhir/hspc-arrivalStatus defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>2000000339<a name=\"2000000339\"> </a></td><td>Arrived</td><td>The patient is present at the service delivery location.</td></tr><tr><td>51084650<a name=\"51084650\"> </a></td><td>In transit</td><td>The patient is currently travelling to the service delivery location.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.759"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-arrivalStatus",
+  "version": "1.4.0",
+  "name": "HSPC Patient Arrival Status",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "The codes that describe whether or not the patient has arrived at the specified location for the encounter.",
+  "copyright": "This value set includes content from and copyrighted by Intermountain Healthcare HDD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-arrivalStatus",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "2000000339",
+      "display": "Arrived",
+      "definition": "The patient is present at the service delivery location."
+    },
+    {
+      "code": "51084650",
+      "display": "In transit",
+      "definition": "The patient is currently travelling to the service delivery location."
+    }
+  ]
+}

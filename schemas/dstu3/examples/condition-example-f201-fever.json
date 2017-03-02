@@ -1,0 +1,110 @@
+{
+  "resourceType": "Condition",
+  "id": "f201",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>patient</b>: <a>Roel</a></p><p><b>encounter</b>: <a>Encounter/f201</a></p><p><b>asserter</b>: <a>Practitioner/f201</a></p><p><b>dateRecorded</b>: 04/04/2013</p><p><b>code</b>: Fever <span>(Details : {SNOMED CT code '386661006' = 'Fever (finding)', given as 'Fever'})</span></p><p><b>category</b>: Problem <span>(Details : {SNOMED CT code '55607006' = 'Problem (finding)', given as 'Problem'}; {http://hl7.org/fhir/condition-category code 'finding' = 'Finding)</span></p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>severity</b>: Mild <span>(Details : {SNOMED CT code '255604002' = 'Mild (qualifier value)', given as 'Mild'})</span></p><p><b>onset</b>: 02/04/2013</p><h3>Evidences</h3><table><tr><td>-</td><td><b>Code</b></td><td><b>Detail</b></td></tr><tr><td>*</td><td>degrees C <span>(Details : {SNOMED CT code '258710007' = 'Degrees Celsius (qualifier value)', given as 'degrees C'})</span></td><td><a>Temperature</a></td></tr></table><p><b>bodySite</b>: Entire body as a whole <span>(Details : {SNOMED CT code '38266002' = 'Entire body as a whole', given as 'Entire body as a whole'})</span></p></div>"
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "_reference": {
+      "fhir_comments": [
+        "  It entails Roel's problem  "
+      ]
+    },
+    "display": "Roel"
+  },
+  "encounter": {
+    "reference": "Encounter/f201"
+  },
+  "asserter": {
+    "reference": "Practitioner/f201"
+  },
+  "dateRecorded": "2013-04-04",
+  "code": {
+    "fhir_comments": [
+      "  The problem was entered at April fourth  "
+    ],
+    "coding": [
+      {
+        "fhir_comments": [
+          "  The problem is a fever  "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "386661006",
+        "display": "Fever"
+      }
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "  The fever is a mild problem  "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "55607006",
+        "display": "Problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/condition-category",
+        "code": "finding"
+      }
+    ]
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "severity": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "  The fever is mild   "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "255604002",
+        "display": "Mild"
+      }
+    ]
+  },
+  "onsetDateTime": "2013-04-02",
+  "evidence": [
+    {
+      "fhir_comments": [
+        "  Problem began on April second  ",
+        "  No remission means no <rebatement>  "
+      ],
+      "code": {
+        "fhir_comments": [
+          "  Problem is confirmed by 39 degrees Celsius  "
+        ],
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "258710007",
+            "display": "degrees C"
+          }
+        ]
+      },
+      "detail": [
+        {
+          "reference": "Observation/f202",
+          "display": "Temperature"
+        }
+      ]
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "fhir_comments": [
+            "  Fever applies to whole body  "
+          ],
+          "system": "http://snomed.info/sct",
+          "code": "38266002",
+          "display": "Entire body as a whole"
+        }
+      ]
+    }
+  ]
+}

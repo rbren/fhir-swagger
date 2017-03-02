@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-dysplasia",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Dysplasia</h2><p>Indicates the presence or absence of dysplasia</p><p>This code system http://hl7.org/fhir/nehta-dysplasia defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>with_dysplasia<a name=\"with_dysplasia\"> </a></td><td>With dysplasia</td><td>Indicates the presence of dysplasia</td></tr><tr><td>without_dysplasia<a name=\"without_dysplasia\"> </a></td><td>Without dysplasia</td><td>Indicates the absence of dysplasia</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.804"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-dysplasia",
+  "version": "20150619",
+  "name": "Dysplasia",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Indicates the presence or absence of dysplasia",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-dysplasia",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "with_dysplasia",
+      "display": "With dysplasia",
+      "definition": "Indicates the presence of dysplasia"
+    },
+    {
+      "code": "without_dysplasia",
+      "display": "Without dysplasia",
+      "definition": "Indicates the absence of dysplasia"
+    }
+  ]
+}

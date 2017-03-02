@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "restful-conformance-mode",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>RestfulConformanceMode</h2><p>The mode of a RESTful conformance statement.</p><p>This code system http://hl7.org/fhir/restful-conformance-mode defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>client<a name=\"client\"> </a></td><td>Client</td><td>The application acts as a client for this resource.</td></tr><tr><td>server<a name=\"server\"> </a></td><td>Server</td><td>The application acts as a server for this resource.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.81"
+    }
+  ],
+  "url": "http://hl7.org/fhir/restful-conformance-mode",
+  "version": "1.4.0",
+  "name": "RestfulConformanceMode",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The mode of a RESTful conformance statement.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/restful-conformance-mode",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "client",
+      "display": "Client",
+      "definition": "The application acts as a client for this resource."
+    },
+    {
+      "code": "server",
+      "display": "Server",
+      "definition": "The application acts as a server for this resource."
+    }
+  ]
+}

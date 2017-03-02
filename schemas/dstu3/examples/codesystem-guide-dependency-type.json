@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "guide-dependency-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>GuideDependencyType</h2><p>How a dependency is represented when the guide is published.</p><p>This code system http://hl7.org/fhir/guide-dependency-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>reference<a name=\"reference\"> </a></td><td>Reference</td><td>The guide is referred to by URL.</td></tr><tr><td>inclusion<a name=\"inclusion\"> </a></td><td>Inclusion</td><td>The guide is embedded in this guide when published.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.170"
+    }
+  ],
+  "url": "http://hl7.org/fhir/guide-dependency-type",
+  "version": "1.4.0",
+  "name": "GuideDependencyType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "How a dependency is represented when the guide is published.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/guide-dependency-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "reference",
+      "display": "Reference",
+      "definition": "The guide is referred to by URL."
+    },
+    {
+      "code": "inclusion",
+      "display": "Inclusion",
+      "definition": "The guide is embedded in this guide when published."
+    }
+  ]
+}

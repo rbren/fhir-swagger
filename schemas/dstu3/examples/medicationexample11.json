@@ -1,0 +1,60 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample011",
+  "text": {
+    "fhir_comments": [
+      "  this example is fully popluated as a package  "
+    ],
+    "status": "generated",
+    "div": "<div>Novo-Prednisone</div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hc-sc.gc.ca",
+        "code": "00021695",
+        "display": "Novo-Prednisone"
+      }
+    ]
+  },
+  "isBrand": true,
+  "manufacturer": {
+    "reference": "http://www.tevacanada.com/fhirresource/1"
+  },
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "385055001",
+          "display": "Tablet"
+        }
+      ]
+    },
+    "ingredient": [
+      {
+        "itemCodeableConcept": {
+          "text": "Prednisone"
+        },
+        "amount": {
+          "numerator": {
+            "value": 5,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          },
+          "denominator": {
+            "value": 1,
+            "system": "http://hl7.org/fhir/v3/orderableDrugForm",
+            "code": "TAB"
+          }
+        }
+      }
+    ],
+    "batch": [
+      {
+        "lotNumber": "9494788",
+        "expirationDate": "2017-05-22"
+      }
+    ]
+  }
+}

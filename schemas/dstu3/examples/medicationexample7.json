@@ -1,0 +1,32 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample007",
+  "text": {
+    "fhir_comments": [
+      "  this example includes a coded Manufactured Over the Counter Medication  "
+    ],
+    "status": "generated",
+    "div": "<div>Tylenol No. 1 Caplets</div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://hc-sc.gc.ca",
+        "code": "02181061",
+        "display": "Tylenol No. 1 Caplets"
+      }
+    ]
+  },
+  "isBrand": true,
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "48582000",
+          "display": "Caplet"
+        }
+      ]
+    }
+  }
+}

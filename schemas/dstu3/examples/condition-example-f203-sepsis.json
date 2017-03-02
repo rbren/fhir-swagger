@@ -1,0 +1,89 @@
+{
+  "resourceType": "Condition",
+  "id": "f203",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f203</p><p><b>patient</b>: <a>Roel</a></p><p><b>encounter</b>: <a>Roel's encounter on March eleventh</a></p><p><b>asserter</b>: <a>Practitioner/f201</a></p><p><b>dateRecorded</b>: 11/03/2013</p><p><b>code</b>: Bacterial sepsis <span>(Details : {SNOMED CT code '10001005' = 'Bacterial sepsis (disorder)', given as 'Bacterial sepsis'})</span></p><p><b>category</b>: Problem <span>(Details : {SNOMED CT code '55607006' = 'Problem (finding)', given as 'Problem'}; {http://hl7.org/fhir/condition-category code 'finding' = 'Finding)</span></p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>severity</b>: Moderate to severe <span>(Details : {SNOMED CT code '371924009' = 'Moderate to severe (qualifier value)', given as 'Moderate to severe'})</span></p><p><b>onset</b>: 08/03/2013</p><h3>Evidences</h3><table><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a>Diagnostic report for Roel's sepsis</a></td></tr></table><p><b>bodySite</b>: Pulmonary vascular structure <span>(Details : {SNOMED CT code '281158006' = 'Pulmonary vascular structure (body structure)', given as 'Pulmonary vascular structure'})</span></p></div>"
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "_reference": {
+      "fhir_comments": [
+        "  It entails Roel's problem  "
+      ]
+    },
+    "display": "Roel"
+  },
+  "encounter": {
+    "reference": "Encounter/f203",
+    "display": "Roel's encounter on March eleventh"
+  },
+  "asserter": {
+    "reference": "Practitioner/f201"
+  },
+  "dateRecorded": "2013-03-11",
+  "code": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "  The problem is bacterial sepsis  "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "10001005",
+        "display": "Bacterial sepsis"
+      }
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "  Bacterial sepsis is certainly a moderate to severe problem  "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "55607006",
+        "display": "Problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/condition-category",
+        "code": "finding"
+      }
+    ]
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "severity": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371924009",
+        "display": "Moderate to severe"
+      }
+    ]
+  },
+  "onsetDateTime": "2013-03-08",
+  "evidence": [
+    {
+      "detail": [
+        {
+          "reference": "DiagnosticReport/f202",
+          "display": "Diagnostic report for Roel's sepsis"
+        }
+      ]
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "fhir_comments": [
+            "  Location is intravascular pulmonary  "
+          ],
+          "system": "http://snomed.info/sct",
+          "code": "281158006",
+          "display": "Pulmonary vascular structure"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "resourceType": "ValueSet",
+  "id": "nhin-purposeofuse",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <h2>NHIN PurposeOfUse</h2>\n      <p>This value set is suitable for use with the provenance resource. It is derived from, but not compatible with, the HL7 v3 Purpose of use Code system.</p>\n      <p>This value set includes codes from the following code systems:</p>\n      <ul>\n        <li>Include all codes defined in \n          <a href=\"codesystem-nhin-purposeofuse.html\">http://healthit.gov/nhin/purposeofuse</a>\n        </li>\n      </ul>\n    </div>"
+  },
+  "contained": [
+    {
+      "resourceType": "ConceptMap",
+      "id": "map",
+      "name": "NHIN / V3 Mapping",
+      "status": "draft",
+      "sourceReference": {
+        "reference": "http://hl7.org/fhir/ValueSet/nhin-purposeofuse"
+      },
+      "targetReference": {
+        "reference": "http://hl7.org/fhir/ValueSet/v3-PurposeOfUse"
+      },
+      "element": [
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "TREATMENT",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "TREAT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "PAYMENT",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HPAYMT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "OPERATIONS",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HOPERAT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "SYSADMIN",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "SYSADMIN",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "FRAUD",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "FRAUD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "PSYCHOTHERAPY",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "PSYCHOTHERAPY",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "TRAINING",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "TRAINING",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "LEGAL",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HLEGAL",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "MARKETING",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HMARKT",
+              "equivalence": "narrower",
+              "comments": "Not clear how much difference there is between 'marketing' and 'healthcare marketing'"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "DIRECTORY",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HDIRECT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "DISASTER",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "DISASTER",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "PUBLICHEALTH",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "PUBHLTH",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "JUDICIAL",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HLEGAL",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "LAW",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HLEGAL",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "DONATION",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "DONAT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "RESEARCH",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "HRESCH",
+              "equivalence": "narrower",
+              "comments": "Not clear how much difference there is between 'research' and 'healthcare research'"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "THREAT",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "THREAT",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "GOVERNMENT",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "GOV",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "COVERAGE",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "OVAUTH",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "system": "http://healthit.gov/nhin/purposeofuse",
+          "code": "REQUEST",
+          "target": [
+            {
+              "system": "http://hl7.org/fhir/v3/ActReason",
+              "code": "PATRQT",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-map",
+      "valueReference": {
+        "reference": "#map"
+      }
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/nhin-purposeofuse",
+  "_url": {
+    "fhir_comments": [
+      "      set of loinc codes for cholesterol for LONC 2.36      "
+    ]
+  },
+  "version": "2.0",
+  "name": "NHIN PurposeOfUse",
+  "status": "active",
+  "experimental": false,
+  "publisher": "Nationwide Health Information Network (NHIN)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "https://www.healthit.gov/sites/default/files/nhin-authorization-framework-production-specification-v2.0-1.pdf"
+        }
+      ]
+    }
+  ],
+  "date": "2010-01-29",
+  "description": "This value set is suitable for use with the provenance resource. It is derived from, but not compatible with, the HL7 v3 Purpose of use Code system.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://healthit.gov/nhin/purposeofuse"
+      }
+    ]
+  }
+}

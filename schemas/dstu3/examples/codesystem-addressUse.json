@@ -1,0 +1,88 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-addressUse",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPCPractitionerAddressUse</h2><p>A set of codes that describe the manner in which an addressed is used.</p><p>This code system http://hl7.org/fhir/addressUse defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>BAD<a name=\"BAD\"> </a></td><td>Bad address</td><td/></tr><tr><td>PHYS<a name=\"PHYS\"> </a></td><td>Physical visit address</td><td/></tr><tr><td>PST<a name=\"PST\"> </a></td><td>Postal address</td><td/></tr><tr><td>HP<a name=\"HP\"> </a></td><td>Primary home</td><td/></tr><tr><td>PUB<a name=\"PUB\"> </a></td><td>Public</td><td/></tr><tr><td>TMP<a name=\"TMP\"> </a></td><td>Temporary address</td><td/></tr><tr><td>HV<a name=\"HV\"> </a></td><td>Vacation home</td><td/></tr><tr><td>WP<a name=\"WP\"> </a></td><td>Work place</td><td/></tr><tr><td>H<a name=\"H\"> </a></td><td>Home address</td><td/></tr><tr><td>DIR<a name=\"DIR\"> </a></td><td>Direct address</td><td/></tr><tr><td>CONF<a name=\"CONF\"> </a></td><td>Conficential address</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.668"
+    }
+  ],
+  "url": "http://hl7.org/fhir/addressUse",
+  "version": "1.4.0",
+  "name": "HSPCPractitionerAddressUse",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "A set of codes that describe the manner in which an addressed is used.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-addressUse",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "BAD",
+      "display": "Bad address"
+    },
+    {
+      "code": "PHYS",
+      "display": "Physical visit address"
+    },
+    {
+      "code": "PST",
+      "display": "Postal address"
+    },
+    {
+      "code": "HP",
+      "display": "Primary home"
+    },
+    {
+      "code": "PUB",
+      "display": "Public"
+    },
+    {
+      "code": "TMP",
+      "display": "Temporary address"
+    },
+    {
+      "code": "HV",
+      "display": "Vacation home"
+    },
+    {
+      "code": "WP",
+      "display": "Work place"
+    },
+    {
+      "code": "H",
+      "display": "Home address"
+    },
+    {
+      "code": "DIR",
+      "display": "Direct address"
+    },
+    {
+      "code": "CONF",
+      "display": "Conficential address"
+    }
+  ]
+}

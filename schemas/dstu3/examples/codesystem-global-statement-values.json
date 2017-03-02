@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-global-statement-values",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>GlobalStatementValues</h2><p>The set of values for the statement about the absence or exclusion.</p><p>This code system http://hl7.org/fhir/global-statement-values defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>01<a name=\"01\"> </a></td><td>None known</td><td>No information about taking any medication is known.</td></tr><tr><td>02<a name=\"02\"> </a></td><td>Not asked</td><td>No information about taking any medication is available because the patient was not asked or not able to be asked.</td></tr><tr><td>03<a name=\"03\"> </a></td><td>None supplied</td><td>No information about taking any medication is supplied.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.864"
+    }
+  ],
+  "url": "http://hl7.org/fhir/global-statement-values",
+  "version": "1.4.0",
+  "name": "GlobalStatementValues",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The set of values for the statement about the absence or exclusion.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-global-statement-values",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "None known",
+      "definition": "No information about taking any medication is known."
+    },
+    {
+      "code": "02",
+      "display": "Not asked",
+      "definition": "No information about taking any medication is available because the patient was not asked or not able to be asked."
+    },
+    {
+      "code": "03",
+      "display": "None supplied",
+      "definition": "No information about taking any medication is supplied."
+    }
+  ]
+}

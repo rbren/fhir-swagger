@@ -1,0 +1,79 @@
+{
+  "resourceType": "DecisionSupportRule",
+  "id": "decisionsupportrule-exclusive-breastfeeding-intervention-04",
+  "text": {
+    "status": "generated",
+    "div": "<div>Exclusive Breastfeeding Intervention-04</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "exclusive-breastfeeding-intervention-04"
+      }
+    ],
+    "version": "1.0.0",
+    "title": "Exclusive Breastfeeding Intervention-04",
+    "type": "eca-rule",
+    "status": "active",
+    "description": "Exclusive breastfeeding intervention intended to improve outcomes for exclusive breastmilk feeding of newborns by creating a lactation consult for the mother if appropriate.",
+    "publicationDate": "2015-03-08",
+    "topic": [
+      {
+        "text": "Exclusive Breastfeeding"
+      }
+    ]
+  },
+  "library": [
+    {
+      "reference": "Library/library-exclusive-breastfeeding-cds-logic"
+    }
+  ],
+  "trigger": [
+    {
+      "type": "named-event",
+      "eventName": "Admission"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Birth"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Infant Transfer to Recovery"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Transfer to Post-Partum"
+    }
+  ],
+  "condition": "Should Create Lactation Consult",
+  "action": [
+    {
+      "title": "Mother should be referred to a lactation specialist for consultation.",
+      "action": [
+        {
+          "title": "Create a lactation consult request.",
+          "textEquivalent": "Create a lactation consult request",
+          "participantType": [
+            "practitioner"
+          ],
+          "_participantType": [
+            {
+              "fhir_comments": [
+                "  TODO: Needs to be able to specify role of the practitioner...  "
+              ]
+            }
+          ],
+          "type": "create",
+          "customization": [
+            {
+              "path": "/",
+              "expression": "Create Lcatation Consult Request"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

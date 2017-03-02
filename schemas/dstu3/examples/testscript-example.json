@@ -1,0 +1,184 @@
+{
+  "resourceType": "TestScript",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>name</b>: Test Script 1</p><p><b>description</b>: Example Test Script</p><h3>Fixtures</h3><table><tr><td>-</td><td><b>Resource</b></td></tr><tr><td>*</td><td><a>Patient resource</a></td></tr></table><blockquote><p><b>test</b></p><p><b>name</b>: Read Patient</p><p><b>description</b>: Read a patient and validate response.</p><blockquote><p><b>metadata</b></p><h3>Links</h3><table><tr><td>-</td><td><b>Url</b></td><td><b>Description</b></td></tr><tr><td>*</td><td><a>http://hl7.org/implement/standards/FHIR-Develop/patient.html</a></td><td>FHIR Patient</td></tr></table><h3>Operations</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Resource</b></td><td><b>Description</b></td><td><b>Link</b></td><td><b>Required</b></td></tr><tr><td>*</td><td>create</td><td>Patient</td><td>Patient Create Operation</td><td><a>http://hl7.org/implement/standards/FHIR-Develop/http.html#create</a></td><td>true</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
+  },
+  "url": "http://hl7.org/fhir/TestScript/example",
+  "version": "1.0",
+  "name": "Test Script 1",
+  "status": "draft",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:1.3.6.1.4.1.21367.2005.3.7.9876"
+  },
+  "experimental": true,
+  "publisher": "HL7",
+  "contact": [
+    {
+      "name": "Support",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "support@gmail.com",
+          "use": "temp"
+        }
+      ]
+    }
+  ],
+  "date": "2015-08-31",
+  "description": "Example Test Script",
+  "useContext": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US",
+          "display": "United States of America (the)"
+        }
+      ]
+    }
+  ],
+  "requirements": "Patient Create, Read, and Update Operations",
+  "copyright": "© HL7.org 2011+",
+  "metadata": {
+    "capability": [
+      {
+        "required": true,
+        "description": "Patient Create, Read, and Update Operations",
+        "destination": 1,
+        "link": [
+          "http://hl7.org/implement/standards/FHIR-Develop/http.html#create",
+          "http://hl7.org/implement/standards/FHIR-Develop/http.html#read",
+          "http://hl7.org/implement/standards/FHIR-Develop/http.html#update"
+        ],
+        "conformance": {
+          "reference": "Conformance/example"
+        }
+      }
+    ]
+  },
+  "fixture": [
+    {
+      "id": "F1",
+      "autocreate": false,
+      "autodelete": false,
+      "resource": {
+        "reference": "Patient/example",
+        "display": "Patient resource"
+      }
+    }
+  ],
+  "profile": [
+    {
+      "id": "patient-profile",
+      "reference": "http://hl7.org/fhir/StructureDefinition/Patient"
+    }
+  ],
+  "setup": {
+    "action": [
+      {
+        "fhir_comments": [
+          "    Create the patient using fixture    "
+        ],
+        "operation": {
+          "type": {
+            "code": "create"
+          },
+          "label": "SetupPatient",
+          "description": "Create patient resource on test server",
+          "accept": "json",
+          "responseId": "create-response",
+          "sourceId": "F1"
+        }
+      },
+      {
+        "assert": {
+          "direction": "request",
+          "responseCode": "201"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "id": "READ01",
+      "name": "Read Patient",
+      "description": "Read a patient and validate response.",
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "code": "read"
+            },
+            "encodeRequestUrl": false,
+            "responseId": "F1-read",
+            "targetId": "F1"
+          }
+        },
+        {
+          "assert": {
+            "label": "ReadOK",
+            "description": "Test for OK response",
+            "direction": "request",
+            "response": "okay"
+          }
+        },
+        {
+          "assert": {
+            "headerField": "Last-Modified",
+            "operator": "notEmpty",
+            "warningOnly": true
+          }
+        },
+        {
+          "assert": {
+            "resource": "Patient"
+          }
+        },
+        {
+          "assert": {
+            "validateProfileId": "patient-profile"
+          }
+        },
+        {
+          "assert": {
+            "operator": "equals",
+            "path": "fhir:Patient/fhir:name/fhir:family/@value",
+            "value": "Chalmers"
+          }
+        },
+        {
+          "assert": {
+            "operator": "equals",
+            "path": "fhir:Patient/fhir:name/fhir:family/@value",
+            "sourceId": "F1",
+            "value": "Chalmers"
+          }
+        },
+        {
+          "assert": {
+            "compareToSourceId": "F1-read",
+            "compareToSourcePath": "fhir:Patient/fhir:name/fhir:family/@value",
+            "operator": "equals",
+            "path": "fhir:Patient/fhir:name/fhir:family/@value"
+          }
+        },
+        {
+          "assert": {
+            "compareToSourceId": "F1-read",
+            "compareToSourcePath": "fhir:Patient/fhir:name/fhir:family/@value",
+            "path": "fhir:Patient/fhir:name/fhir:family/@value",
+            "sourceId": "F1"
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "F1-min"
+          }
+        }
+      ]
+    }
+  ]
+}

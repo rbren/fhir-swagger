@@ -1,0 +1,42 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-fail",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Fail Task</h2><p>OPERATION: Fail Task</p><div><p>Fail this task.  The task is transitioned to the failed state.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>reason</td><td>0..1</td><td>CodeableConcept</td><td/><td><div><p>The reason for failure.  If present, this is assigned to the failureReason property of the task.</p>\n</div></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-fail",
+  "name": "Fail Task",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Fail this task.  The task is transitioned to the failed state.",
+  "code": "fail",
+  "system": false,
+  "instance": true,
+  "parameter": [
+    {
+      "name": "reason",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "documentation": "The reason for failure.  If present, this is assigned to the failureReason property of the task.",
+      "type": "CodeableConcept"
+    }
+  ]
+}

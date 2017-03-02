@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-residual-tumour-status",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ResidualTumourStatus</h2><p>Lists the R code options for recording the residual tumour status</p><p>This code system http://hl7.org/fhir/nehta-residual-tumour-status defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>r0<a name=\"r0\"> </a></td><td>R0: Complete resection, margins histologically negative, no residual tumour left after resection (primary tumour, regional nodes)</td><td>R0: Complete resection, margins histologically negative, no residual tumour left after resection (primary tumour, regional nodes)</td></tr><tr><td>r1<a name=\"r1\"> </a></td><td>R1: Incomplete resection, margins histologically involved, microscopic tumour remains after resection of gross disease (primary tumour, regional nodes)</td><td>R1: Incomplete resection, margins histologically involved, microscopic tumour remains after resection of gross disease (primary tumour, regional nodes)</td></tr><tr><td>r2<a name=\"r2\"> </a></td><td>R2: Incomplete resection, margins macroscopically involved or gross disease remains after subtotal resection (eg primary tumour, regional nodes, or liver metastasis).</td><td>R2: Incomplete resection, margins macroscopically involved or gross disease remains after subtotal resection (eg primary tumour, regional nodes, or liver metastasis).</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.817"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-residual-tumour-status",
+  "version": "20150626",
+  "name": "ResidualTumourStatus",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Lists the R code options for recording the residual tumour status",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-residual-tumour-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "r0",
+      "display": "R0: Complete resection, margins histologically negative, no residual tumour left after resection (primary tumour, regional nodes)",
+      "definition": "R0: Complete resection, margins histologically negative, no residual tumour left after resection (primary tumour, regional nodes)"
+    },
+    {
+      "code": "r1",
+      "display": "R1: Incomplete resection, margins histologically involved, microscopic tumour remains after resection of gross disease (primary tumour, regional nodes)",
+      "definition": "R1: Incomplete resection, margins histologically involved, microscopic tumour remains after resection of gross disease (primary tumour, regional nodes)"
+    },
+    {
+      "code": "r2",
+      "display": "R2: Incomplete resection, margins macroscopically involved or gross disease remains after subtotal resection (eg primary tumour, regional nodes, or liver metastasis).",
+      "definition": "R2: Incomplete resection, margins macroscopically involved or gross disease remains after subtotal resection (eg primary tumour, regional nodes, or liver metastasis)."
+    }
+  ]
+}

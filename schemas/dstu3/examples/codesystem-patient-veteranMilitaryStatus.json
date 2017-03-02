@@ -1,0 +1,92 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-patient-veteranMilitaryStatus",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Veteran Military Status</h2><p>A set of codes that describe the individual's current military status</p><p>This code system http://hl7.org/fhir/patient-hspc-veteranMilitaryStatus defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>8ca8cc2b-baa0-4cb6-8863-418173c125d1<a name=\"8ca8cc2b-baa0-4cb6-8863-418173c125d1\"> </a></td><td>Reserves</td><td>A part-time member of the armed forces (military) who maintains a long-term commitment to support their country if necessary.</td></tr><tr><td>4eb9a0a1-3334-48df-084d-cef37c9ac0d3<a name=\"4eb9a0a1-3334-48df-084d-cef37c9ac0d3\"> </a></td><td>Civilian</td><td>An individual who is not a member of the armed forces (military).</td></tr><tr><td>70a68183-01a4-45b1-a5e6-49a13e221713<a name=\"70a68183-01a4-45b1-a5e6-49a13e221713\"> </a></td><td>Family Member of Active Duty</td><td>A family member of someone who has a full-time occupation in the armed forces (military).</td></tr><tr><td>189e9af6-bcbf-47e2-acee-4e5c50f54ba6<a name=\"189e9af6-bcbf-47e2-acee-4e5c50f54ba6\"> </a></td><td>Veteran</td><td>Someone who has served or is currently serving in the armed forces (military).</td></tr><tr><td>bab7b911-e3cf-426f-95d6-0637d7091e07<a name=\"bab7b911-e3cf-426f-95d6-0637d7091e07\"> </a></td><td>Active Military Duty</td><td>A full-time occupation as a member of the armed forces (military).</td></tr><tr><td>2b98cec8-b29d-4545-9350-a2b54dbd2fe7<a name=\"2b98cec8-b29d-4545-9350-a2b54dbd2fe7\"> </a></td><td>Disabled Veteran</td><td>A member of the armed forces (military) who became disabled while carrying out their duties.</td></tr><tr><td>617936ec-d6a7-4642-a1d8-b27bf8735f9d<a name=\"617936ec-d6a7-4642-a1d8-b27bf8735f9d\"> </a></td><td>Family Member of Retired Military</td><td>A family member of someone who has retired from the armed forces (military).</td></tr><tr><td>40d86a62-67a9-49c6-8f43-c1a9ef51689b<a name=\"40d86a62-67a9-49c6-8f43-c1a9ef51689b\"> </a></td><td>Inactive Ready Reserve</td><td>A previous full-time member of the armed forces (military) who has a commitment to be called to active duty if necessary, but who currently works as a civilian.</td></tr><tr><td>ca02026a-3ebf-4fb4-09e0-02d89c931643<a name=\"ca02026a-3ebf-4fb4-09e0-02d89c931643\"> </a></td><td>Retired military</td><td>Retired from a career in the armed forces (military).</td></tr><tr><td>75f4440a-ec37-47fe-b26d-39c09c204676<a name=\"75f4440a-ec37-47fe-b26d-39c09c204676\"> </a></td><td>National Guard</td><td>A part-time member of a reserve military force of the United States military whos units are composed of members from the state or territory of residence.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.661"
+    }
+  ],
+  "url": "http://hl7.org/fhir/patient-hspc-veteranMilitaryStatus",
+  "version": "1.4.0",
+  "name": "HSPC Veteran Military Status",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "A set of codes that describe the individual's current military status",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-patient-veteranMilitaryStatus",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "8ca8cc2b-baa0-4cb6-8863-418173c125d1",
+      "display": "Reserves",
+      "definition": "A part-time member of the armed forces (military) who maintains a long-term commitment to support their country if necessary."
+    },
+    {
+      "code": "4eb9a0a1-3334-48df-084d-cef37c9ac0d3",
+      "display": "Civilian",
+      "definition": "An individual who is not a member of the armed forces (military)."
+    },
+    {
+      "code": "70a68183-01a4-45b1-a5e6-49a13e221713",
+      "display": "Family Member of Active Duty",
+      "definition": "A family member of someone who has a full-time occupation in the armed forces (military)."
+    },
+    {
+      "code": "189e9af6-bcbf-47e2-acee-4e5c50f54ba6",
+      "display": "Veteran",
+      "definition": "Someone who has served or is currently serving in the armed forces (military)."
+    },
+    {
+      "code": "bab7b911-e3cf-426f-95d6-0637d7091e07",
+      "display": "Active Military Duty",
+      "definition": "A full-time occupation as a member of the armed forces (military)."
+    },
+    {
+      "code": "2b98cec8-b29d-4545-9350-a2b54dbd2fe7",
+      "display": "Disabled Veteran",
+      "definition": "A member of the armed forces (military) who became disabled while carrying out their duties."
+    },
+    {
+      "code": "617936ec-d6a7-4642-a1d8-b27bf8735f9d",
+      "display": "Family Member of Retired Military",
+      "definition": "A family member of someone who has retired from the armed forces (military)."
+    },
+    {
+      "code": "40d86a62-67a9-49c6-8f43-c1a9ef51689b",
+      "display": "Inactive Ready Reserve",
+      "definition": "A previous full-time member of the armed forces (military) who has a commitment to be called to active duty if necessary, but who currently works as a civilian."
+    },
+    {
+      "code": "ca02026a-3ebf-4fb4-09e0-02d89c931643",
+      "display": "Retired military",
+      "definition": "Retired from a career in the armed forces (military)."
+    },
+    {
+      "code": "75f4440a-ec37-47fe-b26d-39c09c204676",
+      "display": "National Guard",
+      "definition": "A part-time member of a reserve military force of the United States military whos units are composed of members from the state or territory of residence."
+    }
+  ]
+}

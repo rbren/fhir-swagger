@@ -1,0 +1,83 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "benefit-subcategory",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Benefit SubCategory Codes</h2><p>This value set includes a smattering of Benefit SubCategory codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/benefit-subcategory defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>oral-basic<a name=\"oral-basic\"> </a></td><td>Dental: Basic Coverage</td><td>Dental Basic Coverage - exams, fillings, xrays, cleaning, minor procedures</td></tr><tr><td>oral-major<a name=\"oral-major\"> </a></td><td>Dental: Major Coverage</td><td>Dental Major Coverage - crowns, bridge, major procedures</td></tr><tr><td>oral-ortho<a name=\"oral-ortho\"> </a></td><td>Dental: Orthodontic Coverage</td><td>Dental Orthodontic Coverage - braces, adjustments, ortho exams, related procedures</td></tr><tr><td>vision-exam<a name=\"vision-exam\"> </a></td><td>Vision Exam</td><td>Vision Exam</td></tr><tr><td>vision-glasses<a name=\"vision-glasses\"> </a></td><td>Vision Glasses</td><td>Frames and lenses</td></tr><tr><td>vision-contacts<a name=\"vision-contacts\"> </a></td><td>Vision Contacts Coverage</td><td>Contact Lenses</td></tr><tr><td>medical-primarycare<a name=\"medical-primarycare\"> </a></td><td>Medical Primary Health Coverage</td><td>Medical Primary Health Coverage</td></tr><tr><td>pharmacy-dispense<a name=\"pharmacy-dispense\"> </a></td><td>Pharmacy Dispense Coverage</td><td>Pharmacy Dispense Coverage</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.482"
+    }
+  ],
+  "url": "http://hl7.org/fhir/benefit-subcategory",
+  "version": "1.4.0",
+  "name": "Benefit SubCategory Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a smattering of Benefit SubCategory codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/benefit-subcategory",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "oral-basic",
+      "display": "Dental: Basic Coverage",
+      "definition": "Dental Basic Coverage - exams, fillings, xrays, cleaning, minor procedures"
+    },
+    {
+      "code": "oral-major",
+      "display": "Dental: Major Coverage",
+      "definition": "Dental Major Coverage - crowns, bridge, major procedures"
+    },
+    {
+      "code": "oral-ortho",
+      "display": "Dental: Orthodontic Coverage",
+      "definition": "Dental Orthodontic Coverage - braces, adjustments, ortho exams, related procedures"
+    },
+    {
+      "code": "vision-exam",
+      "display": "Vision Exam",
+      "definition": "Vision Exam"
+    },
+    {
+      "code": "vision-glasses",
+      "display": "Vision Glasses",
+      "definition": "Frames and lenses"
+    },
+    {
+      "code": "vision-contacts",
+      "display": "Vision Contacts Coverage",
+      "definition": "Contact Lenses"
+    },
+    {
+      "code": "medical-primarycare",
+      "display": "Medical Primary Health Coverage",
+      "definition": "Medical Primary Health Coverage"
+    },
+    {
+      "code": "pharmacy-dispense",
+      "display": "Pharmacy Dispense Coverage",
+      "definition": "Pharmacy Dispense Coverage"
+    }
+  ]
+}

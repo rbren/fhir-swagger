@@ -1,0 +1,72 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "qicore-patient-military-service",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Military Service Codes</h2><p>Value Set for Military Service (Example)</p><p>This code system http://hl7.org/fhir/qicore-military-service defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>not-indicated<a name=\"not-indicated\"> </a></td><td>Not Indicated</td><td>The military status is not indicated</td></tr><tr><td>no-military-service<a name=\"no-military-service\"> </a></td><td>No Military Service</td><td>The subject has no history of military service</td></tr><tr><td>veteran<a name=\"veteran\"> </a></td><td>Veteran</td><td>The subject is has served in the military but is no longer active</td></tr><tr><td>active-duty<a name=\"active-duty\"> </a></td><td>Active Duty</td><td>The subject is not a reserve member and is currently engaged in full-time military activity</td></tr><tr><td>active-reserve<a name=\"active-reserve\"> </a></td><td>Active Reserve</td><td>The subject is a reserve member and is currently engaged in full-time military activity</td></tr><tr><td>inactive-reserve<a name=\"inactive-reserve\"> </a></td><td>Inactive Reserve</td><td>The subject is a reserve member and is not currently engaged in full-time military activity</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.648"
+    }
+  ],
+  "url": "http://hl7.org/fhir/qicore-military-service",
+  "version": "1.4.0",
+  "name": "Military Service Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 Clinical Quality Information (CQI) Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Value Set for Military Service (Example)",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/qicore-patient-military-service",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "not-indicated",
+      "display": "Not Indicated",
+      "definition": "The military status is not indicated"
+    },
+    {
+      "code": "no-military-service",
+      "display": "No Military Service",
+      "definition": "The subject has no history of military service"
+    },
+    {
+      "code": "veteran",
+      "display": "Veteran",
+      "definition": "The subject is has served in the military but is no longer active"
+    },
+    {
+      "code": "active-duty",
+      "display": "Active Duty",
+      "definition": "The subject is not a reserve member and is currently engaged in full-time military activity"
+    },
+    {
+      "code": "active-reserve",
+      "display": "Active Reserve",
+      "definition": "The subject is a reserve member and is currently engaged in full-time military activity"
+    },
+    {
+      "code": "inactive-reserve",
+      "display": "Inactive Reserve",
+      "definition": "The subject is a reserve member and is not currently engaged in full-time military activity"
+    }
+  ]
+}

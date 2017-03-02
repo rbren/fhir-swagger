@@ -1,0 +1,56 @@
+{
+  "resourceType": "Procedure",
+  "id": "biopsy",
+  "text": {
+    "status": "generated",
+    "div": "<div>Biopsy of suspected melanoma L) arm</div>"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "90105005",
+        "display": "Biopsy of soft tissue of forearm (Procedure)"
+      }
+    ],
+    "text": "Biopsy of suspected melanoma L) arm"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "368225008",
+          "display": "Entire Left Forearm"
+        }
+      ],
+      "text": "Left forearm"
+    }
+  ],
+  "reasonCodeableConcept": {
+    "text": "Dark lesion l) forearm. getting darker last 3 months."
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/example",
+        "display": "Dr Bert Biopser"
+      }
+    }
+  ],
+  "performedDateTime": "2014-02-03",
+  "followUp": [
+    {
+      "text": "Review in clinic"
+    }
+  ],
+  "notes": [
+    {
+      "text": "Standard Biopsy"
+    }
+  ]
+}

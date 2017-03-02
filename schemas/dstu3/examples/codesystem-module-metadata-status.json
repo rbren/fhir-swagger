@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "module-metadata-status",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ModuleMetadataStatus</h2><p>The status of the knowledge module</p><p>This code system http://hl7.org/fhir/module-metadata-status defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>draft<a name=\"draft\"> </a></td><td>Draft</td><td>The module is in draft state</td></tr><tr><td>active<a name=\"active\"> </a></td><td>Active</td><td>The module is active</td></tr><tr><td>inactive<a name=\"inactive\"> </a></td><td>Inactive</td><td>The module is inactive, either rejected before publication, or retired after publication</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.492"
+    }
+  ],
+  "url": "http://hl7.org/fhir/module-metadata-status",
+  "version": "1.4.0",
+  "name": "ModuleMetadataStatus",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The status of the knowledge module",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/module-metadata-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "draft",
+      "display": "Draft",
+      "definition": "The module is in draft state"
+    },
+    {
+      "code": "active",
+      "display": "Active",
+      "definition": "The module is active"
+    },
+    {
+      "code": "inactive",
+      "display": "Inactive",
+      "definition": "The module is inactive, either rejected before publication, or retired after publication"
+    }
+  ]
+}

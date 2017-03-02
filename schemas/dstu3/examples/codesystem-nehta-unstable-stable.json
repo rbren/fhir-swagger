@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-unstable-stable",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>UnstableStable</h2><p>Provides the results options of stable, unstable or not tested.</p><p>This code system http://hl7.org/fhir/nehta-unstable-stable defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>unstable<a name=\"unstable\"> </a></td><td>Unstable</td><td>Unstable</td></tr><tr><td>stable<a name=\"stable\"> </a></td><td>Stable</td><td>Stable</td></tr><tr><td>not_tested<a name=\"not_tested\"> </a></td><td>Not tested</td><td>Not tested</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.810"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-unstable-stable",
+  "version": "20150625",
+  "name": "UnstableStable",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Provides the results options of stable, unstable or not tested.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-unstable-stable",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "unstable",
+      "display": "Unstable",
+      "definition": "Unstable"
+    },
+    {
+      "code": "stable",
+      "display": "Stable",
+      "definition": "Stable"
+    },
+    {
+      "code": "not_tested",
+      "display": "Not tested",
+      "definition": "Not tested"
+    }
+  ]
+}

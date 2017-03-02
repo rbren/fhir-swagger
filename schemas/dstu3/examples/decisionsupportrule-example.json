@@ -1,0 +1,44 @@
+{
+  "resourceType": "DecisionSupportRule",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>Chalmydia Screening CDS Example Using Common</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "ChlamydiaScreening_CDS_UsingCommon"
+      }
+    ],
+    "version": "2.0.0",
+    "title": "Chalmydia Screening CDS Example Using Common",
+    "type": "module",
+    "status": "draft",
+    "description": "Chlamydia Screening CDS Example Using Common",
+    "publicationDate": "2015-07-22",
+    "topic": [
+      {
+        "text": "Chlamydia Screeening"
+      }
+    ]
+  },
+  "library": [
+    {
+      "reference": "Library/ChlamydiaScreening_CDS_UsingCommon"
+    }
+  ],
+  "condition": "NoScreening",
+  "action": [
+    {
+      "title": "Patient has not had chlamydia screening within the recommended timeframe...",
+      "customization": [
+        {
+          "path": "~",
+          "expression": "ChlamydiaScreeningRequest"
+        }
+      ]
+    }
+  ]
+}

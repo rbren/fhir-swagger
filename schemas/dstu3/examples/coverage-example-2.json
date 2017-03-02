@@ -1,0 +1,38 @@
+{
+  "resourceType": "Coverage",
+  "id": "7546D",
+  "text": {
+    "status": "generated",
+    "div": "<div>A human-readable rendering of the coverage</div>"
+  },
+  "issuerReference": {
+    "reference": "Organization/2"
+  },
+  "period": {
+    "start": "2011-03-17",
+    "end": "2012-03-17"
+  },
+  "type": {
+    "system": "http://hl7.org/fhir/v3/ActCode",
+    "code": "EHCPOL",
+    "display": "extended healthcare"
+  },
+  "planholderReference": {
+    "reference": "Patient/5"
+  },
+  "beneficiaryReference": {
+    "reference": "Patient/5"
+  },
+  "relationship": {
+    "code": "self"
+  },
+  "identifier": [
+    {
+      "system": "http://xyz.com/codes/identifier",
+      "value": "AB9876"
+    }
+  ],
+  "plan": "11024",
+  "subPlan": "D15C9",
+  "dependent": 1
+}

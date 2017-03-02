@@ -1,0 +1,64 @@
+{
+  "resourceType": "List",
+  "id": "med-list",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Add hydroxocobalamin</p>\n      <p>Cancel Morphine Sulphate</p>\n    </div>"
+  },
+  "status": "current",
+  "mode": "changes",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "182836005",
+        "display": "Review of medication"
+      }
+    ],
+    "text": "Medication Review"
+  },
+  "date": "2013-11-20T23:10:23+11:00",
+  "source": {
+    "reference": "Patient/example"
+  },
+  "entry": [
+    {
+      "fhir_comments": [
+        "  \n      in a real medications list, we'd actually have medication resources.\n      but this an example to demonstrate a changes list, so we'll just use \n      display  "
+      ],
+      "flag": {
+        "fhir_comments": [
+          "  patient was prescribed hydroxocobalamin. the flag marks this \n       as a prescription. Note that healthcare workers will now get into\n       a long debate the exact implication of \"prescribed\". That's why the\n       spec doesn't fix the flag values  "
+        ],
+        "coding": [
+          {
+            "system": "http://nehta.gov.au/codes/medications/changetype",
+            "code": "01",
+            "display": "Prescribed"
+          }
+        ]
+      },
+      "item": {
+        "display": "hydroxocobalamin"
+      }
+    },
+    {
+      "fhir_comments": [
+        " \n     on this one, we record that the patient was taken off morphine sulfate.\n     because not every system knows the flags, and the ensure there's no confusion,\n     if the flag implies that something was removed from the list, then the\n     deleted element must also be set \n   "
+      ],
+      "flag": {
+        "coding": [
+          {
+            "system": "http://nehta.gov.au/codes/medications/changetype",
+            "code": "02",
+            "display": "Cancelled"
+          }
+        ]
+      },
+      "deleted": true,
+      "item": {
+        "display": "Morphine Sulfate"
+      }
+    }
+  ]
+}

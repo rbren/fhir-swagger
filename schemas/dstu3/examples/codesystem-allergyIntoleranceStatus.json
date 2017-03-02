@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-allergyIntoleranceStatus",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Allergy/Intolerance Status Value Set</h2><p>SELECT SNOMED CT and Intermountain Healthcare HDD code system values.</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This code system http://hl7.org/fhir/hspc-allergyintolerancestatus defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1797<a name=\"1797\"> </a></td><td>Resolved</td><td>Indication that a symptom or condition is subsided or healed.</td></tr><tr><td>69074<a name=\"69074\"> </a></td><td>Error</td><td>The state of being mistaken.</td></tr><tr><td>31119<a name=\"31119\"> </a></td><td>Unlikely</td><td>The state of not likely being true.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.50"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-allergyintolerancestatus",
+  "version": "0.01",
+  "name": "HSPC Allergy/Intolerance Status Value Set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "date": "2015-07-30T17:00:00+03:00",
+  "description": "SELECT SNOMED CT and Intermountain Healthcare HDD code system values.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-allergyIntoleranceStatus",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1797",
+      "display": "Resolved",
+      "definition": "Indication that a symptom or condition is subsided or healed."
+    },
+    {
+      "code": "69074",
+      "display": "Error",
+      "definition": "The state of being mistaken."
+    },
+    {
+      "code": "31119",
+      "display": "Unlikely",
+      "definition": "The state of not likely being true."
+    }
+  ]
+}

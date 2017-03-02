@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "grouping-behavior",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>OrderSetItemGroupingBehavior</h2><p>Defines organization behavior of a group</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-grouping-behavior.html\">http://hl7.org/fhir/grouping-behavior</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.503"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/grouping-behavior",
+  "version": "1.4.0",
+  "name": "OrderSetItemGroupingBehavior",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Defines organization behavior of a group",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/grouping-behavior"
+      }
+    ]
+  }
+}

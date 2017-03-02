@@ -1,0 +1,29 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample015",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medexample015</p><p><b>code</b>: Capecitabine 150mg tablet (product) <span>(Details : {SNOMED CT code '134623009' = 'Capecitabine 150mg tablet (product)', given as 'Capecitabine 150mg tablet (product)'})</span></p><p><b>isBrand</b>: false</p><h3>Products</h3><table><tr><td>-</td><td><b>Form</b></td></tr><tr><td>*</td><td>Oral dosage form product <span>(Details : {SNOMED CT code '440131009' = 'Oral dosage form product (product)', given as 'Oral dosage form product'})</span></td></tr></table></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "134623009",
+        "display": "Capecitabine 150mg tablet (product)"
+      }
+    ]
+  },
+  "isBrand": false,
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "440131009",
+          "display": "Oral dosage form product"
+        }
+      ]
+    }
+  }
+}

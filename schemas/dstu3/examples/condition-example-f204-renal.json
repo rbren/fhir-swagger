@@ -1,0 +1,94 @@
+{
+  "resourceType": "Condition",
+  "id": "f204",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f204</p><p><b>patient</b>: <a>Roel</a></p><p><b>encounter</b>: <a>Roel's encounter on March eleventh</a></p><p><b>asserter</b>: <a>Practitioner/f201</a></p><p><b>dateRecorded</b>: 11/03/2013</p><p><b>code</b>: Acute renal insufficiency specified as due to procedure <span>(Details : {SNOMED CT code '36225005' = 'Acute renal failure due to procedure (disorder)', given as 'Acute renal insufficiency specified as due to procedure'})</span></p><p><b>category</b>: Problem <span>(Details : {SNOMED CT code '55607006' = 'Problem (finding)', given as 'Problem'}; {http://hl7.org/fhir/condition-category code 'finding' = 'Finding)</span></p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: differential</p><p><b>severity</b>: Severe <span>(Details : {SNOMED CT code '24484000' = 'Severe (severity modifier) (qualifier value)', given as 'Severe'})</span></p><p><b>onset</b>: 11/03/2013</p><p><b>abatement</b>: 20/03/2013</p><h3>Stages</h3><table><tr><td>-</td><td><b>Summary</b></td></tr><tr><td>*</td><td>Temporary <span>(Details : {SNOMED CT code '14803004' = 'Transitory (qualifier value)', given as 'Temporary'})</span></td></tr></table><p><b>bodySite</b>: Kidney <span>(Details : {SNOMED CT code '181414000' = 'Entire kidney (body structure)', given as 'Kidney'})</span></p></div>"
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "_reference": {
+      "fhir_comments": [
+        "  It entails Roel's problem  "
+      ]
+    },
+    "display": "Roel"
+  },
+  "encounter": {
+    "reference": "Encounter/f203",
+    "display": "Roel's encounter on March eleventh"
+  },
+  "asserter": {
+    "reference": "Practitioner/f201"
+  },
+  "dateRecorded": "2013-03-11",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "36225005",
+        "display": "Acute renal insufficiency specified as due to procedure"
+      }
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "  Renal insufficiency could become a severe problem  "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "55607006",
+        "display": "Problem"
+      },
+      {
+        "system": "http://hl7.org/fhir/condition-category",
+        "code": "finding"
+      }
+    ]
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "differential",
+  "severity": {
+    "fhir_comments": [
+      "  The patient is being treated on the basis that this is the problem, but it is still not confirmed (<certainty> is therewith also working)  "
+    ],
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "24484000",
+        "display": "Severe"
+      }
+    ]
+  },
+  "onsetDateTime": "2013-03-11",
+  "abatementDateTime": "2013-03-20",
+  "stage": {
+    "fhir_comments": [
+      "  After the nine days of inpatient admission, the problem went in remission  "
+    ],
+    "summary": {
+      "fhir_comments": [
+        "  The problem is temporary and will not become permanent renal insufficiency  "
+      ],
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "14803004",
+          "display": "Temporary"
+        }
+      ]
+    }
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "181414000",
+          "display": "Kidney"
+        }
+      ]
+    }
+  ]
+}

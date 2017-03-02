@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "question-max-occurs",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MaxOccurs</h2><p>Flags an element as having unlimited repetitions</p><p>This code system http://hl7.org/fhir/question-max-occurs defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>*<a name=\".42\"> </a></td><td>Repeating</td><td>Element can repeat an unlimited number of times</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.380"
+    }
+  ],
+  "url": "http://hl7.org/fhir/question-max-occurs",
+  "version": "1.4.0",
+  "name": "MaxOccurs",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Flags an element as having unlimited repetitions",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/question-max-occurs",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "*",
+      "display": "Repeating",
+      "definition": "Element can repeat an unlimited number of times"
+    }
+  ]
+}

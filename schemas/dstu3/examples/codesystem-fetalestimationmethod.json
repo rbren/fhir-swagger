@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-fetalestimationmethod",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Fetal Estimation Method value set</h2><p>Select SNOMED CT code system values and selected local codes from Intermountain Healthcare.</p><p><b>Copyright Statement:</b> TBD</p><p>This code system http://hl7.org/fhir/hspc-fetalestimationmethod defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>103241<a name=\"103241\"> </a></td><td>Last known menstrual period</td><td>A method to estimate due date based on the reported date of the last known menstrual period.</td></tr><tr><td>205940<a name=\"205940\"> </a></td><td>Uterine size</td><td>A method to estimate due date by measuring the size of the uterus.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.716"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-fetalestimationmethod",
+  "version": "0.01",
+  "name": "HSPC Fetal Estimation Method value set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "date": "2015-06-14T17:00:00+03:00",
+  "description": "Select SNOMED CT code system values and selected local codes from Intermountain Healthcare.",
+  "copyright": "TBD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-fetalestimationmethod",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "103241",
+      "display": "Last known menstrual period",
+      "definition": "A method to estimate due date based on the reported date of the last known menstrual period."
+    },
+    {
+      "code": "205940",
+      "display": "Uterine size",
+      "definition": "A method to estimate due date by measuring the size of the uterus."
+    }
+  ]
+}

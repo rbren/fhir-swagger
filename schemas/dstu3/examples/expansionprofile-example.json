@@ -1,0 +1,11 @@
+{
+  "resourceType": "ExpansionProfile",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>[ Provide Rendering ]</div>"
+  },
+  "status": "draft",
+  "experimental": true,
+  "excludeNested": true
+}

@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-observation-heightPrecond",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Height Meas Associated Precondition</h2><p>The conditions during which an individual's height was measured.</p><p><b>Copyright Statement:</b> Intermountain Healthcare</p><p>This code system http://hl7,org/fhir/observation-hspc-heightPrecond defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>84138<a name=\"84138\"> </a></td><td>Height (body length) with shoes</td><td>The individual's height was measured while the individual was wearing shoes</td></tr><tr><td>84139<a name=\"84139\"> </a></td><td>Height (body length) without shoes</td><td>The individual's height was measured without the individual wearing shoes.</td></tr><tr><td>84140<a name=\"84140\"> </a></td><td>Height (body length) with patient reclining</td><td>The individual's height was measured while the individual was lying down.</td></tr><tr><td>84141<a name=\"84141\"> </a></td><td>Height (body length) with patient standing</td><td>The individual's height was measured while the individual was standing up.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.692"
+    }
+  ],
+  "url": "http://hl7,org/fhir/observation-hspc-heightPrecond",
+  "version": "0.01",
+  "name": "HSPC Height Meas Associated Precondition",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-05-18T17:00:00+03:00",
+  "description": "The conditions during which an individual's height was measured.",
+  "copyright": "Intermountain Healthcare",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-observation-heightPrecond",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "84138",
+      "display": "Height (body length) with shoes",
+      "definition": "The individual's height was measured while the individual was wearing shoes"
+    },
+    {
+      "code": "84139",
+      "display": "Height (body length) without shoes",
+      "definition": "The individual's height was measured without the individual wearing shoes."
+    },
+    {
+      "code": "84140",
+      "display": "Height (body length) with patient reclining",
+      "definition": "The individual's height was measured while the individual was lying down."
+    },
+    {
+      "code": "84141",
+      "display": "Height (body length) with patient standing",
+      "definition": "The individual's height was measured while the individual was standing up."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "order-set-item-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>OrderSetItemType</h2><p>The type of orderset item</p><p>This code system http://hl7.org/fhir/order-set-item-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>create<a name=\"create\"> </a></td><td>Create</td><td>The action is to create a new resource</td></tr><tr><td>update<a name=\"update\"> </a></td><td>Update</td><td>The action is to update an existing resource</td></tr><tr><td>remove<a name=\"remove\"> </a></td><td>Remove</td><td>The action is to remove an existing resource</td></tr><tr><td>fire-event<a name=\"fire-event\"> </a></td><td>Fire Event</td><td>The action is to fire a specific event</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.502"
+    }
+  ],
+  "url": "http://hl7.org/fhir/order-set-item-type",
+  "version": "1.4.0",
+  "name": "OrderSetItemType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of orderset item",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/order-set-item-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "create",
+      "display": "Create",
+      "definition": "The action is to create a new resource"
+    },
+    {
+      "code": "update",
+      "display": "Update",
+      "definition": "The action is to update an existing resource"
+    },
+    {
+      "code": "remove",
+      "display": "Remove",
+      "definition": "The action is to remove an existing resource"
+    },
+    {
+      "code": "fire-event",
+      "display": "Fire Event",
+      "definition": "The action is to fire a specific event"
+    }
+  ]
+}

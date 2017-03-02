@@ -1,0 +1,163 @@
+{
+  "resourceType": "Observation",
+  "id": "f205",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f205</p><p><b>identifier</b>: 1304-03720-eGFR</p><p><b>status</b>: final</p><p><b>code</b>: Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD) <span>(Details : {LOINC code '33914-3' = 'Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)', given as 'Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)'})</span></p><p><b>subject</b>: <a>Roel</a></p><p><b>issued</b>: 04/04/2013 2:34:00 PM</p><p><b>performer</b>: <a>Luigi Maas</a></p><p><b>interpretation</b>: interpretation of results should be assigned based upon the level of kindey function <span>(Details )</span></p><p><b>comment</b>: GFR estimating equations developed by the Modification of Diet in Renal Disease (MDRD) Study Group and the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI)....</p><p><b>method</b>: MDRD <span>(Details : {SNOMED CT code '702668005' = '??', given as 'MDRD'})</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Glomerular filtration rate/1.73 sq M predicted among blacks [Volume Rate/?Area] in Serum or Plasma by Creatinine-based formula (MDRD) <span>(Details : {LOINC code '48643-1' = 'Glomerular filtration rate/1.73 sq M predicted among blacks by Creatinine-based formula (MDRD)', given as 'Glomerular filtration rate/1.73 sq M predicted among blacks [Volume Rate/?Area] in Serum or Plasma by Creatinine-based formula (MDRD)'})</span></p><p><b>value</b>: &gt;60 mL/min/1.73m2<span> (Details: http://unitsofmeasure.org code mL/min/{1.73_m2} = 'mL/min/{1.73_m2}')</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Glomerular filtration rate/1.73 sq M predicted among non-blacks [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD) <span>(Details : {LOINC code '48642-3' = 'Glomerular filtration rate/1.73 sq M predicted among non-blacks by Creatinine-based formula (MDRD)', given as 'Glomerular filtration rate/1.73 sq M predicted among non-blacks [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)'})</span></p><p><b>value</b>: 60 mL/min/1.73m2<span> (Details: http://unitsofmeasure.org code mL/min/{1.73_m2} = 'mL/min/{1.73_m2}')</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://intranet.aumc.nl/labvalues",
+      "value": "1304-03720-eGFR",
+      "_value": {
+        "fhir_comments": [
+          "    Does not exist    "
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "_status": {
+    "fhir_comments": [
+      "    eGFR was measured on April fourth    "
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "    Kind of observation = eGFR    "
+        ],
+        "system": "http://loinc.org",
+        "code": "33914-3",
+        "display": "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "issued": "2013-04-04T14:34:00+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/f202",
+      "display": "Luigi Maas"
+    }
+  ],
+  "interpretation": {
+    "fhir_comments": [
+      "   no value element since have only component values and unable to interpret results needs clinical interpretation   "
+    ],
+    "text": "interpretation of results should be assigned based upon the level of kindey function"
+  },
+  "comment": "GFR estimating equations developed by the Modification of Diet in Renal Disease (MDRD) Study Group and the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI)....",
+  "method": {
+    "fhir_comments": [
+      "    The observation is complete    ",
+      "    No reliability concerns    "
+    ],
+    "coding": [
+      {
+        "fhir_comments": [
+          "    Method was MDRD    "
+        ],
+        "system": "http://snomed.info/id",
+        "code": "702668005",
+        "display": "MDRD"
+      }
+    ]
+  },
+  "component": [
+    {
+      "fhir_comments": [
+        "    The MDRD equation does require race (African American or non-African American), which also may not be readily available. For this reason, eGFR values for both African Americans and non-African Americans are reported. so use component elements here   "
+      ],
+      "code": {
+        "coding": [
+          {
+            "fhir_comments": [
+              "    Kind of observation = eGFR for AA    "
+            ],
+            "system": "http://loinc.org",
+            "code": "48643-1",
+            "display": "Glomerular filtration rate/1.73 sq M predicted among blacks [Volume Rate/?Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 60,
+        "_value": {
+          "fhir_comments": [
+            "    eGFR=54mL/min/1.73m2    "
+          ]
+        },
+        "comparator": ">",
+        "unit": "mL/min/1.73m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL/min/{1.73_m2}"
+      },
+      "referenceRange": [
+        {
+          "low": {
+            "value": 60,
+            "unit": "mL/min/1.73m2",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min/{1.73_m2}"
+          },
+          "age": {
+            "low": {
+              "value": 18,
+              "unit": "yrs",
+              "system": "http://unitsofmeasure.org",
+              "code": "a"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "fhir_comments": [
+              "    Kind of observation = eGFR for non AA    "
+            ],
+            "system": "http://loinc.org",
+            "code": "48642-3",
+            "display": "Glomerular filtration rate/1.73 sq M predicted among non-blacks [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 60,
+        "_value": {
+          "fhir_comments": [
+            "    eGFR=54mL/min/1.73m2    "
+          ]
+        },
+        "unit": "mL/min/1.73m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL/min/{1.73_m2}"
+      },
+      "referenceRange": [
+        {
+          "low": {
+            "value": 60,
+            "unit": "mL/min/1.73m2",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min/{1.73_m2}"
+          },
+          "age": {
+            "low": {
+              "value": 18,
+              "unit": "yrs",
+              "system": "http://unitsofmeasure.org",
+              "code": "a"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

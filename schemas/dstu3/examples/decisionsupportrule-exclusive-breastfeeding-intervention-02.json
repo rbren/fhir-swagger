@@ -1,0 +1,79 @@
+{
+  "resourceType": "DecisionSupportRule",
+  "id": "decisionsupportrule-exclusive-breastfeeding-intervention-02",
+  "text": {
+    "status": "generated",
+    "div": "<div>Exclusive Breastfeeding Intervention-02</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "exclusive-breastfeeding-intervention-02"
+      }
+    ],
+    "version": "1.0.0",
+    "title": "Exclusive Breastfeeding Intervention-02",
+    "type": "eca-rule",
+    "status": "active",
+    "description": "Exclusive breastfeeding intervention intended to improve outcomes for exclusive breastmilk feeding of newborns by notifying the provider to sign the breastmilk feeding readiness assessment order, if necessary.",
+    "publicationDate": "2015-03-08",
+    "topic": [
+      {
+        "text": "Exclusive Breastfeeding"
+      }
+    ]
+  },
+  "library": [
+    {
+      "reference": "Library/library-exclusive-breastfeeding-cds-logic"
+    }
+  ],
+  "trigger": [
+    {
+      "type": "named-event",
+      "eventName": "Admission"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Birth"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Infant Transfer to Recovery"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Transfer to Post-Partum"
+    }
+  ],
+  "condition": "Should Notify Provider to Sign Assessment Order",
+  "action": [
+    {
+      "title": "Mother should be administered a breastfeeding readiness assessment.",
+      "action": [
+        {
+          "title": "Notify the provider to sign the order.",
+          "textEquivalent": "A Breastfeeding Readiness Assessment is recommended, please authorize or reject the order.",
+          "participantType": [
+            "practitioner"
+          ],
+          "_participantType": [
+            {
+              "fhir_comments": [
+                "  TODO: Needs to be able to specify role of the practitioner...  "
+              ]
+            }
+          ],
+          "type": "create",
+          "customization": [
+            {
+              "path": "/",
+              "expression": "Communication Request to Provider"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3733 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "qs1",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "vs2",
+      "name": "Type options for Task.creator",
+      "status": "active",
+      "description": "Type options for Task.creator",
+      "expansion": {
+        "identifier": "urn:uuid:07a173c3-c789-45b3-8ec7-61f00c0895c5",
+        "timestamp": "2016-03-31T08:10:06+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Device",
+            "display": "Device"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs3",
+      "name": "Type options for Task.owner",
+      "status": "active",
+      "description": "Type options for Task.owner",
+      "expansion": {
+        "identifier": "urn:uuid:56bc7e43-34bc-42b1-b02b-add72308c15b",
+        "timestamp": "2016-03-31T08:10:06+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Device",
+            "display": "Device"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Organization",
+            "display": "Organization"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Patient",
+            "display": "Patient"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "Practitioner",
+            "display": "Practitioner"
+          },
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "RelatedPerson",
+            "display": "RelatedPerson"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs4",
+      "name": "Type options for Task.input.value[x]",
+      "status": "active",
+      "description": "Type options for Task.input.value[x]",
+      "expansion": {
+        "identifier": "urn:uuid:6d995547-7176-497e-9d06-8f8b3c86d38f",
+        "timestamp": "2016-03-31T08:10:06+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "boolean",
+            "display": "boolean"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "integer",
+            "display": "integer"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "decimal",
+            "display": "decimal"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "base64Binary",
+            "display": "base64Binary"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "instant",
+            "display": "instant"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "string",
+            "display": "string"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "uri",
+            "display": "uri"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "date",
+            "display": "date"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "dateTime",
+            "display": "dateTime"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "time",
+            "display": "time"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "code",
+            "display": "code"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "oid",
+            "display": "oid"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "id",
+            "display": "id"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "unsignedInt",
+            "display": "unsignedInt"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "positiveInt",
+            "display": "positiveInt"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "markdown",
+            "display": "markdown"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Annotation",
+            "display": "Annotation"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Attachment",
+            "display": "Attachment"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Identifier",
+            "display": "Identifier"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "CodeableConcept",
+            "display": "CodeableConcept"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Coding",
+            "display": "Coding"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Quantity",
+            "display": "Quantity"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Range",
+            "display": "Range"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Period",
+            "display": "Period"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Ratio",
+            "display": "Ratio"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "SampledData",
+            "display": "SampledData"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Signature",
+            "display": "Signature"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "HumanName",
+            "display": "HumanName"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Address",
+            "display": "Address"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "ContactPoint",
+            "display": "ContactPoint"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Timing",
+            "display": "Timing"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Reference",
+            "display": "Reference"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Meta",
+            "display": "Meta"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "vs5",
+      "name": "Type options for Task.output.value[x]",
+      "status": "active",
+      "description": "Type options for Task.output.value[x]",
+      "expansion": {
+        "identifier": "urn:uuid:30646e3b-35d7-408f-ba83-037b537dfebd",
+        "timestamp": "2016-03-31T08:10:06+11:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "boolean",
+            "display": "boolean"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "integer",
+            "display": "integer"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "decimal",
+            "display": "decimal"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "base64Binary",
+            "display": "base64Binary"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "instant",
+            "display": "instant"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "string",
+            "display": "string"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "uri",
+            "display": "uri"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "date",
+            "display": "date"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "dateTime",
+            "display": "dateTime"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "time",
+            "display": "time"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "code",
+            "display": "code"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "oid",
+            "display": "oid"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "id",
+            "display": "id"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "unsignedInt",
+            "display": "unsignedInt"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "positiveInt",
+            "display": "positiveInt"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "markdown",
+            "display": "markdown"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Annotation",
+            "display": "Annotation"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Attachment",
+            "display": "Attachment"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Identifier",
+            "display": "Identifier"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "CodeableConcept",
+            "display": "CodeableConcept"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Coding",
+            "display": "Coding"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Quantity",
+            "display": "Quantity"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Range",
+            "display": "Range"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Period",
+            "display": "Period"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Ratio",
+            "display": "Ratio"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "SampledData",
+            "display": "SampledData"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Signature",
+            "display": "Signature"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "HumanName",
+            "display": "HumanName"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Address",
+            "display": "Address"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "ContactPoint",
+            "display": "ContactPoint"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Timing",
+            "display": "Timing"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Reference",
+            "display": "Reference"
+          },
+          {
+            "system": "http://hl7.org/fhir/data-types",
+            "code": "Meta",
+            "display": "Meta"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986"
+    }
+  ],
+  "status": "draft",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "Health Level Seven International (Orders and Observations)",
+  "item": [
+    {
+      "linkId": "Task",
+      "text": "A task to be performed",
+      "type": "group",
+      "required": false,
+      "repeats": true,
+      "item": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/questionnaire-item-control",
+                    "code": "flyover",
+                    "display": "Fly-over"
+                  }
+                ]
+              }
+            }
+          ],
+          "text": "A task to be performed.",
+          "type": "display"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "string"
+            }
+          ],
+          "linkId": "Task.id",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. The only time that a resource does not have an id is when it is being submitted to the server using a create operation. Bundles always have an id, though it is usually a generated UUID.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.id.value",
+              "text": "Logical id of this artifact",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "Task.meta",
+          "text": "Metadata about the resource",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "uri"
+            }
+          ],
+          "linkId": "Task.implicitRules",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element as much as possible.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.implicitRules.value",
+              "text": "A set of rules under which this content was created",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "code"
+            }
+          ],
+          "linkId": "Task.language",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The base language in which the resource is written. Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource  Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.language.value",
+              "text": "language",
+              "type": "choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "Task.text",
+          "text": "Text summary of the resource, for human interpretation",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety. Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "Task.contained",
+          "text": "Contained, inline Resources",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope. This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "Task.extension",
+          "text": "Additional Content defined by implementations",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "May be used to represent additional information that is not part of the basic definition of the resource. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "linkId": "Task.modifierExtension",
+          "text": "Extensions that cannot be ignored",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "May be used to represent additional information that is not part of the basic definition of the resource, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+              "type": "display"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Identifier"
+            }
+          ],
+          "linkId": "Task.identifier",
+          "text": "Task Instance Identifier",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The business identifier for this task.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.identifier.label",
+              "text": "label:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Task.identifier.system",
+              "text": "system:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Task.identifier.value",
+              "text": "value:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "CodeableConcept"
+            }
+          ],
+          "linkId": "Task.type",
+          "text": "Task Type",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A name or code (or both) briefly describing what the task involves.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.type.coding",
+              "text": "code:",
+              "type": "open-choice",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Task.type.text",
+              "text": "text:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "string"
+            }
+          ],
+          "linkId": "Task.description",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A description of this task.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.description.value",
+              "text": "Task Description",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Coding"
+            }
+          ],
+          "linkId": "Task.performerType",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The type of participant that can execute the task.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.performerType.value",
+              "text": "requester | dispatcher | scheduler | performer | monitor | manager | acquirer | reviewer",
+              "type": "open-choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "code"
+            }
+          ],
+          "linkId": "Task.priority",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The priority of the task among other tasks of the same type.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.priority.value",
+              "text": "priority",
+              "type": "choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "code"
+            }
+          ],
+          "linkId": "Task.status",
+          "type": "group",
+          "required": true,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The current status of the task.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.status.value",
+              "text": "status",
+              "type": "choice",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "CodeableConcept"
+            }
+          ],
+          "linkId": "Task.failureReason",
+          "text": "Task Failure Reason",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "An explaination as to why this task failed.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.failureReason.coding",
+              "text": "code:",
+              "type": "open-choice",
+              "required": false,
+              "repeats": false
+            },
+            {
+              "linkId": "Task.failureReason.text",
+              "text": "text:",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Reference"
+            }
+          ],
+          "linkId": "Task.subject",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The subject of the task.",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                  "valueCode": "Resource"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                  "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                }
+              ],
+              "linkId": "Task.subject.value",
+              "text": "Task Subject",
+              "type": "reference",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Reference"
+            }
+          ],
+          "linkId": "Task.for",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The entity who benefits from the performance of the service specified in the task (e.g., the patient).",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                  "valueCode": "Resource"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                  "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                }
+              ],
+              "linkId": "Task.for.value",
+              "text": "Beneficiary of the Task",
+              "type": "reference",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "uri"
+            }
+          ],
+          "linkId": "Task.definition",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "A reference to a formal or informal definition of the task.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.definition.value",
+              "text": "Task Definition",
+              "type": "string",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "datetime"
+            }
+          ],
+          "linkId": "Task.created",
+          "type": "group",
+          "required": true,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The date and time this task was created. This information duplicates what appear in Provenance but is often needs to be more accessible.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.created.value",
+              "text": "Task Creation Date",
+              "type": "dateTime",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "datetime"
+            }
+          ],
+          "linkId": "Task.lastModified",
+          "type": "group",
+          "required": true,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The date and time of last modification to this task. This information duplicates what appear in Provenance but is often needs to be more accessible.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.lastModified.value",
+              "text": "Task Last Modified Date",
+              "type": "dateTime",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "Task.creator",
+          "text": "Task Creator",
+          "type": "group",
+          "required": true,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The creator of the task. This information duplicates what appear in Provenance but is often needs to be more accessible.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.creator._type",
+              "text": "type",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "options": {
+                "reference": "#vs2"
+              },
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.creator._Device",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Device"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.creator._Device.value",
+                      "text": "Device",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.creator._Organization",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Organization"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.creator._Organization.value",
+                      "text": "Organization",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.creator._Patient",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Patient"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.creator._Patient.value",
+                      "text": "Patient",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.creator._Practitioner",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Practitioner"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.creator._Practitioner.value",
+                      "text": "Practitioner",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.creator._RelatedPerson",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "RelatedPerson"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.creator._RelatedPerson.value",
+                      "text": "RelatedPerson",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            }
+          ],
+          "linkId": "Task.owner",
+          "text": "Task Owner",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "The owner of this task.  The participant who can execute this task. This information duplicates what appear in Provenance but is often needs to be more accessible.",
+              "type": "display"
+            },
+            {
+              "linkId": "Task.owner._type",
+              "text": "type",
+              "type": "choice",
+              "required": false,
+              "repeats": false,
+              "options": {
+                "reference": "#vs3"
+              },
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.owner._Device",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Device"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.owner._Device.value",
+                      "text": "Device",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.owner._Organization",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Organization"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.owner._Organization.value",
+                      "text": "Organization",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.owner._Patient",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Patient"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.owner._Patient.value",
+                      "text": "Patient",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.owner._Practitioner",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "Practitioner"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.owner._Practitioner.value",
+                      "text": "Practitioner",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                      "valueString": "Reference"
+                    }
+                  ],
+                  "linkId": "Task.owner._RelatedPerson",
+                  "type": "group",
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                          "valueCode": "RelatedPerson"
+                        },
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                          "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                        }
+                      ],
+                      "linkId": "Task.owner._RelatedPerson.value",
+                      "text": "RelatedPerson",
+                      "type": "reference",
+                      "required": false,
+                      "repeats": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+              "valueInteger": 1
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+              "valueString": "Reference"
+            }
+          ],
+          "linkId": "Task.parent",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Task that this particular task is part of.",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                  "valueCode": "Task"
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                  "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                }
+              ],
+              "linkId": "Task.parent.value",
+              "text": "Composite task",
+              "type": "reference",
+              "required": false,
+              "repeats": false
+            }
+          ]
+        },
+        {
+          "linkId": "Task.input",
+          "text": "Task Input",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Inputs to the task.",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "string"
+                }
+              ],
+              "linkId": "Task.input.id",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "unique id for the element within a resource (for internal references).",
+                  "type": "display"
+                },
+                {
+                  "linkId": "Task.input.id.value",
+                  "text": "xml:id (or equivalent in JSON)",
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "Task.input.extension",
+              "text": "Additional Content defined by implementations",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "linkId": "Task.input.modifierExtension",
+              "text": "Extensions that cannot be ignored",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "string"
+                }
+              ],
+              "linkId": "Task.input.name",
+              "type": "group",
+              "required": true,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "The name of the input parameter.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "Task.input.name.value",
+                  "text": "Input Name",
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "Task.input.value[x]",
+              "text": "Input Value",
+              "type": "group",
+              "required": true,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "The value of the input parameter as a basic type.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "Task.input.value[x]._type",
+                  "text": "type",
+                  "type": "choice",
+                  "required": false,
+                  "repeats": false,
+                  "options": {
+                    "reference": "#vs4"
+                  },
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "boolean"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._boolean",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._boolean.value",
+                          "text": "boolean",
+                          "type": "boolean",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "integer"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._integer",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._integer.value",
+                          "text": "integer",
+                          "type": "integer",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "decimal"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._decimal",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._decimal.value",
+                          "text": "decimal",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "binary"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._base64Binary",
+                      "text": "base64Binary",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "instant"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._instant",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._instant.value",
+                          "text": "instant",
+                          "type": "instant",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._string",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._string.value",
+                          "text": "string",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "uri"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._uri",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._uri.value",
+                          "text": "uri",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "datetime"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._date",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._date.value",
+                          "text": "date",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "datetime"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._dateTime",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._dateTime.value",
+                          "text": "dateTime",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "time"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._time",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._time.value",
+                          "text": "time",
+                          "type": "time",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "code"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._code",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._code.value",
+                          "text": "value[x]",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._oid",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._oid.value",
+                          "text": "oid",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._id",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._id.value",
+                          "text": "id",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "integer"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._unsignedInt",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._unsignedInt.value",
+                          "text": "unsignedInt",
+                          "type": "integer",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "integer"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._positiveInt",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._positiveInt.value",
+                          "text": "positiveInt",
+                          "type": "integer",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._markdown",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._markdown.value",
+                          "text": "markdown",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Annotation"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Annotation",
+                      "text": "Annotation",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Attachment"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Attachment",
+                      "text": "Attachment",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Identifier"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Identifier",
+                      "text": "Identifier",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Identifier.label",
+                          "text": "label:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Identifier.system",
+                          "text": "system:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Identifier.value",
+                          "text": "value:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "CodeableConcept"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._CodeableConcept",
+                      "text": "CodeableConcept",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._CodeableConcept.coding",
+                          "text": "code:",
+                          "type": "open-choice",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._CodeableConcept.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Coding"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Coding",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Coding.value",
+                          "text": "Coding",
+                          "type": "open-choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Quantity"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Quantity",
+                      "text": "Quantity",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Quantity.comparator",
+                          "text": "comp:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Quantity.value",
+                          "text": "value:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Quantity.units",
+                          "text": "units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Quantity.code",
+                          "text": "coded units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Quantity.system",
+                          "text": "units system:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Range"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Range",
+                      "text": "Range",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Range.low",
+                          "text": "low:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Range.high",
+                          "text": "high:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Range.units",
+                          "text": "units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Period"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Period",
+                      "text": "Period",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Period.low",
+                          "text": "start:",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Period.end",
+                          "text": "end:",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Ratio"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Ratio",
+                      "text": "Ratio",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Ratio.numerator",
+                          "text": "numerator:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Ratio.denominator",
+                          "text": "denominator:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Ratio.units",
+                          "text": "units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "SampledData"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._SampledData",
+                      "text": "SampledData",
+                      "type": "group"
+                    },
+                    {
+                      "linkId": "Task.input.value[x]._Signature",
+                      "text": "Signature",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Name"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._HumanName",
+                      "text": "HumanName",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._HumanName.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._HumanName.family",
+                          "text": "family:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": true
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._HumanName.given",
+                          "text": "given:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": true
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Address"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Address",
+                      "text": "Address",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Address.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Address.line",
+                          "text": "line:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": true
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Address.city",
+                          "text": "city:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Address.state",
+                          "text": "state:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Address.postalCode",
+                          "text": "post code:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Address.country",
+                          "text": "country:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Address.use",
+                          "text": "use:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "ContactPoint"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._ContactPoint",
+                      "text": "ContactPoint",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._ContactPoint.system",
+                          "text": "type:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._ContactPoint.value",
+                          "text": "value:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._ContactPoint.use",
+                          "text": "use:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Schedule"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Timing",
+                      "text": "Timing",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.input.value[x]._Timing.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.input.value[x]._Timing.date",
+                          "text": "date:",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                              "valueCode": "Patient"
+                            },
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                              "valueCode": "Practitioner"
+                            },
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                              "valueCode": "RelatedPerson"
+                            }
+                          ],
+                          "linkId": "Task.input.value[x]._Timing.author",
+                          "text": "author:",
+                          "type": "reference",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Reference"
+                        }
+                      ],
+                      "linkId": "Task.input.value[x]._Reference",
+                      "type": "group",
+                      "item": [
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                              "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                            }
+                          ],
+                          "linkId": "Task.input.value[x]._Reference.value",
+                          "text": "Reference",
+                          "type": "reference",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "Task.input.value[x]._Meta",
+                      "text": "Meta",
+                      "type": "group"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "Task.output",
+          "text": "Task Output",
+          "type": "group",
+          "required": false,
+          "repeats": true,
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                        "code": "flyover",
+                        "display": "Fly-over"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "text": "Outputs produced by the Task.",
+              "type": "display"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "string"
+                }
+              ],
+              "linkId": "Task.output.id",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "unique id for the element within a resource (for internal references).",
+                  "type": "display"
+                },
+                {
+                  "linkId": "Task.output.id.value",
+                  "text": "xml:id (or equivalent in JSON)",
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "linkId": "Task.output.extension",
+              "text": "Additional Content defined by implementations",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "linkId": "Task.output.modifierExtension",
+              "text": "Extensions that cannot be ignored",
+              "type": "group",
+              "required": false,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions. There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+                  "type": "display"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                  "valueString": "string"
+                }
+              ],
+              "linkId": "Task.output.name",
+              "type": "group",
+              "required": true,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "The name of the Output parameter.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "Task.output.name.value",
+                  "text": "Output Name",
+                  "type": "string",
+                  "required": false,
+                  "repeats": false
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-minOccurs",
+                  "valueInteger": 1
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                  "valueInteger": 1
+                }
+              ],
+              "linkId": "Task.output.value[x]",
+              "text": "Output Value",
+              "type": "group",
+              "required": true,
+              "repeats": true,
+              "item": [
+                {
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "system": "http://hl7.org/fhir/questionnaire-item-control",
+                            "code": "flyover",
+                            "display": "Fly-over"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "text": "The value of the Output parameter as a basic type.",
+                  "type": "display"
+                },
+                {
+                  "linkId": "Task.output.value[x]._type",
+                  "text": "type",
+                  "type": "choice",
+                  "required": false,
+                  "repeats": false,
+                  "options": {
+                    "reference": "#vs5"
+                  },
+                  "item": [
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "boolean"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._boolean",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._boolean.value",
+                          "text": "boolean",
+                          "type": "boolean",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "integer"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._integer",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._integer.value",
+                          "text": "integer",
+                          "type": "integer",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "decimal"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._decimal",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._decimal.value",
+                          "text": "decimal",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "binary"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._base64Binary",
+                      "text": "base64Binary",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "instant"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._instant",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._instant.value",
+                          "text": "instant",
+                          "type": "instant",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._string",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._string.value",
+                          "text": "string",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "uri"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._uri",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._uri.value",
+                          "text": "uri",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "datetime"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._date",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._date.value",
+                          "text": "date",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "datetime"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._dateTime",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._dateTime.value",
+                          "text": "dateTime",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "time"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._time",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._time.value",
+                          "text": "time",
+                          "type": "time",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "code"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._code",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._code.value",
+                          "text": "value[x]",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._oid",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._oid.value",
+                          "text": "oid",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._id",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._id.value",
+                          "text": "id",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "integer"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._unsignedInt",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._unsignedInt.value",
+                          "text": "unsignedInt",
+                          "type": "integer",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "integer"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._positiveInt",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._positiveInt.value",
+                          "text": "positiveInt",
+                          "type": "integer",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "string"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._markdown",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._markdown.value",
+                          "text": "markdown",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Annotation"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Annotation",
+                      "text": "Annotation",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Attachment"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Attachment",
+                      "text": "Attachment",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Identifier"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Identifier",
+                      "text": "Identifier",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Identifier.label",
+                          "text": "label:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Identifier.system",
+                          "text": "system:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Identifier.value",
+                          "text": "value:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "CodeableConcept"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._CodeableConcept",
+                      "text": "CodeableConcept",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._CodeableConcept.coding",
+                          "text": "code:",
+                          "type": "open-choice",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._CodeableConcept.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Coding"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Coding",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Coding.value",
+                          "text": "Coding",
+                          "type": "open-choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Quantity"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Quantity",
+                      "text": "Quantity",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Quantity.comparator",
+                          "text": "comp:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Quantity.value",
+                          "text": "value:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Quantity.units",
+                          "text": "units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Quantity.code",
+                          "text": "coded units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Quantity.system",
+                          "text": "units system:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Range"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Range",
+                      "text": "Range",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Range.low",
+                          "text": "low:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Range.high",
+                          "text": "high:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Range.units",
+                          "text": "units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Period"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Period",
+                      "text": "Period",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Period.low",
+                          "text": "start:",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Period.end",
+                          "text": "end:",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Ratio"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Ratio",
+                      "text": "Ratio",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Ratio.numerator",
+                          "text": "numerator:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Ratio.denominator",
+                          "text": "denominator:",
+                          "type": "decimal",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Ratio.units",
+                          "text": "units:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "SampledData"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._SampledData",
+                      "text": "SampledData",
+                      "type": "group"
+                    },
+                    {
+                      "linkId": "Task.output.value[x]._Signature",
+                      "text": "Signature",
+                      "type": "group"
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Name"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._HumanName",
+                      "text": "HumanName",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._HumanName.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._HumanName.family",
+                          "text": "family:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": true
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._HumanName.given",
+                          "text": "given:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": true
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Address"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Address",
+                      "text": "Address",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Address.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Address.line",
+                          "text": "line:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": true
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Address.city",
+                          "text": "city:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Address.state",
+                          "text": "state:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Address.postalCode",
+                          "text": "post code:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Address.country",
+                          "text": "country:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Address.use",
+                          "text": "use:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "ContactPoint"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._ContactPoint",
+                      "text": "ContactPoint",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._ContactPoint.system",
+                          "text": "type:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._ContactPoint.value",
+                          "text": "value:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._ContactPoint.use",
+                          "text": "use:",
+                          "type": "choice",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Schedule"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Timing",
+                      "text": "Timing",
+                      "type": "group",
+                      "item": [
+                        {
+                          "linkId": "Task.output.value[x]._Timing.text",
+                          "text": "text:",
+                          "type": "string",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "linkId": "Task.output.value[x]._Timing.date",
+                          "text": "date:",
+                          "type": "dateTime",
+                          "required": false,
+                          "repeats": false
+                        },
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                              "valueCode": "Patient"
+                            },
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                              "valueCode": "Practitioner"
+                            },
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-allowedResource",
+                              "valueCode": "RelatedPerson"
+                            }
+                          ],
+                          "linkId": "Task.output.value[x]._Timing.author",
+                          "text": "author:",
+                          "type": "reference",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "extension": [
+                        {
+                          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-fhirType",
+                          "valueString": "Reference"
+                        }
+                      ],
+                      "linkId": "Task.output.value[x]._Reference",
+                      "type": "group",
+                      "item": [
+                        {
+                          "extension": [
+                            {
+                              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-referenceFilter",
+                              "valueString": "subject=$subj&patient=$subj&encounter=$encounter"
+                            }
+                          ],
+                          "linkId": "Task.output.value[x]._Reference.value",
+                          "text": "Reference",
+                          "type": "reference",
+                          "required": false,
+                          "repeats": false
+                        }
+                      ]
+                    },
+                    {
+                      "linkId": "Task.output.value[x]._Meta",
+                      "text": "Meta",
+                      "type": "group"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

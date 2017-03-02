@@ -1,0 +1,51 @@
+{
+  "resourceType": "MedicationOrder",
+  "id": "medrx009",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p><big>AC followed by Paclitaxel + Trastuzumab Course 1</big></p>\n      <p>Name: Cyclophosphamide in AC (Doxorubicin + Cyclophosphamide)</p>\n      <p>Course: 1</p>\n      <p>Agent Protocols Options:</p>\n      <p><b>Cyclophosphamide 600 mg/m^2 IV over 30 minutes D1 </b></p>\n      <p>Offset: None</p>\n      <p>Cycle length: Q21D x 4 cycles</p>\n    </div>"
+  },
+  "status": "on-hold",
+  "_status": {
+    "extension": [
+      {
+        "url": "http://localhost:3000/MedicationOrder/mscode#original-status",
+        "valueCode": "pending"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/Cyclophosphamide"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Cyclophosphamide 600 mg/m^2 IV over 30 minutes D1",
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47625008",
+            "display": "Intravenous route"
+          }
+        ]
+      },
+      "rateRatio": {
+        "numerator": {
+          "fhir_comments": [
+            "    600 mg/m^2 over 30 minutes    "
+          ],
+          "value": 600,
+          "unit": "mg/m^2",
+          "system": "http://snomed.info/sct",
+          "code": "258682000"
+        },
+        "denominator": {
+          "value": 30,
+          "unit": "minutes",
+          "system": "http://snomed.info/sct",
+          "code": "258702006"
+        }
+      }
+    }
+  ]
+}

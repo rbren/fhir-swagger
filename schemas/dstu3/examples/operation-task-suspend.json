@@ -1,0 +1,32 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-suspend",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Suspend Task</h2><p>OPERATION: Suspend Task</p><div><p>Place a hold on any activity for this task until it is subsequently resumed.  The task remains in  its current state but is marked as being suspended, indicating that no additional activity should b performed.  If the task has subtasks, these are also suspended.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-suspend",
+  "name": "Suspend Task",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Place a hold on any activity for this task until it is subsequently resumed.  The task remains in  its current state but is marked as being suspended, indicating that no additional activity should b performed.  If the task has subtasks, these are also suspended.",
+  "code": "suspend",
+  "system": false,
+  "instance": true
+}

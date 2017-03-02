@@ -1,0 +1,60 @@
+{
+  "resourceType": "Library",
+  "id": "library-exclusive-breastfeeding-cds-logic",
+  "text": {
+    "status": "generated",
+    "div": "<div>Exclusive Breastfeeding CDS Logic</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "Exclusive_Breastfeeding_CDS_Logic"
+      }
+    ],
+    "version": "1.0.0",
+    "title": "Exclusive Breastfeeding CDS Logic",
+    "type": "library",
+    "status": "active",
+    "experimental": true,
+    "description": "Decision support logic for improving outcomes for exclusive breastmilk feeding of newborns",
+    "publicationDate": "2016-03-08",
+    "topic": [
+      {
+        "text": "Exclusive Breastfeeding"
+      }
+    ]
+  },
+  "model": [
+    {
+      "identifier": "QUICK"
+    }
+  ],
+  "valueSet": [
+    {
+      "name": "Female Administrative Sex",
+      "identifier": "2.16.840.1.113883.3.560.100.2"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "fhir_comments": [
+        "    ... other value sets as defined in the library    "
+      ],
+      "type": "Condition",
+      "codeFilter": [
+        {
+          "path": "code",
+          "valueSetString": "Single Live Birth"
+        }
+      ]
+    }
+  ],
+  "document": {
+    "fhir_comments": [
+      "    ... other data requirements as defined in the library    "
+    ],
+    "contentType": "application/cql+text",
+    "url": "http://cqlrepository.org/CMS9v4_CDS.cql"
+  }
+}

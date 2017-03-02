@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "measure-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MeasureType</h2><p>The type of measure</p><p>This code system http://hl7.org/fhir/measure-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>process<a name=\"process\"> </a></td><td>Process</td><td>The measure is a process measure</td></tr><tr><td>outcome<a name=\"outcome\"> </a></td><td>Outcome</td><td>The measure is an outcome measure</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.540"
+    }
+  ],
+  "url": "http://hl7.org/fhir/measure-type",
+  "version": "1.4.0",
+  "name": "MeasureType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of measure",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/measure-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "process",
+      "display": "Process",
+      "definition": "The measure is a process measure"
+    },
+    {
+      "code": "outcome",
+      "display": "Outcome",
+      "definition": "The measure is an outcome measure"
+    }
+  ]
+}

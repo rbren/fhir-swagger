@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-crc-rel-anterior-peritoneal-reflection",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NehtaRelAnteriorPeritonealReflection</h2><p>For rectal tumours this indicates the options for the relationship to anterior peritoneal reflection.</p><p>This code system http://hl7.org/fhir/nehta-crc-rel-anterior-peritoneal-reflection defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>entirely_above<a name=\"entirely_above\"> </a></td><td>Entirely above</td><td>The rectal tumour is entirely above the level of the peritoneal reflection anteriorly</td></tr><tr><td>astride<a name=\"astride\"> </a></td><td>Astride</td><td>The rectal tumour is astride (or at) the level of the peritoneal reflection anteriorly</td></tr><tr><td>entirely_below<a name=\"entirely_below\"> </a></td><td>Entirely below</td><td>The rectal tumour is entirely below the level of the peritoneal reflection anteriorly</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.784"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-crc-rel-anterior-peritoneal-reflection",
+  "version": "20150619",
+  "name": "NehtaRelAnteriorPeritonealReflection",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "For rectal tumours this indicates the options for the relationship to anterior peritoneal reflection.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-crc-rel-anterior-peritoneal-reflection",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "entirely_above",
+      "display": "Entirely above",
+      "definition": "The rectal tumour is entirely above the level of the peritoneal reflection anteriorly"
+    },
+    {
+      "code": "astride",
+      "display": "Astride",
+      "definition": "The rectal tumour is astride (or at) the level of the peritoneal reflection anteriorly"
+    },
+    {
+      "code": "entirely_below",
+      "display": "Entirely below",
+      "definition": "The rectal tumour is entirely below the level of the peritoneal reflection anteriorly"
+    }
+  ]
+}

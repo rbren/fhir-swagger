@@ -1,0 +1,32 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-resume",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Resume Task</h2><p>OPERATION: Resume Task</p><div><p>Indicate that activity on this task can now be resumed.  Removes the mark that the task is suspended, and propgates the resume to any child tasks.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-resume",
+  "name": "Resume Task",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Indicate that activity on this task can now be resumed.  Removes the mark that the task is suspended, and propgates the resume to any child tasks.",
+  "code": "resume",
+  "system": false,
+  "instance": true
+}
