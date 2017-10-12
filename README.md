@@ -8,7 +8,7 @@ npm install -g fhir-swagger
 fhir-swagger \
 --fhir_url "http://fhirtest.uhn.ca/baseDstu3" \
 --conformance_path="/metadata?_format=application/json" \
---dstu3
+--dstu3 \
 --output swagger.json
 ```
 
