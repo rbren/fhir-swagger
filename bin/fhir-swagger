@@ -5,6 +5,9 @@ var options = require('../options.js');
 
 require('../index.js')(options, function(err, swagger) {
   if (err) throw err;
-  FS.writeFileSync(options.output, JSON.stringify(swagger, null, 2))
+  if (options.output === "-")
+  	console.log(JSON.stringify(swagger, null, 2))
+  else
+  	FS.writeFileSync(options.output, JSON.stringify(swagger, null, 2))
 });
 
