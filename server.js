@@ -1,6 +1,5 @@
 var App = require('express')();
 
-var Request = require('request');
 var Convert = require('./index.js');
 var LucyConsole = require('lucy-console');
 
@@ -11,7 +10,7 @@ Convert(args, function(err, s) {
   swagger = s;
   var portal = new LucyConsole({
     swagger: swagger,
-    proxy: args.proxy_host || true,
+    proxy: true,
     development: process.env.DEVELOPMENT,
   })
   App.use(portal.router);
