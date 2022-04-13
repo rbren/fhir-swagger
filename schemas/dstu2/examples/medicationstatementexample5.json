@@ -1,0 +1,69 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "example005",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Amoxicillin 250mg capsule - one capsule three times daily</p>\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "informationSource": {
+    "reference": "Patient/example"
+  },
+  "dateAsserted": "2015-02-22",
+  "status": "entered-in-error",
+  "wasNotTaken": false,
+  "reasonForUseCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "65363002",
+        "display": "Otitis Media"
+      }
+    ]
+  },
+  "effectiveDateTime": "2014-01-23",
+  "note": "Patient indicates they miss the occasional dose",
+  "medicationReference": {
+    "reference": "Medication/MedicationExample6"
+  },
+  "dosage": [
+    {
+      "text": "one capsule three times daily",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnits": "d"
+        }
+      },
+      "asNeededBoolean": false,
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "260548002",
+            "display": "Oral"
+          }
+        ]
+      },
+      "quantityQuantity": {
+        "value": 1
+      },
+      "maxDosePerPeriod": {
+        "numerator": {
+          "value": 3,
+          "unit": "capsules",
+          "system": "http://snomed.info/sct",
+          "code": "385055001"
+        },
+        "denominator": {
+          "value": 1,
+          "system": "http://unitsofmeasure.org",
+          "code": "d"
+        }
+      }
+    }
+  ]
+}

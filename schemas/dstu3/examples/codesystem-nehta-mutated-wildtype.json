@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-mutated-wildtype",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MutatedWildtype</h2><p>Gene mutation options</p><p>This code system http://hl7.org/fhir/nehta-mutated-wildtype defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>mutated<a name=\"mutated\"> </a></td><td>Mutated</td><td>The gene mutation type is mutated</td></tr><tr><td>wild_type<a name=\"wild_type\"> </a></td><td>Wild type</td><td>The gene mutation type is wild type</td></tr><tr><td>not_tested<a name=\"not_tested\"> </a></td><td>Not tested</td><td>The gene mutation was not tested</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.812"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-mutated-wildtype",
+  "version": "20150624",
+  "name": "MutatedWildtype",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Gene mutation options",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-mutated-wildtype",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "mutated",
+      "display": "Mutated",
+      "definition": "The gene mutation type is mutated"
+    },
+    {
+      "code": "wild_type",
+      "display": "Wild type",
+      "definition": "The gene mutation type is wild type"
+    },
+    {
+      "code": "not_tested",
+      "display": "Not tested",
+      "definition": "The gene mutation was not tested"
+    }
+  ]
+}

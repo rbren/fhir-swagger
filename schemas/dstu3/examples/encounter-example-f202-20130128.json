@@ -1,0 +1,98 @@
+{
+  "resourceType": "Encounter",
+  "id": "f202",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>identifier</b>: Encounter_Roel_20130128 (TEMP)</p><p><b>status</b>: finished</p><p><b>class</b>: outpatient</p><p><b>type</b>: Chemotherapy <span>(Details : {SNOMED CT code '367336001' = 'Chemotherapy (procedure)', given as 'Chemotherapy'})</span></p><p><b>priority</b>: Urgent <span>(Details : {SNOMED CT code '103391001' = 'Urgency (qualifier value)', given as 'Urgent'})</span></p><p><b>patient</b>: <a>Roel</a></p><h3>Participants</h3><table><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a>Practitioner/f201</a></td></tr></table><p><b>length</b>: 56 minutes<span> (Details: SNOMED CT code 258701004 = 'min (qualifier value)')</span></p><p><b>reason</b>: The patient is treated for a tumor. <span>(Details )</span></p><p><b>indication</b>: <a>Roel's TPF chemotherapy on January 28th, 2013</a></p><p><b>serviceProvider</b>: <a>Organization/f201</a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "temp",
+      "value": "Encounter_Roel_20130128",
+      "_value": {
+        "fhir_comments": [
+          "   0..1 The use of this identifier   "
+        ]
+      }
+    }
+  ],
+  "status": "finished",
+  "class": "outpatient",
+  "_class": {
+    "fhir_comments": [
+      "  Encounter has finished  "
+    ]
+  },
+  "type": [
+    {
+      "fhir_comments": [
+        "  Outpatient encounter for chemotherapy  "
+      ],
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "367336001",
+          "display": "Chemotherapy"
+        }
+      ]
+    }
+  ],
+  "priority": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "  Urgent priority, because of complications  "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "103391001",
+        "display": "Urgent"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/f201"
+      }
+    }
+  ],
+  "length": {
+    "value": 56,
+    "unit": "minutes",
+    "system": "http://snomed.info/sct",
+    "code": "258701004"
+  },
+  "reason": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/encounter-primaryDiagnosis",
+          "valuePositiveInt": 2
+        }
+      ],
+      "text": "The patient is treated for a tumor."
+    }
+  ],
+  "indication": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/encounter-primaryDiagnosis",
+          "valuePositiveInt": 1
+        }
+      ],
+      "reference": "Procedure/f201",
+      "display": "Roel's TPF chemotherapy on January 28th, 2013"
+    }
+  ],
+  "serviceProvider": {
+    "fhir_comments": [
+      "  No hospitalization was deemed necessary  "
+    ],
+    "reference": "Organization/f201"
+  }
+}

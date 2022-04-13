@@ -1,0 +1,8 @@
+{
+  "resourceType": "DetectedIssue",
+  "id": "allergy",
+  "text": {
+    "status": "generated",
+    "div": "<div>[Put rendering here]</div>"
+  }
+}

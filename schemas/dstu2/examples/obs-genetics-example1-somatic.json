@@ -1,0 +1,185 @@
+{
+  "resourceType": "Observation",
+  "id": "genetics-example1-somatic",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: genetics-example1-somatic</p><p><b>contained</b>: </p><p><b>status</b>: final</p><p><b>code</b>: Genetic analysis master panel ­Blood or Tissue by Molecular genetics method <span>(Details : {LOINC code '55233-1' = 'Genetic analysis master panel - Blood or Tissue by Molecular genetics method', given as 'Genetic analysis master panel ­Blood or Tissue by Molecular genetics method'})</span></p><p><b>subject</b>: <a>Molecular Lab Patient ID: HOSP-23456</a></p><p><b>performer</b>: <a>Molecular Diagnostic Laboratory</a></p><p><b>interpretation</b>: positive <span>(Details : {http://hl7.org/fhir/v2/0078 code 'POS' = 'Positive)</span></p><p><b>comments</b>: The EGFR p.L858R mutation has been associated with response to anti-EGFR therapy</p><p><b>specimen</b>: <a>Molecular Specimen ID: MLD45-Z4-1234</a></p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Condition",
+      "id": "c1",
+      "patient": {
+        "reference": "Patient/p1"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "254626006"
+          }
+        ],
+        "text": "Adenocarcinoma of lung "
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/condition-category",
+            "code": "finding",
+            "display": "Finding"
+          }
+        ]
+      },
+      "verificationStatus": "provisional"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomeBuild",
+      "valueString": "GRCh 37"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsChromosome",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.ncbi.nlm.nih.gov/gene",
+            "code": "NC_000007"
+          }
+        ],
+        "text": "Homo sapiens chromosome 7"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomicStart",
+      "valueInteger": 55259515
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomicStop",
+      "valueInteger": 55259516
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsSpecies",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "337915000"
+          }
+        ],
+        "text": "Homo sapiens"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsCIGAR",
+      "valueString": "1M"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsAssessedCondition",
+      "valueReference": {
+        "reference": "#c1"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsReferenceAllele",
+      "valueString": "T"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsObservedAllele",
+      "valueString": "G"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGene",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.genenames.org",
+            "code": "3236",
+            "display": "EGFR"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsTranscriptReferenceSequenceId",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.ensembl.org",
+            "code": "ENSESTT00000085772.1"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsDNASequenceVariation",
+      "valueString": "c.2573T>G"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsDNASequenceVariationType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6690-7",
+            "display": "Substitution"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsAminoAcidChange",
+      "valueString": "p.Leu858Arg"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsAlleleName",
+      "valueString": "p.L858R"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomicSourceClass",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6684-0",
+            "display": "Somatic"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "55233-1",
+        "display": "Genetic analysis master panel ­Blood or Tissue by Molecular genetics method"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/genetics-example1-somatic",
+    "display": "Molecular Lab Patient ID: HOSP-23456"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/genetics-example1-somatic",
+      "display": "Molecular Diagnostic Laboratory"
+    }
+  ],
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "POS"
+      }
+    ],
+    "text": "positive"
+  },
+  "comments": "The EGFR p.L858R mutation has been associated with response to anti-EGFR therapy",
+  "specimen": {
+    "reference": "Specimen/genetics-example1-somatic",
+    "display": "Molecular Specimen ID: MLD45-Z4-1234"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-departureTransportMode",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Departure Transport Mode value set</h2><p>The list of codes that describe how the data came into being.</p><p><b>Copyright Statement:</b> Intermountain Healthcare HDD</p><p>This code system http://hl7.org/fhir/hspc-departureTransportationMode defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>14586425<a name=\"14586425\"> </a></td><td>Left w/ Law Enforcement</td><td>The subject departed by means of a law enforcement vehicle.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.767"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-departureTransportationMode",
+  "version": "1.4.0",
+  "name": "HSPC Departure Transport Mode value set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "description": "The list of codes that describe how the data came into being.",
+  "copyright": "Intermountain Healthcare HDD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-departureTransportMode",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "14586425",
+      "display": "Left w/ Law Enforcement",
+      "definition": "The subject departed by means of a law enforcement vehicle."
+    }
+  ]
+}

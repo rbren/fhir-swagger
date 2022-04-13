@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-substanceCategory",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Substance Category Value Set</h2><p>SELECT SNOMED CT and Intermountain Healthcare HDD code system values.</p><p><b>Copyright Statement:</b> TBD</p><p>This code system http://hl7.org/fhir/hspc-substancecategory defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>527731710<a name=\"527731710\"> </a></td><td>Environmental</td><td>The origin of the substance is environmental.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.279"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-substancecategory",
+  "version": "0.01",
+  "name": "HSPC Substance Category Value Set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "date": "2015-08-04T17:00:00+03:00",
+  "description": "SELECT SNOMED CT and Intermountain Healthcare HDD code system values.",
+  "copyright": "TBD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-substanceCategory",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "527731710",
+      "display": "Environmental",
+      "definition": "The origin of the substance is environmental."
+    }
+  ]
+}

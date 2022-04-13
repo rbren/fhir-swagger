@@ -1,0 +1,54 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "fishallergy",
+  "text": {
+    "status": "additional",
+    "div": "<div>\n      <p>allergy is to fresh fish. Tolerates canned fish</p>\n      <p>recordedDate:2015-08-06T00:00:00-06:00</p>\n      <p>substance:Fish - dietary (substance)</p>\n    </div>"
+  },
+  "identifier": [
+    {
+      "fhir_comments": [
+        "  an identifier used for this Adverse Reaction Risk  "
+      ],
+      "system": "http://acme.com/ids/patients/risks",
+      "value": "49476535"
+    }
+  ],
+  "category": "food",
+  "_category": {
+    "fhir_comments": [
+      "  this categorisation is implied by \"cashew nut\" and therefore basically \n    redundant, but many systems collect this field anyway, since it's either \n    useful when the substance is not coded, or it's quicker to sort/filter on\n    than using terminology based reasoning  "
+    ]
+  },
+  "substance": {
+    "fhir_comments": [
+      "  subtance - either coded, or text. A few times, \n    there's a full description of a complex substance - in these caes, use the\n    extension [url] to refer to a Substance resource  "
+    ],
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "227037002",
+        "display": "Fish - dietary (substance)"
+      }
+    ],
+    "text": "Allergic to fresh fish. Tolerates canned fish"
+  },
+  "patient": {
+    "fhir_comments": [
+      "  the patient that actually has the risk of adverse reaction  "
+    ],
+    "reference": "Patient/example"
+  },
+  "recordedDate": "2015-08-06T15:37:31-06:00",
+  "_recordedDate": {
+    "fhir_comments": [
+      "  the date that this entry was recorded  "
+    ]
+  },
+  "recorder": {
+    "fhir_comments": [
+      "  who made the record / last updated it  "
+    ],
+    "reference": "Practitioner/example"
+  }
+}

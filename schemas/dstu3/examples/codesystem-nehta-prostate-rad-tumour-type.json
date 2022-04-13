@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-prostate-rad-tumour-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ProstateRadTumourType</h2><p>Indicates the radical prostatectomy tumour type.</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright Â&copy; 2002+ International       Health Terminology Standards Development Organisation (IHTSDO), and distributed by    agreement    between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this    agreement</p><p>This code system http://hl7.org/fhir/nehta--prostate-rad-tumour-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>acinar_variant<a name=\"acinar_variant\"> </a></td><td>Adenocarcinoma (Acinar variant eg, foamy, pseudohyperplastic)</td><td>Adenocarcinoma (Acinar variant eg, foamy, pseudohyperplastic)</td></tr><tr><td>prostatic_ductal_adenocarcinoma<a name=\"prostatic_ductal_adenocarcinoma\"> </a></td><td>Prostatic ductal adenocarcinoma</td><td>Prostatic ductal adenocarcinoma</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.789"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta--prostate-rad-tumour-type",
+  "version": "20151104",
+  "name": "ProstateRadTumourType",
+  "status": "active",
+  "experimental": true,
+  "publisher": "NEHTA",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Indicates the radical prostatectomy tumour type.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright Â© 2002+ International       Health Terminology Standards Development Organisation (IHTSDO), and distributed by    agreement    between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this    agreement",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-prostate-rad-tumour-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "acinar_variant",
+      "display": "Adenocarcinoma (Acinar variant eg, foamy, pseudohyperplastic)",
+      "definition": "Adenocarcinoma (Acinar variant eg, foamy, pseudohyperplastic)"
+    },
+    {
+      "code": "prostatic_ductal_adenocarcinoma",
+      "display": "Prostatic ductal adenocarcinoma",
+      "definition": "Prostatic ductal adenocarcinoma"
+    }
+  ]
+}

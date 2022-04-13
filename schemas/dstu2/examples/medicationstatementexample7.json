@@ -1,0 +1,21 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "example007",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Ventolin inhaler - Will take during seasonal allergy season</p>\n    </div>"
+  },
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "informationSource": {
+    "reference": "Patient/example"
+  },
+  "dateAsserted": "2015-02-22",
+  "status": "active",
+  "wasNotTaken": false,
+  "effectiveDateTime": "2015-05-23",
+  "medicationReference": {
+    "reference": "Medication/MedicationExample12"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "resourceType": "DecisionSupportRule",
+  "id": "decisionsupportrule-exclusive-breastfeeding-intervention-03",
+  "text": {
+    "status": "generated",
+    "div": "<div>Exclusive Breastfeeding Intervention-03</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "exclusive-breastfeeding-intervention-03"
+      }
+    ],
+    "version": "1.0.0",
+    "title": "Exclusive Breastfeeding Intervention-03",
+    "type": "eca-rule",
+    "status": "active",
+    "description": "Exclusive breastfeeding intervention intended to improve outcomes for exclusive breastmilk feeding of newborns by notifying the charge and/or bedside nurse to perform the breastfeeding readiness assessment.",
+    "publicationDate": "2015-03-08",
+    "topic": [
+      {
+        "text": "Exclusive Breastfeeding"
+      }
+    ]
+  },
+  "library": [
+    {
+      "reference": "Library/library-exclusive-breastfeeding-cds-logic"
+    }
+  ],
+  "trigger": [
+    {
+      "type": "named-event",
+      "eventName": "Admission"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Birth"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Infant Transfer to Recovery"
+    },
+    {
+      "type": "named-event",
+      "eventName": "Transfer to Post-Partum"
+    }
+  ],
+  "condition": "Should Notify Nurse to Perform Assessment",
+  "action": [
+    {
+      "title": "Mother should be administered a breastfeeding readiness assessment.",
+      "action": [
+        {
+          "title": "Notify the charge nurse to perform the assessment.",
+          "textEquivalent": "A Breastfeeding Readiness Assessment is recommended, please administer the assessment.",
+          "participantType": [
+            "practitioner"
+          ],
+          "_participantType": [
+            {
+              "fhir_comments": [
+                "  TODO: Needs to be able to specify role of the practitioner...  "
+              ]
+            }
+          ],
+          "type": "create",
+          "customization": [
+            {
+              "path": "/",
+              "expression": "Communication Request to Charge Nurse"
+            }
+          ]
+        },
+        {
+          "title": "Notify the bedside nurse to perform the assessment.",
+          "textEquivalent": "A Breastfeeding Readiness Assessment is recommended, please administer the assessment.",
+          "participantType": [
+            "practitioner"
+          ],
+          "_participantType": [
+            {
+              "fhir_comments": [
+                "  TODO: Needs to be able to specify role of the practitioner...  "
+              ]
+            }
+          ],
+          "type": "create",
+          "customization": [
+            {
+              "path": "/",
+              "expression": "Communication Request to Bedside Nurse"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

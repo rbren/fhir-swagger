@@ -1,0 +1,82 @@
+{
+  "resourceType": "EpisodeOfCare",
+  "fhir_comments": [
+    " <careTeam>\n    <role>\n      <coding>\n        <system value=\"http://example.org/EpisodeOfCare/Role\"/>\n        <code value=\"AO\"/>\n        <display value=\"Assessment Worker\"/>\n      </coding>\n    </role>\n    <period>\n      <start value=\"2014-09-01\"/>\n      <end value=\"2014-09-16\"/>\n    </period>\n    <member>\n      <reference value=\"Practitioner/13\"/>\n      <display value=\"Henry Seven\"/>\n    </member>\n  </careTeam> "
+  ],
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      HACC Program for Peter James Chalmers at HL7 Healthcare 15 Sept 2014 - current<br/>\n\t\t\twas on leave from 22 Sept - 24 Sept while in respite care\n    </div>"
+  },
+  "identifier": [
+    {
+      "system": "http://example.org/sampleepisodeofcare-identifier",
+      "value": "123"
+    }
+  ],
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "planned",
+      "period": {
+        "start": "2014-09-01",
+        "end": "2014-09-14"
+      }
+    },
+    {
+      "status": "active",
+      "period": {
+        "start": "2014-09-15",
+        "end": "2014-09-21"
+      }
+    },
+    {
+      "status": "onhold",
+      "period": {
+        "start": "2014-09-22",
+        "end": "2014-09-24"
+      }
+    },
+    {
+      "status": "active",
+      "period": {
+        "start": "2014-09-25"
+      }
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://example.org/EpisodeOfCare/Type",
+          "code": "HACC",
+          "display": "Home and Community Care Package"
+        }
+      ]
+    }
+  ],
+  "condition": [
+    {
+      "reference": "Condition/example",
+      "display": "Severe burn of left ear"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "managingOrganization": {
+    "reference": "Organization/hl7"
+  },
+  "period": {
+    "start": "2014-09-01"
+  },
+  "referralRequest": [
+    {
+      "display": "Referral from Example Aged Care Services"
+    }
+  ],
+  "careManager": {
+    "reference": "Practitioner/14",
+    "display": "Amanda Assigned"
+  }
+}

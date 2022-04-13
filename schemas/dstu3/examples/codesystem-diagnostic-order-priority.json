@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "diagnostic-order-priority",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>DiagnosticOrderPriority</h2><p>The clinical priority of a diagnostic order.</p><p>This code system http://hl7.org/fhir/diagnostic-order-priority defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>routine<a name=\"routine\"> </a></td><td>Routine</td><td>The order has a normal priority .</td></tr><tr><td>urgent<a name=\"urgent\"> </a></td><td>Urgent</td><td>The order should be urgently.</td></tr><tr><td>stat<a name=\"stat\"> </a></td><td>Stat</td><td>The order is time-critical.</td></tr><tr><td>asap<a name=\"asap\"> </a></td><td>ASAP</td><td>The order should be acted on as soon as possible.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.111"
+    }
+  ],
+  "url": "http://hl7.org/fhir/diagnostic-order-priority",
+  "version": "1.4.0",
+  "name": "DiagnosticOrderPriority",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The clinical priority of a diagnostic order.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-order-priority",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "routine",
+      "display": "Routine",
+      "definition": "The order has a normal priority ."
+    },
+    {
+      "code": "urgent",
+      "display": "Urgent",
+      "definition": "The order should be urgently."
+    },
+    {
+      "code": "stat",
+      "display": "Stat",
+      "definition": "The order is time-critical."
+    },
+    {
+      "code": "asap",
+      "display": "ASAP",
+      "definition": "The order should be acted on as soon as possible."
+    }
+  ]
+}

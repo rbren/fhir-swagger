@@ -1,0 +1,150 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "fhir_comments": [
+    "    HISTOPATHOLOGY    ",
+    "    TODO: decide how to do this\n  <item>\n\n    <item>\n      <item>\n       <dataResource>\n          <reference value=\"#obs.pt-category\"/>\n        </dataResource>\n      </item>\n    </item>\n  </item>    "
+  ],
+  "id": "3141",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <pre>\n            Comorbidity? YES\n              Cardial Comorbidity? YES\n                Angina? YES\n                MI? NO\n              Vascular Comorbidity?\n                (no answers)\n              ...\n            Histopathology\n              Abdominal\n                pT category: 1a\n              ...\n          </pre>\n    </div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Patient",
+      "id": "patsub",
+      "identifier": [
+        {
+          "system": "http://cancer.questionnaire.org/systems/id/patientnr",
+          "value": "A34442332"
+        },
+        {
+          "type": {
+            "text": "Dutch BSN"
+          },
+          "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+          "value": "188912345"
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1972-11-30"
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "questauth",
+      "identifier": [
+        {
+          "type": {
+            "text": "AUMC, Den Helder"
+          },
+          "system": "http://cancer.questionnaire.org/systems/id/org",
+          "value": "AUMC"
+        }
+      ]
+    },
+    {
+      "resourceType": "Observation",
+      "id": "obs.pt-category",
+      "status": "final",
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "53786006",
+            "display": "pT1 category"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "#patsub"
+      },
+      "performer": [
+        {
+          "reference": "#questauth"
+        }
+      ],
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "443357004",
+            "display": "pT1a category"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "#patsub"
+  },
+  "author": {
+    "reference": "#questauth"
+  },
+  "authored": "2013-02-19T14:15:00-05:00",
+  "item": [
+    {
+      "item": [
+        {
+          "fhir_comments": [
+            "    COMORBIDITY    ",
+            "    First main section of the form, questions about comorbidity    ",
+            "    section contains one question: whether there is comorbidity    "
+          ],
+          "answer": [
+            {
+              "valueCoding": {
+                "system": "http://cancer.questionnaire.org/system/code/yesno",
+                "code": "1",
+                "display": "Yes"
+              },
+              "item": [
+                {
+                  "item": [
+                    {
+                      "fhir_comments": [
+                        "    COMORBIDITY/CARDIAL    ",
+                        "    Subsection about specific comorbidity: cardial    "
+                      ],
+                      "answer": [
+                        {
+                          "valueCoding": {
+                            "system": "http://cancer.questionnaire.org/system/code/yesno",
+                            "code": "1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "answer": [
+                        {
+                          "fhir_comments": [
+                            "    This answer carries both the questionnaire-specific name and an equivalent SNOMED CT code    "
+                          ],
+                          "valueCoding": {
+                            "system": "http://cancer.questionnaire.org/system/code/yesno",
+                            "code": "1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "answer": [
+                        {
+                          "valueCoding": {
+                            "system": "http://cancer.questionnaire.org/system/code/yesno",
+                            "code": "0"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

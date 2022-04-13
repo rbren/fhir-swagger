@@ -1,0 +1,11 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-dna-variant",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-dna-variant",
+  "name": "dna-variant",
+  "code": "dna-variant",
+  "base": "Observation",
+  "type": "string",
+  "description": "HGVS DNA variant",
+  "xpathUsage": "normal"
+}

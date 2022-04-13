@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "type-derivation-rule",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>TypeDerivationRule</h2><p>How a type relates to it's baseDefinition.</p><p>This code system http://hl7.org/fhir/type-derivation-rule defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>specialization<a name=\"specialization\"> </a></td><td>Specialization</td><td>This definition defines a new type that adds additional elements to the base type</td></tr><tr><td>constraint<a name=\"constraint\"> </a></td><td>Constraint</td><td>This definition adds additional rules to an existing concrete type</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.878"
+    }
+  ],
+  "url": "http://hl7.org/fhir/type-derivation-rule",
+  "version": "1.4.0",
+  "name": "TypeDerivationRule",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "How a type relates to it's baseDefinition.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/type-derivation-rule",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "specialization",
+      "display": "Specialization",
+      "definition": "This definition defines a new type that adds additional elements to the base type"
+    },
+    {
+      "code": "constraint",
+      "display": "Constraint",
+      "definition": "This definition adds additional rules to an existing concrete type"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "PaymentNotice",
+  "id": "77654",
+  "text": {
+    "status": "generated",
+    "div": "<div>A human-readable rendering of the PaymentNotice</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://benefitsinc.com/paymentnotice",
+      "value": "776543"
+    }
+  ],
+  "created": "2014-08-16",
+  "organizationReference": {
+    "reference": "Organization/1"
+  },
+  "requestReference": {
+    "reference": "http://benefitsinc.com/fhir/oralhealthclaim/12345"
+  },
+  "paymentStatus": {
+    "system": "http://hl7.org/fhir/paymentstatus",
+    "code": "paid"
+  }
+}

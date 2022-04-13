@@ -1,0 +1,31 @@
+{
+  "resourceType": "DeviceMetric",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>type</b>: MDC_PULS_OXIM_SAT_O2 <span>(Details : {https://rtmms.nist.gov code '150456' = '??', given as 'MDC_PULS_OXIM_SAT_O2'})</span></p><p><b>identifier</b>: 345675</p><p><b>unit</b>: MDC_DIM_PERCENT <span>(Details : {https://rtmms.nist.gov code '262688' = '??', given as 'MDC_DIM_PERCENT'})</span></p><p><b>category</b>: measurement</p></div>"
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "https://rtmms.nist.gov",
+        "code": "150456",
+        "display": "MDC_PULS_OXIM_SAT_O2"
+      }
+    ]
+  },
+  "identifier": {
+    "system": "http://goodcare.org/devicemetric/id",
+    "value": "345675"
+  },
+  "unit": {
+    "coding": [
+      {
+        "system": "https://rtmms.nist.gov",
+        "code": "262688",
+        "display": "MDC_DIM_PERCENT"
+      }
+    ]
+  },
+  "category": "measurement"
+}

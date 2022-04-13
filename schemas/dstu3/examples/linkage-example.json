@@ -1,0 +1,24 @@
+{
+  "resourceType": "Linkage",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p><b>Source:</b> Condition/example - <i>Severe burn of left ear (Date: 24-May 2012)</i></p>\n      <p><b>Alternate:</b> Condition/condition-example - <i>Severe burn of left ear (Date: 24-May 2012)</i></p>\n    </div>"
+  },
+  "item": [
+    {
+      "type": "source",
+      "resource": {
+        "reference": "Condition/example",
+        "display": "Severe burn of left ear (Date: 24-May 2012)"
+      }
+    },
+    {
+      "type": "alternate",
+      "resource": {
+        "reference": "Condition/condition-example",
+        "display": "Severe burn of left ear (Date: 24-May 2012)"
+      }
+    }
+  ]
+}

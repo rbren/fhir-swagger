@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "testscript-profile-destination-types",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>TestScriptProfileDestinationType</h2><p>This value set defines a set of codes that are used to indicate the profile type of a test system when acting as the destination within a TestScript.</p><p>This code system http://hl7.org/fhir/testscript-profile-destination-types defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>FHIR-Server<a name=\"FHIR-Server\"> </a></td><td>FHIR Server</td><td>General FHIR server used to respond to operations sent from a FHIR client.</td></tr><tr><td>FHIR-SDC-FormManager<a name=\"FHIR-SDC-FormManager\"> </a></td><td>FHIR SDC FormManager</td><td>A FHIR server acting as a Structured Data Capture Form Manager.</td></tr><tr><td>FHIR-SDC-FormProcessor<a name=\"FHIR-SDC-FormProcessor\"> </a></td><td>FHIR SDC FormProcessor</td><td>A FHIR server acting as a Structured Data Capture Form Processor.</td></tr><tr><td>FHIR-SDC-FormReceiver<a name=\"FHIR-SDC-FormReceiver\"> </a></td><td>FHIR SDC FormReceiver</td><td>A FHIR server acting as a Structured Data Capture Form Receiver.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.558"
+    }
+  ],
+  "url": "http://hl7.org/fhir/testscript-profile-destination-types",
+  "version": "1.4.0",
+  "name": "TestScriptProfileDestinationType",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines a set of codes that are used to indicate the profile type of a test system when acting as the destination within a TestScript.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/testscript-profile-destination-types",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "FHIR-Server",
+      "display": "FHIR Server",
+      "definition": "General FHIR server used to respond to operations sent from a FHIR client."
+    },
+    {
+      "code": "FHIR-SDC-FormManager",
+      "display": "FHIR SDC FormManager",
+      "definition": "A FHIR server acting as a Structured Data Capture Form Manager."
+    },
+    {
+      "code": "FHIR-SDC-FormProcessor",
+      "display": "FHIR SDC FormProcessor",
+      "definition": "A FHIR server acting as a Structured Data Capture Form Processor."
+    },
+    {
+      "code": "FHIR-SDC-FormReceiver",
+      "display": "FHIR SDC FormReceiver",
+      "definition": "A FHIR server acting as a Structured Data Capture Form Receiver."
+    }
+  ]
+}

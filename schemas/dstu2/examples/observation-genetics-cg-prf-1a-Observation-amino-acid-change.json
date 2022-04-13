@@ -1,0 +1,11 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-amino-acid-change",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-amino-acid-change",
+  "name": "amino-acid-change",
+  "code": "amino-acid-change",
+  "base": "Observation",
+  "type": "string",
+  "description": "HGVS Protein Change",
+  "xpathUsage": "normal"
+}

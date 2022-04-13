@@ -1,0 +1,13 @@
+{
+  "resourceType": "Encounter",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>Encounter with patient @example</div>"
+  },
+  "status": "in-progress",
+  "class": "inpatient",
+  "patient": {
+    "reference": "Patient/example"
+  }
+}

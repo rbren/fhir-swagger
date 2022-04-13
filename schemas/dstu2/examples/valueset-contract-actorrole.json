@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "id": "contract-actorrole",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Contract Actor Role Codes</h2><p>This value set includes sample Contract Actor Role codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://www.hl7.org/fhir/contractactorrole, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>practitioner<a name=\"practitioner\"> </a></td><td>Practitioner</td><td/></tr><tr><td>patient<a name=\"patient\"> </a></td><td>Patient</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.102"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/contract-actorrole",
+  "version": "1.0.2",
+  "name": "Contract Actor Role Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "CBCC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "This value set includes sample Contract Actor Role codes.",
+  "copyright": "This is an example set.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.102"
+      }
+    ],
+    "system": "http://www.hl7.org/fhir/contractactorrole",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "practitioner",
+        "display": "Practitioner"
+      },
+      {
+        "code": "patient",
+        "display": "Patient"
+      }
+    ]
+  }
+}

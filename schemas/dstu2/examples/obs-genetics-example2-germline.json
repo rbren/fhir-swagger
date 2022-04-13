@@ -1,0 +1,142 @@
+{
+  "resourceType": "Observation",
+  "id": "genetics-example2-germline",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: genetics-example2-germline</p><p><b>status</b>: final</p><p><b>code</b>: BRCA1 gene mutation analysis <span>(Details : {LOINC code '21636-6' = 'BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal', given as 'BRCA1 gene mutation analysis'})</span></p><p><b>subject</b>: <a>Molecular Lab Patient ID: HOSP-23456</a></p><p><b>performer</b>: <a>Molecular Diagnostic Laboratory</a></p><p><b>specimen</b>: <a>Molecular Specimen ID: MLD45-Z4-1234</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomeBuild",
+      "valueString": "GRCh 37"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsChromosome",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.ncbi.nlm.nih.gov/gene",
+            "code": "NC_000017"
+          }
+        ],
+        "text": "Homo sapiens chromosome 17"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomicStart",
+      "valueInteger": 41258504
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomicStop",
+      "valueInteger": 41258505
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsReferenceAllele",
+      "valueString": "A"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsObservedAllele",
+      "valueString": "C"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGene",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.genenames.org",
+            "code": "1100",
+            "display": "BRCA1"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsDNASequenceVariation",
+      "valueString": "c.181T>G"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsVariationId",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.ncbi.nlm.nih.gov/clinvar",
+            "code": "17661",
+            "display": "c.181T>G"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsDNARegionName",
+      "valueString": "Exon 4"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsDNASequenceVariationType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6690-7",
+            "display": "Substitution"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsAminoAcidChange",
+      "valueString": "p.Cys61Gly"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsGenomicSourceClass",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6683-2",
+            "display": "Germline"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsSpecies",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "337915000"
+          }
+        ],
+        "text": "Homo sapiens"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/geneticsCIGAR",
+      "valueString": "1M"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "21636-6",
+        "display": "BRCA1 gene mutation analysis"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/genetics-example2-germline",
+    "display": "Molecular Lab Patient ID: HOSP-23456"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/genetics-example2-germline",
+      "display": "Molecular Diagnostic Laboratory"
+    }
+  ],
+  "specimen": {
+    "reference": "Specimen/genetics-example2-germline",
+    "display": "Molecular Specimen ID: MLD45-Z4-1234"
+  }
+}

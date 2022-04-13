@@ -1,0 +1,139 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-admissionSource",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Admission Source value set</h2><p>Select Intermountain Healthcare HDD code system values.</p><p><b>Copyright Statement:</b> Intermountain Healthcare</p><p>This code system http://hl7.org/fhir/hspc-admissionSource defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>102702<a name=\"102702\"> </a></td><td>Clinic Referral</td><td>The source of admission is from a clinic.</td></tr><tr><td>17567<a name=\"17567\"> </a></td><td>Court/Law Enforcement</td><td>The source of admission is from a court or law enforcement</td></tr><tr><td>17566<a name=\"17566\"> </a></td><td>Emergency Room</td><td>The source of admission is from an emergency department</td></tr><tr><td>528129525<a name=\"528129525\"> </a></td><td>From Home Or Work</td><td>The source of admission is from the individual's place of residence or employment</td></tr><tr><td>102703<a name=\"102703\"> </a></td><td>HMO Referral</td><td>The source of referral is from a health management organization</td></tr><tr><td>219107<a name=\"219107\"> </a></td><td>In-Hospital Transfer</td><td>The source of admission is a transfer from one area of the hospital to another</td></tr><tr><td>528129526<a name=\"528129526\"> </a></td><td>Newborn From an Outside Hospital</td><td>The source of the newborn admission is from a facility not associate with the organization</td></tr><tr><td>154642<a name=\"154642\"> </a></td><td>Normal Newborn</td><td>The source of admission is a routine birth of a newborn at an internal birthing facility</td></tr><tr><td>102701<a name=\"102701\"> </a></td><td>Physician Referral</td><td>The patient was referred for admission by a physician</td></tr><tr><td>528129527<a name=\"528129527\"> </a></td><td>Premature newborn within the hospital</td><td>The source of admission is a premature birth at an internal birthing facility</td></tr><tr><td>510105657<a name=\"510105657\"> </a></td><td>Readmission to Same HHA</td><td>The patient was readmitted to the same home health agency as the previous admission</td></tr><tr><td>528129528<a name=\"528129528\"> </a></td><td>Sick newborn within a hospital</td><td>The admission is due to an infant becoming ill at an internal neborn facility</td></tr><tr><td>510105655<a name=\"510105655\"> </a></td><td>Transfer From A Critical Access Hospital</td><td>The source of admission is an external critical care access facility</td></tr><tr><td>102704<a name=\"102704\"> </a></td><td>Transfer from a Hospital</td><td>The source of admission is an external hospital</td></tr><tr><td>14689616<a name=\"14689616\"> </a></td><td>Transfer from a SNF</td><td>The source of admission is a transfer from a skilled nursing facility</td></tr><tr><td>528129529<a name=\"528129529\"> </a></td><td>Transfer From Acute Care Hospital</td><td>The source of admission is a transfer from an acute care hospital</td></tr><tr><td>520442099<a name=\"520442099\"> </a></td><td>Transfer From Ambulatory Surgery Center</td><td>The source of admission is a transfer from an ambulatory surgery facility</td></tr><tr><td>14690444<a name=\"14690444\"> </a></td><td>Transfer from Other Facility</td><td>The source of admission is a transfer from an external facility</td></tr><tr><td>510105656<a name=\"510105656\"> </a></td><td>Transfer From Another HHA</td><td>The source of admission is a transfer from an external home health agency</td></tr><tr><td>528129530<a name=\"528129530\"> </a></td><td>Transfer from hospice</td><td>The source of admission is a transfer from a hospice facility</td></tr><tr><td>510105654<a name=\"510105654\"> </a></td><td>Transfer From Pysch, Substance Abuse or Rehab Hosp</td><td>The source of admission is a transfer from a psychiatric, substance abuse, or rehabilitation facility</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.144"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-admissionSource",
+  "version": "0.01",
+  "name": "HSPC Admission Source value set",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "date": "2015-08-05T17:00:00+03:00",
+  "description": "Select Intermountain Healthcare HDD code system values.",
+  "copyright": "Intermountain Healthcare",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-admissionSource",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "102702",
+      "display": "Clinic Referral",
+      "definition": "The source of admission is from a clinic."
+    },
+    {
+      "code": "17567",
+      "display": "Court/Law Enforcement",
+      "definition": "The source of admission is from a court or law enforcement"
+    },
+    {
+      "code": "17566",
+      "display": "Emergency Room",
+      "definition": "The source of admission is from an emergency department"
+    },
+    {
+      "code": "528129525",
+      "display": "From Home Or Work",
+      "definition": "The source of admission is from the individual's place of residence or employment"
+    },
+    {
+      "code": "102703",
+      "display": "HMO Referral",
+      "definition": "The source of referral is from a health management organization"
+    },
+    {
+      "code": "219107",
+      "display": "In-Hospital Transfer",
+      "definition": "The source of admission is a transfer from one area of the hospital to another"
+    },
+    {
+      "code": "528129526",
+      "display": "Newborn From an Outside Hospital",
+      "definition": "The source of the newborn admission is from a facility not associate with the organization"
+    },
+    {
+      "code": "154642",
+      "display": "Normal Newborn",
+      "definition": "The source of admission is a routine birth of a newborn at an internal birthing facility"
+    },
+    {
+      "code": "102701",
+      "display": "Physician Referral",
+      "definition": "The patient was referred for admission by a physician"
+    },
+    {
+      "code": "528129527",
+      "display": "Premature newborn within the hospital",
+      "definition": "The source of admission is a premature birth at an internal birthing facility"
+    },
+    {
+      "code": "510105657",
+      "display": "Readmission to Same HHA",
+      "definition": "The patient was readmitted to the same home health agency as the previous admission"
+    },
+    {
+      "code": "528129528",
+      "display": "Sick newborn within a hospital",
+      "definition": "The admission is due to an infant becoming ill at an internal neborn facility"
+    },
+    {
+      "code": "510105655",
+      "display": "Transfer From A Critical Access Hospital",
+      "definition": "The source of admission is an external critical care access facility"
+    },
+    {
+      "code": "102704",
+      "display": "Transfer from a Hospital",
+      "definition": "The source of admission is an external hospital"
+    },
+    {
+      "code": "14689616",
+      "display": "Transfer from a SNF",
+      "definition": "The source of admission is a transfer from a skilled nursing facility"
+    },
+    {
+      "code": "528129529",
+      "display": "Transfer From Acute Care Hospital",
+      "definition": "The source of admission is a transfer from an acute care hospital"
+    },
+    {
+      "code": "520442099",
+      "display": "Transfer From Ambulatory Surgery Center",
+      "definition": "The source of admission is a transfer from an ambulatory surgery facility"
+    },
+    {
+      "code": "14690444",
+      "display": "Transfer from Other Facility",
+      "definition": "The source of admission is a transfer from an external facility"
+    },
+    {
+      "code": "510105656",
+      "display": "Transfer From Another HHA",
+      "definition": "The source of admission is a transfer from an external home health agency"
+    },
+    {
+      "code": "528129530",
+      "display": "Transfer from hospice",
+      "definition": "The source of admission is a transfer from a hospice facility"
+    },
+    {
+      "code": "510105654",
+      "display": "Transfer From Pysch, Substance Abuse or Rehab Hosp",
+      "definition": "The source of admission is a transfer from a psychiatric, substance abuse, or rehabilitation facility"
+    }
+  ]
+}

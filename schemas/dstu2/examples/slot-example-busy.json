@@ -1,0 +1,30 @@
+{
+  "resourceType": "Slot",
+  "id": "1",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n\t\t\t25 Dec 2013 9:00am - 9:15am: <b>Busy</b> Physiotherapy\n\t\t</div>"
+  },
+  "identifier": [
+    {
+      "system": "http://example.org/identifiers/slots",
+      "value": "123132"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "45",
+        "display": "Physiotherapy"
+      }
+    ]
+  },
+  "schedule": {
+    "reference": "Schedule/example"
+  },
+  "freeBusyType": "busy",
+  "start": "2013-12-25T09:00:00Z",
+  "end": "2013-12-25T09:15:00Z",
+  "overbooked": true,
+  "comment": "Assessments should be performed before requesting appointments in this slot."
+}

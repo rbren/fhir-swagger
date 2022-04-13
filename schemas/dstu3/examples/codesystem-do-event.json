@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "uslab-do-event",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>USLAB Diagnostic Order Event Codes</h2><p>US Realm ambulatory care event codes that correspond the Use cases outlined in the USLabOrder Implementation Guide.</p><p>This code system http://hl7.org/fhir/uslab-event defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>new-request<a name=\"new-request\"> </a></td><td>new request</td><td>a Provider (.orderer) orders one or more new laboratory tests or scheduled laboratory tests (including future tests) to be performed by a laboratory. </td></tr><tr><td>add-on-request<a name=\"add-on-request\"> </a></td><td>add-on request</td><td>a Provider (.orderer) adds one or more additional tests to a previously transmitted test requisition.</td></tr><tr><td>orderer-cancel<a name=\"orderer-cancel\"> </a></td><td>orderer cancel</td><td>The Provider (orderer) requests cancelation of previously ordered test.</td></tr><tr><td>lab-cancel<a name=\"lab-cancel\"> </a></td><td>laboratory cancel</td><td>The laboratory cancels a previously ordered test.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.565"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uslab-event",
+  "version": "1.4.0",
+  "name": "USLAB Diagnostic Order Event Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Orders and Observations Working Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "US Realm ambulatory care event codes that correspond the Use cases outlined in the USLabOrder Implementation Guide.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/uslab-do-event",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "new-request",
+      "display": "new request",
+      "definition": "a Provider (.orderer) orders one or more new laboratory tests or scheduled laboratory tests (including future tests) to be performed by a laboratory. "
+    },
+    {
+      "code": "add-on-request",
+      "display": "add-on request",
+      "definition": "a Provider (.orderer) adds one or more additional tests to a previously transmitted test requisition."
+    },
+    {
+      "code": "orderer-cancel",
+      "display": "orderer cancel",
+      "definition": "The Provider (orderer) requests cancelation of previously ordered test."
+    },
+    {
+      "code": "lab-cancel",
+      "display": "laboratory cancel",
+      "definition": "The laboratory cancels a previously ordered test."
+    }
+  ]
+}

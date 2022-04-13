@@ -1,0 +1,53 @@
+{
+  "resourceType": "MedicationOrder",
+  "id": "medrx008",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Name: Gentamicin 80mg/100ml IV</p>\n      <p><b>80mg IV over one hour</b></p>\n    </div>"
+  },
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/medicationexample17"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Gentamicin 80mg IV over one hour",
+      "timing": {
+        "repeat": {
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47625008",
+            "display": "Intravenous route"
+          }
+        ]
+      },
+      "doseQuantity": {
+        "value": 80,
+        "unit": "mg",
+        "system": "http://unitsofmeasure.org",
+        "code": "mg"
+      },
+      "rateRatio": {
+        "numerator": {
+          "value": 80,
+          "unit": "mg",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg"
+        },
+        "denominator": {
+          "value": 60,
+          "unit": "minutes",
+          "system": "http://snomed.info/sct",
+          "code": "258702006"
+        }
+      }
+    }
+  ]
+}

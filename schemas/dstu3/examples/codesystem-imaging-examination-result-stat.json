@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-imaging-examination-result-stat",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ImagingExaminationResultStatusValues</h2><p>Set of values for the imaging examination result status.</p><p>This code system http://hl7.org/fhir/imaging-examination-result-stat defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1<a name=\"1\"> </a></td><td>Registered</td><td>No result yet available.</td></tr><tr><td>2<a name=\"2\"> </a></td><td>Interim</td><td>This is an initial or interim result: data may be missing or verification has not been performed.</td></tr><tr><td>3<a name=\"3\"> </a></td><td>Final</td><td>The result is complete and verified by the responsible radiologist.</td></tr><tr><td>4<a name=\"4\"> </a></td><td>Amended</td><td>The result has been modified subsequent to being Final, and is complete and verified by the radiologist.</td></tr><tr><td>5<a name=\"5\"> </a></td><td>Cancelled/Aborted</td><td>The result is not available because the examination was not started or completed.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.859"
+    }
+  ],
+  "url": "http://hl7.org/fhir/imaging-examination-result-stat",
+  "version": "1.4.0",
+  "name": "ImagingExaminationResultStatusValues",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Set of values for the imaging examination result status.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-imaging-examination-result-stat",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Registered",
+      "definition": "No result yet available."
+    },
+    {
+      "code": "2",
+      "display": "Interim",
+      "definition": "This is an initial or interim result: data may be missing or verification has not been performed."
+    },
+    {
+      "code": "3",
+      "display": "Final",
+      "definition": "The result is complete and verified by the responsible radiologist."
+    },
+    {
+      "code": "4",
+      "display": "Amended",
+      "definition": "The result has been modified subsequent to being Final, and is complete and verified by the radiologist."
+    },
+    {
+      "code": "5",
+      "display": "Cancelled/Aborted",
+      "definition": "The result is not available because the examination was not started or completed."
+    }
+  ]
+}

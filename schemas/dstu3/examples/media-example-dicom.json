@@ -1,0 +1,92 @@
+{
+  "resourceType": "Media",
+  "id": "1.2.840.11361907579238403408700.3.0.14.19970327150033",
+  "text": {
+    "fhir_comments": [
+      " \n    This example demonstrates how to represent an image \n    originally sourced by a DICOM acquisition device\n    as a Media resource. Whether this is appropriate depends\n    on the complexity of the image - the media resource only\n    contains crude metadata, and plain png/jpg (typically)\n    pixels. This is suitable for the bulk of simple images\n    shared as summaries with consumers, but not at all suitable \n    for other kinds of images, or for internal radiology \n    reporting usage    \n   "
+    ],
+    "status": "generated",
+    "div": "<div>\n      Ultrasound Image on patient &quot;James Chalmers&quot;:<br/>\n      <img alt=\"WADO reference to image\" src=\"http://imaging.acme.com/wado/server?requestType=WADO&amp;contentType=application%2Fdicom&amp;studyUid=1.2.840.113619.2.21.848.34082.0.538976288.3&amp;seriesUid=1.2.840.113619.2.21.3408.700.0.757923840.3.0&amp;objectUid=1.2.840.11361907579238403408700.3.0.14.19970327150033\"/>\n        \n    </div>"
+  },
+  "extension": [
+    {
+      "fhir_comments": [
+        "  \n    this is added to demonstrate the use of DICOM extensions.\n    0002,0010 is the DICOM transfer syntax of the referenced image\n    "
+      ],
+      "url": "http://nema.org/fhir/extensions#0002-0010",
+      "valueUri": "urn:oid:1.2.840.10008.1.2.1"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "text": "InstanceUID"
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.840.11361907579238403408700.3.0.14.19970327150033"
+    },
+    {
+      "type": {
+        "text": "accessionNo"
+      },
+      "system": "http://acme-imaging.com/accession/2012",
+      "_system": {
+        "fhir_comments": [
+          "  the imaging department accession number. (they recycle numbers each year)  "
+        ]
+      },
+      "value": "1234567"
+    },
+    {
+      "type": {
+        "text": "studyId"
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.840.113619.2.21.848.34082.0.538976288.3"
+    },
+    {
+      "type": {
+        "text": "seriesId"
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.2.840.113619.2.21.3408.700.0.757923840.3.0"
+    }
+  ],
+  "type": "photo",
+  "subtype": {
+    "coding": [
+      {
+        "system": "http://nema.org/dicom/dicm",
+        "code": "US"
+      }
+    ]
+  },
+  "view": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "399067008",
+        "display": "Lateral projection"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "deviceName": "G.E. Medical Systems",
+  "height": 480,
+  "width": 640,
+  "content": {
+    "fhir_comments": [
+      "  and a reference to the image data  "
+    ],
+    "contentType": "application/dicom",
+    "url": "http://imaging.acme.com/wado/server?requestType=WADO&contentType=application%2Fdicom&studyUid=1.2.840.113619.2.21.848.34082.0.538976288.3&seriesUid=1.2.840.113619.2.21.3408.700.0.757923840.3.0&objectUid=1.2.840.11361907579238403408700.3.0.14.19970327150033",
+    "_url": {
+      "fhir_comments": [
+        "  The actual image could be anywhere. This is a WADO example  "
+      ]
+    }
+  }
+}

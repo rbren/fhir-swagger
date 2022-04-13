@@ -1,0 +1,32 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "break-the-glass",
+  "_id": {
+    "fhir_comments": [
+      "  :md: \nThis is an example of a operation outcome that would be returned\nas part of a set of search results (e.g. in the bundle with search.mode = outcome)\nto indicate that additional results may be available using the break-the-glass\nprotocol. The correct use of this is discussed on the [security labels](security-labels.html#break-the-glass) page\n "
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      <p>Additional information may be available using the Break-The-Glass Protocol</p>\n    </div>"
+  },
+  "issue": [
+    {
+      "severity": "information",
+      "code": "suppressed",
+      "details": {
+        "coding": [
+          {
+            "fhir_comments": [
+              "  this is not really the right code; it's being used at cross -purposes to it's definition.\n        todo: get a more correct concept defined  "
+            ],
+            "system": "http://hl7.org/fhir/v3-ActReason",
+            "code": "ETREAT",
+            "display": "Emergency Treatment"
+          }
+        ],
+        "text": "Additional information may be available using the Break-The-Glass Protocol"
+      }
+    }
+  ]
+}

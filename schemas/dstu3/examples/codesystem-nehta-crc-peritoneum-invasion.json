@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-crc-peritoneum-invasion",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NehtaPeritoneumInvasion</h2><p>Any involvement of the peritoneum should be recorded.</p><p>This code system http://hl7.org/fhir/nehta-crc-peritoneum-invasion defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>tumour_invades_to_peritoneal_surface<a name=\"tumour_invades_to_peritoneal_surface\"> </a></td><td>Tumour invades to the peritoneal surface</td><td>Tumour invades to the peritoneal surface</td></tr><tr><td>tumour_formed_nodule(s)_discrete_from_tumour_mass_along_the_serosal_surface<a name=\"tumour_formed_nodule.40s.41_discrete_from_tumour_mass_along_the_serosal_surface\"> </a></td><td>Tumour has formed nodule(s) discrete from the tumour mass along the serosal surface</td><td>Tumour has formed nodule(s) discrete from the tumour mass along the serosal surface</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.786"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-crc-peritoneum-invasion",
+  "version": "20150619",
+  "name": "NehtaPeritoneumInvasion",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Any involvement of the peritoneum should be recorded.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-crc-peritoneum-invasion",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "tumour_invades_to_peritoneal_surface",
+      "display": "Tumour invades to the peritoneal surface",
+      "definition": "Tumour invades to the peritoneal surface"
+    },
+    {
+      "code": "tumour_formed_nodule(s)_discrete_from_tumour_mass_along_the_serosal_surface",
+      "display": "Tumour has formed nodule(s) discrete from the tumour mass along the serosal surface",
+      "definition": "Tumour has formed nodule(s) discrete from the tumour mass along the serosal surface"
+    }
+  ]
+}

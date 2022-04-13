@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "measure-scoring",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>MeasureScoring</h2><p>The scoring type of the measure</p><p>This code system http://hl7.org/fhir/measure-scoring defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>proportion<a name=\"proportion\"> </a></td><td>Proportion</td><td>The measure score is defined using a proportion</td></tr><tr><td>ratio<a name=\"ratio\"> </a></td><td>Ratio</td><td>The measure score is defined using a ratio</td></tr><tr><td>continuous-variable<a name=\"continuous-variable\"> </a></td><td>Continuous Variable</td><td>The score is defined by a calculation of some quantity</td></tr><tr><td>cohort<a name=\"cohort\"> </a></td><td>Cohort</td><td>The measure is a cohort definition</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.539"
+    }
+  ],
+  "url": "http://hl7.org/fhir/measure-scoring",
+  "version": "1.4.0",
+  "name": "MeasureScoring",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The scoring type of the measure",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/measure-scoring",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "proportion",
+      "display": "Proportion",
+      "definition": "The measure score is defined using a proportion"
+    },
+    {
+      "code": "ratio",
+      "display": "Ratio",
+      "definition": "The measure score is defined using a ratio"
+    },
+    {
+      "code": "continuous-variable",
+      "display": "Continuous Variable",
+      "definition": "The score is defined by a calculation of some quantity"
+    },
+    {
+      "code": "cohort",
+      "display": "Cohort",
+      "definition": "The measure is a cohort definition"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-tumour-stage-grouping",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>TumourStageGrouping</h2><p>A code that records tumour stage grouping</p><p>This code system http://hl7.org/fhir/tumour-stage-grouping defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>0<a name=\"0\"> </a></td><td>0 Tis N0 M0</td><td/></tr><tr><td>i<a name=\"i\"> </a></td><td>I T1 N0 M0\n  T2 N0 M0</td><td/></tr><tr><td>iia<a name=\"iia\"> </a></td><td>IIA T3 N0 M0</td><td/></tr><tr><td>iib<a name=\"iib\"> </a></td><td>IIB T4a N0 M0</td><td/></tr><tr><td>iic<a name=\"iic\"> </a></td><td>IIC T4b N0 M0</td><td/></tr><tr><td>iiia<a name=\"iiia\"> </a></td><td>IIIA T1-T2 N1/N1c M0\n       T1       N2a        M0</td><td/></tr><tr><td>iiib<a name=\"iiib\"> </a></td><td>IIIB T3-T4a N1/N1c M0\n       T2-T3   N2a        M0\n       T1-T2   N2b        M0</td><td/></tr><tr><td>iiic<a name=\"iiic\"> </a></td><td>IIIC T4a       N2a      M0\n       T3-T4a N2b      M0\n       T4b       N1-N2 M0</td><td/></tr><tr><td>iva<a name=\"iva\"> </a></td><td>IVA Any T Any N M1a</td><td/></tr><tr><td>ivb<a name=\"ivb\"> </a></td><td>IVB Any T Any N M1b</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.816"
+    }
+  ],
+  "url": "http://hl7.org/fhir/tumour-stage-grouping",
+  "version": "1.4.0",
+  "name": "TumourStageGrouping",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "A code that records tumour stage grouping",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-tumour-stage-grouping",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "0",
+      "display": "0 Tis N0 M0"
+    },
+    {
+      "code": "i",
+      "display": "I T1 N0 M0\n  T2 N0 M0"
+    },
+    {
+      "code": "iia",
+      "display": "IIA T3 N0 M0"
+    },
+    {
+      "code": "iib",
+      "display": "IIB T4a N0 M0"
+    },
+    {
+      "code": "iic",
+      "display": "IIC T4b N0 M0"
+    },
+    {
+      "code": "iiia",
+      "display": "IIIA T1-T2 N1/N1c M0\n       T1       N2a        M0"
+    },
+    {
+      "code": "iiib",
+      "display": "IIIB T3-T4a N1/N1c M0\n       T2-T3   N2a        M0\n       T1-T2   N2b        M0"
+    },
+    {
+      "code": "iiic",
+      "display": "IIIC T4a       N2a      M0\n       T3-T4a N2b      M0\n       T4b       N1-N2 M0"
+    },
+    {
+      "code": "iva",
+      "display": "IVA Any T Any N M1a"
+    },
+    {
+      "code": "ivb",
+      "display": "IVB Any T Any N M1b"
+    }
+  ]
+}

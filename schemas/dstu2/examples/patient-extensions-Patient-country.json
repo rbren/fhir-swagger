@@ -1,0 +1,12 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "patient-extensions-Patient-country",
+  "url": "http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-country",
+  "name": "country",
+  "code": "country",
+  "base": "Patient",
+  "type": "string",
+  "description": "Return records where one of the patient addresses matches on country.",
+  "xpath": "f:Patient/f:address/f:country",
+  "xpathUsage": "normal"
+}

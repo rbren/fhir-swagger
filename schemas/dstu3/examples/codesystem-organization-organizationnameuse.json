@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-organization-organizationnameuse",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Organization Name Use</h2><p>The set of codes that describe use of an organization's name.</p><p>This code system http://hl7,org/fhir/organization-hspc-organizationnameuse defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>526758025<a name=\"526758025\"> </a></td><td>Stock Exchange Name</td><td>A name used to represent the organization in a stock exchange market.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.714"
+    }
+  ],
+  "url": "http://hl7,org/fhir/organization-hspc-organizationnameuse",
+  "version": "0.01",
+  "name": "HSPC Organization Name Use",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HSPC",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://healthcaresoa.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-05-18T17:00:00+03:00",
+  "description": "The set of codes that describe use of an organization's name.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-organization-organizationnameuse",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "526758025",
+      "display": "Stock Exchange Name",
+      "definition": "A name used to represent the organization in a stock exchange market."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "MedicationOrder",
+  "id": "medrx002",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medrx002</p><p><b>identifier</b>: 12345 (OFFICIAL)</p><p><b>dateWritten</b>: 01/03/2015</p><p><b>status</b>: active</p><p><b>patient</b>: <a>Eve Everywoman</a></p><p><b>prescriber</b>: <a>Patricia Primary</a></p><p><b>encounter</b>: <a>encounter who leads to this prescription</a></p><p><b>reason</b>: Osteoporosis <span>(Details : {SNOMED CT code '64859006' = '64859006', given as 'Osteoporosis'})</span></p><p><b>medication</b>: <a>prescribed medication</a></p><h3>DosageInstructions</h3><table><tr><td>-</td><td><b>Text</b></td></tr><tr><td>*</td><td>Take one tablet daily as directed</td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://www.bmc.nl/portal/prescriptions",
+      "value": "12345"
+    }
+  ],
+  "dateWritten": "2015-03-01",
+  "status": "active",
+  "patient": {
+    "reference": "Patient/f001",
+    "display": "Eve Everywoman"
+  },
+  "prescriber": {
+    "reference": "Practitioner/f007",
+    "display": "Patricia Primary"
+  },
+  "encounter": {
+    "reference": "Encounter/f002",
+    "display": "encounter who leads to this prescription"
+  },
+  "reasonCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "64859006",
+        "display": "Osteoporosis"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/MedicationExample5",
+    "display": "prescribed medication"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Take one tablet daily as directed"
+    }
+  ]
+}

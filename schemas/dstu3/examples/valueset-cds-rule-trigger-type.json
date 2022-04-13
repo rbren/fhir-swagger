@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "cds-rule-trigger-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>DecisionSupportRuleTriggerType</h2><p>The type of trigger</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-cds-rule-trigger-type.html\">http://hl7.org/fhir/cds-rule-trigger-type</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.498"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/cds-rule-trigger-type",
+  "version": "1.4.0",
+  "name": "DecisionSupportRuleTriggerType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The type of trigger",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/cds-rule-trigger-type"
+      }
+    ]
+  }
+}

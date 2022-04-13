@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "hspc-vitalsignassociatedprecond",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>HSPC Vital Sign Associated Precondition</h2><p>SELECT SNOMED CT code system values descending from 'Qualifier value' (362981000).</p><p><b>Copyright Statement:</b> TBD</p><p>This code system http://hl7.org/fhir/hspc-vitalsignassociatedprecond defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1942<a name=\"1942\"> </a></td><td>After cardioversion</td><td>Occurred after the cardioversion procedure</td></tr><tr><td>1966<a name=\"1966\"> </a></td><td>Before cardioversion</td><td>Occurred before the cardioversion procedure</td></tr><tr><td>2029<a name=\"2029\"> </a></td><td>During cardioversion</td><td>Occurred during the cardioversion procedure</td></tr><tr><td>219101<a name=\"219101\"> </a></td><td>At birth</td><td>Occurred at birth</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.713"
+    }
+  ],
+  "url": "http://hl7.org/fhir/hspc-vitalsignassociatedprecond",
+  "version": "0.01",
+  "name": "HSPC Vital Sign Associated Precondition",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Health Services Platform Consortium (HSPC)",
+  "date": "2015-06-10T17:00:00+03:00",
+  "description": "SELECT SNOMED CT code system values descending from 'Qualifier value' (362981000).",
+  "copyright": "TBD",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/hspc-vitalsignassociatedprecond",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1942",
+      "display": "After cardioversion",
+      "definition": "Occurred after the cardioversion procedure"
+    },
+    {
+      "code": "1966",
+      "display": "Before cardioversion",
+      "definition": "Occurred before the cardioversion procedure"
+    },
+    {
+      "code": "2029",
+      "display": "During cardioversion",
+      "definition": "Occurred during the cardioversion procedure"
+    },
+    {
+      "code": "219101",
+      "display": "At birth",
+      "definition": "Occurred at birth"
+    }
+  ]
+}

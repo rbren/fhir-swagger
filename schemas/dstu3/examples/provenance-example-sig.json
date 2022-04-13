@@ -1,0 +1,70 @@
+{
+  "resourceType": "Provenance",
+  "id": "signature",
+  "text": {
+    "status": "generated",
+    "div": "<div>procedure record authored on 27-June 2015 by Harold Hippocrates, MD Content extracted from Referral received 26-June</div>"
+  },
+  "target": [
+    {
+      "fhir_comments": [
+        "  \n    where possible, provenance targets should be version specific,\n    so that there is no ambiguity about which version of the \n    record this relates to\n   "
+      ],
+      "reference": "DocumentReference/example"
+    }
+  ],
+  "recorded": "2015-08-27T08:39:24+10:00",
+  "reason": [
+    {
+      "system": "http://hl7.org/fhir/v3/ActReason",
+      "code": "TREAT",
+      "display": "treatment"
+    }
+  ],
+  "activity": {
+    "system": "http://hl7.org/fhir/v3/DocumentCompletion",
+    "code": "AU",
+    "display": "authenticated"
+  },
+  "agent": [
+    {
+      "fhir_comments": [
+        "  signer = Harold Hippocrates  "
+      ],
+      "role": {
+        "system": "http://hl7.org/fhir/provenance-participant-role",
+        "code": "verifier"
+      },
+      "actor": {
+        "reference": "Practitioner/xcda-author"
+      },
+      "userId": {
+        "fhir_comments": [
+          "  very often, the user won't have a known system - these aren't available \n      for security system log ons. But where you can define it, you should  "
+        ],
+        "system": "http://acme.com/fhir/users/sso",
+        "value": "hhd"
+      }
+    }
+  ],
+  "signature": [
+    {
+      "type": [
+        {
+          "fhir_comments": [
+            "  verification signature  "
+          ],
+          "system": "http://hl7.org/fhir/valueset-signature-type",
+          "code": "1.2.840.10065.1.12.1.5",
+          "display": "Verification Signature"
+        }
+      ],
+      "when": "2015-08-27T08:39:24+10:00",
+      "whoReference": {
+        "reference": "Practitioner/xcda-author"
+      },
+      "contentType": "application/signature+xml",
+      "blob": "Li4u"
+    }
+  ]
+}

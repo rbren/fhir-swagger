@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "flag-category",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Flag Category</h2><p>Example list of detail codes for flagged issues. (Not complete or necessarily appropriate.)</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-flag-category.html\">http://hl7.org/fhir/flag-category</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.403"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/flag-category",
+  "version": "1.4.0",
+  "name": "Flag Category",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 International - Patient Care WG",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Example list of detail codes for flagged issues. (Not complete or necessarily appropriate.)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/flag-category"
+      }
+    ]
+  }
+}

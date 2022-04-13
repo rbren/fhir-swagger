@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "contract-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Contract Type Codes</h2><p>This value set includes sample Contract Type codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/contracttypecodes defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td></tr><tr><td>privacy<a name=\"privacy\"> </a></td><td/></tr><tr><td>disclosure<a name=\"disclosure\"> </a></td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.95"
+    }
+  ],
+  "url": "http://hl7.org/fhir/contracttypecodes",
+  "version": "1.4.0",
+  "name": "Contract Type Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes sample Contract Type codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/contract-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "privacy"
+    },
+    {
+      "code": "disclosure"
+    }
+  ]
+}

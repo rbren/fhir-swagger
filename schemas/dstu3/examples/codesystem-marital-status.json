@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "marital-status",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Marital Status Codes</h2><p>This value set defines the set of codes that can be used to indicate the marital status of a person.</p><p>This code system http://hl7.org/fhir/marital-status defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>U<a name=\"U\"> </a></td><td>Unmarried</td><td>The person is not presently married. The marital history is not known or stated.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.19"
+    }
+  ],
+  "url": "http://hl7.org/fhir/marital-status",
+  "version": "1.4.0",
+  "name": "Marital Status Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/marital-status",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "U",
+      "display": "Unmarried",
+      "definition": "The person is not presently married. The marital history is not known or stated."
+    }
+  ]
+}

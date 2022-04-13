@@ -1,0 +1,33 @@
+{
+  "resourceType": "Condition",
+  "id": "f205",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f205</p><p><b>patient</b>: <a>Roel</a></p><p><b>asserter</b>: <a>Practitioner/f201</a></p><p><b>dateRecorded</b>: 04/04/2013</p><p><b>code</b>: Bacterial infectious disease <span>(Details : {SNOMED CT code '87628006' = 'Bacterial infectious disease (disorder)', given as 'Bacterial infectious disease'})</span></p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: differential</p></div>"
+  },
+  "patient": {
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "asserter": {
+    "reference": "Practitioner/f201"
+  },
+  "dateRecorded": "2013-04-04",
+  "code": {
+    "fhir_comments": [
+      "  The problem was entered at April fourth  "
+    ],
+    "coding": [
+      {
+        "fhir_comments": [
+          "  The problem is a bacterial infection   "
+        ],
+        "system": "http://snomed.info/sct",
+        "code": "87628006",
+        "display": "Bacterial infectious disease"
+      }
+    ]
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "differential"
+}

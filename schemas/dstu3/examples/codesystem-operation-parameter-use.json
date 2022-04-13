@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "operation-parameter-use",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>OperationParameterUse</h2><p>Whether an operation parameter is an input or an output parameter.</p><p>This code system http://hl7.org/fhir/operation-parameter-use defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>in<a name=\"in\"> </a></td><td>In</td><td>This is an input parameter.</td></tr><tr><td>out<a name=\"out\"> </a></td><td>Out</td><td>This is an output parameter.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.298"
+    }
+  ],
+  "url": "http://hl7.org/fhir/operation-parameter-use",
+  "version": "1.4.0",
+  "name": "OperationParameterUse",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Whether an operation parameter is an input or an output parameter.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/operation-parameter-use",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "in",
+      "display": "In",
+      "definition": "This is an input parameter."
+    },
+    {
+      "code": "out",
+      "display": "Out",
+      "definition": "This is an output parameter."
+    }
+  ]
+}

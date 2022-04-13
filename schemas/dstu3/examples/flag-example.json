@@ -1,0 +1,37 @@
+{
+  "resourceType": "Flag",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>Large Dog warning for Peter Patient</div>"
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://example.org/local",
+        "code": "admin",
+        "display": "Admin"
+      }
+    ],
+    "text": "admin"
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Peter Patient"
+  },
+  "author": {
+    "reference": "Practitioner/example",
+    "display": "Nancy Nurse"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://example.org/local",
+        "code": "bigdog",
+        "display": "Big dog"
+      }
+    ],
+    "text": "Patient has a big dog at his home. Always always wear a suit of armor or take other active counter-measures"
+  }
+}

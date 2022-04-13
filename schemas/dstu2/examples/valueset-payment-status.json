@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "id": "payment-status",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Payment Status Codes</h2><p>This value set includes a sample set of Payment Status codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://hl7.org/fhir/paymentstatus, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Definition</b></td></tr><tr><td>paid<a name=\"paid\"> </a></td><td/></tr><tr><td>cleared<a name=\"cleared\"> </a></td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.334"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/payment-status",
+  "version": "1.0.2",
+  "name": "Payment Status Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "This value set includes a sample set of Payment Status codes.",
+  "copyright": "This is an example set.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.334"
+      }
+    ],
+    "system": "http://hl7.org/fhir/paymentstatus",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "paid"
+      },
+      {
+        "fhir_comments": [
+          "   Payment has been sent via cheque, EFT, other   "
+        ],
+        "code": "cleared"
+      }
+    ]
+  }
+}

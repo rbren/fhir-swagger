@@ -1,0 +1,35 @@
+{
+  "resourceType": "OrderResponse",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>Lab Report completed at 13:10 28-Dec 2012</div>"
+  },
+  "request": {
+    "fhir_comments": [
+      "  \n    this should be a response to the example request, \n\tbut we don't yet have all the resource types in \n\tplace to make this happen\n\t\n\tSo for now, although the Order message referred to \n\there contains a prescription resource, this example\n\tresponse contains lab reports\n   "
+    ],
+    "reference": "Order/example"
+  },
+  "date": "2012-12-28T13:10:56+11:00",
+  "who": {
+    "fhir_comments": [
+      "  made by the lab  "
+    ],
+    "reference": "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f"
+  },
+  "orderStatus": "completed",
+  "_orderStatus": {
+    "fhir_comments": [
+      "  \n    there's a loose relationship between the status of \n    the order, and status information on the fulfillment\n    resources. For instance, in the case of a lab, it probably\n    wouldn't make sense to claim that the response is anything\n    but completed when the report is marked as \"final\" (as it is \n    in this case). However due to the diversity of business \n    practices in the order/fulfillment cycle, there's no formal\n    rules about what is allowed\n   "
+    ]
+  },
+  "fulfillment": [
+    {
+      "fhir_comments": [
+        "  \n    the lab report that the lab provides as a token of its \n    fulfillment for this order \n\n    In the case of a lab order, the report is usually the real/only\n    outcome. However in a case such as a medication administration,\n    the actual administration is the fulfillment - the MedicationAdministration\n    resource is only a token of the fulfillment of the order\n   "
+      ],
+      "reference": "DiagnosticReport/101"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample013",
+  "text": {
+    "fhir_comments": [
+      "  this example is an example of Insulin  "
+    ],
+    "status": "generated",
+    "div": "<div>3 ML Insulin, Aspart, Human 100 UNT/ML Prefilled Syringe [NovoLog]</div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://purl.bioontology.org/ontology/RXNORM/847265",
+        "code": "847265",
+        "display": "3 ML Insulin, Aspart, Human 100 UNT/ML Prefilled Syringe [NovoLog]"
+      }
+    ]
+  },
+  "isBrand": true,
+  "manufacturer": {
+    "reference": "http://www.novonordisk-us.com/fhirresource/1"
+  },
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "385219001",
+          "display": "Injection Solution"
+        }
+      ]
+    },
+    "ingredient": [
+      {
+        "itemCodeableConcept": {
+          "text": "Insulin Aspart"
+        },
+        "amount": {
+          "numerator": {
+            "value": 100,
+            "system": "http://unitsofmeasure.org",
+            "code": "U"
+          },
+          "denominator": {
+            "value": 1,
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+          }
+        }
+      }
+    ],
+    "batch": [
+      {
+        "lotNumber": "12345",
+        "expirationDate": "2018-12-22"
+      }
+    ]
+  }
+}

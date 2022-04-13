@@ -1,0 +1,107 @@
+{
+  "resourceType": "Measure",
+  "id": "measure-exclusive-breastfeeding",
+  "text": {
+    "status": "generated",
+    "div": "<div>Exclusive Breastfeeding Measure</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "exclusive-breastfeeding-measure"
+      }
+    ],
+    "version": "1.0.0",
+    "title": "Exclusive Breastfeeding Measure",
+    "type": "eca-rule",
+    "status": "active",
+    "description": "Exclusive breastfeeding measure of outcomes for exclusive breastmilk feeding of newborns.",
+    "publicationDate": "2015-03-08",
+    "topic": [
+      {
+        "text": "Exclusive Breastfeeding"
+      }
+    ]
+  },
+  "library": [
+    {
+      "reference": "Library/library-exclusive-breastfeeding-cqm-logic"
+    }
+  ],
+  "type": [
+    "outcome"
+  ],
+  "group": [
+    {
+      "identifier": {
+        "value": "Population Group 1"
+      },
+      "population": [
+        {
+          "type": "initial-population",
+          "identifier": {
+            "value": "initial-population-1-identifier"
+          },
+          "criteria": "InitialPopulation1"
+        },
+        {
+          "type": "denominator",
+          "identifier": {
+            "value": "denominator-1-identifier"
+          },
+          "criteria": "Denominator1"
+        },
+        {
+          "type": "denominator-exclusion",
+          "identifier": {
+            "value": "denominator-exclusions-1-identifier"
+          },
+          "criteria": "DenominatorExclusions1"
+        },
+        {
+          "type": "numerator",
+          "identifier": {
+            "value": "numerator-1-identifier"
+          },
+          "criteria": "Numerator1"
+        }
+      ]
+    },
+    {
+      "identifier": {
+        "value": "Population Group 2"
+      },
+      "population": [
+        {
+          "type": "initial-population",
+          "identifier": {
+            "value": "initial-population-2-identifier"
+          },
+          "criteria": "InitialPopulation2"
+        },
+        {
+          "type": "denominator",
+          "identifier": {
+            "value": "denominator-2-identifier"
+          },
+          "criteria": "Denominator2"
+        },
+        {
+          "type": "denominator-exclusion",
+          "identifier": {
+            "value": "denominator-exclusions-2-identifier"
+          },
+          "criteria": "DenominatorExclusions2"
+        },
+        {
+          "type": "numerator",
+          "identifier": {
+            "value": "numerator-2-identifier"
+          },
+          "criteria": "Numerator2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "supplydelivery-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Supply Item Type</h2><p>This value sets refers to a specific supply item.</p><p>This code system http://hl7.org/fhir/supply-item-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>medication<a name=\"medication\"> </a></td><td>Medication</td><td>Supply is a kind of medication.</td></tr><tr><td>device<a name=\"device\"> </a></td><td>Device</td><td>What is supplied (or requested) is a device.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.356"
+    }
+  ],
+  "url": "http://hl7.org/fhir/supply-item-type",
+  "version": "1.4.0",
+  "name": "Supply Item Type",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value sets refers to a specific supply item.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/supplydelivery-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "medication",
+      "display": "Medication",
+      "definition": "Supply is a kind of medication."
+    },
+    {
+      "code": "device",
+      "display": "Device",
+      "definition": "What is supplied (or requested) is a device."
+    }
+  ]
+}

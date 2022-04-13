@@ -1,0 +1,90 @@
+{
+  "resourceType": "Claim",
+  "id": "960150",
+  "text": {
+    "status": "generated",
+    "div": "<div>A human-readable rendering of the Claim</div>"
+  },
+  "type": "institutional",
+  "identifier": [
+    {
+      "system": "http://happyhospital.com/claim",
+      "value": "9612345"
+    }
+  ],
+  "created": "2014-08-16",
+  "targetReference": {
+    "reference": "Organization/2"
+  },
+  "organizationReference": {
+    "reference": "Organization/1"
+  },
+  "use": "complete",
+  "priority": {
+    "code": "normal"
+  },
+  "entererIdentifier": {
+    "system": "http://jurisdiction.org/facilities/HOSP1234/users",
+    "value": "UC1234"
+  },
+  "facilityIdentifier": {
+    "system": "http://jurisdiction.org/facilities",
+    "value": "HOSP1234"
+  },
+  "payee": {
+    "type": {
+      "code": "provider"
+    }
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosis": {
+        "code": "654456"
+      }
+    }
+  ],
+  "patientReference": {
+    "reference": "Patient/1"
+  },
+  "coverage": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverageReference": {
+        "reference": "Coverage/9876B1"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "type": {
+        "code": "service"
+      },
+      "providerReference": {
+        "reference": "Practitioner/example"
+      },
+      "service": {
+        "system": "http://hl7.org/fhir/ex-serviceproduct",
+        "code": "exam"
+      },
+      "servicedDate": "2014-08-16",
+      "unitPrice": {
+        "value": 125.00,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "net": {
+        "value": 125.00,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    }
+  ],
+  "total": {
+    "value": 125.00,
+    "system": "urn:iso:std:iso:4217",
+    "code": "USD"
+  }
+}

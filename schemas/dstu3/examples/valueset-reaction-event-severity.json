@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "reaction-event-severity",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>AllergyIntoleranceSeverity</h2><p>Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"codesystem-reaction-event-severity.html\">http://hl7.org/fhir/reaction-event-severity</a></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.56"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+  "version": "1.4.0",
+  "name": "AllergyIntoleranceSeverity",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/reaction-event-severity"
+      }
+    ]
+  }
+}

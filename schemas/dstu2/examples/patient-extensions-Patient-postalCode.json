@@ -1,0 +1,12 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "patient-extensions-Patient-postalCode",
+  "url": "http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-postalCode",
+  "name": "postalCode",
+  "code": "postalCode",
+  "base": "Patient",
+  "type": "string",
+  "description": "Return records where one of the patient addresses matches on postalCode.",
+  "xpath": "f:Patient/f:address/f:postalCode",
+  "xpathUsage": "normal"
+}

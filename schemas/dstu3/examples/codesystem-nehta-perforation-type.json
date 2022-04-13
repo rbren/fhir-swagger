@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-perforation-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NehtaNatureOfPerforation</h2><p>Indicates the options for indicating the type(s) of perforation.</p><p>This code system http://hl7.org/fhir/nehta-nature-of-perforation defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>through_tumour_prior_to_surgery<a name=\"through_tumour_prior_to_surgery\"> </a></td><td>Through tumour prior to surgery</td><td>The perforation was through tumour prior to surgery</td></tr><tr><td>through_tumour_during_surgery_mobilisation<a name=\"through_tumour_during_surgery_mobilisation\"> </a></td><td>Through tumour during surgery mobilisation</td><td>The perforation was through tumour during surgery mobilisation</td></tr><tr><td>away_from_tumour<a name=\"away_from_tumour\"> </a></td><td>Away from tumour</td><td>The perforation was away from the tumour</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.774"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-nature-of-perforation",
+  "version": "20150619",
+  "name": "NehtaNatureOfPerforation",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Indicates the options for indicating the type(s) of perforation.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-perforation-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "through_tumour_prior_to_surgery",
+      "display": "Through tumour prior to surgery",
+      "definition": "The perforation was through tumour prior to surgery"
+    },
+    {
+      "code": "through_tumour_during_surgery_mobilisation",
+      "display": "Through tumour during surgery mobilisation",
+      "definition": "The perforation was through tumour during surgery mobilisation"
+    },
+    {
+      "code": "away_from_tumour",
+      "display": "Away from tumour",
+      "definition": "The perforation was away from the tumour"
+    }
+  ]
+}

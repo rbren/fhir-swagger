@@ -1,0 +1,98 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-example",
+  "meta": {
+    "fhir_comments": [
+      "   this example bundle is a search set   ",
+      "   when the search was executed   "
+    ],
+    "lastUpdated": "2014-08-18T01:43:30Z"
+  },
+  "type": "searchset",
+  "total": 3,
+  "_total": {
+    "fhir_comments": [
+      "   the total number of matches. This is a stupid example - there's a grand total of 3 matches, and \n    we're only going to return the first 1, with a next link, in order to demonstrate what a page link\n    looks like   "
+    ]
+  },
+  "link": [
+    {
+      "fhir_comments": [
+        "   all search sets include the self link - the server's statement of what it thought it was \n    searching on. The client can use this to cross-check whether the server executed what it \n    asked the server to, if it cares   "
+      ],
+      "relation": "self",
+      "url": "https://example.com/base/MedicationOrder?patient=347&_include=MedicationOrder.medication"
+    },
+    {
+      "fhir_comments": [
+        "   now, the link to the next set of results. The actual URL is entirely at the \n  discretion of the server, and is opaque to the client. Many servers will insert \n  some kind of search instance identifier \n  \n  Note that a big set of results will include prev, first, last links as well as next   "
+      ],
+      "relation": "next",
+      "url": "https://example.com/base/MedicationOrder?patient=347&searchId=ff15fd40-ff71-4b48-b366-09c706bed9d0&page=2"
+    }
+  ],
+  "entry": [
+    {
+      "fhir_comments": [
+        "   now, the actual entries   "
+      ],
+      "fullUrl": "https://example.com/base/MedicationOrder/3123",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "id": "3123",
+        "text": {
+          "fhir_comments": [
+            "   snip   "
+          ],
+          "status": "generated",
+          "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3123</p><p><b>medication</b>: <a>Medication/example</a></p><p><b>patient</b>: <a>Patient/347</a></p></div>"
+        },
+        "medicationReference": {
+          "reference": "Medication/example"
+        },
+        "patient": {
+          "reference": "Patient/347"
+        }
+      },
+      "search": {
+        "fhir_comments": [
+          "   and now optional search information   "
+        ],
+        "mode": "match",
+        "_mode": {
+          "fhir_comments": [
+            "   this resource included as a match to the search criteria.\n         Servers are not required to populate this, but should, because\n         there are a few cases where it might be ambiguous whether a \n         resource is added because it's a match or an include           "
+          ]
+        },
+        "score": 1,
+        "_score": {
+          "fhir_comments": [
+            "   score. For matches where the criteria are not determinate,\n        e.g. text search on narrative, the server can include a score to indicate\n        how well the resource matches the conditions. Since this search is by patient\n        identifier, there's nothing fuzzy about it, but for example purposes:   "
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://example.com/base/Medication/example",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "example",
+        "text": {
+          "fhir_comments": [
+            "   snip   "
+          ],
+          "status": "generated",
+          "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>"
+        }
+      },
+      "search": {
+        "mode": "include",
+        "_mode": {
+          "fhir_comments": [
+            "   added because the client asked to include the medications   "
+          ]
+        }
+      }
+    }
+  ]
+}

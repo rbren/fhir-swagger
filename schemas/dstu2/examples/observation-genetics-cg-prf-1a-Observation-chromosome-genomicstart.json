@@ -1,0 +1,11 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "observation-genetics-cg-prf-1a-Observation-chromosome-genomicstart",
+  "url": "http://hl7.org/fhir/SearchParameter/observation-genetics-cg-prf-1a-Observation-chromosome-genomicstart",
+  "name": "chromosome-genomicstart",
+  "code": "chromosome-genomicstart",
+  "base": "Observation",
+  "type": "string",
+  "description": "Chromosome and Genomic Starting Position",
+  "xpathUsage": "normal"
+}

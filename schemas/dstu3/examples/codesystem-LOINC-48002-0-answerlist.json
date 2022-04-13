@@ -1,0 +1,79 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "LOINC-48002-0-answerlist",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>LOINC 48002-0 answerlist</h2><p>LOINC answer list for Genomic source class</p><p>This code system http://hl7.org/fhir/LOINC-48002-0-answerlist defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>LA6683-2<a name=\"LA6683-2\"> </a></td><td>Germline</td><td>Germline</td></tr><tr><td>LA6684-0<a name=\"LA6684-0\"> </a></td><td>Somatic</td><td>Somatic</td></tr><tr><td>LA10429-1<a name=\"LA10429-1\"> </a></td><td>Prenatal</td><td>Prenatal</td></tr><tr><td>LA18194-3<a name=\"LA18194-3\"> </a></td><td>Likely Germline</td><td>Likely Germline</td></tr><tr><td>LA18195-0<a name=\"LA18195-0\"> </a></td><td>Likely Somatic</td><td>Likely Somatic</td></tr><tr><td>LA18196-8<a name=\"LA18196-8\"> </a></td><td>Likely Prenatal</td><td>Likely Prenatal</td></tr><tr><td>LA18197-6<a name=\"LA18197-6\"> </a></td><td>Unknown Genomic Origin</td><td>Unknown Genomic Origin</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.470"
+    }
+  ],
+  "url": "http://hl7.org/fhir/LOINC-48002-0-answerlist",
+  "version": "1.4.0",
+  "name": "LOINC 48002-0 answerlist",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "LOINC answer list for Genomic source class",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/LOINC-48002-0-answerlist",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "LA6683-2",
+      "display": "Germline",
+      "definition": "Germline"
+    },
+    {
+      "code": "LA6684-0",
+      "display": "Somatic",
+      "definition": "Somatic"
+    },
+    {
+      "code": "LA10429-1",
+      "display": "Prenatal",
+      "definition": "Prenatal"
+    },
+    {
+      "code": "LA18194-3",
+      "display": "Likely Germline",
+      "definition": "Likely Germline"
+    },
+    {
+      "code": "LA18195-0",
+      "display": "Likely Somatic",
+      "definition": "Likely Somatic"
+    },
+    {
+      "code": "LA18196-8",
+      "display": "Likely Prenatal",
+      "definition": "Likely Prenatal"
+    },
+    {
+      "code": "LA18197-6",
+      "display": "Unknown Genomic Origin",
+      "definition": "Unknown Genomic Origin"
+    }
+  ]
+}

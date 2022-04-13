@@ -1,0 +1,11 @@
+{
+  "resourceType": "DetectedIssue",
+  "fhir_comments": [
+    "  insert contents here  "
+  ],
+  "id": "lab",
+  "text": {
+    "status": "generated",
+    "div": "<div>[Put rendering here]</div>"
+  }
+}

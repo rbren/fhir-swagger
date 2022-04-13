@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "id": "device-kind",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Device Types</h2><p>Device Types :  Codes used to identify medical devices. This value set includes all children of SNOMED CT Concepts (US Extension and Core) from SCTID 49062001 Device (physical object)  and is provided as a suggestive example.</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright &copy; 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from http://snomed.info/sct where concept  is-a  49062001</li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.106"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/device-kind",
+  "version": "1.4.0",
+  "name": "Device Types",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "HL7 Orders and Observations Workgroup",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Device Types :  Codes used to identify medical devices. This value set includes all children of SNOMED CT Concepts (US Extension and Core) from SCTID 49062001 Device (physical object)  and is provided as a suggestive example.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "_property": {
+              "fhir_comments": [
+                "  SNOMED CT - children of SNOMED CT Concepts (US Extension and Core) from SCTID 182922004 Dietary regime (Therapeutic or Preventive Procedure)   "
+              ]
+            },
+            "op": "is-a",
+            "value": "49062001"
+          }
+        ]
+      }
+    ]
+  }
+}

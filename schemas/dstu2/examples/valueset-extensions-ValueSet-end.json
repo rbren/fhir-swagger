@@ -1,0 +1,10 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "valueset-extensions-ValueSet-end",
+  "url": "http://hl7.org/fhir/SearchParameter/valueset-extensions-ValueSet-end",
+  "name": "end",
+  "code": "end",
+  "type": "date",
+  "xpath": "f:ValueSet/f:extension[@url='http://hl7.org/fhir/StructureDefinition/valueset-expirationDate']",
+  "xpathUsage": "normal"
+}

@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "care-plan-relationship",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>CarePlanRelationship</h2><p>Codes identifying the types of relationships between two plans.</p><p>This code system http://hl7.org/fhir/care-plan-relationship defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>includes<a name=\"includes\"> </a></td><td>Includes</td><td>The referenced plan is considered to be part of this plan.</td></tr><tr><td>replaces<a name=\"replaces\"> </a></td><td>Replaces</td><td>This plan takes the places of the referenced plan.</td></tr><tr><td>fulfills<a name=\"fulfills\"> </a></td><td>Fulfills</td><td>This plan provides details about how to perform activities defined at a higher level by the referenced plan.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.406"
+    }
+  ],
+  "url": "http://hl7.org/fhir/care-plan-relationship",
+  "version": "1.4.0",
+  "name": "CarePlanRelationship",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Codes identifying the types of relationships between two plans.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/care-plan-relationship",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "includes",
+      "display": "Includes",
+      "definition": "The referenced plan is considered to be part of this plan."
+    },
+    {
+      "code": "replaces",
+      "display": "Replaces",
+      "definition": "This plan takes the places of the referenced plan."
+    },
+    {
+      "code": "fulfills",
+      "display": "Fulfills",
+      "definition": "This plan provides details about how to perform activities defined at a higher level by the referenced plan."
+    }
+  ]
+}

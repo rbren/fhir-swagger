@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "content-type",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>ContentType</h2><p>The content or mime type.</p><p>This code system http://hl7.org/fhir/content-type defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>xml<a name=\"xml\"> </a></td><td>xml</td><td>XML content-type corresponding to the application/xml+fhir mime-type.</td></tr><tr><td>json<a name=\"json\"> </a></td><td>json</td><td>JSON content-type corresponding to the application/json+fhir mime-type.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.358"
+    }
+  ],
+  "url": "http://hl7.org/fhir/content-type",
+  "version": "1.4.0",
+  "name": "ContentType",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "The content or mime type.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/content-type",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "xml",
+      "display": "xml",
+      "definition": "XML content-type corresponding to the application/xml+fhir mime-type."
+    },
+    {
+      "code": "json",
+      "display": "json",
+      "definition": "JSON content-type corresponding to the application/json+fhir mime-type."
+    }
+  ]
+}

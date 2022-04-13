@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "uslab-obs-kind",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>uslab-observationkind</h2><p>Code to classify the kind of observation in Observation.value[x]</p><p>This code system http://hl7.org/fhir/obs-kind defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>result<a name=\"result\"> </a></td><td>result</td><td>The value is Observation.value[x] is an actual result from a laboratory test</td></tr><tr><td>response<a name=\"response\"> </a></td><td>response</td><td>The value is Observation.value[x] is a response to laboratory Ask at order (AOE) questions</td></tr><tr><td>information<a name=\"information\"> </a></td><td>information</td><td>The value is Observation.value[x] is some other unsolicited clnically relevant information.</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.571"
+    }
+  ],
+  "url": "http://hl7.org/fhir/obs-kind",
+  "version": "1.4.0",
+  "name": "uslab-observationkind",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2016-03-31T08:01:25+11:00",
+  "description": "Code to classify the kind of observation in Observation.value[x]",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/uslab-obs-kind",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "result",
+      "display": "result",
+      "definition": "The value is Observation.value[x] is an actual result from a laboratory test"
+    },
+    {
+      "code": "response",
+      "display": "response",
+      "definition": "The value is Observation.value[x] is a response to laboratory Ask at order (AOE) questions"
+    },
+    {
+      "code": "information",
+      "display": "information",
+      "definition": "The value is Observation.value[x] is some other unsolicited clnically relevant information."
+    }
+  ]
+}

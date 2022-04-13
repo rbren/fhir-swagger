@@ -1,0 +1,38 @@
+{
+  "resourceType": "Device",
+  "id": "f001",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 12345</p><p><b>type</b>: Feeding tube, device <span>(Details : {SNOMED CT code '25062003' = '25062003', given as 'Feeding tube, device'})</span></p><p><b>status</b>: available</p><p><b>manufactureDate</b>: 08/08/2015</p><p><b>expiry</b>: 08/08/2020</p><p><b>udi</b>: (01)00000123000017(10)ABC123(17)120415</p><p><b>owner</b>: <a>Organization/2.16.840.1.113883.19.5</a></p><p><b>location</b>: Central Supply</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http:/goodhealthhospital/identifier/devices",
+      "value": "12345"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "25062003",
+        "display": "Feeding tube, device"
+      }
+    ]
+  },
+  "status": "available",
+  "manufactureDate": "2015-08-08",
+  "expiry": "2020-08-08",
+  "udi": "(01)00000123000017(10)ABC123(17)120415",
+  "_udi": {
+    "fhir_comments": [
+      "   this udi is fictitious and will be updated when more information and better examples of UDI's become available    "
+    ]
+  },
+  "owner": {
+    "reference": "Organization/2.16.840.1.113883.19.5"
+  },
+  "location": {
+    "display": "Central Supply"
+  }
+}

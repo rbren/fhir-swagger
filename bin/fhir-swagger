@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var FS = require('fs');
+var options = require('../options.js');
+
+require('../index.js')(options, function(err, swagger) {
+  if (err) throw err;
+  if (options.output === "-")
+  	console.log(JSON.stringify(swagger, null, 2))
+  else
+  	FS.writeFileSync(options.output, JSON.stringify(swagger, null, 2))
+});
+

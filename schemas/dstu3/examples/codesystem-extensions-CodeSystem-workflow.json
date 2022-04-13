@@ -1,0 +1,10 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "codesystem-extensions-CodeSystem-workflow",
+  "url": "http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-workflow",
+  "name": "workflow",
+  "code": "workflow",
+  "type": "token",
+  "xpath": "f:CodeSystem/f:extension[@url='http://hl7.org/fhir/StructureDefinition/codesystem-workflowStatus'] | /f:#workflowStatus",
+  "xpathUsage": "normal"
+}

@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "id": "entformula-additive",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Enteral Formula Additive Type Code</h2><p>EnteralFormulaAdditiveType: Codes for the type of modular component such as protein, carbohydrate or fiber to be provided in addition to or mixed with the base formula. This value set is provided as a suggestive example.</p><p>This value set has an inline code system http://hl7.org/fhir/entformula-additive, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>lipid<a name=\"lipid\"> </a></td><td>Modular lipid enteral formula component</td><td/></tr><tr><td>protein<a name=\"protein\"> </a></td><td>Modular protein enteral formula component</td><td/></tr><tr><td>carbohydrate<a name=\"carbohydrate\"> </a></td><td>Modular carbohydrate enteral formula component</td><td/></tr><tr><td>fiber<a name=\"fiber\"> </a></td><td>Modular fiber enteral formula component</td><td/></tr><tr><td>water<a name=\"water\"> </a></td><td>Added water</td><td/></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.213"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/entformula-additive",
+  "version": "1.0.2",
+  "name": "Enteral Formula Additive Type Code",
+  "status": "draft",
+  "_status": {
+    "fhir_comments": [
+      "  copyright value=\"This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\"/   "
+    ]
+  },
+  "experimental": true,
+  "publisher": "FHIR NutritionOrder team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "EnteralFormulaAdditiveType: Codes for the type of modular component such as protein, carbohydrate or fiber to be provided in addition to or mixed with the base formula. This value set is provided as a suggestive example.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.213"
+      }
+    ],
+    "system": "http://hl7.org/fhir/entformula-additive",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "lipid",
+        "display": "Modular lipid enteral formula component"
+      },
+      {
+        "code": "protein",
+        "display": "Modular protein enteral formula component"
+      },
+      {
+        "code": "carbohydrate",
+        "display": "Modular carbohydrate enteral formula component"
+      },
+      {
+        "code": "fiber",
+        "display": "Modular fiber enteral formula component"
+      },
+      {
+        "code": "water",
+        "display": "Added water"
+      }
+    ]
+  }
+}

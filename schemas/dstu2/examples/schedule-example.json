@@ -1,0 +1,34 @@
+{
+  "resourceType": "Schedule",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>\n      Burgers UMC, South Wing, second floor Physiotherapy Schedule\n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "http://example.org/scheduleid",
+      "value": "45"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "45",
+          "display": "Physiotherapy"
+        }
+      ]
+    }
+  ],
+  "actor": {
+    "reference": "Location/1",
+    "display": "Burgers UMC, South Wing, second floor"
+  },
+  "planningHorizon": {
+    "start": "2013-12-25T09:15:00Z",
+    "end": "2013-12-25T09:30:00Z"
+  },
+  "comment": "Assessments should be performed before requesting appointments in this slot."
+}

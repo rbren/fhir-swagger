@@ -1,0 +1,23 @@
+{
+  "resourceType": "ProcedureRequest",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>To be added</div>"
+  },
+  "subject": {
+    "fhir_comments": [
+      "  insert contents here  "
+    ],
+    "reference": "Patient/example"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "323418000",
+        "display": "Fix me up"
+      }
+    ]
+  }
+}

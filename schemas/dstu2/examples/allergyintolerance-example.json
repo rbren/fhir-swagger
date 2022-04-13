@@ -1,0 +1,126 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "example",
+  "text": {
+    "fhir_comments": [
+      "   an identifier used for this Adverse Reaction Risk   "
+    ],
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>identifier</b>: 49476534</p><p><b>recordedDate</b>: 09/10/2014 2:58:00 PM</p><p><b>recorder</b>: <a>Practitioner/example</a></p><p><b>patient</b>: <a>Patient/example</a></p><p><b>substance</b>: Cashew nuts <span>(Details : {SNOMED CT code '227493005' = '227493005', given as 'Cashew nuts'})</span></p><p><b>status</b>: confirmed</p><p><b>criticality</b>: CRITH</p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>lastOccurence</b>: 01/06/2012</p><blockquote><p><b>reaction</b></p><p><b>substance</b>: cashew nut allergenic extract Injectable Product <span>(Details : {RxNorm code 'C3214954' = '??', given as 'cashew nut allergenic extract Injectable Product'})</span></p><p><b>manifestation</b>: Anaphylactic reaction <span>(Details : {SNOMED CT code '39579001' = '39579001', given as 'Anaphylactic reaction'})</span></p><p><b>description</b>: Challenge Protocol. Severe Reaction to 1/8 cashew. Epinephrine administered</p><p><b>onset</b>: 12/06/2012</p><p><b>severity</b>: severe</p></blockquote><blockquote><p><b>reaction</b></p><p><b>certainty</b>: likely</p><p><b>manifestation</b>: Urticaria <span>(Details : {SNOMED CT code '64305001' = '64305001', given as 'Urticaria'})</span></p><p><b>onset</b>: 01/01/2004</p><p><b>severity</b>: moderate</p></blockquote></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://acme.com/ids/patients/risks",
+      "value": "49476534"
+    }
+  ],
+  "recordedDate": "2014-10-09T14:58:00+11:00",
+  "_recordedDate": {
+    "fhir_comments": [
+      "   the date that this entry was recorded   "
+    ]
+  },
+  "recorder": {
+    "fhir_comments": [
+      "   who made the record / last updated it   "
+    ],
+    "reference": "Practitioner/example"
+  },
+  "patient": {
+    "fhir_comments": [
+      "   the patient that actually has the risk of adverse reaction   "
+    ],
+    "reference": "Patient/example"
+  },
+  "substance": {
+    "fhir_comments": [
+      "   subtance - either coded, or text. A few times, \n    there's a full description of a complex substance - in these caes, use the\n    extension [url] to refer to a Substance resource   "
+    ],
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "227493005",
+        "display": "Cashew nuts"
+      }
+    ]
+  },
+  "status": "confirmed",
+  "_status": {
+    "fhir_comments": [
+      "   this individual has had several reactions, and there is no \n    question that the allergy is real and serious   "
+    ]
+  },
+  "criticality": "CRITH",
+  "type": "allergy",
+  "_type": {
+    "fhir_comments": [
+      "   note: it's often unknown whether an allergy is mediated by an immune response, and not as significant as once thought   "
+    ]
+  },
+  "category": "food",
+  "_category": {
+    "fhir_comments": [
+      "   this categorisation is implied by \"cashew nut\" and therefore basically \n    redundant, but many systems collect this field anyway, since it's either \n    useful when the substance is not coded, or it's quicker to sort/filter on\n    than using terminology based reasoning   "
+    ]
+  },
+  "lastOccurence": "2012-06",
+  "_lastOccurence": {
+    "fhir_comments": [
+      "   last happened June 2012. Typically, systems either track lastOccurence,\n     or a list of events.   "
+    ]
+  },
+  "reaction": [
+    {
+      "fhir_comments": [
+        "   past events. There's no claim that this is all the events, and \n     that should not be assumed   "
+      ],
+      "substance": {
+        "fhir_comments": [
+          "   \n      It's possible to list specific things to which the patient responded,\n      e.g. chocolate (that happened to contain cashew nuts). This event has\n      such a specific substance. Note that systems should ensure that what\n      goes in here does not conflict with the substance above, and systems\n      processing the data can be sure that what is here does not contravene\n      the substance above\n      "
+        ],
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "C3214954",
+            "display": "cashew nut allergenic extract Injectable Product"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39579001",
+              "display": "Anaphylactic reaction"
+            }
+          ]
+        }
+      ],
+      "description": "Challenge Protocol. Severe Reaction to 1/8 cashew. Epinephrine administered",
+      "onset": "2012-06-12",
+      "severity": "severe"
+    },
+    {
+      "certainty": "likely",
+      "_certainty": {
+        "fhir_comments": [
+          "   this was the first occurrence   "
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "64305001",
+              "display": "Urticaria"
+            }
+          ]
+        }
+      ],
+      "onset": "2004",
+      "severity": "moderate"
+    }
+  ]
+}

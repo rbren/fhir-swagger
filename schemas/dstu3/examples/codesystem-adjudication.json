@@ -1,0 +1,78 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "adjudication",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Adjudication Codes</h2><p>This value set includes a smattering of Adjudication codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This code system http://hl7.org/fhir/adjudication defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>total<a name=\"total\"> </a></td><td>Total</td><td>Total submitted</td></tr><tr><td>copay<a name=\"copay\"> </a></td><td>CoPay</td><td>Patient Co-Payment</td></tr><tr><td>eligible<a name=\"eligible\"> </a></td><td>Eligible Amount</td><td>Amount of the change which is considered for adjudication</td></tr><tr><td>deductible<a name=\"deductible\"> </a></td><td>Deductable</td><td>Amount deducted from the eligible amount prior to adjudication</td></tr><tr><td>eligpercent<a name=\"eligpercent\"> </a></td><td>Eligible %</td><td>Eligible Percentage</td></tr><tr><td>tax<a name=\"tax\"> </a></td><td>Emergency Department</td><td>Emergency Department</td></tr><tr><td>benefit<a name=\"benefit\"> </a></td><td>Benefit Amount</td><td>Amount payable under the coverage</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.325"
+    }
+  ],
+  "url": "http://hl7.org/fhir/adjudication",
+  "version": "1.4.0",
+  "name": "Adjudication Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "FHIR Project team",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a smattering of Adjudication codes.",
+  "copyright": "This is an example set.",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/adjudication",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "total",
+      "display": "Total",
+      "definition": "Total submitted"
+    },
+    {
+      "code": "copay",
+      "display": "CoPay",
+      "definition": "Patient Co-Payment"
+    },
+    {
+      "code": "eligible",
+      "display": "Eligible Amount",
+      "definition": "Amount of the change which is considered for adjudication"
+    },
+    {
+      "code": "deductible",
+      "display": "Deductable",
+      "definition": "Amount deducted from the eligible amount prior to adjudication"
+    },
+    {
+      "code": "eligpercent",
+      "display": "Eligible %",
+      "definition": "Eligible Percentage"
+    },
+    {
+      "code": "tax",
+      "display": "Emergency Department",
+      "definition": "Emergency Department"
+    },
+    {
+      "code": "benefit",
+      "display": "Benefit Amount",
+      "definition": "Amount payable under the coverage"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "patient-extensions-Patient-state",
+  "url": "http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-state",
+  "name": "state",
+  "code": "state",
+  "base": "Patient",
+  "type": "string",
+  "description": "Return records where one of the patient addresses matches on state.",
+  "xpath": "f:Patient/f:address/f:state",
+  "xpathUsage": "normal"
+}

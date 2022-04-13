@@ -1,0 +1,12 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "patient-extensions-Patient-city",
+  "url": "http://hl7.org/fhir/SearchParameter/patient-extensions-Patient-city",
+  "name": "city",
+  "code": "city",
+  "base": "Patient",
+  "type": "string",
+  "description": "Return records where one of the patient addresses matches on city.",
+  "xpath": "f:Patient/f:address/f:city",
+  "xpathUsage": "normal"
+}

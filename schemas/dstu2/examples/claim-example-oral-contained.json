@@ -1,0 +1,163 @@
+{
+  "resourceType": "Claim",
+  "id": "100152",
+  "text": {
+    "status": "generated",
+    "div": "<div>A human-readable rendering of the Oral Health Claim</div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "organization-1",
+      "identifier": [
+        {
+          "system": "http://www.jurisdiction.com/oralhealthoffices",
+          "value": "3456"
+        }
+      ]
+    },
+    {
+      "resourceType": "Organization",
+      "id": "organization-2",
+      "identifier": [
+        {
+          "system": "http://www.bindb.com/bin",
+          "value": "123456"
+        }
+      ]
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "practitioner-1",
+      "identifier": [
+        {
+          "system": "http://www.jurisdiction.com/oralhealthproviders",
+          "value": "123456789"
+        }
+      ]
+    },
+    {
+      "resourceType": "Patient",
+      "id": "patient-1",
+      "name": [
+        {
+          "use": "official",
+          "family": [
+            "Donald"
+          ],
+          "given": [
+            "Duck"
+          ]
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1986-05-17",
+      "address": [
+        {
+          "use": "home",
+          "line": [
+            "1234 Main Street"
+          ],
+          "city": "Vancouver",
+          "postalCode": "V2H1Y3",
+          "country": "CAD"
+        }
+      ]
+    },
+    {
+      "resourceType": "Coverage",
+      "id": "coverage-1",
+      "issuer": {
+        "reference": "#organization-2"
+      },
+      "type": {
+        "system": "http://hl7.org/fhir/v3/ActCode",
+        "code": "EHCPOL"
+      },
+      "identifier": [
+        {
+          "system": "http://benefitsinc.com/certificate",
+          "value": "12345"
+        }
+      ],
+      "plan": "CBI35",
+      "subPlan": "123",
+      "dependent": 1,
+      "sequence": 1,
+      "subscriber": {
+        "reference": "#patient-1"
+      }
+    }
+  ],
+  "type": "oral",
+  "identifier": [
+    {
+      "system": "http://happyvalley.com/claim",
+      "value": "12347"
+    }
+  ],
+  "created": "2014-08-16",
+  "target": {
+    "reference": "#organization-2"
+  },
+  "organization": {
+    "reference": "#organization-1"
+  },
+  "use": "complete",
+  "priority": {
+    "code": "normal"
+  },
+  "payee": {
+    "type": {
+      "code": "provider"
+    }
+  },
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosis": {
+        "code": "123456"
+      }
+    }
+  ],
+  "patient": {
+    "reference": "#patient-1"
+  },
+  "coverage": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "coverage": {
+        "reference": "#coverage-1"
+      },
+      "relationship": {
+        "code": "self"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "type": {
+        "code": "service"
+      },
+      "provider": {
+        "reference": "#practitioner-1"
+      },
+      "service": {
+        "code": "1200"
+      },
+      "serviceDate": "2014-08-16",
+      "unitPrice": {
+        "value": 135.57,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      },
+      "net": {
+        "value": 135.57,
+        "system": "urn:iso:std:iso:4217",
+        "code": "USD"
+      }
+    }
+  ]
+}

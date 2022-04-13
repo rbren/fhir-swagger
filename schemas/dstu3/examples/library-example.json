@@ -1,0 +1,59 @@
+{
+  "resourceType": "Library",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "<div>Chlamydia Screening Common Library</div>"
+  },
+  "moduleMetadata": {
+    "identifier": [
+      {
+        "use": "official",
+        "value": "ChalmydiaScreening_Common"
+      }
+    ],
+    "version": "2.0.0",
+    "title": "Chlamydia Screening Common Library",
+    "type": "library",
+    "status": "draft",
+    "description": "Common Logic for adherence to Chlamydia Screening guidelines",
+    "publicationDate": "2015-07-22",
+    "topic": [
+      {
+        "text": "Chlamydia Screening"
+      }
+    ]
+  },
+  "model": [
+    {
+      "identifier": "QUICK"
+    }
+  ],
+  "valueSet": [
+    {
+      "name": "Female Administrative Sex",
+      "identifier": "2.16.840.1.113883.3.560.100.2"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "fhir_comments": [
+        "  ... other value sets as defined in the library  "
+      ],
+      "type": "Condition",
+      "codeFilter": [
+        {
+          "path": "code",
+          "valueSetString": "Other Female Reproductive Conditions"
+        }
+      ]
+    }
+  ],
+  "document": {
+    "fhir_comments": [
+      "  ... other data requirements as defined in the library  "
+    ],
+    "contentType": "application/cql+text",
+    "url": "http://cqlrepository.org/ChlamydiaScreening_Common.cql"
+  }
+}

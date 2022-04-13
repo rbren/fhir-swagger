@@ -1,0 +1,32 @@
+{
+  "resourceType": "OperationDefinition",
+  "id": "Task-cancel",
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Cancel Task</h2><p>OPERATION: Cancel Task</p><div><p>Cancel the task.  Set the status of the task to cancelled.</p>\n</div><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+  },
+  "url": "http://hl7.org/fhir/OperationDefinition/Task-cancel",
+  "name": "Cancel Task",
+  "status": "draft",
+  "kind": "operation",
+  "date": "2016-03-31T08:01:25+11:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Cancel the task.  Set the status of the task to cancelled.",
+  "code": "cancel",
+  "system": false,
+  "instance": true
+}

@@ -1,0 +1,104 @@
+{
+  "resourceType": "Observation",
+  "id": "f202",
+  "text": {
+    "fhir_comments": [
+      "   Oral temperature was measured on April fourth   "
+    ],
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f202</p><p><b>status</b>: entered-in-error</p><p><b>code</b>: Body temperature <span>(Details : {http://acme.lab code 'BT' = '??', given as 'Body temperature'}; {LOINC code '8310-5' = 'Body temperature', given as 'Body temperature'}; {SNOMED CT code '56342008' = '56342008', given as 'Temperature taking'})</span></p><p><b>subject</b>: <a>Roel</a></p><p><b>issued</b>: 04/04/2013 1:27:00 PM</p><p><b>performer</b>: <a>Practitioner/f201</a></p><p><b>value</b>: 39 degrees C<span> (Details: SNOMED CT code 258710007 = '258710007')</span></p><p><b>interpretation</b>: High <span>(Details : {http://hl7.org/fhir/v2/0078 code 'H' = 'High)</span></p><p><b>bodySite</b>: Oral cavity <span>(Details : {SNOMED CT code '74262004' = '74262004', given as 'Oral cavity'})</span></p><p><b>method</b>: Oral temperature taking <span>(Details : {SNOMED CT code '89003005' = '89003005', given as 'Oral temperature taking'})</span></p><h3>ReferenceRanges</h3><table><tr><td>-</td><td><b>Low</b></td></tr><tr><td>*</td><td>37.5 degrees C</td></tr></table></div>"
+  },
+  "status": "entered-in-error",
+  "code": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "   Kind of observation = Oral Temperature   ",
+          "   local code here   "
+        ],
+        "system": "http://acme.lab",
+        "code": "BT",
+        "display": "Body temperature"
+      },
+      {
+        "fhir_comments": [
+          "   LOINC and SNOMED CT translations here - Note in the US the primary code will be LOINC per meaningful use.  Further SNOMED CT  has acceeded to LOINC being the primary coding system for vitals and anthropromorphic measures.  SNOMED CT is required in some countries such as the UK.  "
+        ],
+        "system": "http://loinc.org",
+        "code": "8310-5",
+        "display": "Body temperature"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "56342008",
+        "display": "Temperature taking"
+      }
+    ],
+    "text": "Body temperature"
+  },
+  "subject": {
+    "fhir_comments": [
+      "   No identifier could be provided to this observation   "
+    ],
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "issued": "2013-04-04T13:27:00+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/f201"
+    }
+  ],
+  "valueQuantity": {
+    "value": 39,
+    "_value": {
+      "fhir_comments": [
+        "   Temperature=39 degrees Celsius   "
+      ]
+    },
+    "unit": "degrees C",
+    "system": "http://snomed.info/sct",
+    "code": "258710007"
+  },
+  "interpretation": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v2/0078",
+        "code": "H"
+      }
+    ]
+  },
+  "bodySite": {
+    "fhir_comments": [
+      "   In the meantime a new oral temperature is measured   ",
+      "   http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3418963/   "
+    ],
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "74262004",
+        "display": "Oral cavity"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "89003005",
+        "display": "Oral temperature taking"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "fhir_comments": [
+          "    0..* Provides guide for interpretation    "
+        ],
+        "value": 37.5,
+        "unit": "degrees C"
+      }
+    }
+  ]
+}

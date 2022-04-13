@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "nehta-nehta-none-identified-present",
+  "meta": {
+    "lastUpdated": "2016-03-31T08:01:25.570+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>NoneIdentifiedPresent</h2><p>Indicates if there are any other nodules present.</p><p><b>Copyright Statement:</b> This value set includes content from SNOMED CT, which is copyright Â&copy; 2002+ International       Health Terminology Standards Development Organisation (IHTSDO), and distributed by    agreement    between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this    agreement</p><p>This code system http://hl7.org/fhir/nehta-none-identified-present defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>none_identified<a name=\"none_identified\"> </a></td><td>None identified</td><td>None identified</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.823"
+    }
+  ],
+  "url": "http://hl7.org/fhir/nehta-none-identified-present",
+  "version": "20151104",
+  "name": "NoneIdentifiedPresent",
+  "status": "active",
+  "experimental": true,
+  "publisher": "NEHTA",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "date": "2015-06-11T09:01:03+03:00",
+  "description": "Indicates if there are any other nodules present.",
+  "copyright": "This value set includes content from SNOMED CT, which is copyright Â© 2002+ International       Health Terminology Standards Development Organisation (IHTSDO), and distributed by    agreement    between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this    agreement",
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/nehta-nehta-none-identified-present",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "none_identified",
+      "display": "None identified",
+      "definition": "None identified"
+    }
+  ]
+}

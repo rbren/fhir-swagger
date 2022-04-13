@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "id": "intervention",
+  "meta": {
+    "lastUpdated": "2015-10-24T07:41:03.495+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/valueset-shareable-definition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div><h2>Intervention Codes</h2><p>This value set includes sample Intervention codes.</p><p><b>Copyright Statement:</b> This is an example set.</p><p>This value set has an inline code system http://hl7.org/fhir/intervention, which defines the following codes:</p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>unknown<a name=\"unknown\"> </a></td><td>Unknown</td><td>Unknown</td></tr><tr><td>other<a name=\"other\"> </a></td><td>Other</td><td>Other</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+      "valueUri": "urn:oid:2.16.840.1.113883.4.642.2.309"
+    }
+  ],
+  "url": "http://hl7.org/fhir/ValueSet/intervention",
+  "version": "1.0.2",
+  "name": "Intervention Codes",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "Financial Management",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/fhir"
+        }
+      ]
+    }
+  ],
+  "date": "2015-10-24T07:41:03+11:00",
+  "description": "This value set includes sample Intervention codes.",
+  "copyright": "This is an example set.",
+  "codeSystem": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/valueset-oid",
+        "valueUri": "urn:oid:2.16.840.1.113883.4.642.1.309"
+      }
+    ],
+    "system": "http://hl7.org/fhir/intervention",
+    "caseSensitive": true,
+    "concept": [
+      {
+        "code": "unknown",
+        "display": "Unknown",
+        "_display": {
+          "fhir_comments": [
+            "   unknown   "
+          ]
+        },
+        "definition": "Unknown"
+      },
+      {
+        "code": "other",
+        "display": "Other",
+        "_display": {
+          "fhir_comments": [
+            "   other   "
+          ]
+        },
+        "definition": "Other"
+      }
+    ]
+  }
+}

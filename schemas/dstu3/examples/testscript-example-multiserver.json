@@ -1,0 +1,366 @@
+{
+  "resourceType": "TestScript",
+  "id": "multiserver",
+  "text": {
+    "status": "generated",
+    "div": "<div><p><b>Generated Narrative with Details</b></p><p><b>id</b>: multiserver</p><p><b>name</b>: Multiserver Test Script</p><p><b>description</b>: Multiserver Test Script</p><h3>Fixtures</h3><table><tr><td>-</td><td><b>Resource</b></td></tr><tr><td>*</td><td><a>Patient/patient-example.xml</a></td></tr></table><blockquote><p><b>setup</b></p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>ContentType</b></td><td><b>Destination</b></td><td><b>SourceId</b></td></tr><tr><td>*</td><td>create</td><td>xml</td><td>0</td><td>F1</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Read Patient</p><p><b>description</b>: Read the patient from server 0.</p><blockquote><p><b>metadata</b></p><h3>Links</h3><table><tr><td>-</td><td><b>Url</b></td><td><b>Description</b></td></tr><tr><td>*</td><td><a>http://hl7.org/implement/standards/FHIR-Develop/patient.html</a></td><td>FHIR Patient</td></tr></table><blockquote><p><b>operation</b></p><p><b>type</b>: create</p><p><b>resource</b>: Patient</p><p><b>description</b>: Patient Create Operation</p><p><b>link</b>: <a>http://hl7.org/implement/standards/FHIR-Develop/http.html#create</a></p><p><b>required</b>: true</p></blockquote><blockquote><p><b>operation</b></p><p><b>type</b>: read</p><p><b>resource</b>: Patient</p><p><b>description</b>: Patient Read Operation</p><p><b>link</b>: <a>http://hl7.org/implement/standards/FHIR-Develop/http.html#read</a></p><p><b>validated</b>: true</p></blockquote></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Write Patient</p><p><b>description</b>: Write the patient read from server 0 to server 1.</p><blockquote><p><b>metadata</b></p><h3>Links</h3><table><tr><td>-</td><td><b>Url</b></td><td><b>Description</b></td></tr><tr><td>*</td><td><a>http://hl7.org/implement/standards/FHIR-Develop/patient.html</a></td><td>FHIR Patient</td></tr></table><blockquote><p><b>operation</b></p><p><b>type</b>: create</p><p><b>resource</b>: Patient</p><p><b>description</b>: Patient Create Operation</p><p><b>link</b>: <a>http://hl7.org/implement/standards/FHIR-Develop/http.html#create</a></p><p><b>required</b>: true</p></blockquote><blockquote><p><b>operation</b></p><p><b>type</b>: read</p><p><b>resource</b>: Patient</p><p><b>description</b>: Patient Read Operation</p><p><b>link</b>: <a>http://hl7.org/implement/standards/FHIR-Develop/http.html#read</a></p><p><b>validated</b>: true</p></blockquote></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Update Patient</p><p><b>description</b>: Update the patient on server 0 with the one read from server 1.</p><blockquote><p><b>metadata</b></p><h3>Links</h3><table><tr><td>-</td><td><b>Url</b></td><td><b>Description</b></td></tr><tr><td>*</td><td><a>http://hl7.org/implement/standards/FHIR-Develop/patient.html</a></td><td>FHIR Patient</td></tr></table><blockquote><p><b>operation</b></p><p><b>type</b>: create</p><p><b>resource</b>: Patient</p><p><b>description</b>: Patient Create Operation</p><p><b>link</b>: <a>http://hl7.org/implement/standards/FHIR-Develop/http.html#create</a></p><p><b>required</b>: true</p></blockquote><blockquote><p><b>operation</b></p><p><b>type</b>: read</p><p><b>resource</b>: Patient</p><p><b>description</b>: Patient Read Operation</p><p><b>link</b>: <a>http://hl7.org/implement/standards/FHIR-Develop/http.html#read</a></p><p><b>validated</b>: true</p></blockquote></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>teardown</b></p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>"
+  },
+  "url": "http://hl7.org/fhir/TestScript/multiserver",
+  "name": "Multiserver Test Script",
+  "status": "draft",
+  "description": "Multiserver Test Script",
+  "origin": [
+    {
+      "index": 1,
+      "profile": {
+        "code": "FHIR-Client"
+      }
+    }
+  ],
+  "destination": [
+    {
+      "index": 1,
+      "profile": {
+        "code": "FHIR-Server"
+      }
+    }
+  ],
+  "fixture": [
+    {
+      "id": "F1",
+      "resource": {
+        "reference": "Patient/example"
+      }
+    }
+  ],
+  "setup": {
+    "metadata": {
+      "link": [
+        {
+          "url": "http://hl7.org/implement/standards/FHIR-Develop/patient.html",
+          "description": "FHIR Patient"
+        }
+      ],
+      "capability": [
+        {
+          "required": true,
+          "validated": true,
+          "description": "Patient Create Operation",
+          "origin": [
+            1
+          ],
+          "destination": 1,
+          "link": [
+            "http://hl7.org/implement/standards/FHIR-Develop/http.html#create"
+          ],
+          "conformance": {
+            "reference": "Conformance/example"
+          }
+        }
+      ]
+    },
+    "action": [
+      {
+        "operation": {
+          "type": {
+            "code": "create"
+          },
+          "contentType": "xml",
+          "destination": 0,
+          "origin": 0,
+          "sourceId": "F1"
+        }
+      }
+    ]
+  },
+  "test": [
+    {
+      "id": "READ01",
+      "name": "Read Patient",
+      "description": "Read the patient from server 0.",
+      "metadata": {
+        "capability": [
+          {
+            "required": true,
+            "validated": true,
+            "description": "Patient Read Operation",
+            "origin": [
+              1
+            ],
+            "destination": 1,
+            "link": [
+              "http://hl7.org/implement/standards/FHIR-Develop/http.html#read"
+            ],
+            "conformance": {
+              "reference": "Conformance/example"
+            }
+          }
+        ]
+      },
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "fhir_comments": [
+                "    this operation reads the fixture \"F1\" from server-0 and maps the response to fixture \"R1\"    "
+              ],
+              "code": "read"
+            },
+            "destination": 0,
+            "responseId": "R1",
+            "targetId": "F1"
+          }
+        },
+        {
+          "assert": {
+            "response": "okay"
+          }
+        },
+        {
+          "assert": {
+            "headerField": "Last-Modified",
+            "operator": "notEmpty"
+          }
+        },
+        {
+          "assert": {
+            "resource": "Patient"
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "F1",
+            "_minimumId": {
+              "fhir_comments": [
+                "    this operation asserts that the response to the\n\t\t\t\t\t\tread operation contains at a minimumId the resource\n\t\t\t\t\t\tmapped to fixture ID \"F1\"   "
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "WRITE01",
+      "name": "Write Patient",
+      "description": "Write the patient read from server 0 to server 1.",
+      "metadata": {
+        "capability": [
+          {
+            "validated": true,
+            "description": "Patient Create Operation",
+            "link": [
+              "http://hl7.org/implement/standards/FHIR-Develop/http.html#create"
+            ],
+            "conformance": {
+              "reference": "Conformance/example"
+            }
+          },
+          {
+            "validated": true,
+            "description": "Patient Read Operation",
+            "link": [
+              "http://hl7.org/implement/standards/FHIR-Develop/http.html#read"
+            ],
+            "conformance": {
+              "reference": "Conformance/example"
+            }
+          }
+        ]
+      },
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "fhir_comments": [
+                "    this operation creates the fixture \"R1\" that was read from\n\t\t\t\t\t\tserver-0 and creates it on server-1    "
+              ],
+              "code": "create"
+            },
+            "destination": 1,
+            "sourceId": "R1"
+          }
+        },
+        {
+          "assert": {
+            "response": "okay"
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "fhir_comments": [
+                "    this operation reads the fixture \"R1\" from server-1 and\n\t\t\t\t\t\tmaps the response to fixture \"R2\"    "
+              ],
+              "code": "read"
+            },
+            "destination": 1,
+            "responseId": "R2",
+            "targetId": "R1"
+          }
+        },
+        {
+          "assert": {
+            "response": "okay"
+          }
+        },
+        {
+          "assert": {
+            "headerField": "Last-Modified",
+            "operator": "notEmpty"
+          }
+        },
+        {
+          "assert": {
+            "resource": "Patient"
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "F1",
+            "_minimumId": {
+              "fhir_comments": [
+                "    this operation asserts that the response to the\n\t\t\t\t\tread operation contains at a minimumId the resource\n\t\t\t\t\tmapped to fixture ID \"F1\"   "
+              ]
+            }
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "R1",
+            "_minimumId": {
+              "fhir_comments": [
+                "    this [redundant] operation asserts that the response to the\n\t\t\t\t\tread operation contains at a minimumId the resource\n\t\t\t\t\tmapped to fixture ID \"R1\"   "
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "UPDATE01",
+      "name": "Update Patient",
+      "description": "Update the patient on server 0 with the one read from server 1.",
+      "metadata": {
+        "capability": [
+          {
+            "validated": true,
+            "description": "Patient Update Operation",
+            "link": [
+              "http://hl7.org/implement/standards/FHIR-Develop/http.html#update"
+            ],
+            "conformance": {
+              "reference": "Conformance/example"
+            }
+          }
+        ]
+      },
+      "action": [
+        {
+          "operation": {
+            "type": {
+              "fhir_comments": [
+                "    this operation updates the fixture \"R1\" on\n\t\t\t\t\tserver-0 and with fixture \"R2\" that was read from server-1    "
+              ],
+              "code": "update"
+            },
+            "destination": 0,
+            "sourceId": "R2",
+            "targetId": "R1"
+          }
+        },
+        {
+          "assert": {
+            "response": "okay"
+          }
+        },
+        {
+          "operation": {
+            "type": {
+              "fhir_comments": [
+                "    this operation reads the fixture \"R1\" from server-0 and\nmaps the response to fixture \"R3\"    "
+              ],
+              "code": "read"
+            },
+            "destination": 0,
+            "responseId": "R3",
+            "targetId": "R1"
+          }
+        },
+        {
+          "assert": {
+            "response": "okay"
+          }
+        },
+        {
+          "assert": {
+            "headerField": "Last-Modified",
+            "operator": "notEmpty"
+          }
+        },
+        {
+          "assert": {
+            "resource": "Patient"
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "F1",
+            "_minimumId": {
+              "fhir_comments": [
+                "    this operation asserts that the response to the\n\t\t\t\t\t\tread operation contains at a minimumId the resource\n\t\t\t\t\t\tmapped to fixture ID \"F1\"   "
+              ]
+            }
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "R1",
+            "_minimumId": {
+              "fhir_comments": [
+                "    this [redundant] operation asserts that the response to the\n\t\t\t\t\t\tread operation contains at a minimumId the resource\n\t\t\t\t\t\tmapped to fixture ID \"R1\"   "
+              ]
+            }
+          }
+        },
+        {
+          "assert": {
+            "minimumId": "R2",
+            "_minimumId": {
+              "fhir_comments": [
+                "    this [redundant] operation asserts that the response to the\n\t\t\t\t\t\tread operation contains at a minimumId the resource\n\t\t\t\t\t\tmapped to fixture ID \"R1\"   "
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "teardown": {
+    "action": [
+      {
+        "fhir_comments": [
+          "    delete the patient from server-0    "
+        ],
+        "operation": {
+          "type": {
+            "code": "delete"
+          },
+          "destination": 0,
+          "targetId": "F1"
+        }
+      },
+      {
+        "fhir_comments": [
+          "    delete the patient from server-1    "
+        ],
+        "operation": {
+          "type": {
+            "code": "delete"
+          },
+          "destination": 1,
+          "targetId": "F1"
+        }
+      }
+    ]
+  }
+}

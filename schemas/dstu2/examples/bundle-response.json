@@ -1,0 +1,181 @@
+{
+  "resourceType": "Bundle",
+  "id": "bundle-response",
+  "meta": {
+    "fhir_comments": [
+      "   this example bundle is a transaction response    ",
+      "   when the transaction response was constructed   "
+    ],
+    "lastUpdated": "2014-08-18T01:43:33Z"
+  },
+  "type": "transaction-response",
+  "entry": [
+    {
+      "fhir_comments": [
+        "   \n    one entry for each entry in the transaction, in order, with a \n    response\n    "
+      ],
+      "fullUrl": "http://example.org/fhir/Patient/12423",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "12423",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2014-08-18T01:43:31Z"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>Some narrative</div>"
+        },
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Chalmers"
+            ],
+            "given": [
+              "Peter",
+              "James"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1974-12-25"
+      },
+      "response": {
+        "fhir_comments": [
+          "   now, details about the action to take with the resource   "
+        ],
+        "status": "201 Created",
+        "_status": {
+          "fhir_comments": [
+            "   important responses from the server   "
+          ]
+        },
+        "location": "Patient/12423/_history/1",
+        "etag": "W/\"1\"",
+        "lastModified": "2014-08-18T01:43:33Z"
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to the conditional create operation   ",
+          "   in this case, there was a match to the If-None-Exist header   "
+        ],
+        "status": "200 OK",
+        "_status": {
+          "fhir_comments": [
+            "   no action taken   "
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to a simple update operation   ",
+          "   no return resource for this example, though in a \n      real transaction, all entries would have a resource or all would not \n      "
+        ],
+        "status": "200 OK",
+        "location": "Patient/123/_history/4",
+        "etag": "W/\"4\""
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to the conditional update operation   "
+        ],
+        "status": "201 Created",
+        "_status": {
+          "fhir_comments": [
+            "   created a new resource for this one   "
+          ]
+        },
+        "location": "Patient/12424/_history/1",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to the 2nd conditional update operation   "
+        ],
+        "status": "200 ok",
+        "_status": {
+          "fhir_comments": [
+            "   created a new resource for this one   "
+          ]
+        },
+        "location": "Patient/123a/_history/3",
+        "etag": "W/\"3\""
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to the simple delete operation   "
+        ],
+        "status": "202 Accepted",
+        "_status": {
+          "fhir_comments": [
+            "   successful deletion   "
+          ]
+        }
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to the conditional delete operation   "
+        ],
+        "status": "DELETE",
+        "_status": {
+          "fhir_comments": [
+            "   delete matching resource - but you can't find out what was deleted - an inherent limitation in a condition delete   "
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233",
+      "resource": {
+        "resourceType": "Parameters",
+        "parameter": [
+          {
+            "name": "name",
+            "valueString": "LOINC"
+          }
+        ]
+      },
+      "response": {
+        "status": "200 ok",
+        "_status": {
+          "fhir_comments": [
+            "   POST to [base]/ValueSet/$lookup - invoking a lookup operation (see Terminology Service)   "
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125",
+      "resource": {
+        "resourceType": "Bundle",
+        "id": "fb6ed6cb-324e-4588-87cd-0c92c68986ca",
+        "type": "searchset"
+      },
+      "response": {
+        "status": "200 OK"
+      }
+    },
+    {
+      "response": {
+        "fhir_comments": [
+          "   response to conditional read - no changes "
+        ],
+        "status": "304 Not Modified"
+      }
+    }
+  ]
+}

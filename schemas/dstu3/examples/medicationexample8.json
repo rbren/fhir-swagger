@@ -1,0 +1,79 @@
+{
+  "resourceType": "Medication",
+  "id": "medexample008",
+  "text": {
+    "fhir_comments": [
+      "  this example includes a compounded medication  "
+    ],
+    "status": "generated",
+    "div": "<div>Hydrocortisone 1%, Salicyclic Acid 5% in Glaxal Base</div>"
+  },
+  "code": {
+    "text": "Hydrocortisone 1%, Salicyclic Acid 5% in Glaxal Base"
+  },
+  "isBrand": false,
+  "product": {
+    "form": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "255621006",
+          "display": "Cream"
+        }
+      ]
+    },
+    "ingredient": [
+      {
+        "itemCodeableConcept": {
+          "text": "Hydrocortisone Powder"
+        },
+        "amount": {
+          "numerator": {
+            "value": 1,
+            "system": "http://unitsofmeasure.org",
+            "code": "g"
+          },
+          "denominator": {
+            "value": 100,
+            "system": "http://unitsofmeasure.org",
+            "code": "g"
+          }
+        }
+      },
+      {
+        "itemCodeableConcept": {
+          "text": "Salicyclic Acid"
+        },
+        "amount": {
+          "numerator": {
+            "value": 5,
+            "system": "http://unitsofmeasure.org",
+            "code": "g"
+          },
+          "denominator": {
+            "value": 100,
+            "system": "http://unitsofmeasure.org",
+            "code": "g"
+          }
+        }
+      },
+      {
+        "itemCodeableConcept": {
+          "text": "Glaxal Base"
+        },
+        "amount": {
+          "numerator": {
+            "value": 94,
+            "system": "http://unitsofmeasure.org",
+            "code": "g"
+          },
+          "denominator": {
+            "value": 100,
+            "system": "http://unitsofmeasure.org",
+            "code": "g"
+          }
+        }
+      }
+    ]
+  }
+}
