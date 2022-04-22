@@ -11,6 +11,8 @@ npm install -g fhir-swagger
 Generate Swagger DSTU3:
 ```bash
 fhir-swagger \
+--fhir_cs_path "/path/to/metadata.json"
+--schemaPath "/path/to/profileSchemas"
 --fhir_url "http://fhirtest.uhn.ca/baseDstu3" \
 --conformance_path="/metadata?_format=application/json" \
 --dstu3 \
