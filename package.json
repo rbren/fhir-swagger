@@ -1,7 +1,7 @@
 {
   "name": "fhir-oas",
-  "version": "3.0.0",
-  "description": "Helper for creating Swagger from FHIR APIs ======",
+  "version": "4.0.0",
+  "description": "Helper for creating Swagger from FHIR APIs from snapshot profiles and capability statement",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
