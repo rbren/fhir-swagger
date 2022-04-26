@@ -5,12 +5,12 @@ Generate Swagger from a FHIR conformance profile
 ### Command Line
 Install:
 ```bash
-npm install -g fhir-swagger
+npm install -g fhir-oas
 ```
 
 Generate Swagger DSTU3:
 ```bash
-fhir-swagger \
+fhir-oas \
 --fhir_cs_path "/path/to/metadata.json"
 --schemaPath "/path/to/profileSchemas"
 --fhir_url "http://fhirtest.uhn.ca/baseDstu3" \
@@ -21,7 +21,7 @@ fhir-swagger \
 
 Generate Swagger R4:
 ```bash
-fhir-swagger \
+fhir-oas \
 --fhir_url "http://<your_base>/app/FHIR/r4" \
 --conformance_path="/metadata?_format=application/json" \
 --r4 \
@@ -31,12 +31,12 @@ fhir-swagger \
 ### NodeJS
 Install:
 ```bash
-npm install --save fhir-swagger
+npm install --save fhir-oas
 ```
 
 Use in code:
 ```js
-var fhirToSwagger = require('fhir-swagger')
+var fhirToSwagger = require('fhir-oas')
 var options = {
   fhir_url: 'http://fhirtest.uhn.ca/baseDstu3',
   conformance_path: '/metadata?_format=application/json',
@@ -50,12 +50,12 @@ fhirToSwagger(options, function(err, swagger) {
 ### Docker
 #### Build
 ```bash
-docker build -t <your username>/fhir-swagger .
+docker build -t <your username>/fhir-oas .
 ```
 
 #### Run
 ```bash
-docker run --network host <your username>/fhir-swagger --fhir_url "http://<your_base>/app/FHIR/r4" --conformance_path="/metadata?_format=application/json" --r4 
+docker run --network host <your username>/fhir-oas --fhir_url "http://<your_base>/app/FHIR/r4" --conformance_path="/metadata?_format=application/json" --r4 
 ```
 
 ## All Options

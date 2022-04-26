@@ -1,1 +1,0 @@
-{"code":"keyword","id":"codesystem-extensions-CodeSystem-keyword","name":"keyword","resourceType":"SearchParameter","type":"string","url":"http://hl7.org/fhir/SearchParameter/codesystem-extensions-CodeSystem-keyword","xpath":"f:CodeSystem/f:extension[@url='http://hl7.org/fhir/StructureDefinition/codesystem-keyWord'] | /f:#keyWord","xpathUsage":"normal"}

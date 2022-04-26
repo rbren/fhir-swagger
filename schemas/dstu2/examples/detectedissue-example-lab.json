@@ -1,8 +1,0 @@
-{
-  "resourceType": "DetectedIssue",
-  "id": "lab",
-  "text": {
-    "status": "generated",
-    "div": "<div>[Put rendering here]</div>"
-  }
-}
