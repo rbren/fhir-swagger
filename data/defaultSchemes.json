@@ -994,7 +994,7 @@
                     }
                 }
             },
-            "dosageAndRate": {
+            "doseAndRate": {
                 "description": "Amount of medication administered",
                 "type": "object",
                 "properties": {
