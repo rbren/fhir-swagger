@@ -291,7 +291,7 @@
                                 "type": "integer",
                                 "description": "Maximum number of times to repeat"
                             },
-                            "duration": {
+                            "Duration": {
                                 "type": "number",
                                 "description": "How long when it happens"
                             },
@@ -533,6 +533,19 @@
                     "value"
                 ]
             },
+            "ContactDetail": {
+                "description": "The ContactDetail structure defines general contact details.",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of an individual to contact"
+                    },
+                    "telecom": {
+                        "$ref": "#/components/schemas/ContactPoint"
+                    }
+                }
+            },
             "HumanName": {
                 "description": "Name of a human - parts and usage",
                 "type": "object",
@@ -603,14 +616,642 @@
             },
             "Reference": {
                 "type": "object",
-                "properties":{
-                    "reference":{
-                        "type":"string",
-                        "description":"refrence to resource for example: Patient/{id}"
+                "properties": {
+                    "reference": {
+                        "type": "string",
+                        "description": "refrence to resource for example: Patient/{id}"
                     }
                 },
-                "required":["reference"]
-
+                "required": [
+                    "reference"
+                ]
+            },
+            "RelatedArtifact": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "documentation','justification",
+                            "citation",
+                            "predecessor",
+                            "successor','derived-from",
+                            "depends-on",
+                            "composed-of"
+                        ]
+                    },
+                    "label": {
+                        "description": "Short label",
+                        "type": "string"
+                    },
+                    "display": {
+                        "type": "string",
+                        "description": "Brief description of the related artifact"
+                    },
+                    "citation": {
+                        "type": "string",
+                        "pattern": "\\s*(\\S|\\s)*",
+                        "description": "Bibliographic citation for the artifact (markdown)"
+                    },
+                    "url": {
+                        "description": "Where the artifact can be accessed (URL)",
+                        "type": "string"
+                    },
+                    "document": {
+                        "$ref": "#/components/schemas/Attachment",
+                        "description": "What document is being referenced"
+                    },
+                    "resource": {
+                        "type": "string",
+                        "description": "What resource is being referenced (Canonical URL)"
+                    }
+                },
+                "required": [
+                    "type"
+                ]
+            },
+            "Meta": {
+                "type": "object",
+                "properties": {
+                    "versionId": {
+                        "type": "string",
+                        "format": "[A-Za-z0-9\\-\\.]{1,64}",
+                        "description": "Version specific identifier"
+                    },
+                    "lastUpdated": {
+                        "$ref": "#/components/schemas/instant"
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "Identifies where the resource comes from"
+                    },
+                    "profile": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Profiles this resource claims to conform to canonical(StructureDefinition)"
+                        }
+                    },
+                    "security": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Security Labels applied to this resource as per https://hl7.org/fhir/valueset-security-labels.html"
+                        }
+                    },
+                    "tag": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "tags as per https://hl7.org/fhir/valueset-common-tags.html"
+                        }
+                    }
+                }
+            },
+            "Contributor": {
+                "description": "Contributor information",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "author",
+                            "editor",
+                            "reviewer",
+                            "endorser"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Who contributed the content"
+                    },
+                    "contact": {
+                        "description": "Contact details of the contributor",
+                        "type": "array",
+                        "items": {
+                            "type": {
+                                "$ref": "#/components/schemas/ContactDetail"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "type"
+                ]
+            },
+            "DataRequirement": {
+                "type": "object",
+                "description": "The DataRequirement structure defines a general data requirement for a knowledge asset such as a decision support rule or quality measure.",
+                "properties": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "format": "[^s]+(s[^s]+)*",
+                            "description": "The type of the required data"
+                        },
+                        "profile": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "The profile of the required data"
+                        },
+                        "subjectCodeableConcept": {
+                            "type": "string",
+                            "format": "[^s]+(s[^s]+)*",
+                            "description": ""
+                        },
+                        "subjectReference": {
+                            "$ref": "#/components/schemas/Group",
+                            "description": ""
+                        },
+                        "mustSupport": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Indicates specific structure elements that are referenced by the knowledge module"
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "format": "int32",
+                            "description": "Number of results"
+                        },
+                        "codeFilter": {
+                            "description": "What codes are expected",
+                            "type": "object",
+                            "properties": {
+                                "path": {
+                                    "type": "string",
+                                    "description": "A code-valued attribute to filter on"
+                                },
+                                "searchParam": {
+                                    "type": "string",
+                                    "description": "A coded (token) parameter to search on"
+                                },
+                                "valueSet": {
+                                    "type": "string",
+                                    "description": "Valueset for the filter (canonical)"
+                                },
+                                "code": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string",
+                                        "format": "[^s]+(s[^s]+)*"
+                                    },
+                                    "description": "What code is expected"
+                                }
+                            }
+                        },
+                        "dateFilter": {
+                            "description": "What dates/date ranges are expected",
+                            "type": "object",
+                            "properties": {
+                                "path": {
+                                    "type": "string",
+                                    "description": "A date-valued attribute to filter on"
+                                },
+                                "searchParam": {
+                                    "type": "string",
+                                    "description": "A date valued parameter to search on"
+                                },
+                                "valueDateTime": {
+                                    "$ref": "#/components/schemas/dateTime",
+                                    "description": ""
+                                },
+                                "valuePeriod": {
+                                    "$ref": "#/components/schemas/Period",
+                                    "description": ""
+                                },
+                                "valueDuration": {
+                                    "$ref": "#/components/schemas/Duration",
+                                    "description": ""
+                                }
+                            }
+                        },
+                        "sort": {
+                            "description": "Order of the results",
+                            "type": "object",
+                            "properties": {
+                                "path": {
+                                    "type": "string",
+                                    "description": "The name of the attribute to perform the sort"
+                                },
+                                "direction": {
+                                    "type": "string",
+                                    "format": "[^s]+(s[^s]+)*",
+                                    "description": "ascending | descending"
+                                }
+                            },
+                            "required": [
+                                "path",
+                                "direction"
+                            ]
+                        }
+                    }
+                }
+            },
+            "Expression": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "type": "string",
+                        "description": "Natural language description of the condition"
+                    },
+                    "name": {
+                        "description": "Short name assigned to expression for reuse",
+                        "type": "string",
+                        "format": "[A-Za-z0-9\\-\\.]{1,64}"
+                    },
+                    "language": {
+                        "type": "string",
+                        "description": "language file type as per https://hl7.org/fhir/valueset-expression-language.html"
+                    },
+                    "expression": {
+                        "type": "string",
+                        "description": "Expression in specified language"
+                    },
+                    "reference": {
+                        "type": "string",
+                        "description": "Where the expression is found (URI)"
+                    }
+                },
+                "required": [
+                    "language"
+                ]
+            },
+            "Coding": {
+                "type": "object",
+                "properties": {
+                    "system": {
+                        "type": "string",
+                        "description": "Identity of the terminology system"
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "Version of the system - if relevant"
+                    },
+                    "code": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "Symbol in syntax defined by the system"
+                    },
+                    "display": {
+                        "type": "string",
+                        "description": "Representation defined by the system"
+                    },
+                    "userSelected": {
+                        "type": "boolean",
+                        "description": "If this coding was chosen directly by the user"
+                    }
+                }
+            },
+            "CodeableConcept": {
+                "type": "object",
+                "properties": {
+                    "coding": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "format": "[^s]+(s[^s]+)*"
+                        },
+                        "description": "Code defined by a terminology system"
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "Plain text representation of the concept"
+                    }
+                }
+            },
+            "Dosage": {
+                "type": "object",
+                "properties": {
+                    "sequence": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "The order of the dosage instructions"
+                    },
+                    "text": {
+                        "type": "string",
+                        "description": "Free text dosage instructions e.g. SIG"
+                    },
+                    "additionalInstruction": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "format": "[^s]+(s[^s]+)*"
+                        },
+                        "description": "Supplemental instruction or warnings to the patient - e.g. \"with meals\", \"may cause drowsiness\""
+                    },
+                    "patientInstruction": {
+                        "type": "string",
+                        "description": "Patient or consumer oriented instructions"
+                    },
+                    "timing": {
+                        "$ref": "#/components/schemas/Timing",
+                        "description": "When medication should be administered"
+                    },
+                    "asNeededBoolean": {
+                        "type": "boolean",
+                        "description": ""
+                    },
+                    "asNeededCodeableConcept": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "as per https://hl7.org/fhir/valueset-medication-as-needed-reason.html"
+                    },
+                    "site": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "Body site to administer to"
+                    },
+                    "route": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "How drug should enter body"
+                    },
+                    "method": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "Technique for administering medication"
+                    },
+                    "doseAndRate": {
+                        "$ref": "#/components/schemas/doseAndRate",
+                        "description": "Amount of medication administered"
+                    },
+                    "maxDosePerPeriod": {
+                        "$ref": "#/components/schemas/Ratio",
+                        "description": "Upper limit on medication per unit of time"
+                    },
+                    "maxDosePerAdministration": {
+                        "$ref": "#/components/schemas/SimpleQuantity",
+                        "description": "Upper limit on medication per administration"
+                    },
+                    "maxDosePerLifetime": {
+                        "$ref": "#/components/schemas/SimpleQuantity",
+                        "description": "Upper limit on medication per lifetime of the patient"
+                    }
+                }
+            },
+            "dosageAndRate": {
+                "description": "Amount of medication administered",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "The kind of dose or rate specified"
+                    },
+                    "doseRange": {
+                        "$ref": "#/components/schemas/Range",
+                        "description": ""
+                    },
+                    "doseQuantity": {
+                        "$ref": "#/components/schemas/SimpleQuantity",
+                        "description": ""
+                    },
+                    "rateRatio": {
+                        "$ref": "#/components/schemas/Ratio",
+                        "description": ""
+                    },
+                    "rateRange": {
+                        "$ref": "#/components/schemas/Range",
+                        "description": ""
+                    },
+                    "rateQuantity": {
+                        "$ref": "#/components/schemas/SimpleQuantity",
+                        "description": ""
+                    }
+                }
+            },
+            "UsageContext": {
+                "description": "The UsageContext structure defines the context of use for a module. requires one of the valuetypes",
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "Type of context being specified"
+                    },
+                    "valueCodeableConcept": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": ""
+                    },
+                    "valueQuantity": {
+                        "$ref": "#/components/schemas/Quantity",
+                        "description": ""
+                    },
+                    "valueRange": {
+                        "$ref": "#/components/schemas/Range",
+                        "description": ""
+                    },
+                    "valueReference": {
+                        "type": "array",
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: PlanDefinition/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: ResearchStudy/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: InsurancePlan/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: Organization/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: Location/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: Group/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                },
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "reference": {
+                                            "type": "string",
+                                            "description": "Literal reference, Relative, internal or absolute URL example: HealthcareService/{id}"
+                                        }
+                                    },
+                                    "required": [
+                                        "reference"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "TriggerDefinition": {
+                "description": "Defines an expected trigger for a module, Either timing, or a data requirement, but not both, A condition only if there is a data requirement, A named event requires a name, a periodic event requires timing, and a data event requires data",
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "named-event | periodic | data-changed | data-added | data-modified | data-removed | data-accessed | data-access-ended"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Name or URI that identifies the event"
+                    },
+                    "timingTiming": {
+                        "$ref": "#/components/schemas/Timing",
+                        "description": ""
+                    },
+                    "timingReference": {
+                        "$ref": "#/components/schemas/Schedule"
+                    },
+                    "timingDate": {
+                        "type": "string",
+                        "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?",
+                        "description": ""
+                    },
+                    "timingDateTime": {
+                        "$ref": "#/components/schemas/dateTime",
+                        "description": ""
+                    },
+                    "data": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ DataRequirement"
+                        },
+                        "description": "Triggering data of the event (multiple = 'and')"
+                    },
+                    "condition": {
+                        "$ref": "#/components/schemas/Expression",
+                        "description": "Whether the event triggers (boolean expression)"
+                    }
+                }
+            },
+            "ParameterDefinition": {
+                "description": "Definition of a parameter to a module",
+                "required": [
+                    "type",
+                    "use"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "Name used to access the parameter value"
+                    },
+                    "use": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "in | out"
+                    },
+                    "min": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Minimum cardinality"
+                    },
+                    "max": {
+                        "type": "string",
+                        "description": "Maximum cardinality (a number of *)"
+                    },
+                    "documentation": {
+                        "type": "string",
+                        "description": "A brief description of the parameter"
+                    },
+                    "type": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "What type of value"
+                    },
+                    "profile": {
+                        "type": "string",
+                        "description": "What profile the value is expected to be"
+                    }
+                }
+            },
+            "Narrative": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "generated | extensions | additional | empty"
+                    },
+                    "div": {
+                        "type": "string",
+                        "description": "Limited xhtml content"
+                    }
+                }
+            },
+            "XHTML": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "generated | extensions | additional | empty"
+                    },
+                    "div": {
+                        "type": "string",
+                        "description": "Limited xhtml content"
+                    }
+                },
+                "required":["status","div"]
             }
         }
     },
@@ -636,7 +1277,7 @@
                 "requestBody": {
                     "content": {
                         "application/json": {
-                            "schema": { 
+                            "schema": {
                                 "oneOf": [
                                     {
                                         "$ref": "#/components/schemas/Address"
