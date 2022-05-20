@@ -5,6 +5,7 @@ args.conformance_path = args.conformance_path || '/metadata?_format=application/
 args.output = args.output || '-';
 args.fhir_cs_path=(/[A-z]:\//.test(args.fhir_cs_path))?args.fhir_cs_path:process.cwd()+args.fhir_cs_path;
 args.schemaPath=(/[A-z]:\//.test(args.schemaPath))?args.schemaPath:process.cwd()+args.schemaPath;
-args.filePrefilePrefix=args.filePrefilePrefix||""
+args.prefix=args.prefix||""
+args.version=args.version||"R4"
 // console.log(args)
 // process.exit()

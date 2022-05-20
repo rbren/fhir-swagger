@@ -18,13 +18,13 @@ fhir-oas \
 --dstu3 \
 --output swagger.json
 ```
-
+fhir-oas --fhir_url "http://<your_base>/app/FHIR/r4" --conformance_path="/metadata?_format=application/json" --output swagger.json 
 Generate Swagger R4:
 ```bash
 fhir-oas \
 --fhir_url "http://<your_base>/app/FHIR/r4" \
 --conformance_path="/metadata?_format=application/json" \
---r4 \
+--prefix test \
 --output swagger.json
 ```
 

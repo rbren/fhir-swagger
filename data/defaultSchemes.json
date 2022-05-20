@@ -743,112 +743,109 @@
                 "type": "object",
                 "description": "The DataRequirement structure defines a general data requirement for a knowledge asset such as a decision support rule or quality measure.",
                 "properties": {
-                    "type": "object",
-                    "properties": {
-                        "type": {
-                            "type": "string",
-                            "format": "[^s]+(s[^s]+)*",
-                            "description": "The type of the required data"
+                    "type": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "The type of the required data"
+                    },
+                    "profile": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
                         },
-                        "profile": {
-                            "type": "array",
-                            "items": {
-                                "type": "string"
+                        "description": "The profile of the required data"
+                    },
+                    "subjectCodeableConcept": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": ""
+                    },
+                    "subjectReference": {
+                        "$ref": "#/components/schemas/Group",
+                        "description": ""
+                    },
+                    "mustSupport": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "Indicates specific structure elements that are referenced by the knowledge module"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Number of results"
+                    },
+                    "codeFilter": {
+                        "description": "What codes are expected",
+                        "type": "object",
+                        "properties": {
+                            "path": {
+                                "type": "string",
+                                "description": "A code-valued attribute to filter on"
                             },
-                            "description": "The profile of the required data"
-                        },
-                        "subjectCodeableConcept": {
-                            "type": "string",
-                            "format": "[^s]+(s[^s]+)*",
-                            "description": ""
-                        },
-                        "subjectReference": {
-                            "$ref": "#/components/schemas/Group",
-                            "description": ""
-                        },
-                        "mustSupport": {
-                            "type": "array",
-                            "items": {
-                                "type": "string"
+                            "searchParam": {
+                                "type": "string",
+                                "description": "A coded (token) parameter to search on"
                             },
-                            "description": "Indicates specific structure elements that are referenced by the knowledge module"
-                        },
-                        "limit": {
-                            "type": "integer",
-                            "format": "int32",
-                            "description": "Number of results"
-                        },
-                        "codeFilter": {
-                            "description": "What codes are expected",
-                            "type": "object",
-                            "properties": {
-                                "path": {
+                            "valueSet": {
+                                "type": "string",
+                                "description": "Valueset for the filter (canonical)"
+                            },
+                            "code": {
+                                "type": "array",
+                                "items": {
                                     "type": "string",
-                                    "description": "A code-valued attribute to filter on"
+                                    "format": "[^s]+(s[^s]+)*"
                                 },
-                                "searchParam": {
-                                    "type": "string",
-                                    "description": "A coded (token) parameter to search on"
-                                },
-                                "valueSet": {
-                                    "type": "string",
-                                    "description": "Valueset for the filter (canonical)"
-                                },
-                                "code": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "string",
-                                        "format": "[^s]+(s[^s]+)*"
-                                    },
-                                    "description": "What code is expected"
-                                }
+                                "description": "What code is expected"
                             }
-                        },
-                        "dateFilter": {
-                            "description": "What dates/date ranges are expected",
-                            "type": "object",
-                            "properties": {
-                                "path": {
-                                    "type": "string",
-                                    "description": "A date-valued attribute to filter on"
-                                },
-                                "searchParam": {
-                                    "type": "string",
-                                    "description": "A date valued parameter to search on"
-                                },
-                                "valueDateTime": {
-                                    "$ref": "#/components/schemas/dateTime",
-                                    "description": ""
-                                },
-                                "valuePeriod": {
-                                    "$ref": "#/components/schemas/Period",
-                                    "description": ""
-                                },
-                                "valueDuration": {
-                                    "$ref": "#/components/schemas/Duration",
-                                    "description": ""
-                                }
-                            }
-                        },
-                        "sort": {
-                            "description": "Order of the results",
-                            "type": "object",
-                            "properties": {
-                                "path": {
-                                    "type": "string",
-                                    "description": "The name of the attribute to perform the sort"
-                                },
-                                "direction": {
-                                    "type": "string",
-                                    "format": "[^s]+(s[^s]+)*",
-                                    "description": "ascending | descending"
-                                }
-                            },
-                            "required": [
-                                "path",
-                                "direction"
-                            ]
                         }
+                    },
+                    "dateFilter": {
+                        "description": "What dates/date ranges are expected",
+                        "type": "object",
+                        "properties": {
+                            "path": {
+                                "type": "string",
+                                "description": "A date-valued attribute to filter on"
+                            },
+                            "searchParam": {
+                                "type": "string",
+                                "description": "A date valued parameter to search on"
+                            },
+                            "valueDateTime": {
+                                "$ref": "#/components/schemas/dateTime",
+                                "description": ""
+                            },
+                            "valuePeriod": {
+                                "$ref": "#/components/schemas/Period",
+                                "description": ""
+                            },
+                            "valueDuration": {
+                                "$ref": "#/components/schemas/Duration",
+                                "description": ""
+                            }
+                        }
+                    },
+                    "sort": {
+                        "description": "Order of the results",
+                        "type": "object",
+                        "properties": {
+                            "path": {
+                                "type": "string",
+                                "description": "The name of the attribute to perform the sort"
+                            },
+                            "direction": {
+                                "type": "string",
+                                "format": "[^s]+(s[^s]+)*",
+                                "description": "ascending | descending"
+                            }
+                        },
+                        "required": [
+                            "path",
+                            "direction"
+                        ]
                     }
                 }
             },
@@ -1172,7 +1169,7 @@
                     "data": {
                         "type": "array",
                         "items": {
-                            "$ref": "#/components/schemas/ DataRequirement"
+                            "$ref": "#/components/schemas/DataRequirement"
                         },
                         "description": "Triggering data of the event (multiple = 'and')"
                     },
@@ -1251,7 +1248,158 @@
                         "description": "Limited xhtml content"
                     }
                 },
-                "required":["status","div"]
+                "required": [
+                    "status",
+                    "div"
+                ]
+            },
+            "Group": {
+                "type": "object",
+                "description": "Group of multiple entities",
+                "required": [
+                    "type",
+                    "actual"
+                ],
+                "properties": {
+                    "identifier": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Identifier"
+                        },
+                        "description": "Unique ids"
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "description": "Whether this group's record is in active use"
+                    },
+                    "type": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "group type as per http://hl7.org/fhir/2021May/valueset-group-type.html"
+                    },
+                    "actual": {
+                        "type": "boolean",
+                        "description": "Descriptive or actual"
+                    },
+                    "code": {
+                        "type": "string",
+                        "format": "[^s]+(s[^s]+)*",
+                        "description": "Kind of Group members"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Label for Group"
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "Number of members"
+                    },
+                    "managingEntity": {
+                        "description": "Entity that is the custodian of the Group's definition",
+                        "oneOf": [
+                            {
+                                "$ref": "#/components/schemas/Organization"
+                            },
+                            {
+                                "$ref": "#/components/schemas/Practitioner"
+                            },
+                            {
+                                "$ref": "#/components/schemas/PractitionerRole"
+                            },
+                            {
+                                "$ref": "#/components/schemas/RelatedPerson"
+                            }
+                        ]
+                    },
+                    "characteristic": {
+                        "description": "Include / Exclude group members by Trait | must include one of the 5 value types",
+                        "required": [
+                            "code",
+                            "exclude"
+                        ],
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "format": "[^s]+(s[^s]+)*",
+                                "description": "Kind of characteristic"
+                            },
+                            "valueCodeableConcept": {
+                                "type": "string",
+                                "format": "[^s]+(s[^s]+)*",
+                                "description": ""
+                            },
+                            "valueBoolean": {
+                                "type": "boolean",
+                                "description": ""
+                            },
+                            "valueQuantity": {
+                                "$ref": "#/components/schemas/Quantity",
+                                "description": ""
+                            },
+                            "valueRange": {
+                                "$ref": "#/components/schemas/Range",
+                                "description": ""
+                            },
+                            "valueReference": {
+                                "$ref": "#/components/schemas/Reference",
+                                "description": ""
+                            },
+                            "exclude": {
+                                "type": "boolean",
+                                "description": "Group includes or excludes"
+                            },
+                            "period": {
+                                "$ref": "#/components/schemas/Period",
+                                "description": "Period over which characteristic is tested"
+                            }
+                        }
+                    },
+                    "member": {
+                        "description": "Who or what is in group",
+                        "required": [
+                            "entity"
+                        ],
+                        "type": "object",
+                        "properties": {
+                            "entity": {
+                                "description": "Reference to the group member",
+                                "oneOf": [
+                                    {
+                                        "$ref": "#/components/schemas/Device"
+                                    },
+                                    {
+                                        "$ref": "#/components/schemas/Group"
+                                    },
+                                    {
+                                        "$ref": "#/components/schemas/Medication"
+                                    },
+                                    {
+                                        "$ref": "#/components/schemas/Patient"
+                                    },
+                                    {
+                                        "$ref": "#/components/schemas/Practitioner"
+                                    },
+                                    {
+                                        "$ref": "#/components/schemas/PractitionerRole"
+                                    },
+                                    {
+                                        "$ref": "#/components/schemas/Substance"
+                                    }
+                                ]
+                            },
+                            "period": {
+                                "$ref": "#/components/schemas/Period",
+                                "description": "Period member belonged to the group"
+                            },
+                            "inactive": {
+                                "type": "boolean",
+                                "description": "If member is no longer in group"
+                            }
+                        }
+                    }
+                }
             }
         }
     },
