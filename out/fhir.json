@@ -1,5 +1,5 @@
 {
-  "swagger": "2.0",
+  "swagger": "3.0",
   "definitions": {
     "Account": {
       "$schema": "http://json-schema.org/draft-04/schema#",
