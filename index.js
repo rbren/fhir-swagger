@@ -10,7 +10,7 @@ module.exports = function(options, callback) {
             if(err){
                 throw err;
             }
-            Converter.convert(options.fhir_url, json,options).then(swagger=>{
+            Converter.convert(options.fhir_url, json.CapabilityStatement,options).then(swagger=>{
                 callback(null,swagger);
             });
         });
