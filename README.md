@@ -1,6 +1,8 @@
 # FHIR to Swagger
-> This repo is no longer maintained. A better-maintaned fork can be found at
-> https://github.com/Sheep-inc/fhir-oas
+---
+**This repo is no longer maintained. A better fork can be found at https://github.com/Sheep-inc/fhir-oas**
+
+---
 
 Generate Swagger from a FHIR conformance profile
 
