@@ -1,8 +1,0 @@
-{
-  "resourceType": "Contract",
-  "id": "C-123",
-  "text": {
-    "status": "generated",
-    "div": "<div>A human-readable rendering of the contract</div>"
-  }
-}

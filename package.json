@@ -1,34 +1,32 @@
 {
-  "name": "fhir-swagger",
-  "version": "2.3.0",
-  "description": "Helper for creating Swagger from FHIR APIs ======",
+  "name": "fhir-oas",
+  "version": "4.2.39",
+  "description": "Helper for creating Swagger from FHIR APIs from snapshot profiles and capability statement",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bobby-brennan/fhir-swagger.git"
+    "url": "https://github.com/sheep-inc/fhir-oas.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bobby-brennan/fhir-swagger/issues"
+    "url": "https://github.com/sheep-inc/fhir-oas/issues"
   },
   "dependencies": {
-    "async": "~1.4.0",
-    "express": "~4.13.1",
-    "json-schema-generator": "bobby-brennan/json-schema-generator#patch-1",
-    "jsonix": "~2.3.0",
-    "request": "^2.69.0",
-    "xsd2json": "~1.4.3",
-    "yargs": "^3.32.0"
+    "express": "^4.17.3",
+    "fast-xml-parser": "^4.0.8",
+    "node-fetch": "^3.2.4",
+    "oas-reducer": "^3.0.0",
+    "request": "^2.88.2",
+    "yargs": "^17.4.1"
   },
   "bin": {
     "fhir-swagger": "./bin/fhir-swagger"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "lucy-console": "^1.1.0"
+    "chai": "^4.3.6"
   }
 }
